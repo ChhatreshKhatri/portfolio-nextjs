@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="96" height="96" viewBox="0 0 96 96" class="css-1j8o68f" xmlns="http://www.w3.org/2000/svg">
+  <defs id="SvgjsDefs1014">
+    <linearGradient id="SvgjsLinearGradient1019">
+      <stop id="SvgjsStop1020" stop-color="#7e1f2a" offset="0"/>
+      <stop id="SvgjsStop1021" stop-color="#ff4057" offset="1"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="148" y1="0" x2="148" y2="96" id="gradient-0" gradientTransform="matrix(0.704451, 0.709753, -0.941212, 0.934181, -11.396503, -101.884087)">
+      <stop offset="0" style="stop-color: rgb(25, 25, 25);"/>
+      <stop offset="1" style=""/>
+    </linearGradient>
+  </defs>
+  <rect style="fill: url(#gradient-0);" width="96" height="96" rx="6" ry="6"/>
+  <g id="g-1" featurekey="nameFeature-0" transform="matrix(1.254376, -0.000017, 0.000018, 1.257237, 83.692215, 16.04373)" fill="url(#SvgjsLinearGradient1019)" style="">
+    <path d="M -31.095 20.457 L -39.735 20.457 C -40.175 17.257 -42.775 16.137 -45.975 16.137 C -51.455 16.137 -54.095 19.977 -54.095 25.257 C -54.095 30.377 -51.895 34.697 -46.215 34.697 C -43.015 34.697 -40.095 33.577 -39.815 30.057 L -30.935 30.057 C -31.295 38.577 -38.335 40.617 -47.055 40.617 C -55.695 40.617 -62.735 36.217 -62.735 25.457 C -62.735 14.617 -56.015 10.217 -45.695 10.217 C -38.335 10.217 -31.215 12.817 -31.095 20.457 Z M -25.295 39.857 L -25.295 10.977 L -16.895 10.977 L -16.895 23.737 L -5.215 10.977 L 4.905 10.977 L -7.735 23.937 L 5.825 39.857 L -5.055 39.857 L -16.815 24.977 L -16.895 24.977 L -16.895 39.857 L -25.295 39.857 Z"/>
+  </g>
+</svg>
