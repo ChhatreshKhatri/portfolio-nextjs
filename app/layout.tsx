@@ -1,9 +1,13 @@
 import "./globals.css";
-// import NavBar from "./components/nav";
-import CustomNavbar from "./components/customNavbar";
-import { Inter } from "next/font/google";
+import NavBar from "./components/Navbar";
+import { Poppins } from "next/font/google";
+import Footer from "./components/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ["500","700"]
+});
 
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio",
@@ -22,12 +26,13 @@ export const metadata = {
   category: "website",
   icons: {
     icon: [
-      { url: "/favicon.svg", sizes: "any", type: "image/svg+xml" },
+      { url: "/icon.svg", sizes: "any", type: "image/svg+xml" },
       { url: "/favicon.ico", sizes: "16x16 32x32", type: "image/x-icon" },
     ],
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   manifest: "/app.webmanifest",
+  themeColor: "#000000",
   openGraph: {
     title: "Chhatresh Khatri | Portfolio",
     description:
@@ -79,10 +84,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-light w-full min-h-screen`}>
-        {/* <NavBar /> */}
-        <CustomNavbar />
+      <body className={`${poppins.className} h-full flex flex-col bg-light text-dark dark:bg-dark dark:text-light w-full min-h-screen`}>
+        <NavBar />
         {children}
+        <Footer />
       </body>
     </html>
   );
