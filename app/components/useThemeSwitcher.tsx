@@ -1,47 +1,45 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState, Dispatch, SetStateAction } from "react";
 
-const useThemeSwitcher = () => {
-  const prefersDark = "(prefers-color-scheme: dark)";
-  const [theme, setTheme] = useState(() => {
-    const userPref = window.localStorage.getItem("theme");
+type Theme = "light" | "dark";
+
+const useThemeSwitcher = (): [Theme, Dispatch<SetStateAction<Theme>>] => {
+  const [theme, setTheme] = useState<Theme>(() => {
+    const userPref = localStorage.getItem("theme");
     if (userPref) {
       return userPref === "dark" ? "dark" : "light";
     } else {
-      return window.matchMedia(prefersDark).matches ? "dark" : "light";
+      return "light";
     }
   });
+
   useEffect(() => {
-    const mediaQuery = window.matchMedia(prefersDark);
-    const userPref = window.localStorage.getItem("theme");
-    const handler = () => {
-      if(userPref){
-        let check=userPref==="dark"?"dark":"light";
-        setTheme(check);
-        if(check==="dark"){
-          document.documentElement.classList.add("dark");
-        }else{
-          document.documentElement.classList.remove("dark");
-        }
-      }else{
-        let check=mediaQuery.matches?"dark":"light";
-        setTheme(check);
-        if(check==="dark"){
-          document.documentElement.classList.add("dark");
-        }else{
-          document.documentElement.classList.remove("dark");
-        }
+    const handleThemeChange = (e: MediaQueryListEvent) => {
+      const check = e.matches ? "dark" : "light";
+      setTheme(check);
+      if (check === "dark") {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
       }
     };
-    mediaQuery.addEventListener("change", handler);
+
+    const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+    mediaQuery.addListener(handleThemeChange);
+
+    return () => {
+      mediaQuery.removeListener(handleThemeChange);
+    };
   }, []);
 
   useEffect(() => {
-    if (theme === "dark") {
-      window.localStorage.setItem("theme", "dark");
-      document.documentElement.classList.add("dark");
-    } else {
-      window.localStorage.setItem("theme", "light");
-      document.documentElement.classList.remove("dark");
+    if (typeof window !== "undefined") {
+      if (theme === "dark") {
+        localStorage.setItem("theme", "dark");
+        document.documentElement.classList.add("dark");
+      } else {
+        localStorage.setItem("theme", "light");
+        document.documentElement.classList.remove("dark");
+      }
     }
   }, [theme]);
 

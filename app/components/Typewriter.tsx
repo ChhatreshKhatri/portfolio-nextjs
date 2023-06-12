@@ -1,6 +1,5 @@
 "use client";
 import TypeWriter from "typewriter-effect";
-import React from 'react'
 
 const Typewriter = () => {
     return (

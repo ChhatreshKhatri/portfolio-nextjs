@@ -69,9 +69,9 @@ Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment)
 ## 🖼️ Screenshots
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Chhatreshkhatri/portfolio-nextjs/master/app/assets/home.jpeg?token=GHSAT0AAAAAACB43TTCIVUH3KYSWEALQFJSZEHEMBA" width="960">
-  <img src="https://raw.githubusercontent.com/Chhatreshkhatri/portfolio-nextjs/master/app/assets/about.jpeg?token=GHSAT0AAAAAACB43TTCIVUH3KYSWEALQFJSZEHEMBA" width="960">
-  <img src="https://raw.githubusercontent.com/Chhatreshkhatri/portfolio-nextjs/master/app/assets/projects.jpeg?token=GHSAT0AAAAAACB43TTCIVUH3KYSWEALQFJSZEHEMBA" width="960">
+  <img src="https://raw.githubusercontent.com/Chhatreshkhatri/portfolio-nextjs/master/app/assets/home.jpeg?token=GHSAT0AAAAAACB43TTD6XKTEN5ZSA77D65UZEHGDQA" width="960">
+  <img src="https://raw.githubusercontent.com/Chhatreshkhatri/portfolio-nextjs/master/app/assets/about.jpeg?token=GHSAT0AAAAAACB43TTDXJVKGEAC2YZ77GMWZEHGD5Q" width="960">
+  <img src="https://raw.githubusercontent.com/Chhatreshkhatri/portfolio-nextjs/master/app/assets/projects.jpeg?token=GHSAT0AAAAAACB43TTDM7ZBNG2HMOV4I47YZEHGC3Q" width="960">
 
 </div>
 

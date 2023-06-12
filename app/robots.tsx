@@ -5,8 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '/private/',
+      disallow: '',
     },
-    sitemap: 'https://www.dlouck.com/sitemap.xml',
   };
 }
