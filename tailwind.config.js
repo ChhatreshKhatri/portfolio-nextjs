@@ -8,6 +8,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      transitionDuration: {
+        '4000': '4000ms',
+      },
       boxShadow: {
         'top': '0px -4px 6px rgba(0, 0, 0, 0.1)', 
         'bottom': '0px 4px 6px rgba(0, 0, 0, 0.1)',

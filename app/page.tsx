@@ -1,16 +1,15 @@
-"use client";
 import Image from "next/image";
 import pfp from "./assets/banner_pic.webp";
-import Typewriter from "typewriter-effect";
 import { ResumeIcon } from "./components/icons";
 import { SocialIcon } from "./components/socialicon.js";
 import Link from "next/link";
+import Typewriter from "./components/Typewriter";
 
 export default function Home() {
   return (
     <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-4 md:px-12 lg:px-20 py-[100px]">
       <div className="w-full h-full flex justify-center">
-        <span className="font-semibold tracking-wider  bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 inline-block text-2xl md:text-3xl px-1 md:px-2 py-1 ">
+        <span className="font-semibold tracking-wider  bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 inline-block text-xl xs:2xl md:text-3xl px-1 md:px-2 py-1 ">
           Welcome to my Portfolio
         </span>
       </div>
@@ -23,17 +22,7 @@ export default function Home() {
               {`Hi! I'm Chhatresh Khatri`}
             </h1>
             <h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold mt-4 text-center">
-              <Typewriter
-                options={{
-                  strings: [
-                    "Web Developer",
-                    "Web Designer",
-                    "Software Engineer",
-                  ],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
+              <Typewriter />
             </h2>
             <p className="text-xl mt-4 text-justify">
               B.Tech in Computer Science & Engineering and I am skilled in
@@ -44,6 +33,7 @@ export default function Home() {
             <div className="mt-8 flex space-x-4 text-xl justify-center">
               <Link
                 href={`https://drive.google.com/file/d/19RguGg9v2VWPQJa-XL_2sCASpk65u5hd/view`}
+                target="_blank"
                 className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/80 hover:to-lightCk/80"
               >
                 <ResumeIcon className="mr-2" />
@@ -51,10 +41,11 @@ export default function Home() {
               </Link>
               <Link
                 href={`https://social.chhatreshkhatri.com/`}
-                className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/80 hover:to-lightCk/80"
+                target="_blank"
+                className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/80 hover:to-lightCk/80"
               >
                 <SocialIcon className="mr-2" />
-                SocialLinks
+                Social Links
               </Link>
             </div>
           </div>
@@ -65,6 +56,7 @@ export default function Home() {
             {/* Centered content in the second column */}
             <Image
               src={pfp}
+              priority
               alt="picture"
               className="w-[60%] xs:w-[50%] md:w-[30%] lg:w-[80%] drop-shadow-3xl"
             />

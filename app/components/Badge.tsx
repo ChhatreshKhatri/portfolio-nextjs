@@ -16,7 +16,7 @@ const CustomImage: React.FC<CustomImageProps> = ({ src,alt,className }) => {
     <Image
       loader={imageLoader}
       src={src}
-      alt="Picture of the author"
+      alt={`${alt}`}
       width={500}
       height={500}
       className={`h-[45px] w-auto ${className}`}

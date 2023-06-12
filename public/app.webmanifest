@@ -1,18 +1,18 @@
 {
-  "short_name": "Portfolio",
+  "short_name": "Chhatresh Khatri",
   "name": "Chhatresh Khatri | Portfolio",
   "description": "Hi, I am Chhatresh Khatri B. Tech in CSE. Full stack Web-Developer and a self-motivated, initiative-taking, and an enthusiastic professional.",
   "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16 32x32",
+      "type": "image/x-icon"
+    },
     {
       "src": "icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"
-    },
-    {
-      "src": "favicon.ico",
-      "sizes": "16x16 32x32",
-      "type": "image/x-icon"
     },
     {
       "src": "apple-icon.png",

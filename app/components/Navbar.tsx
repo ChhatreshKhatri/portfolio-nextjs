@@ -19,9 +19,8 @@ const CustomLink = ({
     <Link href={href} className={`${className} relative group inline-flex `}>
       {title}
       <span
-        className={`${
-          path === href ? "w-full" : "w-0"
-        } h-0.5 flex items-center bg-dark dark:bg-light absolute left-0 bottom-0.5 group-hover:w-full transition-[width] ease duration-400`}
+        className={`${path === href ? "w-full" : "w-0"
+          } h-0.5 flex items-center bg-dark dark:bg-light absolute left-0 bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}
       ></span>
     </Link>
   );
@@ -48,11 +47,10 @@ const Navbar = () => {
 
   return (
     <header
-      className={`${
-        scrolled || navOpen
+      className={`${scrolled || navOpen
           ? "shadow-bottom bg-slate-300 dark:bg-darker py-2 h-12"
           : "py-3"
-      } w-full font-medium flex align-center justify-between fixed z-50 transition duration-400 ease-in-out `}
+        } w-full font-medium flex align-center justify-between fixed z-50 transition duration-500 ease-in-out `}
     >
       <nav
         className={`w-full flex justify-between align-center px-2 xxs:px-4 md:px-12 lg:px-20`}
@@ -73,19 +71,16 @@ const Navbar = () => {
           }}
         >
           <span
-            className={`bg-dark dark:bg-light transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${
-              navOpen ? "rotate-45 translate-y-1" : "-translate-y-1"
-            }`}
+            className={`bg-dark dark:bg-light transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${navOpen ? "rotate-45 translate-y-1" : "-translate-y-1"
+              }`}
           ></span>
           <span
-            className={`bg-dark dark:bg-light transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
-              navOpen ? "opacity-0" : "opacity-100"
-            }`}
+            className={`bg-dark dark:bg-light transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${navOpen ? "opacity-0" : "opacity-100"
+              }`}
           ></span>
           <span
-            className={`bg-dark dark:bg-light transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
-              navOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
-            }`}
+            className={`bg-dark dark:bg-light transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${navOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
+              }`}
           ></span>
         </button>
         <div className="text-xl hidden lg:flex">
@@ -127,9 +122,8 @@ const Navbar = () => {
           <button
             aria-label="Toggle Theme"
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-            className={`${
-              theme === "light" ? "bg-light text-dark" : "bg-dark text-light"
-            } rounded-full flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8 `}
+            className={`${theme === "light" ? "bg-light text-dark" : "bg-dark text-light"
+              } rounded-full flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8 `}
           >
             {theme === "dark" ? (
               <SunIcon className={`fill-dark`} />
@@ -142,9 +136,8 @@ const Navbar = () => {
       {/* mobile */}
 
       <div
-        className={`${
-          navOpen ? " flex lg:hidden bg-slate-300 dark:bg-darker" : "hidden"
-        } min-w-full flex-col items-center fixed top-12`}
+        className={`${navOpen ? " flex lg:hidden bg-slate-300 dark:bg-darker" : "hidden"
+          } min-w-full flex-col items-center fixed top-12`}
       >
         <nav className="text-xl flex flex-col items-center justify-center space-y-2">
           <CustomLink href={"/"} title={"Home"} className="" />
@@ -152,7 +145,7 @@ const Navbar = () => {
           <CustomLink href={"/projects"} title={"Projects"} className="" />
         </nav>
         <nav className={`flex items-center justify-center flex-wrap my-2`}>
-          
+
           <Link
             aria-label="Github"
             href={"https://github.com/chhatreshkhatri"}
@@ -186,9 +179,8 @@ const Navbar = () => {
           <button
             aria-label="Toggle Theme"
             onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-            className={`${
-              theme === "light" ? "bg-light text-dark" : "bg-dark text-light"
-            } rounded-full flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8`}
+            className={`${theme === "light" ? "bg-light text-dark" : "bg-dark text-light"
+              } rounded-full flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8`}
           >
             {theme === "dark" ? (
               <SunIcon className={`fill-dark`} />

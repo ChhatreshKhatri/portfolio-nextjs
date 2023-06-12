@@ -2,7 +2,7 @@ import Badge from "../components/Badge";
 
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | About",
-  description: "About page",
+  description: "Chhatresh Khatri is a web developer with expertise in a wide range of technologies including C/C++, Java, HTML5, CSS3, JavaScript, React, Next.js, and more.",
 };
 
 export default function Page() {
@@ -69,7 +69,7 @@ export default function Page() {
           />
           <Badge
             src="badge/JavaScript-%23323330.svg?logo=javascript&logoColor=%23F7DF1E"
-            className={`m-3  `}
+            className={`m-3`}
             alt="JavaScript"
           />
         </div>
@@ -77,52 +77,52 @@ export default function Page() {
         <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
           <Badge
             src="badge/bootstrap-702cf5.svg?logo=bootstrap&logoColor=white"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Bootstrap"
           />
           <Badge
             src="badge/Tailwind%20CSS-06B6D4.svg?logo=Tailwind-CSS&logoColor=white"
-            className={`m-3  `}
-            alt="Bootstrap"
+            className={`m-3`}
+            alt="Tailwind CSS"
           />
           <Badge
             src="badge/ReactJS-282c34.svg?logo=react&logoColor=61dafb"
-            className={`m-3  `}
+            className={`m-3`}
             alt="ReactJS"
           />
           <Badge
             src="badge/Next.js-000000.svg?logo=nextdotjs&logoColor=white"
-            className={`m-3  `}
+            className={`m-3`}
             alt="NextJS"
           />
           <Badge
             src="badge/express.js-%23404d59.svg?logo=express&logoColor=%2361DAFB"
-            className={`m-3  `}
+            className={`m-3`}
             alt="ExpressJS"
           />
           <Badge
             src="badge/Node.js-233056.svg?logo=nodedotjs"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Node"
           />
           <Badge
             src="badge/Axios-5A29E4.svg?logo=Axios&logoColor=white"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Axios"
           />
           <Badge
             src="badge/React%20Router-CA4245.svg?logo=React-Router&logoColor=white"
-            className={`m-3  `}
+            className={`m-3`}
             alt="React-router"
           />
           <Badge
             src="badge/Redux-764ABC.svg?logo=Redux&logoColor=white"
-            className={`m-3  `}
+            className={`m-3`}
             alt="React-redux"
           />
           <Badge
             src="badge/.ENV-ECD53F.svg?logo=dotenv&logoColor=black"
-            className={`m-3  `}
+            className={`m-3`}
             alt=".env"
           />
         </div>
@@ -130,97 +130,97 @@ export default function Page() {
         <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
           <Badge
             src="badge/MongoDB-001e2b.svg?logo=mongodb"
-            className={`m-3  `}
+            className={`m-3`}
             alt="MongoDB"
           />
           <Badge
             src="badge/nodemon-4f4d3f.svg?logo=nodemon"
-            className={`m-3  `}
+            className={`m-3`}
             alt="nodemon"
           />
           <Badge
             src="badge/netlify-%23000000.svg?logo=netlify"
-            className={`m-3  `}
+            className={`m-3`}
             alt="netlify"
           />
           <Badge
             src="badge/render-1f1f1f.svg?logo=render"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Render"
           />
           <Badge
             src="badge/-Back4App-10203a?logo=back4app"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Back4App"
           />
           <Badge
             src="badge/-Git-f0efe7?logo=git"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Git"
           />
           <Badge
             src="badge/-GitHub-161b22?logo=github"
-            className={`m-3  `}
+            className={`m-3`}
             alt="GitHub"
           />
           <Badge
             src="badge/GitHub%20Actions-0d1117.svg?logo=GitHub-Actions"
-            className={`m-3  `}
+            className={`m-3`}
             alt="GitHub Actions"
           />
           <Badge
             src="badge/GitHub%20Pages-222222.svg?logo=GitHub-Pages&logoColor=white"
-            className={`m-3  `}
+            className={`m-3`}
             alt="GitHub Pages"
           />
           <Badge
             src="badge/Vercel-000000.svg?logo=Vercel&logoColor=white"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Vercel"
           />
           <Badge
             src="badge/firebase-%23039BE5.svg?logo=firebase"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Firebase"
           />
           <Badge
             src="badge/Canva-%2300C4CC.svg?logo=Canva&logoColor=white"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Canva"
           />
           <Badge
             src="badge/Gimp-0e2426.svg?logo=gimp&logoColor=white"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Gimp"
           />
           <Badge
             src="badge/Postman-FF6C37?logo=postman&logoColor=white"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Postman"
           />
           <Badge
             src="badge/Cloudflare-1d1d1d?logo=cloudflare&logoColor=orange"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Cloudflare"
           />
           <Badge
             src="badge/AlibabaCloud-2c3134?logo=alibabacloud"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Alibaba Cloud"
           />
           <Badge
             src="badge/GoogleCloud-5f6368?logo=googlecloud"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Google Cloud"
           />
           <Badge
             src="badge/Android%20Studio-3DDC84.svg?logo=Android-Studio&logoColor=white"
-            className={`m-3  `}
+            className={`m-3`}
             alt="Android Studio"
           />
           <Badge
             src="badge/VSCode-1f1f1f?logo=visualstudiocode&logoColor=026ec1"
-            className={`m-3  `}
+            className={`m-3`}
             alt="VS Code"
           />
         </div>
