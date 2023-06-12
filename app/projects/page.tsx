@@ -108,7 +108,7 @@ export default function Projects() {
           <div className="w-full h-full flex flex-col justify-center items-center xs:px-8">
             {/* Centered content in the first column */}
             <h2 className='text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold'>Amazon Clone</h2>
-            <h3 className='text-2xl  xl:text-3xl font-semibold mt-4 text-center'>An e-commerce Jewellery website</h3>
+            <h3 className='text-xl  xl:text-3xl font-semibold mt-4 text-center'>An e-commerce Jewellery website</h3>
             <p className='text-xl mt-4 text-justify'>This project includes a range of features including user authentication, a shopping cart, product details page, payment processing and order history.</p>
             <div className="mt-8 flex space-x-4 text-xl justify-center">
               <Link
@@ -152,7 +152,7 @@ export default function Projects() {
           <div className="w-full h-full flex flex-col justify-center items-center xs:px-8">
             {/* Centered content in the first column */}
             <h2 className='text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold'>MyChat</h2>
-            <h3 className='text-2xl  xl:text-3xl font-semibold mt-4 text-center'>An android chat application</h3>
+            <h3 className='text-xl  xl:text-3xl font-semibold mt-4 text-center'>An android chat application</h3>
             <p className='text-xl mt-4 text-justify'>A simple Android chat app allows users to communicate with each other through text messages on their Android devices. The app typically features a user-friendly interface and easy-to-use chat functions.</p>
             <div className="mt-8 flex space-x-4 text-xl justify-center">
               <Link
