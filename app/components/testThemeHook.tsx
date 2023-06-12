@@ -3,7 +3,15 @@ import { useEffect, useState, Dispatch, SetStateAction } from "react";
 type Theme = "light" | "dark";
 
 const useThemeSwitcher = (): [Theme, Dispatch<SetStateAction<Theme>>] => {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const prefersDark = "(prefers-color-scheme: dark)";
+  const [theme, setTheme] = useState<Theme>(() => {
+    const userPref = window.localStorage.getItem("theme");
+    if (userPref) {
+      return userPref === "dark" ? "dark" : "light";
+    } else {
+      return window.matchMedia(prefersDark).matches ? "dark" : "light";
+    }
+  });
 
   useEffect(() => {
     if (typeof window !== "undefined") {

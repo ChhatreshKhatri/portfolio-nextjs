@@ -1,8 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-// import useThemeSwitcher from "./useThemeSwitcher";
-import {useTheme} from 'next-themes'
+import useThemeSwitcher from "./useThemeSwitcher";
+// import {useTheme} from 'next-themes'
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, MailIcon } from "./icons";
 import { usePathname } from "next/navigation";
 
@@ -28,9 +28,9 @@ const CustomLink = ({
 };
 
 const Navbar = () => {
-  // const [theme, setTheme] = useThemeSwitcher();
-  const {systemTheme ,theme, setTheme} = useTheme()
-  const currentTheme = theme==="system"?systemTheme:theme;
+  const [theme, toggleTheme] = useThemeSwitcher();
+  // const {systemTheme ,theme, setTheme} = useTheme()
+  // const currentTheme = theme==="system"?systemTheme:theme;
   const [scrolled, setScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
 
@@ -124,7 +124,7 @@ const Navbar = () => {
           </Link>
           <button
             aria-label="Toggle Theme"
-            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+            onClick={() => toggleTheme(theme === "light" ? "dark" : "light")}
             className={`${theme === "light" ? "bg-light text-dark" : "bg-dark text-light"
               } rounded-full flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8 `}
           >
@@ -181,7 +181,7 @@ const Navbar = () => {
           </Link>
           <button
             aria-label="Toggle Theme"
-            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+            onClick={() => toggleTheme(theme === "light" ? "dark" : "light")}
             className={`${theme === "light" ? "bg-light text-dark" : "bg-dark text-light"
               } rounded-full flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8`}
           >
