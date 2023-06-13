@@ -2,7 +2,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import useThemeSwitcher from "./useThemeSwitcher";
-// import {useTheme} from 'next-themes'
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, MailIcon } from "./icons";
 import { usePathname } from "next/navigation";
 
@@ -29,8 +28,6 @@ const CustomLink = ({
 
 const Navbar = () => {
   const [theme, toggleTheme] = useThemeSwitcher();
-  // const {systemTheme ,theme, setTheme} = useTheme()
-  // const currentTheme = theme==="system"?systemTheme:theme;
   const [scrolled, setScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
 
