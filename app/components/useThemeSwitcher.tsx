@@ -3,7 +3,7 @@ import { useEffect, useState, Dispatch, SetStateAction } from "react";
 type Theme = "light" | "dark";
 
 const useThemeSwitcher = (): [Theme, Dispatch<SetStateAction<Theme>>] => {
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
     if (typeof window !== "undefined") {
