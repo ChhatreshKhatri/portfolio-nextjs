@@ -51,12 +51,12 @@ const Navbar = () => {
   return (
     <header
       className={`${scrolled || navOpen
-        ? "shadow-bottom bg-slate-300 dark:bg-darker py-2 h-12"
+        ? "shadow-bottom bg-slate-300 dark:bg-darker py-2 h-12 transition-none"
         : "py-3"
         } w-full font-medium flex align-center justify-between fixed z-50 transition duration-500 ease-in-out `}
     >
       <nav
-        className={`w-full flex justify-between align-center px-2 xxs:px-4 md:px-12 lg:px-20`}
+        className={`w-full flex justify-between align-center px-4 md:px-12 lg:px-20`}
       >
         <div className="flex">
           <Link

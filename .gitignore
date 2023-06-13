@@ -35,3 +35,5 @@ yarn-error.log*
 next-env.d.ts
 
 deploy.cmd
+testTheme.tsx
+app/components/useThemer.tsx

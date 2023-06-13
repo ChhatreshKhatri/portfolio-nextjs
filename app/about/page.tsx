@@ -7,13 +7,13 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className=" w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-4 md:px-12 lg:px-20 py-[100px]">
+    <main className=" w-full h-full flex items-center flex-col justify-center font-medium px-4 md:px-12 lg:px-20 py-[100px]">
       <div className="w-full h-full flex justify-center">
         <h1 className="font-semibold tracking-wider bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 inline-block text-2xl md:text-3xl px-1 md:px-2 py-1 ">
           About Me
         </h1>
       </div>
-      <div className="dark:bg-darked rounded-xl bg-slate-200 text-justify px-10 py-6 mt-6">
+      <div className="dark:bg-darked rounded-xl bg-slate-200 text-justify px-6 xs:px-10 py-6 mt-6">
         <h2 className={`text-4xl text-center`}>Description</h2>
         <p className="text-xl mt-4">
           Hi there! My name is Chhatresh Khatri and I&apos;m a web developer
