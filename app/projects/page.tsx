@@ -9,6 +9,9 @@ import Link from 'next/link';
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | Projects",
   description: "Projects by Chhatresh Khatri. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
+  alternates: {
+    canonical: "https://www.chhatreshkhatri.com/projects",
+  },
 };
 export default function Projects() {
   return (

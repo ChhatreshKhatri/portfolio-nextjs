@@ -3,6 +3,9 @@ import Badge from "../components/Badge";
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | About",
   description: "Chhatresh Khatri is a web developer with expertise in a wide range of technologies including C/C++, Java, HTML5, CSS3, JavaScript, React, Next.js, and more.",
+  alternates: {
+    canonical: "https://www.chhatreshkhatri.com/about",
+  },
 };
 
 export default function Page() {
