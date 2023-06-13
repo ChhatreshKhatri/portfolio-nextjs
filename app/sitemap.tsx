@@ -5,6 +5,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     {
       url: 'https://www.chhatreshkhatri.com',
       lastModified: new Date(),
+    },
+    {
+      url: 'https://www.chhatreshkhatri.com/about',
+      lastModified: new Date(),
+    },
+    {
+      url: 'https://www.chhatreshkhatri.com/projects',
+      lastModified: new Date(),
     }
   ];
 }
