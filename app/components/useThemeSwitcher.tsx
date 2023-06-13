@@ -3,43 +3,34 @@ import { useEffect, useState, Dispatch, SetStateAction } from "react";
 type Theme = "light" | "dark";
 
 const useThemeSwitcher = (): [Theme, Dispatch<SetStateAction<Theme>>] => {
+  const prefersDark = "(prefers-color-scheme: dark)";
   const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
+    const storedTheme = localStorage.getItem("theme");
+
     if (typeof window !== "undefined") {
-      const userPref = window.localStorage.getItem("theme");
-      if (userPref) {
-        setTheme(userPref === "dark" ? "dark" : "light");
-      }
+      const initialTheme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : (window.matchMedia(prefersDark).matches ? "dark" : "light");
+      setTheme(initialTheme);
+
+      const mediaQuery = window.matchMedia(prefersDark);
+
+      const handleChange = (event: MediaQueryListEvent) => {
+        setTheme(event.matches ? "dark" : "light");
+      };
+
+      mediaQuery.addEventListener("change", handleChange);
+      return () => mediaQuery.removeEventListener("change", handleChange);
     }
   }, []);
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      window.localStorage.setItem("theme", theme);
-      if (theme === "dark") {
-        document.documentElement.classList.add("dark");
-      } else {
-        document.documentElement.classList.remove("dark");
-      }
+      localStorage.setItem("theme", theme);
+      document.documentElement.classList.remove("light", "dark");
+      document.documentElement.classList.add(theme);
     }
   }, [theme]);
-
-  useEffect(() => {
-    const handleThemeChange = (e: MediaQueryListEvent) => {
-      const check = e.matches ? "dark" : "light";
-      setTheme(check);
-    };
-
-    if (typeof window !== "undefined") {
-      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
-      mediaQuery.addListener(handleThemeChange);
-
-      return () => {
-        mediaQuery.removeListener(handleThemeChange);
-      };
-    }
-  }, []);
 
   return [theme, setTheme];
 };
