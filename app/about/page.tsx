@@ -17,7 +17,7 @@ export default function Page() {
         </h1>
       </div>
       <div className="dark:bg-darked rounded-xl bg-slate-200 text-justify px-6 xs:px-10 py-6 mt-6">
-        <h2 className={`text-4xl text-center`}>Description</h2>
+        <h2 className={`text-2xl xxs:text-3xl md:text-4xl text-center`}>Description</h2>
         <p className="text-xl mt-4">
           Hi there! My name is Chhatresh Khatri and I&apos;m a web developer
           with a passion for building modern and user-friendly websites and
@@ -38,7 +38,7 @@ export default function Page() {
         </h2>
       </div>
       <div className="dark:bg-darked rounded-xl bg-slate-200 px-10 py-6 mt-6 w-full">
-        <h3 className={`text-4xl text-center`}>Languages</h3>
+        <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center`}>Languages</h3>
         <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
           <Badge
             src={"badge/c-1563b1.svg?logo=c&logoColor=white"}
