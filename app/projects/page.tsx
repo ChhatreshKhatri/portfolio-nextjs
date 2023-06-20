@@ -13,6 +13,7 @@ export const metadata = {
     canonical: "https://www.chhatreshkhatri.com/projects",
   },
 };
+
 export default function Projects() {
   return (
     <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-4 md:px-12 lg:px-20 py-[100px]">

@@ -12,25 +12,25 @@ export const metadata = {
   description:
     "Hi, I'm Chhatresh Khatri. Full stack Web Developer and a self-motivated, initiative-taking, and an enthusiastic professional.",
   keywords: [
-    "Portfolio, Chhatresh, Khatri, Web Developer, Web Development, Website, Code, reactjs, front end",
+    "Chhatresh, Khatri, Portfolio, About, Projects, Web Developer, Web Development, Website, Code, React.JS, Next.JS, front end",
   ],
-  sitename: "Dlouck",
+  applicationName: 'Chhatresh Khatri',
   type: "website",
   authors: [{ name: "Chhatresh Khatri" }],
   metadataBase: new URL("https://www.chhatreshkhatri.com"),
   alternates: {
-    canonical: "https://www.chhatreshkhatri.com/",
+    canonical: "/",
   },
   category: "website",
   icons: {
     icon: [
-      { url: "/icon.svg", sizes: "any", type: "image/svg+xml" },
-      { url: "/favicon.ico", sizes: "16x16 24x24 32x32", type: "image/x-icon" },
+      { url: "/favicon.svg", sizes: "any", type: "image/svg+xml" },
+      { url: "/icon.ico", sizes: "16x16 24x24", type: "image/x-icon" },
     ],
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   manifest: "/app.webmanifest",
-  themeColor: "#000000",
+  themeColor: "dark",
   openGraph: {
     title: "Chhatresh Khatri | Portfolio",
     description:
