@@ -23,9 +23,11 @@ export const metadata = {
   },
   category: "website",
   icons: {
+    shortcut: [
+      { url: "/icon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
     icon: [
       { url: "/favicon.svg", sizes: "any", type: "image/svg+xml" },
-      { url: "/icon.ico", sizes: "16x16 24x24", type: "image/x-icon" },
     ],
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
@@ -39,12 +41,12 @@ export const metadata = {
     siteName: "chhatreshkhatri",
     images: [
       {
-        url: "/ck800x600.png",
+        url: "/ck-800x600.png",
         width: 800,
         height: 600,
       },
       {
-        url: "/ck1200x630.png",
+        url: "/ck-1200x630.png",
         width: 1200,
         height: 630,
       },
@@ -56,7 +58,7 @@ export const metadata = {
     url: "https://www.chhatreshkhatri.com/",
     description:
       "Hi, I'm Chhatresh Khatri. Full stack Web Developer and a self-motivated, initiative-taking, and an enthusiastic professional.",
-    images: "/ck1200x630.png",
+    images: "/ck-1200x630.png",
     card: "summary_large_image",
     creator: "@chhatreshkhatri",
   },
