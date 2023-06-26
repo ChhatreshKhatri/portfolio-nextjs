@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<svg width="32" height="32" viewBox="0 0 96 96" class="css-1j8o68f" xmlns="http://www.w3.org/2000/svg">
-  <defs id="SvgjsDefs1014">
-    <linearGradient id="SvgjsLinearGradient1019">
-      <stop id="SvgjsStop1020" stop-color="#7e1f2a" offset="0"/>
-      <stop id="SvgjsStop1021" stop-color="#ff4057" offset="1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="96" height="96">
+  <defs>
+    <linearGradient id="b">
+      <stop offset="0" stop-color="#7e1f2a"/>
+      <stop offset="1" stop-color="#ff4057"/>
     </linearGradient>
-    <linearGradient gradientUnits="userSpaceOnUse" x1="148" y1="0" x2="148" y2="96" id="gradient-0" gradientTransform="matrix(0.704451, 0.709753, -0.941212, 0.934181, -11.396503, -101.884087)">
-      <stop offset="0" style="stop-color: rgb(25, 25, 25);"/>
-      <stop offset="1" style=""/>
+    <linearGradient id="a" x1="148" x2="148" y1="0" y2="96" gradientTransform="matrix(.70445 .70975 -.94121 .93418 -11.397 -101.884)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" style="stop-color:#191919"/>
+      <stop offset="1"/>
     </linearGradient>
   </defs>
-  <rect style="fill: url(#gradient-0);" width="96" height="96" rx="6" ry="6"/>
-  <g id="g-1" featurekey="nameFeature-0" transform="matrix(1.254376, -0.000017, 0.000018, 1.257237, 83.692215, 16.04373)" fill="url(#SvgjsLinearGradient1019)" style="">
-    <path d="M -31.095 20.457 L -39.735 20.457 C -40.175 17.257 -42.775 16.137 -45.975 16.137 C -51.455 16.137 -54.095 19.977 -54.095 25.257 C -54.095 30.377 -51.895 34.697 -46.215 34.697 C -43.015 34.697 -40.095 33.577 -39.815 30.057 L -30.935 30.057 C -31.295 38.577 -38.335 40.617 -47.055 40.617 C -55.695 40.617 -62.735 36.217 -62.735 25.457 C -62.735 14.617 -56.015 10.217 -45.695 10.217 C -38.335 10.217 -31.215 12.817 -31.095 20.457 Z M -25.295 39.857 L -25.295 10.977 L -16.895 10.977 L -16.895 23.737 L -5.215 10.977 L 4.905 10.977 L -7.735 23.937 L 5.825 39.857 L -5.055 39.857 L -16.815 24.977 L -16.895 24.977 L -16.895 39.857 L -25.295 39.857 Z"/>
-  </g>
+  <rect width="96" height="96" rx="6" ry="6" style="fill:url(#a)"/>
+  <path fill="url(#b)" d="M-31.095 20.457h-8.64c-.44-3.2-3.04-4.32-6.24-4.32-5.48 0-8.12 3.84-8.12 9.12 0 5.12 2.2 9.44 7.88 9.44 3.2 0 6.12-1.12 6.4-4.64h8.88c-.36 8.52-7.4 10.56-16.12 10.56-8.64 0-15.68-4.4-15.68-15.16 0-10.84 6.72-15.24 17.04-15.24 7.36 0 14.48 2.6 14.6 10.24Zm5.8 19.4v-28.88h8.4v12.76l11.68-12.76h10.12l-12.64 12.96 13.56 15.92h-10.88l-11.76-14.88h-.08v14.88h-8.4Z" transform="matrix(1.25438 -.00002 .00002 1.25724 83.692 16.044)"/>
 </svg>

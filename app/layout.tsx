@@ -23,9 +23,6 @@ export const metadata = {
   },
   category: "website",
   icons: {
-    shortcut: [
-      { url: "/icon-16x16.png", sizes: "16x16", type: "image/png" },
-    ],
     icon: [
       { url: "/favicon.svg", sizes: "any", type: "image/svg+xml" },
     ],
@@ -40,11 +37,6 @@ export const metadata = {
     url: "https://www.chhatreshkhatri.com/",
     siteName: "chhatreshkhatri",
     images: [
-      {
-        url: "/ck-800x600.png",
-        width: 800,
-        height: 600,
-      },
       {
         url: "/ck-1200x630.png",
         width: 1200,
