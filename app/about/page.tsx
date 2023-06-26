@@ -11,8 +11,8 @@ export const metadata = {
 export default function Page() {
   return (
     <main className=" w-full h-full flex items-center flex-col justify-center font-medium px-4 md:px-12 lg:px-20 py-[100px]">
-      <div className="w-full h-full flex justify-center">
-        <h1 className="font-semibold tracking-wider bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 inline-block text-2xl md:text-3xl px-1 md:px-2 py-1 ">
+      <div className="w-full h-full flex justify-center items-center">
+        <h1 className="flex justify-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xs:2xl md:text-3xl px-1 md:px-2 py-1 ">
           About Me
         </h1>
       </div>
