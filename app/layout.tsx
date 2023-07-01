@@ -23,13 +23,20 @@ export const metadata = {
   },
   category: "website",
   icons: {
-    icon: [
-      { url: "/favicon.svg", sizes: "any", type: "image/svg+xml" },
+    shortcut: [
+      { url: "/favicon.ico", type: "image/x-icon" },
     ],
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    other: {
+      rel: "mask-icon",
+      url: "/icon.svg",
+    }
   },
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'light' },
+    { media: '(prefers-color-scheme: dark)', color: 'dark' },
+  ],
   manifest: "/app.webmanifest",
-  themeColor: "dark",
   openGraph: {
     title: "Chhatresh Khatri | Portfolio",
     description:

@@ -1,11 +1,9 @@
-<h2 >
-  Portfolio Website
-  <a href="https://www.chhatreshkhatri.com/" target="_blank">Chhatresh Khatri | Portfolio</a>
-</h2>
+# Portfolio Website <a href="https://www.chhatreshkhatri.com/" target="_blank">Chhatresh Khatri | Portfolio</a>
+
 
 <br/> 
 
-## Built With
+# Built With
 
 
 This project was built using
@@ -19,7 +17,7 @@ This project was built using
 
 <br/> 
 
-## Features
+# Features
 
 **📖 Multi-Page Layout**
 
@@ -29,7 +27,7 @@ This project was built using
 
 <br/> 
 
-## Getting Started
+# Getting Started
 
 Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
 
@@ -50,7 +48,7 @@ The page will reload if you make edits.
 First, run the development server:
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load poppins, a custom Google Font.
 
 ## Learn More
 
@@ -66,18 +64,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-## 🖼️ Screenshots
+
+<br>
+
+# 🖼️ Screenshots
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/Chhatreshkhatri/portfolio-nextjs/master/app/assets/home.jpeg?token=GHSAT0AAAAAACB43TTD6XKTEN5ZSA77D65UZEHGDQA" width="960">
-  <img src="https://raw.githubusercontent.com/Chhatreshkhatri/portfolio-nextjs/master/app/assets/about.jpeg?token=GHSAT0AAAAAACB43TTDXJVKGEAC2YZ77GMWZEHGD5Q" width="960">
-  <img src="https://raw.githubusercontent.com/Chhatreshkhatri/portfolio-nextjs/master/app/assets/projects.jpeg?token=GHSAT0AAAAAACB43TTDM7ZBNG2HMOV4I47YZEHGC3Q" width="960">
+  <img src="./app/assets/home.jpeg" width="960">
+  <img src="./app/assets/about.jpeg" width="960">
+  <img src="./app/assets/projects.jpeg" width="960">
 
 </div>
 
 <br/>
 
-## 🧷 Share My Portfolio
+# 🧷 Share My Portfolio
 
 <div align="center">
 
@@ -94,5 +95,4 @@ Share my portfolio ( https://www.chhatreshkhatri.com/ ) with your friends in jus
 
 </div>
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 

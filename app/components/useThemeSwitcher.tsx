@@ -3,34 +3,39 @@ import { useEffect, useState, Dispatch, SetStateAction } from "react";
 type Theme = "light" | "dark";
 
 const useThemeSwitcher = (): [Theme, Dispatch<SetStateAction<Theme>>] => {
-  const prefersDark = "(prefers-color-scheme: dark)";
+  const [isReady, setIsReady] = useState(false);
   const [theme, setTheme] = useState<Theme>("light");
 
   useEffect(() => {
-    const storedTheme = localStorage.getItem("theme");
+    const prefersDark = "(prefers-color-scheme: dark)";
+
+    const initializeTheme = () => {
+      const storedTheme = localStorage.getItem("theme");
+      const systemTheme = window.matchMedia && window.matchMedia(prefersDark).matches ? "dark" : "light";
+      const initialTheme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : systemTheme;
+      setTheme(initialTheme);
+      setIsReady(true);
+    };
+
+    const handleThemeChange = (event: MediaQueryListEvent) => {
+      setTheme(event.matches ? "dark" : "light");
+    };
 
     if (typeof window !== "undefined") {
-      const initialTheme = storedTheme === "dark" || storedTheme === "light" ? storedTheme : (window.matchMedia(prefersDark).matches ? "dark" : "light");
-      setTheme(initialTheme);
-
+      initializeTheme();
       const mediaQuery = window.matchMedia(prefersDark);
-
-      const handleChange = (event: MediaQueryListEvent) => {
-        setTheme(event.matches ? "dark" : "light");
-      };
-
-      mediaQuery.addEventListener("change", handleChange);
-      return () => mediaQuery.removeEventListener("change", handleChange);
+      mediaQuery.addEventListener("change", handleThemeChange);
+      return () => mediaQuery.removeEventListener("change", handleThemeChange);
     }
   }, []);
 
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem("theme", theme);
+    if (isReady) {
       document.documentElement.classList.remove("light", "dark");
       document.documentElement.classList.add(theme);
+      localStorage.setItem("theme", theme);
     }
-  }, [theme]);
+  }, [theme, isReady]);
 
   return [theme, setTheme];
 };
