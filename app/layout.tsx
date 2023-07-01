@@ -32,10 +32,6 @@ export const metadata = {
       url: "/icon.svg",
     }
   },
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'light' },
-    { media: '(prefers-color-scheme: dark)', color: 'dark' },
-  ],
   manifest: "/app.webmanifest",
   openGraph: {
     title: "Chhatresh Khatri | Portfolio",
