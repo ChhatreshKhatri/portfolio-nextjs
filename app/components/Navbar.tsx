@@ -119,16 +119,16 @@ const Navbar = () => {
           >
             <MailIcon className="" />
           </Link>
-          <Link
+          <button
             aria-label="Toggle Theme"
             onClick={() => toggleTheme(theme === "light" ? "dark" : "light")}
-            className={`${theme === "light" ? " text-dark" : " text-light"} flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8`} href={""}>
+            className={`${theme === "light" ? " text-dark" : " text-light"} flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8`} >
             {theme === "dark" ? (
               <SunIcon className={`fill-dark`} />
             ) : (
               <MoonIcon className={`fill-dark`} />
             )}
-          </Link>
+          </button>
         </div>
       </nav>
       {/* mobile */}
