@@ -23,10 +23,10 @@ export const metadata = {
   },
   category: "website",
   icons: {
-    shortcut: [
-      { url: "/favicon.ico", type: "image/x-icon" },
+    icon: [
+      { type: "image/x-icon", url: "/favicon.ico" },
     ],
-    apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
+    apple: [{ type: "image/png", url: "/apple-icon.png", sizes: "180x180" }],
     other: {
       rel: "mask-icon",
       url: "/icon.svg",
