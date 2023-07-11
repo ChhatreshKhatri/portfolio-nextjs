@@ -5,7 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: '',
+      disallow: '/_next/',
     },
+    sitemap: 'https://www.chhatreshkhatri.com/sitemap.xml',
   };
 }

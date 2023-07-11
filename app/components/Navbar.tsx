@@ -94,7 +94,7 @@ const Navbar = () => {
             href={"https://github.com/chhatreshkhatri"}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 h-8"
+            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8"
           >
             <GithubIcon className="" />
           </Link>
@@ -103,7 +103,7 @@ const Navbar = () => {
             href={"https://www.linkedin.com/in/chhatreshkhatri/"}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8"
+            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
           >
             <LinkedInIcon
               className={``}
@@ -115,22 +115,20 @@ const Navbar = () => {
             href={"mailto:contact@chhatreshkhatri.com"}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8"
+            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
           >
             <MailIcon className="" />
           </Link>
-          <button
+          <Link
             aria-label="Toggle Theme"
             onClick={() => toggleTheme(theme === "light" ? "dark" : "light")}
-            className={`${theme === "light" ? "bg-light text-dark" : "bg-dark text-light"
-              } rounded-full flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8 `}
-          >
+            className={`${theme === "light" ? " text-dark" : " text-light"} flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8`} href={""}>
             {theme === "dark" ? (
               <SunIcon className={`fill-dark`} />
             ) : (
               <MoonIcon className={`fill-dark`} />
             )}
-          </button>
+          </Link>
         </div>
       </nav>
       {/* mobile */}

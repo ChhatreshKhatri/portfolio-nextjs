@@ -95,11 +95,11 @@ export const TwitterIcon = ({ className, ...rest }) => (
 export const LinkedInIcon = ({ className, color, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
+    width="1.5em"
+    height="1.5em"
     viewBox="0 0 256 256"
     {...rest}
-    className={`w-full h-auto pr-1 ${className}`}
+    className={`w-full h-auto ${className}`}
   >
     <path fill="none" d="M0 0h256v256H0z" />
     <g fill="none">
