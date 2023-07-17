@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="w-full h-full flex items-center flex-col justify-center font-medium px-4 md:px-12 lg:px-20 py-[100px]">
       <div className="w-full h-full flex justify-center items-center">
-        <span className="flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xs:2xl md:text-3xl px-1 md:px-2 py-1 ">
+        <span className="flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl md:text-3xl px-1 md:px-2 py-1 ">
           Welcome to my Portfolio
         </span>
       </div>

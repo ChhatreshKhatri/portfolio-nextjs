@@ -2,9 +2,9 @@ import Link from 'next/link';
 import React from 'react'
 export const metadata = {
     title: "Chhatresh Khatri | Portfolio | Privacy-Policy ",
-    description: "Chhatresh Khatri is a web developer with expertise in a wide range of technologies including C/C++, Java, HTML5, CSS3, JavaScript, React, Next.js, and more.",
+    description: "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
     alternates: {
-        canonical: "https://www.chhatreshkhatri.com/about",
+        canonical: "https://www.chhatreshkhatri.com/privacy-policy",
     },
     robots: {
         index: false,
@@ -15,7 +15,7 @@ export const metadata = {
 const page = () => {
     return (
         <main className='w-full h-full flex items-center flex-col justify-center font-medium px-4 md:px-12 lg:px-20 py-[100px]'>
-            <h1 className="flex justify-center items-center text-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xs:2xl md:text-3xl px-1 md:px-2 py-1 ">
+            <h1 className="flex justify-center items-center text-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl md:text-3xl px-1 md:px-2 py-1 ">
                 Privacy Policy
             </h1>
             <div className='dark:bg-darked rounded-xl bg-slate-200 px-6 xs:px-10 py-6 mt-6 space-y-2 '>
