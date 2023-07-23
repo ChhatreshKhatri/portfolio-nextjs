@@ -2,7 +2,6 @@ import "./globals.css";
 import NavBar from "./components/Navbar";
 import { Poppins } from "next/font/google";
 import Footer from "./components/footer";
-import { Analytics } from "@vercel/analytics/react";
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ["500","700"]
@@ -83,7 +82,6 @@ export default function RootLayout({
         {children}
         <Footer />
       </body>
-      <Analytics />
     </html>
   );
 }
