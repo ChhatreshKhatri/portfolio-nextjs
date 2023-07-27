@@ -23,12 +23,12 @@ export const metadata = {
   category: "website",
   icons: {
     icon: [
-      { type: "image/x-icon", url: "/favicon.ico" },
+      { type: "image/x-icon", url: "webicon.ico", sizes: "16x16 32x32 48x48 64x64" },
     ],
-    apple: [{ type: "image/png", url: "/apple-icon.png", sizes: "180x180" }],
+    apple: [{ type: "image/png", url: "apple-icon.png", sizes: "180x180" }],
     other: {
       rel: "mask-icon",
-      url: "/icon.svg",
+      url: "icon.svg",
     }
   },
   manifest: "/app.webmanifest",
@@ -40,7 +40,7 @@ export const metadata = {
     siteName: "chhatreshkhatri",
     images: [
       {
-        url: "/ck-1200x630.png",
+        url: "ck-1200x630.png",
         width: 1200,
         height: 630,
       },
