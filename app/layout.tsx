@@ -23,7 +23,7 @@ export const metadata = {
   category: "website",
   icons: {
     icon: [
-      { type: "image/x-icon", url: "webicon.ico", sizes: "16x16 32x32 48x48 64x64" },
+      { type: "image/x-icon", url: "favicon.ico", sizes: "16x16 32x32 48x48 64x64" },
     ],
     apple: [{ type: "image/png", url: "apple-icon.png", sizes: "180x180" }],
     other: {
