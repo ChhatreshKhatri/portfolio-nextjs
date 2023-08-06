@@ -1,14 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 96 96">
-  <defs>
-    <linearGradient id="b">
-      <stop offset="0" stop-color="#7e1f2a"/>
-      <stop offset="1" stop-color="#ff4057"/>
-    </linearGradient>
-    <linearGradient id="a" x1="148" x2="148" y1="0" y2="96" gradientTransform="matrix(.70445 .70975 -.94121 .93418 -11.397 -101.884)" gradientUnits="userSpaceOnUse">
-      <stop offset="0" style="stop-color:#191919"/>
-      <stop offset="1"/>
-    </linearGradient>
-  </defs>
-  <rect width="96" height="96" rx="6" ry="6" style="fill:url(#a)"/>
-  <path fill="url(#b)" d="M-31.095 20.457h-8.64c-.44-3.2-3.04-4.32-6.24-4.32-5.48 0-8.12 3.84-8.12 9.12 0 5.12 2.2 9.44 7.88 9.44 3.2 0 6.12-1.12 6.4-4.64h8.88c-.36 8.52-7.4 10.56-16.12 10.56-8.64 0-15.68-4.4-15.68-15.16 0-10.84 6.72-15.24 17.04-15.24 7.36 0 14.48 2.6 14.6 10.24Zm5.8 19.4v-28.88h8.4v12.76l11.68-12.76h10.12l-12.64 12.96 13.56 15.92h-10.88l-11.76-14.88h-.08v14.88h-8.4Z" transform="matrix(1.25438 -.00002 .00002 1.25724 83.692 16.044)"/>
-</svg>
+<svg cache-id="cdb5fb4bedab457a9c7310a7f18ecebd" id="eQDyELelSb91" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 96 96" shape-rendering="geometricPrecision" text-rendering="geometricPrecision"><defs><linearGradient id="eQDyELelSb92-fill" x1="96" y1="0" x2="0" y2="96" spreadMethod="pad" gradientUnits="userSpaceOnUse" gradientTransform="translate(0 0)"><stop id="eQDyELelSb92-fill-0" offset="0%" stop-color="#191919"/><stop id="eQDyELelSb92-fill-1" offset="100%" stop-color="#000"/></linearGradient><linearGradient id="eQDyELelSb93-fill" x1="0" y1="0" x2="1" y2="0" spreadMethod="pad" gradientUnits="objectBoundingBox" gradientTransform="translate(0 0)"><stop id="eQDyELelSb93-fill-0" offset="0%" stop-color="#7e1f2a"/><stop id="eQDyELelSb93-fill-1" offset="100%" stop-color="#ff4057"/></linearGradient></defs><rect width="96" height="96" rx="6" ry="6" transform="translate(0-.000847)" fill="url(#eQDyELelSb92-fill)"/><path d="M-31.095,20.457h-8.64c-.44-3.2-3.04-4.32-6.24-4.32-5.48,0-8.12,3.84-8.12,9.12c0,5.12,2.2,9.44,7.88,9.44c3.2,0,6.12-1.12,6.4-4.64h8.88c-.36,8.52-7.4,10.56-16.12,10.56-8.64,0-15.68-4.4-15.68-15.16c0-10.84,6.72-15.24,17.04-15.24c7.36,0,14.48,2.6,14.6,10.24Zm5.8,19.4v-28.88h8.4v12.76l11.68-12.76h10.12l-12.64,12.96l13.56,15.92h-10.88l-11.76-14.88h-.08v14.88h-8.4Z" transform="matrix(1.25438-.00002 0.00002 1.25724 83.692 16.044)" fill="url(#eQDyELelSb93-fill)"/></svg>
