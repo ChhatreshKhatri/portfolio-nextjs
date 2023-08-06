@@ -25,11 +25,7 @@ export const metadata = {
     icon: [
       { type: "image/svg+xml", url: "favicon.svg", sizes: "any" },
     ],
-    apple: [{ type: "image/png", url: "apple-icon.png", sizes: "180x180" }],
-    other: {
-      rel: "mask-icon",
-      url: "favicon.svg",
-    }
+    apple: [{ type: "image/png", url: "apple-icon.png", sizes: "180x180" }]
   },
   manifest: "/app.webmanifest",
   openGraph: {
