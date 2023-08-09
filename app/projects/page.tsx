@@ -18,12 +18,12 @@ export default function Projects() {
   return (
     <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-4 md:px-12 lg:px-20 py-[100px]">
       <div className="w-full h-full flex justify-center items-center">
-        <h1 className="flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl md:text-3xl px-1 md:px-2 py-1 ">
+        <h1 className="flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl md:text-3xl px-1 md:px-2 py-1 ">
           My Projects
         </h1>
       </div>
       {/* Ramma creations */}
-      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-slate-200 dark:bg-darked mt-6 p-6">
+      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-contentBg dark:bg-darked mt-6 p-6">
         {/* <div className="absolute right-[50%] -mt-10 rounded-[50%] bg-dark text-light dark:bg-light dark:text-dark text-center w-12 h-12 text-3xl">1</div> */}
         <div className="flex items-center">
           {/* Content for the first column */}
@@ -37,7 +37,7 @@ export default function Projects() {
               <Link
                 href="https://www.alibabacloud.com/blog/project-showcase-%7C-ramaa-creations_598812"
                 target="_blank"
-                className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/80 hover:to-lightCk/80"
+                className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
               >
                 <AlibabaCloudIcon className="mr-2" />
                 Blog
@@ -60,7 +60,7 @@ export default function Projects() {
         </div>
       </div>
       {/* StackOverflow Clone */}
-      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-slate-200 dark:bg-darked mt-6 p-6">
+      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-contentBg dark:bg-darked mt-6 p-6">
         {/* <div className="absolute right-[50%] -mt-10 rounded-[50%] bg-dark text-light dark:bg-light dark:text-dark text-center w-12 h-12 text-3xl">1</div> */}
         <div className="flex items-center lg:order-2">
           {/* Content for the first column */}
@@ -73,7 +73,7 @@ export default function Projects() {
               <Link
                 href="https://github.com/Chhatreshkhatri/stack-overflow-clone"
                 target="_blank"
-                className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/80 hover:to-lightCk/80"
+                className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
               >
                 <GithubIcon className="mr-2 flex whitespace-nowrap" />
                 GitHub Link
@@ -81,7 +81,7 @@ export default function Projects() {
               <Link
                 href="https://soclone.chhatreshkhatri.com/"
                 target="_blank"
-                className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/80 hover:to-lightCk/80"
+                className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
               >
                 <LinkIcon className="mr-2 " />
                 Live Link
@@ -105,7 +105,7 @@ export default function Projects() {
         </div>
       </div>
       {/* AmazonClone*/}
-      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-slate-200 dark:bg-darked mt-6 p-6">
+      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-contentBg dark:bg-darked mt-6 p-6">
         {/* <div className="absolute right-[50%] -mt-10 rounded-[50%] bg-dark text-light dark:bg-light dark:text-dark text-center w-12 h-12 text-3xl">1</div> */}
         <div className="flex items-center">
           {/* Content for the first column */}
@@ -118,7 +118,7 @@ export default function Projects() {
               <Link
                 href="https://github.com/Chhatreshkhatri/amazon-clone"
                 target="_blank"
-                className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/80 hover:to-lightCk/80"
+                className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
               >
                 <GithubIcon className="mr-2" />
                 GiHub Link
@@ -126,7 +126,7 @@ export default function Projects() {
               <Link
                 href="https://amazonclone.chhatreshkhatri.com/"
                 target="_blank"
-                className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/80 hover:to-lightCk/80"
+                className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
               >
                 <LinkIcon className="mr-2" />
                 Live Link
@@ -149,7 +149,7 @@ export default function Projects() {
         </div>
       </div>
       {/* MyChat Project */}
-      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-slate-200 dark:bg-darked mt-6 p-6">
+      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-contentBg dark:bg-darked mt-6 p-6">
         {/* <div className="absolute right-[50%] -mt-10 rounded-[50%] bg-dark text-light dark:bg-light dark:text-dark text-center w-12 h-12 text-3xl">1</div> */}
         <div className="flex items-center  lg:order-2">
           {/* Content for the first column */}
@@ -162,7 +162,7 @@ export default function Projects() {
               <Link
                 href="https://github.com/Chhatreshkhatri/MyChat"
                 target="_blank"
-                className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/80 hover:to-lightCk/80"
+                className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
               >
                 <GithubIcon className="mr-2" />
                 GitHub Link

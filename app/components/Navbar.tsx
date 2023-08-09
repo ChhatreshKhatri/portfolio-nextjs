@@ -20,7 +20,7 @@ const CustomLink = ({
       {title}
       <span
         className={`${path === href ? "w-full" : "w-0"
-          } h-0.5 flex items-center bg-dark dark:bg-light absolute left-0 bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}
+          } h-0.5 flex items-center bg-gradient-to-r from-darkCk to-lightCk absolute left-0 bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}
       ></span>
     </Link>
   );
@@ -48,7 +48,7 @@ const Navbar = () => {
   return (
     <header
       className={`${scrolled || navOpen
-        ? "shadow-bottom bg-slate-300 dark:bg-darker py-2 h-12 transition-none"
+        ? "shadow-bottom bg-navbarBg dark:bg-darker py-2 h-12 transition-none"
         : "py-3"
         } w-full font-medium flex align-center justify-between fixed z-50 transition duration-500 ease-in-out `}
     >
@@ -71,7 +71,7 @@ const Navbar = () => {
           }}
         >
           <span
-            className={`bg-dark dark:bg-light transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${navOpen ? "rotate-45 translate-y-1" : "-translate-y-1"
+            className={`bg-gradient-to-r from-darkCk to-lightCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${navOpen ? "rotate-45 translate-y-1" : "-translate-y-1"
               }`}
           ></span>
           <span

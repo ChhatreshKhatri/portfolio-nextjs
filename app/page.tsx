@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="w-full h-full flex items-center flex-col justify-center font-medium px-4 md:px-12 lg:px-20 py-[100px]">
       <div className="w-full h-full flex justify-center items-center">
-        <span className="flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl md:text-3xl px-1 md:px-2 py-1 ">
+        <span className="flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl md:text-3xl px-1 md:px-2 py-1 ">
           Welcome to my Portfolio
         </span>
       </div>
@@ -34,7 +34,7 @@ export default function Home() {
               <Link
                 href={`https://drive.google.com/file/d/19RguGg9v2VWPQJa-XL_2sCASpk65u5hd/view`}
                 target="_blank"
-                className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/80 hover:to-lightCk/80"
+                className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
               >
                 <ResumeIcon className="mr-2" />
                 Resume
@@ -42,7 +42,7 @@ export default function Home() {
               <Link
                 href={`https://social.chhatreshkhatri.com/`}
                 target="_blank"
-                className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/80 hover:to-lightCk/80"
+                className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
               >
                 <SocialIcon className="mr-2" />
                 Social Links

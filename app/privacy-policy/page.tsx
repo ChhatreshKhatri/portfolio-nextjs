@@ -15,7 +15,7 @@ export const metadata = {
 const page = () => {
     return (
         <main className='w-full h-full flex items-center flex-col justify-center font-medium px-4 md:px-12 lg:px-20 py-[100px]'>
-            <h1 className="flex justify-center items-center text-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl md:text-3xl px-1 md:px-2 py-1 ">
+            <h1 className="flex justify-center items-center text-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl md:text-3xl px-1 md:px-2 py-1 ">
                 Privacy Policy
             </h1>
             <div className='dark:bg-darked rounded-xl bg-slate-200 px-6 xs:px-10 py-6 mt-6 space-y-2 '>

@@ -12,11 +12,11 @@ export default function Page() {
   return (
     <main className=" w-full h-full flex items-center flex-col justify-center font-medium px-4 md:px-12 lg:px-20 py-[100px]">
       <div className="w-full h-full flex justify-center items-center">
-        <h1 className="flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl md:text-3xl px-1 md:px-2 py-1 ">
+        <h1 className="flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl md:text-3xl px-1 md:px-2 py-1 ">
           About Me
         </h1>
       </div>
-      <div className="dark:bg-darked rounded-xl bg-slate-200 text-justify px-6 xs:px-10 py-6 mt-6">
+      <div className="dark:bg-darked rounded-xl bg-contentBg text-justify px-6 xs:px-10 py-6 mt-6">
         <h2 className={`text-2xl xxs:text-3xl md:text-4xl text-center`}>Description</h2>
         <p className="text-xl mt-4">
           Hi there! My name is Chhatresh Khatri and I&apos;m a web developer
@@ -33,11 +33,11 @@ export default function Page() {
         </p>
       </div>
       <div className="w-full h-full flex justify-center">
-        <h2 className="font-semibold tracking-wider bg-gradient-to-r from-darkCk/80 to-lightCk/90 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 inline-block text-2xl md:text-3xl px-1 md:px-2 py-1 mt-10">
+        <h2 className="font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 inline-block text-2xl md:text-3xl px-1 md:px-2 py-1 mt-10">
           Technology Stack
         </h2>
       </div>
-      <div className="dark:bg-darked rounded-xl bg-slate-200 px-10 py-6 mt-6 w-full">
+      <div className="dark:bg-darked rounded-xl bg-contentBg px-10 py-6 mt-6 w-full">
         <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center`}>Languages</h3>
         <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
           <Badge

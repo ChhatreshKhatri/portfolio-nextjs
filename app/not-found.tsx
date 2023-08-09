@@ -7,6 +7,8 @@ const NotFoundPage: React.FC = () => {
       <p className="text-xl mb-8">The page you&pos;re looking for does not exist.</p>
       <Link href="/" className="text-blue-500 underline">Go back to the homepage
       </Link>
+
+      {/*   */}
     </div>
   )
 }
