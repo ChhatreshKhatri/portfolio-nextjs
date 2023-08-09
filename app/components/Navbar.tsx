@@ -75,11 +75,11 @@ const Navbar = () => {
               }`}
           ></span>
           <span
-            className={`bg-dark dark:bg-light transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${navOpen ? "opacity-0" : "opacity-100"
+            className={`bg-gradient-to-r from-darkCk to-lightCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${navOpen ? "opacity-0" : "opacity-100"
               }`}
           ></span>
           <span
-            className={`bg-dark dark:bg-light transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${navOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
+            className={`bg-gradient-to-r from-darkCk to-lightCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${navOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
               }`}
           ></span>
         </button>
@@ -134,7 +134,7 @@ const Navbar = () => {
       {/* mobile */}
 
       <div
-        className={`${navOpen ? " flex lg:hidden bg-slate-300 dark:bg-darker" : "hidden"
+        className={`${navOpen ? " flex lg:hidden bg-navbarBg dark:bg-darker" : "hidden"
           } min-w-full flex-col items-center fixed top-12`}
       >
         <nav className="text-xl flex flex-col items-center justify-center space-y-2">
