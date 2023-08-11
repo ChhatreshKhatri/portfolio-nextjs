@@ -23,7 +23,7 @@ module.exports = {
       },
       screens: {xxs:'425px', xs:'480px', md: "768px", lg: "1024px", xl: "1200px", xxl: "1400px" },
       colors: {
-        dark: "#191919",
+        dark: "#1c1c1c",
         light: "#E6E6FF",
         primary: "#B63E96",
         primaryDark: "#58E6D9",
