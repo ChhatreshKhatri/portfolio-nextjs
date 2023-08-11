@@ -68,12 +68,13 @@ Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment)
 <br>
 
 # 🖼️ Screenshots
-
-<div align="center">
-  <img src="./app/assets/home.jpeg" width="960">
-  <img src="./app/assets/about.jpeg" width="960">
-  <img src="./app/assets/projects.jpeg" width="960">
-
+<div align="center" > 
+  <img src="./app/assets/home dark.jpeg" width="49%">
+  <img src="./app/assets/home light.jpeg" width="49%">
+  <img src="./app/assets/about dark.jpeg" width="49%">
+  <img src="./app/assets/about light.jpeg" width="49%">
+  <img src="./app/assets/projects dark.jpeg" width="49%">
+  <img src="./app/assets/projects light.jpeg" width="49%">
 </div>
 
 <br/>
