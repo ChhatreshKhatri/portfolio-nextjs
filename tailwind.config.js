@@ -24,15 +24,15 @@ module.exports = {
       screens: {xxs:'425px', xs:'480px', md: "768px", lg: "1024px", xl: "1200px", xxl: "1400px" },
       colors: {
         dark: "#191919",
-        light: "#E6E6FF",
+        light: "#f6f6FF",
         primary: "#B63E96",
         primaryDark: "#58E6D9",
         darkCk: "#5740FF",
         lightCk: "#FF4057",
         darker: "#0c0c0c",
         darked: "#111111",
-        contentBg: "#B3B3FF",
-        navbarBg: "#9999FF",
+        contentBg: "#E6E6FA",
+        navbarBg: "#D6D6FA",
         footerBg: "#FF6B7A",
       },
       backgroundImage: {
