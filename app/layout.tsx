@@ -75,7 +75,7 @@ export default function RootLayout({
       <body
         className={`${poppins.className} h-full flex flex-col bg-light text-dark dark:bg-dark dark:text-light w-full min-h-screen`}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+        <ThemeProvider>
           <NavBar />
           {children}
           <Footer />
