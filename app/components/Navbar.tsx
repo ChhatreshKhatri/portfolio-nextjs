@@ -52,7 +52,7 @@ const Navbar = () => {
     <header className={`z-10`}>
       <nav
         className={`${scrolled
-            ? " py-2 shadow-bottom bg-navbarBg/80 dark:bg-darker/95 backdrop-blur-md"
+            ? " py-2 shadow-bottom bg-navbarBg/70 dark:bg-darker/90 backdrop-blur-md"
             : "py-3"
           } hidden  lg:flex w-full font-medium  align-center justify-between fixed px-4 lg:px-20 transition-all duration-300 ease-in-out`}
       >
@@ -118,7 +118,7 @@ const Navbar = () => {
 
       <nav
         className={`${navOpen || scrolled
-            ? "lg:hidden bg-navbarBg/80 dark:bg-darker/95 backdrop-blur-md shadow-bottom py-2 transition-all duration-300 ease-in-out"
+            ? "lg:hidden bg-navbarBg/70 dark:bg-darker/90 backdrop-blur-md shadow-bottom py-2 transition-all duration-300 ease-in-out"
             : 'py-3'
           } w-full flex flex-col items-center px-4 md:px-12 lg:px-20 fixed lg:hidden`}
       >
