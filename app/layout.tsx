@@ -2,7 +2,7 @@ import "./globals.css";
 import NavBar from "./components/Navbar";
 import { Poppins } from "next/font/google";
 import Footer from "./components/footer";
-import { ThemeProvider } from "./components/theme-provider";
+import ThemeProvider from "./providers";
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["500", "700"],

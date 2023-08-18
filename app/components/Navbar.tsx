@@ -1,9 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useTheme } from 'next-themes'
-import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, MailIcon } from "./icons";
+import { useTheme } from "next-themes";
+import { GithubIcon, LinkedInIcon, MailIcon } from "./icons";
 import { usePathname } from "next/navigation";
+import ThemeButton from "./ThemeButton";
 
 const CustomLink = ({
   href,
@@ -30,10 +31,9 @@ const CustomLink = ({
 };
 
 const Navbar = () => {
-  const {theme, setTheme} = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [scrolled, setScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
-  const checkTheme=theme;
 
   useEffect(() => {
     const onScroll = () => {
@@ -87,10 +87,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
           >
-            <LinkedInIcon
-              className={``}
-              color={`${checkTheme === "dark" ? "#191919" : "#f5f5f5"}`}
-            />
+            <LinkedInIcon className={``} />
           </Link>
           <Link
             aria-label="Mail"
@@ -101,26 +98,16 @@ const Navbar = () => {
           >
             <MailIcon className="" />
           </Link>
-          <button
-            aria-label="Toggle Theme"
-            onClick={() => setTheme(checkTheme === "dark" || checkTheme=="" ? "light" : "dark")}
-            className={`${checkTheme === "dark" ? " text-light" : " text-dark"
-              } flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8`}
-          >
-            {checkTheme === "dark" ? (
-              <SunIcon className={`fill-dark`} />
-            ) : (
-              <MoonIcon className={`fill-dark`} />
-            )}
-          </button>
+          <ThemeButton />
         </div>
       </nav>
+
       {/* mobile */}
 
       <nav
         className={`${navOpen || scrolled
             ? "lg:hidden bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md shadow-bottom py-2 transition-all duration-200 ease-in-out"
-            : 'py-3'
+            : "py-3"
           } w-full flex flex-col items-center px-4 md:px-12 lg:px-20 fixed lg:hidden`}
       >
         <div className="flex justify-between w-full">
@@ -175,10 +162,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8"
             >
-              <LinkedInIcon
-                className={``}
-                color={`${checkTheme === "dark" ? "#191919" : "#f5f5f5"}`}
-              />
+              <LinkedInIcon className={``} />
             </Link>
             <Link
               aria-label="Mail"
@@ -189,18 +173,7 @@ const Navbar = () => {
             >
               <MailIcon className="" />
             </Link>
-            <button
-              aria-label="Toggle Theme"
-              onClick={() => setTheme(checkTheme === "dark" ? "light" : "dark")}
-              className={`${checkTheme === "dark" || checkTheme=="" ? " text-light" : "text-dark"
-                } rounded-full flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8`}
-            >
-              {checkTheme === "dark" ? (
-                <SunIcon className={`fill-dark`} />
-              ) : (
-                <MoonIcon className={`fill-dark`} />
-              )}
-            </button>
+            <ThemeButton />
           </div>
         </div>
       </nav>
