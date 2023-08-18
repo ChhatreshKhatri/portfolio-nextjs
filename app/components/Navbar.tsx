@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import useThemeSwitcher from "./useThemeSwitcher";
+import { useTheme } from 'next-themes'
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, MailIcon } from "./icons";
 import { usePathname } from "next/navigation";
 
@@ -30,9 +30,10 @@ const CustomLink = ({
 };
 
 const Navbar = () => {
-  const [theme, toggleTheme] = useThemeSwitcher();
+  const {theme, setTheme} = useTheme();
   const [scrolled, setScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
+  const checkTheme=theme;
 
   useEffect(() => {
     const onScroll = () => {
@@ -88,7 +89,7 @@ const Navbar = () => {
           >
             <LinkedInIcon
               className={``}
-              color={`${theme === "dark" ? "#191919" : "#f5f5f5"}`}
+              color={`${checkTheme === "dark" ? "#191919" : "#f5f5f5"}`}
             />
           </Link>
           <Link
@@ -102,11 +103,11 @@ const Navbar = () => {
           </Link>
           <button
             aria-label="Toggle Theme"
-            onClick={() => toggleTheme(theme === "light" ? "dark" : "light")}
-            className={`${theme === "light" ? " text-dark" : " text-light"
+            onClick={() => setTheme(checkTheme === "dark" || checkTheme=="" ? "light" : "dark")}
+            className={`${checkTheme === "dark" ? " text-light" : " text-dark"
               } flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8`}
           >
-            {theme === "dark" ? (
+            {checkTheme === "dark" ? (
               <SunIcon className={`fill-dark`} />
             ) : (
               <MoonIcon className={`fill-dark`} />
@@ -176,7 +177,7 @@ const Navbar = () => {
             >
               <LinkedInIcon
                 className={``}
-                color={`${theme === "dark" ? "#191919" : "#f5f5f5"}`}
+                color={`${checkTheme === "dark" ? "#191919" : "#f5f5f5"}`}
               />
             </Link>
             <Link
@@ -190,11 +191,11 @@ const Navbar = () => {
             </Link>
             <button
               aria-label="Toggle Theme"
-              onClick={() => toggleTheme(theme === "light" ? "dark" : "light")}
-              className={`${theme === "light" ? "bg-light text-dark" : "bg-dark text-light"
+              onClick={() => setTheme(checkTheme === "dark" ? "light" : "dark")}
+              className={`${checkTheme === "dark" || checkTheme=="" ? " text-light" : "text-dark"
                 } rounded-full flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8`}
             >
-              {theme === "dark" ? (
+              {checkTheme === "dark" ? (
                 <SunIcon className={`fill-dark`} />
               ) : (
                 <MoonIcon className={`fill-dark`} />

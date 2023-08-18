@@ -2,9 +2,10 @@ import "./globals.css";
 import NavBar from "./components/Navbar";
 import { Poppins } from "next/font/google";
 import Footer from "./components/footer";
+import { ThemeProvider } from "./components/theme-provider";
 const poppins = Poppins({
-  subsets: ['latin'],
-  weight: ["500","700"]
+  subsets: ["latin"],
+  weight: ["500", "700"],
 });
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio",
@@ -13,7 +14,7 @@ export const metadata = {
   keywords: [
     "Chhatresh, Khatri, Portfolio, About, Projects, Web Developer, Web Development, Website, Code, React.JS, Next.JS, front end",
   ],
-  applicationName: 'Chhatresh Khatri',
+  applicationName: "Chhatresh Khatri",
   type: "website",
   authors: [{ name: "Chhatresh Khatri" }],
   metadataBase: new URL("https://www.chhatreshkhatri.com"),
@@ -22,10 +23,8 @@ export const metadata = {
   },
   category: "website",
   icons: {
-    icon: [
-      { type: "image/svg+xml", url: "favicon.svg", sizes: "any" },
-    ],
-    apple: [{ type: "image/png", url: "apple-icon.png", sizes: "180x180" }]
+    icon: [{ type: "image/svg+xml", url: "favicon.svg", sizes: "any" }],
+    apple: [{ type: "image/png", url: "apple-icon.png", sizes: "180x180" }],
   },
   manifest: "/app.webmanifest",
   openGraph: {
@@ -73,10 +72,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} h-full flex flex-col bg-light text-dark dark:bg-dark dark:text-light w-full min-h-screen`}>
-        <NavBar />
-        {children}
-        <Footer />
+      <body
+        className={`${poppins.className} h-full flex flex-col bg-light text-dark dark:bg-dark dark:text-light w-full min-h-screen`}
+      >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <NavBar />
+          {children}
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
