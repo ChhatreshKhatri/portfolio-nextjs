@@ -6,9 +6,9 @@ const Typewriter = () => {
         <TypeWriter
             options={{
                 strings: [
+                    "Software Engineer",
                     "Web Developer",
                     "Web Designer",
-                    "Software Engineer",
                 ],
                 autoStart: true,
                 loop: true,

@@ -19,7 +19,7 @@ const CustomImage: React.FC<CustomImageProps> = ({ src,alt,className }) => {
       alt={`${alt}`}
       width={500}
       height={500}
-      className={`h-[45px] w-auto ${className}`}
+      className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] ${className}`}
     />
   );
 };

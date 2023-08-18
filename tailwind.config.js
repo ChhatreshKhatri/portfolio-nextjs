@@ -21,7 +21,7 @@ module.exports = {
         '5xl': '45px',      
         '6xl': '55px',    
       },
-      screens: {xxs:'425px', xs:'480px', md: "768px", lg: "1024px", xl: "1200px", xxl: "1400px" },
+      screens: {xxs:'375px', xs:'480px', md: "768px", lg: "1024px", xl: "1200px", xxl: "1400px" },
       colors: {
         dark: "#191919",
         light: "#f6f6FF",

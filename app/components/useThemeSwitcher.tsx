@@ -1,3 +1,4 @@
+"use client"
 import { useEffect, useState, Dispatch, SetStateAction } from "react";
 
 type Theme = "light" | "dark";
@@ -16,17 +17,13 @@ const useThemeSwitcher = (): [Theme, Dispatch<SetStateAction<Theme>>] => {
       setTheme(event.matches ? "dark" : "light");
     };
 
-    if (typeof window !== "undefined") {
       const mediaQuery = window.matchMedia(prefersDark);
       mediaQuery.addEventListener("change", handleThemeChange);
-      setTheme(mediaQuery.matches ? "dark" : "light"); // Add this line to set the initial theme based on system preference
+      setTheme(mediaQuery.matches ? "dark" : "light"); 
       return () => mediaQuery.removeEventListener("change", handleThemeChange);
-    }
   }, []);
 
   useEffect(() => {
-    if (theme !== "light" && theme !== "dark") return;
-
     document.documentElement.classList.remove("light", "dark");
     document.documentElement.classList.add(theme);
     localStorage.setItem("theme", theme);

@@ -16,14 +16,14 @@ export const metadata = {
 
 export default function Projects() {
   return (
-    <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-4 md:px-12 lg:px-20 py-[100px]">
+    <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-24">
       <div className="w-full h-full flex justify-center items-center">
-        <h1 className="flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl md:text-3xl px-1 md:px-2 py-1 ">
+        <h1 className="flex justify-center items-center w-auto font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xxs:text-2xl md:text-3xl px-1 md:px-2 py-1">
           My Projects
         </h1>
       </div>
       {/* Ramma creations */}
-      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-contentBg dark:bg-darked mt-6 p-6">
+      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-contentBg dark:bg-darked mt-6 p-3 xs:p-6">
         {/* <div className="absolute right-[50%] -mt-10 rounded-[50%] bg-dark text-light dark:bg-light dark:text-dark text-center w-12 h-12 text-3xl">1</div> */}
         <div className="flex items-center">
           {/* Content for the first column */}
@@ -60,7 +60,7 @@ export default function Projects() {
         </div>
       </div>
       {/* StackOverflow Clone */}
-      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-contentBg dark:bg-darked mt-6 p-6">
+      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-contentBg dark:bg-darked mt-6 p-3 xs:p-6">
         {/* <div className="absolute right-[50%] -mt-10 rounded-[50%] bg-dark text-light dark:bg-light dark:text-dark text-center w-12 h-12 text-3xl">1</div> */}
         <div className="flex items-center lg:order-2">
           {/* Content for the first column */}
@@ -105,7 +105,7 @@ export default function Projects() {
         </div>
       </div>
       {/* AmazonClone*/}
-      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-contentBg dark:bg-darked mt-6 p-6">
+      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-contentBg dark:bg-darked mt-6 p-3 xs:p-6">
         {/* <div className="absolute right-[50%] -mt-10 rounded-[50%] bg-dark text-light dark:bg-light dark:text-dark text-center w-12 h-12 text-3xl">1</div> */}
         <div className="flex items-center">
           {/* Content for the first column */}
@@ -149,7 +149,7 @@ export default function Projects() {
         </div>
       </div>
       {/* MyChat Project */}
-      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-contentBg dark:bg-darked mt-6 p-6">
+      <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-contentBg dark:bg-darked mt-6 p-3 xs:p-6">
         {/* <div className="absolute right-[50%] -mt-10 rounded-[50%] bg-dark text-light dark:bg-light dark:text-dark text-center w-12 h-12 text-3xl">1</div> */}
         <div className="flex items-center  lg:order-2">
           {/* Content for the first column */}

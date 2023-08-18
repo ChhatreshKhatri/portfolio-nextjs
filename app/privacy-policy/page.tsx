@@ -14,11 +14,11 @@ export const metadata = {
 };
 const page = () => {
     return (
-        <main className='w-full h-full flex items-center flex-col justify-center font-medium px-4 md:px-12 lg:px-20 py-[100px]'>
+        <main className='w-full h-full flex items-center flex-col justify-center font-medium px-4 md:px-12 lg:px-20 py-24'>
             <h1 className="flex justify-center items-center text-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl md:text-3xl px-1 md:px-2 py-1 ">
                 Privacy Policy
             </h1>
-            <div className='dark:bg-darked rounded-xl bg-slate-200 px-6 xs:px-10 py-6 mt-6 space-y-2 '>
+            <div className='dark:bg-darked rounded-xl bg-slate-200 p-3 xs:p-6 xs:px-10 py-6 mt-6 space-y-2 '>
                 <p className='text-xl  xl:text-2xl font-semibold'>Privacy Policy for This Website and Its Subdomains</p>
                 <p>Effective Date: July 1,2023</p>
                 <p>Thank you for visiting. At This Website and its subdomains, we value the privacy of our users and are committed to protecting it. This Privacy Policy outlines how This Website collects, uses, and discloses information when you use our website and its subdomains. By accessing and using our website, you consent to the practices described in this policy.</p>
