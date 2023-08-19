@@ -1,8 +1,8 @@
 import Image from 'next/image';
-import RamaaCreations from '../assets/ramaacreations.webp';
-import MyChat from '../assets/mychatproject.webp';
-import AmazonClone from '../assets/amazonproject.webp';
-import StackoverflowClone from '../assets/stackoverflowclone.webp';
+import RamaaCreations from '@/app/assets/projects/ramaacreations.webp';
+import MyChat from '@/app/assets/projects/mychatproject.webp';
+import AmazonClone from '@/app/assets/projects/amazonproject.webp';
+import StackoverflowClone from '@/app/assets/projects/stackoverflowclone.webp';
 import { AlibabaCloudIcon, GithubIcon, LinkIcon } from '../components/icons';
 import Link from 'next/link';
 

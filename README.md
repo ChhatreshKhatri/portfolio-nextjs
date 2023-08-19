@@ -8,11 +8,11 @@
 
 This project was built using
 
-- React.js
 - Next.js
 - TailwindCSS
 - TypeScript
 - Typewriter-Effects
+- Next-themes
 - VS Code
 
 <br/> 
