@@ -41,22 +41,14 @@ import Windows11 from "@/app/assets/about/Windows11.svg";
 
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | About",
-  description:
-    "Chhatresh Khatri is a web developer with expertise in a wide range of technologies including C/C++, Java, HTML5, CSS3, JavaScript, React, Next.js, and more.",
+  description: "Chhatresh Khatri is a web developer with expertise in a wide range of technologies including C/C++, Java, HTML5, CSS3, JavaScript, React, Next.js, and more.",
   alternates: {
     canonical: "https://www.chhatreshkhatri.com/about",
   },
 };
-const CustomImage = ({
-  SRC,
-  title,
-}: {
-  SRC: string;
-  title: string;
-}) => {
-  return (
-    <Image priority src={SRC} alt={title} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-  )}
+const CustomImage = ({ SRC, title }: { SRC: string; title: string }) => {
+  return <Image src={SRC} alt={title} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />;
+};
 
 export default function Page() {
   return (
@@ -69,12 +61,10 @@ export default function Page() {
       <div className="dark:bg-darked rounded-xl bg-contentBg text-justify p-3 xs:p-6 xs:px-10 py-6 mt-6">
         <h2 className={`text-2xl xxs:text-2xl xs:text-3xl md:text-4xl text-center`}>Description</h2>
         <p className="text-lg xs:text-xl mt-4">
-          Hi there! My name is Chhatresh Khatri and I&apos;m a web developer with a passion for building modern and user-friendly websites and
-          applications. I have experience working with a range of Tech Stack to create clean and modular code that follows industry best practices. In
-          addition to my technical skills, I also have a keen eye for design and enjoy creating responsive and visually appealing websites. I&apos;m
-          learning about the latest trends in the tech industry. I&apos;m a total go-getter and always bring my A-game, plus I&apos;m super easy to
-          talk to! I&apos;m driven, self-motivated, and passionate about all things tech. Let&apos;s work together and make something amazing! Thanks
-          for visiting my portfolio website!
+          Hi there! My name is Chhatresh Khatri and I&apos;m a web developer with a passion for building modern and user-friendly websites and applications. I have experience working with a range of
+          Tech Stack to create clean and modular code that follows industry best practices. In addition to my technical skills, I also have a keen eye for design and enjoy creating responsive and
+          visually appealing websites. I&apos;m learning about the latest trends in the tech industry. I&apos;m a total go-getter and always bring my A-game, plus I&apos;m super easy to talk to!
+          I&apos;m driven, self-motivated, and passionate about all things tech. Let&apos;s work together and make something amazing! Thanks for visiting my portfolio website!
         </p>
       </div>
       <div className="w-full h-full flex justify-center">
