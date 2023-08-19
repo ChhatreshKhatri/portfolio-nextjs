@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import RamaaCreations from '@/app/assets/projects/ramaacreations.webp';
-import MyChat from '@/app/assets/projects/mychatproject.webp';
-import AmazonClone from '@/app/assets/projects/amazonproject.webp';
-import StackoverflowClone from '@/app/assets/projects/stackoverflowclone.webp';
-import { AlibabaCloudIcon, GithubIcon, LinkIcon } from '../components/icons';
-import Link from 'next/link';
+import Image from "next/image";
+import RamaaCreations from "@/app/assets/projects/ramaacreations.webp";
+import MyChat from "@/app/assets/projects/mychatproject.webp";
+import AmazonClone from "@/app/assets/projects/amazonproject.webp";
+import StackoverflowClone from "@/app/assets/projects/stackoverflowclone.webp";
+import { AlibabaCloudIcon, GithubIcon, LinkIcon } from "../components/icons";
+import Link from "next/link";
 
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | Projects",
@@ -29,10 +29,10 @@ export default function Projects() {
           {/* Content for the first column */}
           <div className="w-full h-full flex flex-col justify-center items-center xs:px-8">
             {/* Centered content in the first column */}
-            <h2 className='text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold text-center'>Ramaa Creations</h2>
-            <h3 className='text-xl  xl:text-3xl font-semibold mt-4 text-center'>An e-commerce Jewellery website</h3>
-            <p className='text-xl mt-4 text-justify'>Built using Alicms tool at Alibaba Cloud Low-Code Development Contest 2022.</p>
-            <p className='text-xl mt-4 text-justify'>Achieved second position out of 2043 participants.</p>
+            <h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold text-center">Ramaa Creations</h2>
+            <h3 className="text-xl  xl:text-3xl font-semibold mt-4 text-center">An e-commerce Jewellery website</h3>
+            <p className="text-xl mt-4 text-justify">Built using Alicms tool at Alibaba Cloud Low-Code Development Contest 2022.</p>
+            <p className="text-xl mt-4 text-justify">Achieved second position out of 2043 participants.</p>
             <div className="mt-8 flex space-x-4 text-xl justify-center">
               <Link
                 href="https://www.alibabacloud.com/blog/project-showcase-%7C-ramaa-creations_598812"
@@ -51,6 +51,7 @@ export default function Projects() {
             {/* Centered content in the second column */}
             <div className="w-full h-[300px] md:h-[350px] relative overflow-hidden rounded-2xl scroll-div xs:px-8">
               <Image
+                priority
                 src={RamaaCreations}
                 alt="Ramaa Creations project"
                 className="w-full h-full object-cover object-top transition-all duration-4000 ease-in-out rounded-2xl hover:object-bottom"
@@ -66,9 +67,12 @@ export default function Projects() {
           {/* Content for the first column */}
           <div className="w-full h-full flex flex-col justify-center items-center xs:px-8">
             {/* Centered content in the first column */}
-            <h2 className='text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold text-center'>StackOverflow Clone</h2>
-            <h3 className='text-xl  xl:text-3xl font-semibold mt-4 text-center'>A question-answer website with chatbot feature</h3>
-            <p className='text-xl mt-4 text-justify'>A popular online forum for programming-related questions and answers built using MERN Stack, and it features user authentication, a voting system for answers, and keyword-based question search.</p>
+            <h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold text-center">StackOverflow Clone</h2>
+            <h3 className="text-xl  xl:text-3xl font-semibold mt-4 text-center">A question-answer website with chatbot feature</h3>
+            <p className="text-xl mt-4 text-justify">
+              A popular online forum for programming-related questions and answers built using MERN Stack, and it features user authentication, a voting system for answers, and keyword-based question
+              search.
+            </p>
             <div className="mt-8 flex space-x-4 text-xl justify-center">
               <Link
                 href="https://github.com/Chhatreshkhatri/stack-overflow-clone"
@@ -86,7 +90,6 @@ export default function Projects() {
                 <LinkIcon className="mr-2 " />
                 Live Link
               </Link>
-
             </div>
           </div>
         </div>
@@ -96,6 +99,7 @@ export default function Projects() {
             {/* Centered content in the second column */}
             <div className="w-full h-[300px] md:h-[350px] relative overflow-hidden rounded-2xl scroll-div xs:px-8">
               <Image
+                priority
                 src={StackoverflowClone}
                 alt="StackoverflowClone project"
                 className="w-full h-full object-cover object-top transition-all duration-4000 ease-in-out rounded-2xl hover:object-bottom"
@@ -111,9 +115,11 @@ export default function Projects() {
           {/* Content for the first column */}
           <div className="w-full h-full flex flex-col justify-center items-center xs:px-8">
             {/* Centered content in the first column */}
-            <h2 className='text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold'>Amazon Clone</h2>
-            <h3 className='text-xl  xl:text-3xl font-semibold mt-4 text-center'>An e-commerce Jewellery website</h3>
-            <p className='text-xl mt-4 text-justify'>This project includes a range of features including user authentication, a shopping cart, product details page, payment processing and order history.</p>
+            <h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold">Amazon Clone</h2>
+            <h3 className="text-xl  xl:text-3xl font-semibold mt-4 text-center">An e-commerce Jewellery website</h3>
+            <p className="text-xl mt-4 text-justify">
+              This project includes a range of features including user authentication, a shopping cart, product details page, payment processing and order history.
+            </p>
             <div className="mt-8 flex space-x-4 text-xl justify-center">
               <Link
                 href="https://github.com/Chhatreshkhatri/amazon-clone"
@@ -139,11 +145,7 @@ export default function Projects() {
           <div className="w-full h-full flex justify-center items-center relative">
             {/* Centered content in the second column */}
             <div className="w-full h-[300px] md:h-[350px] relative overflow-hidden rounded-2xl scroll-div xs:px-8">
-              <Image
-                src={AmazonClone}
-                alt="AmazonClone project"
-                className="w-full h-full object-cover object-top transition-all duration-4000 ease-in-out rounded-2xl hover:object-bottom"
-              />
+              <Image priority src={AmazonClone} alt="AmazonClone project" className="w-full h-full object-cover object-top transition-all duration-4000 ease-in-out rounded-2xl hover:object-bottom" />
             </div>
           </div>
         </div>
@@ -155,9 +157,12 @@ export default function Projects() {
           {/* Content for the first column */}
           <div className="w-full h-full flex flex-col justify-center items-center xs:px-8">
             {/* Centered content in the first column */}
-            <h2 className='text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold'>MyChat</h2>
-            <h3 className='text-xl  xl:text-3xl font-semibold mt-4 text-center'>An android chat application</h3>
-            <p className='text-xl mt-4 text-justify'>A simple Android chat app allows users to communicate with each other through text messages on their Android devices. The app typically features a user-friendly interface and easy-to-use chat functions.</p>
+            <h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold">MyChat</h2>
+            <h3 className="text-xl  xl:text-3xl font-semibold mt-4 text-center">An android chat application</h3>
+            <p className="text-xl mt-4 text-justify">
+              A simple Android chat app allows users to communicate with each other through text messages on their Android devices. The app typically features a user-friendly interface and easy-to-use
+              chat functions.
+            </p>
             <div className="mt-8 flex space-x-4 text-xl justify-center">
               <Link
                 href="https://github.com/Chhatreshkhatri/MyChat"
@@ -175,11 +180,7 @@ export default function Projects() {
           <div className="w-full h-full flex justify-center items-center relative">
             {/* Centered content in the second column */}
             <div className="w-full h-[300px] md:h-[350px] relative overflow-hidden rounded-2xl scroll-div xs:px-8">
-              <Image
-                src={MyChat}
-                alt="MyChat project"
-                className="w-full h-full object-cover object-top transition-all duration-4000 ease-in-out rounded-2xl hover:object-bottom"
-              />
+              <Image priority src={MyChat} alt="MyChat project" className="w-full h-full object-cover object-top transition-all duration-4000 ease-in-out rounded-2xl hover:object-bottom" />
             </div>
           </div>
         </div>

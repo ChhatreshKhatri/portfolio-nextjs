@@ -47,6 +47,16 @@ export const metadata = {
     canonical: "https://www.chhatreshkhatri.com/about",
   },
 };
+const CustomImage = ({
+  SRC,
+  title,
+}: {
+  SRC: string;
+  title: string;
+}) => {
+  return (
+    <Image priority src={SRC} alt={title} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
+  )}
 
 export default function Page() {
   return (
@@ -75,55 +85,54 @@ export default function Page() {
       <div className="dark:bg-darked rounded-xl bg-contentBg px-6 xs:px-10 py-6 mt-6 w-full">
         <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center pt-4`}>Languages</h3>
         <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
-          <Image src={C} alt={`C`} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />{" "}
-          <Image src={Cpp} alt={`C++`} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />{" "}
-          <Image src={Java} alt={`Java`} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />{" "}
-          <Image src={MySql} alt={`MySQL`} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />{" "}
-          <Image src={Html} alt={`HTML5`} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />{" "}
-          <Image src={Css} alt={`CSS3`} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />{" "}
-          <Image src={JavaScript} alt={`JavaScript`} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
+          <CustomImage SRC={C} title={`C`} />
+          <CustomImage SRC={Cpp} title={`C++`} />
+          <CustomImage SRC={Java} title={`Java`} />
+          <CustomImage SRC={MySql} title={`MySQL`} />
+          <CustomImage SRC={Html} title={`HTML5`} />
+          <CustomImage SRC={Css} title={`CSS3`} />
+          <CustomImage SRC={JavaScript} title={`JavaScript`} />
         </div>
         <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Framework & Libraries</h3>
         <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
-          <Image src={Bootstrap} alt="Bootstrap" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Tailwind} alt="TailwindCSS" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Reactjs} alt="ReactJS" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Nextjs} alt="Next.js" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Expressjs} alt="Express" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Nodejs} alt="Node.js" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Axios} alt="Axios" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={ReactRouter} alt="React Router" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Redux} alt="Redux" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={DotEnv} alt="DotENV" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
+          <CustomImage SRC={Bootstrap} title={`Bootstrap`} />
+          <CustomImage SRC={Tailwind} title={`TailwindCSS`} />
+          <CustomImage SRC={Reactjs} title={`ReactJS`} />
+          <CustomImage SRC={Nextjs} title={`Next.js`} />
+          <CustomImage SRC={Expressjs} title={`Express`} />
+          <CustomImage SRC={Nodejs} title={`Node.js`} />
+          <CustomImage SRC={Axios} title={`Axios`} />
+          <CustomImage SRC={ReactRouter} title={`React Router`} />
+          <CustomImage SRC={Redux} title={`Redux`} />
+          <CustomImage SRC={DotEnv} title={`DotENV`} />
         </div>
         <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Tools & IDEs</h3>
         <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
-          {/* prettier-ignore */}
-          <Image src={MongoDB} alt="MongoDB" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Nodemon} alt="Nodemon" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Netlify} alt="Netlify" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Render} alt="Render" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Back4App} alt="Back4App" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Git} alt="Git" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={GitHub} alt="GitHub" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={GitHubActions} alt="GitHub Actions" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={GitHubPages} alt="GitHub Pages" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Vercel} alt="Vercel" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Firebase} alt="Firebase" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Canva} alt="Canva" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Gimp} alt="Gimp" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Postman} alt="Postman" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Cloudflare} alt="Cloudflare" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={AlibabaCloud} alt="Alibaba Cloud" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={GoogleCloud} alt="Google Cloud" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={AndroidStudio} alt="Android Studio" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={VSCode} alt="VS Code" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
+          <CustomImage SRC={MongoDB} title={`MongoDB`} />
+          <CustomImage SRC={Nodemon} title={`Nodemon`} />
+          <CustomImage SRC={Netlify} title={`Netlify`} />
+          <CustomImage SRC={Render} title={`Render`} />
+          <CustomImage SRC={Back4App} title={`Back4App`} />
+          <CustomImage SRC={Git} title={`Git`} />
+          <CustomImage SRC={GitHub} title={`GitHub`} />
+          <CustomImage SRC={GitHubActions} title={`GitHub Actions`} />
+          <CustomImage SRC={GitHubPages} title={`GitHub Pages`} />
+          <CustomImage SRC={Vercel} title={`Vercel`} />
+          <CustomImage SRC={Firebase} title={`Firebase`} />
+          <CustomImage SRC={Canva} title={`Canva`} />
+          <CustomImage SRC={Gimp} title={`Gimp`} />
+          <CustomImage SRC={Postman} title={`Postman`} />
+          <CustomImage SRC={Cloudflare} title={`Cloudflare`} />
+          <CustomImage SRC={AlibabaCloud} title={`Alibaba Cloud`} />
+          <CustomImage SRC={GoogleCloud} title={`Google Cloud`} />
+          <CustomImage SRC={AndroidStudio} title={`Android Studio`} />
+          <CustomImage SRC={VSCode} title={`VS Code`} />
         </div>
         <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">OS</h3>
         <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
-          <Image src={Linux} alt="Linux" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />
-          <Image src={Ubuntu} alt="Ubuntu" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `}/>
-          <Image src={Windows11} alt="Windows 11" className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px]`} />
+          <CustomImage SRC={Linux} title={`Linux`} />
+          <CustomImage SRC={Ubuntu} title={`Ubuntu`} />
+          <CustomImage SRC={Windows11} title={`Windows 11`} />
         </div>
       </div>
     </main>
