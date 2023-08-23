@@ -45,7 +45,10 @@ const Navbar = () => {
         } hidden  lg:flex w-full font-medium  align-center justify-between fixed px-4 lg:px-20 transition-all duration-200 ease-in-out z-10`}
       >
         <div className="flex">
-          <Link href={"/"} className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold ">
+          <Link
+            href={"/"}
+            className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold "
+          >
             CHHATRESH KHATRI
           </Link>
         </div>
@@ -93,11 +96,16 @@ const Navbar = () => {
 
       <nav
         className={`${
-          navOpen || scrolled ? "lg:hidden bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md shadow-bottom py-2 transition-all duration-200 ease-in-out" : "py-3"
+          navOpen || scrolled
+            ? "lg:hidden bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md shadow-bottom py-2 transition-all duration-200 ease-in-out"
+            : "py-3"
         } w-full flex flex-col items-center px-4 md:px-12 lg:px-20 fixed z-10 lg:hidden`}
       >
         <div className="flex justify-between w-full">
-          <Link href={"/"} className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold ">
+          <Link
+            href={"/"}
+            className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold "
+          >
             CHHATRESH KHATRI
           </Link>
           <button
@@ -107,9 +115,21 @@ const Navbar = () => {
               setNavOpen(!navOpen);
             }}
           >
-            <span className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${navOpen ? "rotate-45 translate-y-1" : "-translate-y-1"}`}></span>
-            <span className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${navOpen ? "opacity-0" : "opacity-100"}`}></span>
-            <span className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${navOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"}`}></span>
+            <span
+              className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${
+                navOpen ? "rotate-45 translate-y-1" : "-translate-y-1"
+              }`}
+            ></span>
+            <span
+              className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+                navOpen ? "opacity-0" : "opacity-100"
+              }`}
+            ></span>
+            <span
+              className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+                navOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
+              }`}
+            ></span>
           </button>
         </div>
         <div className={`${navOpen ? "flex" : "hidden"} text-xl flex-col items-center justify-center`}>

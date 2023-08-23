@@ -13,7 +13,16 @@ interface CustomProps {
   link1Type: string;
   link2Type: string;
 }
-const ProjectHolder: React.FC<CustomProps> = ({ heading, subHeading, projectContent, projectImage, link1, link2, link1Type, link2Type }) => {
+const ProjectHolder: React.FC<CustomProps> = ({
+  heading,
+  subHeading,
+  projectContent,
+  projectImage,
+  link1,
+  link2,
+  link1Type,
+  link2Type,
+}) => {
   return (
     <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl bg-contentBg dark:bg-darked mt-6 p-3 xs:p-6">
       {/* <div className="absolute right-[50%] -mt-10 rounded-[50%] bg-dark text-light dark:bg-light dark:text-dark text-center w-12 -12 text-3xl">1</div> */}
@@ -28,13 +37,25 @@ const ProjectHolder: React.FC<CustomProps> = ({ heading, subHeading, projectCont
             {link2 == "" ? (
               ""
             ) : (
-              <Link href={link1} target="_blank" className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
+              <Link
+                href={link1}
+                target="_blank"
+                className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
+              >
                 <GithubIcon className="mr-2" />
                 {link1Type}
               </Link>
             )}
-            <Link href={link1} target="_blank" className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
-              {link1Type.indexOf("Alibaba") >= 0 ? <AlibabaCloudIcon className="mr-2" /> : <LinkIcon className="mr-2" />}
+            <Link
+              href={link1}
+              target="_blank"
+              className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
+            >
+              {link1Type.indexOf("Alibaba") >= 0 ? (
+                <AlibabaCloudIcon className="mr-2" />
+              ) : (
+                <LinkIcon className="mr-2" />
+              )}
               {link1Type}
             </Link>
           </div>
