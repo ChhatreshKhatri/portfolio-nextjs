@@ -8,6 +8,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      padding: {
+        '25':'100px'
+      },
       transitionDuration: {
         '4000': '4000ms',
       },

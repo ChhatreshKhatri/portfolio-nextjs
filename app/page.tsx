@@ -4,10 +4,12 @@ import { ResumeIcon } from "./components/icons";
 import { SocialIcon } from "./components/socialicon.js";
 import Link from "next/link";
 import Typewriter from "./components/Typewriter";
+import FramerWrapper from '@/app/framerWrapper'
 
 export default function Home() {
   return (
-    <main className="w-full h-auto flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-24">
+    <FramerWrapper>
+    <main className="w-full h-full flex flex-col font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-25">
       <div className="w-full h-full flex justify-center items-center">
         <span className="flex justify-center items-center w-auto font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xxs:text-2xl md:text-3xl px-1 md:px-2 py-1">
           Welcome to my Portfolio
@@ -64,5 +66,6 @@ export default function Home() {
         </div>
       </div>
     </main>
+    </FramerWrapper>
   );
 }

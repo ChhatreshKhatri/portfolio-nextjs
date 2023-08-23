@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react'
+import FramerWrapper from '../framerWrapper';
 export const metadata = {
     title: "Chhatresh Khatri | Portfolio | Privacy-Policy ",
     description: "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
@@ -14,7 +15,8 @@ export const metadata = {
 };
 const page = () => {
     return (
-        <main className='w-full h-full flex items-center flex-col justify-center font-medium px-4 md:px-12 lg:px-20 py-24'>
+        <FramerWrapper>
+        <main className='w-full h-full flex items-center flex-col justify-center font-medium px-4 md:px-12 lg:px-20 py-25'>
             <h1 className="flex justify-center items-center text-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl md:text-3xl px-1 md:px-2 py-1 ">
                 Privacy Policy
             </h1>
@@ -48,6 +50,7 @@ const page = () => {
                 <p>Last updated: July 1, 2023</p>
             </div>
         </main>
+        </FramerWrapper>
     )
 }
 

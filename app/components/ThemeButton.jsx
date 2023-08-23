@@ -16,6 +16,7 @@ const ThemeButton = () => {
 
   return (
     <button
+    title={resolvedTheme === "dark" ? "Dark Mode" : "Light Mode"}
       aria-label="Toggle Theme"
       type='button'
       className={`${resolvedTheme === "dark" ? " text-light" : " text-dark"

@@ -1,37 +1,25 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { useTheme } from "next-themes";
 import { GithubIcon, LinkedInIcon, MailIcon } from "./icons";
 import { usePathname } from "next/navigation";
 import ThemeButton from "./ThemeButton";
 
-const CustomLink = ({
-  href,
-  title,
-  className = "",
-}: {
-  href: string;
-  title: string;
-  className?: string;
-}) => {
+const CustomLink = ({ href, title, className = "" }: { href: string; title: string; className?: string }) => {
   const path = usePathname();
   return (
-    <Link
-      href={href}
-      className={`${className} relative group inline-flex py-1`}
-    >
+    <Link href={href} className={`${className} relative group inline-flex py-1`}>
       {title}
       <span
-        className={`${path === href ? "w-full" : "w-0"
-          } h-0.5 flex items-center bg-gradient-to-r from-darkCk to-lightCk absolute left-0 bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}
+        className={`${
+          path === href ? "w-full" : "w-0"
+        } h-0.5 flex items-center bg-gradient-to-r from-darkCk to-lightCk absolute left-0 bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}
       ></span>
     </Link>
   );
 };
 
 const Navbar = () => {
-  const { resolvedTheme, setTheme } = useTheme();
   const [scrolled, setScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
 
@@ -50,18 +38,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header className={`z-10`}>
+    <header className={``}>
       <nav
-        className={`${scrolled
-            ? " py-2 shadow-bottom bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md"
-            : "py-3"
-          } hidden  lg:flex w-full font-medium  align-center justify-between fixed px-4 lg:px-20 transition-all duration-200 ease-in-out`}
+        className={`${
+          scrolled ? " py-2 shadow-bottom bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md" : "py-3"
+        } hidden  lg:flex w-full font-medium  align-center justify-between fixed px-4 lg:px-20 transition-all duration-200 ease-in-out z-10`}
       >
         <div className="flex">
-          <Link
-            href={"/"}
-            className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold "
-          >
+          <Link href={"/"} className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold ">
             CHHATRESH KHATRI
           </Link>
         </div>
@@ -72,6 +56,7 @@ const Navbar = () => {
         </div>
         <div className={`flex`}>
           <Link
+            title="Github"
             aria-label="Github"
             href={"https://github.com/chhatreshkhatri"}
             target="_blank"
@@ -81,6 +66,7 @@ const Navbar = () => {
             <GithubIcon className="" />
           </Link>
           <Link
+            title="LinkedIn"
             aria-label="LinkedIn"
             href={"https://www.linkedin.com/in/chhatreshkhatri/"}
             target="_blank"
@@ -90,6 +76,7 @@ const Navbar = () => {
             <LinkedInIcon className={``} />
           </Link>
           <Link
+            title="Mail"
             aria-label="Mail"
             href={"mailto:contact@chhatreshkhatri.com"}
             target="_blank"
@@ -105,16 +92,12 @@ const Navbar = () => {
       {/* mobile */}
 
       <nav
-        className={`${navOpen || scrolled
-            ? "lg:hidden bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md shadow-bottom py-2 transition-all duration-200 ease-in-out"
-            : "py-3"
-          } w-full flex flex-col items-center px-4 md:px-12 lg:px-20 fixed lg:hidden`}
+        className={`${
+          navOpen || scrolled ? "lg:hidden bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md shadow-bottom py-2 transition-all duration-200 ease-in-out" : "py-3"
+        } w-full flex flex-col items-center px-4 md:px-12 lg:px-20 fixed z-10 lg:hidden`}
       >
         <div className="flex justify-between w-full">
-          <Link
-            href={"/"}
-            className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold "
-          >
+          <Link href={"/"} className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold ">
             CHHATRESH KHATRI
           </Link>
           <button
@@ -124,29 +107,18 @@ const Navbar = () => {
               setNavOpen(!navOpen);
             }}
           >
-            <span
-              className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${navOpen ? "rotate-45 translate-y-1" : "-translate-y-1"
-                }`}
-            ></span>
-            <span
-              className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${navOpen ? "opacity-0" : "opacity-100"
-                }`}
-            ></span>
-            <span
-              className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${navOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
-                }`}
-            ></span>
+            <span className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${navOpen ? "rotate-45 translate-y-1" : "-translate-y-1"}`}></span>
+            <span className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${navOpen ? "opacity-0" : "opacity-100"}`}></span>
+            <span className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${navOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"}`}></span>
           </button>
         </div>
-        <div
-          className={`${navOpen ? "flex" : "hidden"
-            } text-xl flex-col items-center justify-center`}
-        >
+        <div className={`${navOpen ? "flex" : "hidden"} text-xl flex-col items-center justify-center`}>
           <CustomLink href={"/"} title={"Home"} className="" />
           <CustomLink href={"/about"} title={"About"} className="" />
           <CustomLink href={"/projects"} title={"Projects"} className="" />
           <div className={`flex items-center justify-center flex-wrap my-2`}>
             <Link
+              title="Github"
               aria-label="Github"
               href={"https://github.com/chhatreshkhatri"}
               target="_blank"
@@ -156,6 +128,7 @@ const Navbar = () => {
               <GithubIcon className="" />
             </Link>
             <Link
+              title="LinkedIn"
               aria-label="LinkedIn"
               href={"https://www.linkedin.com/in/chhatreshkhatri/"}
               target="_blank"
@@ -165,11 +138,12 @@ const Navbar = () => {
               <LinkedInIcon className={``} />
             </Link>
             <Link
+              title="Mail"
               aria-label="Mail"
               href={"mailto:contact@chhatreshkhatri.com"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8"
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8 "
             >
               <MailIcon className="" />
             </Link>
