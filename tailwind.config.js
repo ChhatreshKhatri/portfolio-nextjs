@@ -8,6 +8,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      transitionProperty: {
+        'navBar': 'margin, padding, color, background-color, border-color',
+      },
       padding: {
         '25':'100px'
       },

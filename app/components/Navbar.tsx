@@ -42,7 +42,7 @@ const Navbar = () => {
       <nav
         className={`${
           scrolled ? " py-2 shadow-bottom bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md" : "py-3"
-        } hidden  lg:flex w-full font-medium  align-center justify-between fixed px-4 lg:px-20 transition-all duration-200 ease-in-out z-10`}
+        } hidden  lg:flex w-full font-medium  align-center justify-between fixed px-4 lg:px-20 transition-navBar duration-200 ease-in-out z-10`}
       >
         <div className="flex">
           <Link
@@ -97,7 +97,7 @@ const Navbar = () => {
       <nav
         className={`${
           navOpen || scrolled
-            ? "lg:hidden bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md shadow-bottom py-2 transition-all duration-200 ease-in-out"
+            ? "lg:hidden bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md shadow-bottom py-2 transition-navBar duration-200 ease-in-out"
             : "py-3"
         } w-full flex flex-col items-center px-4 md:px-12 lg:px-20 fixed z-10 lg:hidden`}
       >
