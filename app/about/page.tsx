@@ -56,11 +56,9 @@ export default function Page() {
   return (
     <FramerWrapper>
       <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-25">
-        <div className="w-full h-full flex justify-center items-center">
-          <h1 className="flex justify-center items-center w-auto font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xxs:text-2xl md:text-3xl px-1 md:px-2 py-1">
-            About Me
-          </h1>
-        </div>
+        <h1 className=" inline-flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
+          About Me
+        </h1>
         <div className="dark:bg-darked rounded-xl bg-contentBg text-justify p-3 xs:p-6 xs:px-10 py-6 mt-6">
           <h2 className={`text-2xl xxs:text-2xl xs:text-3xl md:text-4xl text-center`}>Description</h2>
           <p className="text-lg xs:text-xl mt-4">
@@ -73,11 +71,9 @@ export default function Page() {
             work together and make something amazing! Thanks for visiting my portfolio website!
           </p>
         </div>
-        <div className="w-full h-full flex justify-center">
-          <h2 className="font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 inline-block text-2xl md:text-3xl px-1 md:px-2 py-1 mt-10">
-            Technology Stack
-          </h2>
-        </div>
+        <h2 className=" inline-flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mt-10 mb-4 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
+          Technology Stack
+        </h2>
         <div className="dark:bg-darked rounded-xl bg-contentBg px-6 xs:px-10 py-6 mt-6 w-full">
           <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center pt-4`}>Languages</h3>
           <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
