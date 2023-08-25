@@ -87,14 +87,14 @@ export default function Page() {
           </div>
           <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Framework & Libraries</h3>
           <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
-            <CustomImage SRC={Bootstrap} title={`Bootstrap`} />
-            <CustomImage SRC={Tailwind} title={`TailwindCSS`} />
             <CustomImage SRC={Reactjs} title={`ReactJS`} />
             <CustomImage SRC={Nextjs} title={`Next.js`} />
             <CustomImage SRC={Expressjs} title={`Express`} />
             <CustomImage SRC={Nodejs} title={`Node.js`} />
-            <CustomImage SRC={Axios} title={`Axios`} />
+            <CustomImage SRC={Bootstrap} title={`Bootstrap`} />
+            <CustomImage SRC={Tailwind} title={`TailwindCSS`} />
             <CustomImage SRC={ReactRouter} title={`React Router`} />
+            <CustomImage SRC={Axios} title={`Axios`} />
             <CustomImage SRC={Redux} title={`Redux`} />
             <CustomImage SRC={DotEnv} title={`DotENV`} />
           </div>
