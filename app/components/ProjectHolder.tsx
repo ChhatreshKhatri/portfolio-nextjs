@@ -38,7 +38,7 @@ const ProjectHolder: React.FC<CustomProps> = ({
           <h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold text-center">{heading}</h2>
           <h3 className="text-xl  xl:text-3xl font-semibold mt-4 text-center">{subHeading}</h3>
           <p className="text-xl mt-4 text-justify">{projectContent} </p>
-          <div className="mt-8 flex space-x-4 text-md xss:text-xl justify-center">
+          <div className="mt-8 flex space-x-4 text-md xxs:text-xl justify-center">
             {link1 ? (
               <Link
                 href={link1}
