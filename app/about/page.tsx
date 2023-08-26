@@ -47,6 +47,16 @@ export const metadata = {
   alternates: {
     canonical: "https://www.chhatreshkhatri.com/about",
   },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: true,
+    }
+  },
 };
 const CustomImage = ({ SRC, title }: { SRC: string; title: string }) => {
   return <Image priority src={SRC} alt={title} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />;

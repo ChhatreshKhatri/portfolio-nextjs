@@ -12,7 +12,7 @@ export const metadata = {
   description:
     "Hi, I'm Chhatresh Khatri. Full stack Web Developer and a self-motivated, initiative-taking, and an enthusiastic professional.",
   keywords: [
-    "Chhatresh, Khatri, Portfolio, About, Projects, Web Developer, Web Development, Website, Code, React.JS, Next.JS, front end",
+    "Chhatresh Khatri, Portfolio, About, Projects, Web Developer, Web Development, Website, Code, React.JS, Next.JS, front end",
   ],
   applicationName: "Chhatresh Khatri",
   type: "website",
@@ -63,6 +63,7 @@ export const metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
+    themeColor: "#191919"
   },
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -52,7 +52,7 @@ const Navbar = () => {
             CHHATRESH KHATRI
           </Link>
         </div>
-        <div className="text-xl flex">
+        <div className="flex text-xl font-semibold">
           <CustomLink href={"/"} title={"Home"} className="mr-4" />
           <CustomLink href={"/about"} title={"About"} className="mx-4" />
           <CustomLink href={"/projects"} title={"Projects"} className="ml-4" />
@@ -132,7 +132,7 @@ const Navbar = () => {
             ></span>
           </button>
         </div>
-        <div className={`${navOpen ? "flex" : "hidden"} text-xl flex-col items-center justify-center`}>
+        <div className={`${navOpen ? "flex" : "hidden"} flex-col text-xl font-semibold items-center justify-center`}>
           <CustomLink href={"/"} title={"Home"} className="" />
           <CustomLink href={"/about"} title={"About"} className="" />
           <CustomLink href={"/projects"} title={"Projects"} className="" />
