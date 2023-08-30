@@ -55,16 +55,13 @@ export const metadata = {
     index: true,
     follow: true,
     nocache: false,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: false,
-      "max-video-preview": -1,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-    themeColor: "#191919"
+    noarchive: true,
+    noimageindex: false,
+    "max-video-preview": -1,
+    "max-image-preview": "standard",
+    "max-snippet": -1,
   },
+  themeColor: "#191919",
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (

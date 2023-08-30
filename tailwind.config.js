@@ -31,20 +31,13 @@ module.exports = {
       colors: {
         dark: "#191919",
         light: "#f6f6FF",
-        primary: "#B63E96",
-        primaryDark: "#58E6D9",
         darkCk: "#5740FF",
         lightCk: "#FF4057",
         darker: "#0c0c0c",
         darked: "#111111",
-        contentBg: "#E6E6FA",
-        navbarBg: "#D6D6FA",
-        footerBg: "#FF6B7A",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        contentBg: "#E6E6FF",
+        navbarBg: "#D6D6FF",
+        footerBg: "#c6c6ff",
       },
 
       dropShadow: {

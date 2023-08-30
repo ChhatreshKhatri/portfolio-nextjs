@@ -44,14 +44,14 @@ const Navbar = () => {
           scrolled ? " py-2 shadow-bottom bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md" : "py-3"
         } hidden  lg:flex w-full font-medium  align-center justify-between fixed px-4 lg:px-20 transition-navBar duration-200 ease-in-out z-10`}
       >
-        <div className="flex">
-          <Link
-            href={"/"}
-            className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold "
-          >
-            CHHATRESH KHATRI
-          </Link>
-        </div>
+        <Link
+          title="Chhatresh Khatri"
+          aria-label="Chhatresh Khatri"
+          href={""}
+          className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold "
+        >
+          CHHATRESH KHATRI
+        </Link>
         <div className="flex text-xl font-semibold">
           <CustomLink href={"/"} title={"Home"} className="mr-4" />
           <CustomLink href={"/about"} title={"About"} className="mx-4" />
@@ -103,7 +103,9 @@ const Navbar = () => {
       >
         <div className="flex justify-between w-full">
           <Link
-            href={"/"}
+            title="Chhatresh Khatri"
+            aria-label="Chhatresh Khatri"
+            href={""}
             className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold "
           >
             CHHATRESH KHATRI
