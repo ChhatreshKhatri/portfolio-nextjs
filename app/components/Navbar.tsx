@@ -47,7 +47,7 @@ const Navbar = () => {
         <Link
           title="Chhatresh Khatri"
           aria-label="Chhatresh Khatri"
-          href={""}
+          href={"/"}
           className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold "
         >
           CHHATRESH KHATRI
@@ -105,7 +105,7 @@ const Navbar = () => {
           <Link
             title="Chhatresh Khatri"
             aria-label="Chhatresh Khatri"
-            href={""}
+            href={"/"}
             className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold "
           >
             CHHATRESH KHATRI

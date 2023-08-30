@@ -30,14 +30,14 @@ module.exports = {
       screens: {xxs:'375px', xs:'480px', md: "768px", lg: "1024px", xl: "1200px", xxl: "1400px" },
       colors: {
         dark: "#191919",
-        light: "#f6f6FF",
+        light: "#f3f3FF",
         darkCk: "#5740FF",
         lightCk: "#FF4057",
         darker: "#0c0c0c",
         darked: "#111111",
-        contentBg: "#E6E6FF",
-        navbarBg: "#D6D6FF",
-        footerBg: "#c6c6ff",
+        contentBg: "#E3E3FF",
+        navbarBg: "#D3D3FF",
+        footerBg: "#c3c3ff",
       },
 
       dropShadow: {
