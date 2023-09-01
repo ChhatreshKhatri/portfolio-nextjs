@@ -72,9 +72,10 @@ const ProjectHolder: React.FC<CustomProps> = ({
           {/* Centered content in the second column */}
           <div className="w-full h-[300px] md:h-[350px] relative overflow-hidden rounded-2xl scroll-div xs:px-8">
             <Image
+              title={heading}
               priority
               src={projectImage}
-              alt="Ramaa Creations project"
+              alt={`${heading} Image`}
               width={500}
               height={500}
               className="w-full h-full object-cover object-top transition-all duration-4000 ease-in-out rounded-2xl hover:object-bottom"
