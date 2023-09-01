@@ -6,6 +6,7 @@ import MySql from "@/app/assets/about/MySql.svg";
 import Html from "@/app/assets/about/HTML5.svg";
 import Css from "@/app/assets/about/CSS3.svg";
 import JavaScript from "@/app/assets/about/JavaScript.svg";
+import TypeScript from "@/app/assets/about/TypeScript.svg";
 import Bootstrap from "@/app/assets/about/bootstrap.svg";
 import Tailwind from "@/app/assets/about/TailwindCSS.svg";
 import Reactjs from "@/app/assets/about/ReactJS.svg";
@@ -59,7 +60,7 @@ export const metadata = {
   },
 };
 const CustomImage = ({ SRC, title }: { SRC: string; title: string }) => {
-  return <Image priority src={SRC} alt={title} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />;
+  return <Image title={title} priority src={SRC} alt={title} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />;
 };
 
 export default function Page() {
@@ -72,7 +73,7 @@ export default function Page() {
         <div className="dark:bg-darked rounded-xl bg-contentBg text-justify p-3 xs:p-6 xs:px-10 py-6 mt-6">
           <h2 className={`text-2xl xxs:text-2xl xs:text-3xl md:text-4xl text-center`}>Description</h2>
           <p className="text-lg xs:text-xl mt-4">
-            Hi there! My name is Chhatresh Khatri and I&apos;m a web developer with a passion for building modern and
+            Hi there! My name is Chhatresh Khatri and I&apos;m a Full Stack developer with a passion for building modern and
             user-friendly websites and applications. I have experience working with a range of Tech Stack to create
             clean and modular code that follows industry best practices. In addition to my technical skills, I also have
             a keen eye for design and enjoy creating responsive and visually appealing websites. I&apos;m learning about
@@ -94,12 +95,13 @@ export default function Page() {
             <CustomImage SRC={Html} title={`HTML5`} />
             <CustomImage SRC={Css} title={`CSS3`} />
             <CustomImage SRC={JavaScript} title={`JavaScript`} />
+            <CustomImage SRC={TypeScript} title={`TypeScript`} />
           </div>
           <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Framework & Libraries</h3>
           <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
-            <CustomImage SRC={Reactjs} title={`ReactJS`} />
+            <CustomImage SRC={Reactjs} title={`React.js`} />
             <CustomImage SRC={Nextjs} title={`Next.js`} />
-            <CustomImage SRC={Expressjs} title={`Express`} />
+            <CustomImage SRC={Expressjs} title={`Express.js`} />
             <CustomImage SRC={Nodejs} title={`Node.js`} />
             <CustomImage SRC={Bootstrap} title={`Bootstrap`} />
             <CustomImage SRC={Tailwind} title={`TailwindCSS`} />
