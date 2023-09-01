@@ -12,7 +12,18 @@ export const metadata = {
   description:
     "Hi, I'm Chhatresh Khatri. Full stack Web Developer and a self-motivated, initiative-taking, and an enthusiastic professional.",
   keywords: [
-    "Chhatresh Khatri, Portfolio, About, Projects, Web Developer, Web Development, Website, Code, React.JS, Next.JS, front end",
+    "Chhatresh Khatri",
+    "Chhatresh Portfolio",
+    "Full Stack",
+    "Web Developer",
+    "Web Development",
+    "Website",
+    "Code",
+    "React.JS",
+    "Next.JS",
+    "front end",
+    "Chhatresh About",
+    "Chhatresh Projects",
   ],
   applicationName: "Chhatresh Khatri",
   type: "website",
@@ -67,7 +78,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} h-full flex flex-col bg-light text-dark dark:bg-dark dark:text-light w-full min-h-screen`}
+        className={`${poppins.className} w-full h-screen flex flex-col bg-light text-dark dark:bg-dark dark:text-light`}
       >
         <ThemeProvider>
           <NavBar />

@@ -135,9 +135,9 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`${navOpen ? "flex" : "hidden"} flex-col text-xl font-semibold items-center justify-center`}>
-          <CustomLink href={"/"} title={"Home"} className="" />
-          <CustomLink href={"/about"} title={"About"} className="" />
-          <CustomLink href={"/projects"} title={"Projects"} className="" />
+          <CustomLink href={"/"} title={"Home"} className={""} />
+          <CustomLink href={"/about"} title={"About"} className={""} />
+          <CustomLink href={"/projects"} title={"Projects"} className={""} />
           <div className={`flex items-center justify-center flex-wrap my-2`}>
             <Link
               title="Github"
@@ -147,7 +147,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 h-8"
             >
-              <GithubIcon className="" />
+              <GithubIcon className={""} />
             </Link>
             <Link
               title="LinkedIn"
@@ -165,9 +165,9 @@ const Navbar = () => {
               href={"mailto:contact@chhatreshkhatri.com"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8 "
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8"
             >
-              <MailIcon className="" />
+              <MailIcon className={""} />
             </Link>
             <ThemeButton />
           </div>
