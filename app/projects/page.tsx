@@ -11,7 +11,7 @@ export const metadata = {
   description:
     "Projects by Chhatresh Khatri. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
   alternates: {
-    canonical: "https://www.chhatreshkhatri.com/projects",
+    canonical: "/projects",
   },
 };
 

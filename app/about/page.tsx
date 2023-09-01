@@ -46,17 +46,7 @@ export const metadata = {
   description:
     "Chhatresh Khatri is a web developer with expertise in a wide range of technologies including C/C++, Java, HTML5, CSS3, JavaScript, React, Next.js, and more.",
   alternates: {
-    canonical: "https://www.chhatreshkhatri.com/about",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    nocache: false,
-    googleBot: {
-      index: true,
-      follow: true,
-      noimageindex: true,
-    }
+    canonical: "/about",
   },
 };
 const CustomImage = ({ SRC, title }: { SRC: string; title: string }) => {
@@ -73,8 +63,8 @@ export default function Page() {
         <div className="dark:bg-darked rounded-xl bg-contentBg text-justify p-3 xs:p-6 xs:px-10 py-6 mt-6">
           <h2 className={`text-2xl xxs:text-2xl xs:text-3xl md:text-4xl text-center`}>Description</h2>
           <p className="text-lg xs:text-xl mt-4">
-            Hi there! My name is Chhatresh Khatri and I&apos;m a Full Stack developer with a passion for building modern and
-            user-friendly websites and applications. I have experience working with a range of Tech Stack to create
+            Hi there! My name is Chhatresh Khatri and I&apos;m a Full Stack developer with a passion for building modern
+            and user-friendly websites and applications. I have experience working with a range of Tech Stack to create
             clean and modular code that follows industry best practices. In addition to my technical skills, I also have
             a keen eye for design and enjoy creating responsive and visually appealing websites. I&apos;m learning about
             the latest trends in the tech industry. I&apos;m a total go-getter and always bring my A-game, plus I&apos;m

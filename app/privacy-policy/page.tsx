@@ -5,7 +5,7 @@ export const metadata = {
   title: "Chhatresh Khatri | Portfolio | Privacy-Policy ",
   description: "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
   alternates: {
-    canonical: "https://www.chhatreshkhatri.com/privacy-policy",
+    canonical: "/privacy-policy",
   },
   robots: {
     index: false,
