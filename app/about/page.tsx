@@ -44,7 +44,7 @@ import FramerWrapper from "@/app/components/framerWrapper";
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | About",
   description:
-    "Chhatresh Khatri is a web developer with expertise in a wide range of technologies including C/C++, Java, HTML5, CSS3, JavaScript, React, Next.js, and more.",
+    "Chhatresh Khatri About. Full Stack developer with expertise in a wide range of technologies including C/C++, Java, HTML5, CSS3, JavaScript, React.js, Next.js, and more.",
   alternates: {
     canonical: "/about",
   },

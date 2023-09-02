@@ -9,7 +9,7 @@ import ProjectHolder from "../components/ProjectHolder";
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | Projects",
   description:
-    "Projects by Chhatresh Khatri. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
+    "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
   alternates: {
     canonical: "/projects",
   },
