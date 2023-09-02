@@ -10,22 +10,22 @@ const poppins = Poppins({
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio",
   description:
-    "Hi, I'm Chhatresh Khatri. Full stack Web Developer and a self-motivated, initiative-taking, and an enthusiastic professional.",
+    "Chhatresh Khatri Portfolio. Full stack Web Developer and a self-motivated, initiative-taking and an enthusiastic professional.",
   keywords: [
     "Chhatresh Khatri",
-    "Chhatresh Portfolio",
+    "Chhatresh khatri Portfolio",
     "Full Stack",
     "Web Developer",
-    "Web Development",
+    "Web Designer",
     "Website",
     "Code",
     "React.JS",
     "Next.JS",
-    "front end",
+    "frontend",
     "Chhatresh About",
     "Chhatresh Projects",
   ],
-  applicationName: "Chhatresh Khatri",
+  applicationName: "Chhatresh Khatri Portfolio",
   type: "website",
   authors: [{ name: "Chhatresh Khatri" }],
   metadataBase: new URL("https://www.chhatreshkhatri.com"),
@@ -41,7 +41,7 @@ export const metadata = {
   openGraph: {
     title: "Chhatresh Khatri | Portfolio",
     description:
-      "Hi, I'm Chhatresh Khatri. Full stack Web Developer and a self-motivated, initiative-taking, and an enthusiastic professional.",
+      "Chhatresh Khatri Portfolio. Full stack Web Developer and a self-motivated, initiative-taking and an enthusiastic professional.",
     url: "https://www.chhatreshkhatri.com/",
     siteName: "chhatreshkhatri",
     images: [
@@ -57,7 +57,7 @@ export const metadata = {
     title: "Chhatresh Khatri | Portfolio",
     url: "https://www.chhatreshkhatri.com/",
     description:
-      "Hi, I'm Chhatresh Khatri. Full stack Web Developer and a self-motivated, initiative-taking, and an enthusiastic professional.",
+      "Chhatresh Khatri Portfolio. Full stack Web Developer and a self-motivated, initiative-taking and an enthusiastic professional.",
     images: "/ck-1200x630.png",
     card: "summary_large_image",
     creator: "@chhatreshkhatri",
