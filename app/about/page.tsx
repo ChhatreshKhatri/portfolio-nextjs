@@ -77,7 +77,7 @@ export default function Page() {
         </h2>
         <div className="dark:bg-darked rounded-xl bg-contentBg px-6 xs:px-10 py-6 mt-6 w-full">
           <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center pt-4`}>Languages</h3>
-          <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
+          <div className="flex flex-wrap items-center justify-center mt-4">
             <CustomImage SRC={C} title={`C`} />
             <CustomImage SRC={Cpp} title={`C++`} />
             <CustomImage SRC={Java} title={`Java`} />
@@ -88,7 +88,7 @@ export default function Page() {
             <CustomImage SRC={TypeScript} title={`TypeScript`} />
           </div>
           <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Framework & Libraries</h3>
-          <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
+          <div className="flex flex-wrap items-center justify-center mt-4">
             <CustomImage SRC={Reactjs} title={`React.js`} />
             <CustomImage SRC={Nextjs} title={`Next.js`} />
             <CustomImage SRC={Expressjs} title={`Express.js`} />
@@ -101,7 +101,7 @@ export default function Page() {
             <CustomImage SRC={DotEnv} title={`DotENV`} />
           </div>
           <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Tools & IDEs</h3>
-          <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
+          <div className="flex flex-wrap items-center justify-center mt-4">
             <CustomImage SRC={MongoDB} title={`MongoDB`} />
             <CustomImage SRC={Nodemon} title={`Nodemon`} />
             <CustomImage SRC={Netlify} title={`Netlify`} />
@@ -119,11 +119,10 @@ export default function Page() {
             <CustomImage SRC={Cloudflare} title={`Cloudflare`} />
             <CustomImage SRC={AlibabaCloud} title={`Alibaba Cloud`} />
             <CustomImage SRC={GoogleCloud} title={`Google Cloud`} />
-            <CustomImage SRC={AndroidStudio} title={`Android Studio`} />
             <CustomImage SRC={VSCode} title={`VS Code`} />
           </div>
           <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">OS</h3>
-          <div className="flex flex-wrap items-center justify-center mt-4 space-x-3 ">
+          <div className="flex flex-wrap items-center justify-center mt-4">
             <CustomImage SRC={Linux} title={`Linux`} />
             <CustomImage SRC={Ubuntu} title={`Ubuntu`} />
             <CustomImage SRC={Windows11} title={`Windows 11`} />
