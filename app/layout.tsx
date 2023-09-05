@@ -53,7 +53,7 @@ export const metadata = {
     index: true,
     follow: true,
     nocache: false,
-    noarchive: true,
+    noarchive: false,
     noimageindex: false,
     "max-video-preview": -1,
     "max-image-preview": "standard",
