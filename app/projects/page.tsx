@@ -4,7 +4,6 @@ import MyChat from "@/app/assets/projects/mychatproject.webp";
 import AmazonClone from "@/app/assets/projects/amazonproject.webp";
 import StackoverflowClone from "@/app/assets/projects/stackoverflowclone.webp";
 import { AlibabaCloudIcon, GithubIcon, LinkIcon } from "../components/icons";
-import FramerWrapper from "../components/framerWrapper";
 import ProjectHolder from "../components/ProjectHolder";
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | Projects",
@@ -17,7 +16,6 @@ export const metadata = {
 
 export default function Projects() {
   return (
-    <FramerWrapper>
       <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-25">
         <h1 className="w-fit flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
           My Projects
@@ -79,6 +77,5 @@ export default function Projects() {
           order="even"
         />
       </main>
-    </FramerWrapper>
   );
 }

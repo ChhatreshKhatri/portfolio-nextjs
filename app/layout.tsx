@@ -65,7 +65,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body
-        className={`${poppins.className} w-full h-screen flex flex-col bg-light text-dark dark:bg-dark dark:text-light`}
+        className={`${poppins.className} w-full min-h-screen flex flex-col bg-light text-dark dark:bg-dark dark:text-light`}
       >
         <ThemeProvider>
           <NavBar />

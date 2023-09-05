@@ -1,6 +1,5 @@
 import Link from "next/link";
 import React from "react";
-import FramerWrapper from "../components/framerWrapper";
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | Privacy-Policy ",
   description: "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
@@ -15,7 +14,6 @@ export const metadata = {
 };
 const page = () => {
   return (
-    <FramerWrapper>
       <main className="w-full h-full flex items-center flex-col justify-center font-medium px-4 md:px-12 lg:px-20 py-25">
         <h1 className=" inline-flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
           Privacy Policy
@@ -102,7 +100,6 @@ const page = () => {
           <p>Last updated: July 1, 2023</p>
         </div>
       </main>
-    </FramerWrapper>
   );
 };
 

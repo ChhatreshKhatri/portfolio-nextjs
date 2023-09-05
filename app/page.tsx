@@ -4,11 +4,9 @@ import { ResumeIcon } from "./components/icons";
 import { SocialIcon } from "./components/socialicon.js";
 import Link from "next/link";
 import Typewriter from "./components/Typewriter";
-import FramerWrapper from "./components/framerWrapper";
 
 export default function Home() {
   return (
-    <FramerWrapper>
       <main className="w-full h-full flex flex-col  font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-25">
         <div className="flex justify-center items-center">
           <span className="w-fit flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
@@ -29,11 +27,11 @@ export default function Home() {
                 well as being an enthusiastic and self-motivated professional with great interpersonal and communication
                 skills.
               </p>
-              <div className="mt-8 flex text-xl justify-center">
+              <div className="mt-8 flex space-x-4 text-md xxs:text-xl justify-center">
                 <Link
                   href={`https://drive.google.com/file/d/19RguGg9v2VWPQJa-XL_2sCASpk65u5hd/view`}
                   target="_blank"
-                  className="p-1 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
+                  className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50 whitespace-nowrap"
                 >
                   <ResumeIcon className="mr-2" />
                   Resume
@@ -41,7 +39,7 @@ export default function Home() {
                 <Link
                   href={`https://social.chhatreshkhatri.com/`}
                   target="_blank"
-                  className="p-1 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50 ml-2 xxs:ml-4"
+                  className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50 whitespace-nowrap"
                 >
                   <SocialIcon className="mr-2" />
                   Social Links
@@ -63,6 +61,5 @@ export default function Home() {
           </div>
         </div>
       </main>
-    </FramerWrapper>
   );
 }

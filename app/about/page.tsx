@@ -34,12 +34,10 @@ import Postman from "@/app/assets/about/Postman.svg";
 import Cloudflare from "@/app/assets/about/Cloudflare.svg";
 import AlibabaCloud from "@/app/assets/about/AlibabaCloud.svg";
 import GoogleCloud from "@/app/assets/about/GoogleCloud.svg";
-import AndroidStudio from "@/app/assets/about/AndroidStudio.svg";
 import VSCode from "@/app/assets/about/VSCode.svg";
 import Linux from "@/app/assets/about/Linux.svg";
 import Ubuntu from "@/app/assets/about/Ubuntu.svg";
 import Windows11 from "@/app/assets/about/Windows11.svg";
-import FramerWrapper from "@/app/components/framerWrapper";
 
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | About",
@@ -55,7 +53,6 @@ const CustomImage = ({ SRC, title }: { SRC: string; title: string }) => {
 
 export default function Page() {
   return (
-    <FramerWrapper>
       <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-25">
         <h1 className="w-fit flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
           About Me
@@ -129,6 +126,5 @@ export default function Page() {
           </div>
         </div>
       </main>
-    </FramerWrapper>
   );
 }
