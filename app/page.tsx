@@ -29,11 +29,11 @@ export default function Home() {
                 well as being an enthusiastic and self-motivated professional with great interpersonal and communication
                 skills.
               </p>
-              <div className="mt-8 flex space-x-4 text-xl justify-center">
+              <div className="mt-8 flex text-xl justify-center">
                 <Link
                   href={`https://drive.google.com/file/d/19RguGg9v2VWPQJa-XL_2sCASpk65u5hd/view`}
                   target="_blank"
-                  className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
+                  className="p-1 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
                 >
                   <ResumeIcon className="mr-2" />
                   Resume
@@ -41,7 +41,7 @@ export default function Home() {
                 <Link
                   href={`https://social.chhatreshkhatri.com/`}
                   target="_blank"
-                  className="py-1 px-2 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50"
+                  className="p-1 rounded flex whitespace-nowrap items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50 ml-2 xxs:ml-4"
                 >
                   <SocialIcon className="mr-2" />
                   Social Links

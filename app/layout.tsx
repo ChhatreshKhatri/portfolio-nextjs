@@ -33,24 +33,12 @@ export const metadata = {
     canonical: "/",
   },
   category: "website",
-  icons: {
-    icon: [{ type: "image/svg+xml", url: "favicon.svg", sizes: "any" }],
-    apple: [{ type: "image/png", url: "apple-icon.png", sizes: "180x180" }],
-  },
-  manifest: "/app.webmanifest",
   openGraph: {
     title: "Chhatresh Khatri | Portfolio",
     description:
       "Chhatresh Khatri Portfolio. Full stack Web Developer and a self-motivated, initiative-taking and an enthusiastic professional.",
     url: "https://www.chhatreshkhatri.com/",
     siteName: "chhatreshkhatri",
-    images: [
-      {
-        url: "ck-1200x630.png",
-        width: 1200,
-        height: 630,
-      },
-    ],
     type: "website",
   },
   twitter: {
@@ -58,7 +46,6 @@ export const metadata = {
     url: "https://www.chhatreshkhatri.com/",
     description:
       "Chhatresh Khatri Portfolio. Full stack Web Developer and a self-motivated, initiative-taking and an enthusiastic professional.",
-    images: "/ck-1200x630.png",
     card: "summary_large_image",
     creator: "@chhatreshkhatri",
   },
