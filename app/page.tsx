@@ -54,7 +54,7 @@ export default function Home() {
               <Image
                 src={pfp}
                 priority
-                alt="picture"
+                alt="Chhatresh Khatri Banner"
                 className="w-[60%] xs:w-[45%] md:w-[35%] lg:w-[80%] drop-shadow-3xl"
               />
             </div>

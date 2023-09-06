@@ -42,7 +42,7 @@ import Windows11 from "@/app/assets/about/Windows11.svg";
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | About",
   description:
-    "Chhatresh Khatri About. Full Stack developer with expertise in a wide range of technologies including C/C++, Java, HTML5, CSS3, JavaScript, React.js, Next.js, and more.",
+    "Chhatresh Khatri About. Full Stack developer with expertise in diverse tech including C/C++, Java, HTML5, CSS3, JavaScript, React.js, Next.js, and more.",
   alternates: {
     canonical: "/about",
   },
