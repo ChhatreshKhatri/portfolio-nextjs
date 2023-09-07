@@ -1,5 +1,5 @@
 import Image from "next/image";
-import pfp from "./assets/banner_pic.webp";
+import pfp from "./assets/chhatresh_banner.webp";
 import { ResumeIcon } from "./components/icons";
 import { SocialIcon } from "./components/socialicon.js";
 import Link from "next/link";
