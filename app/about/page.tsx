@@ -52,76 +52,81 @@ const CustomImage = ({ SRC, title }: { SRC: string; title: string }) => {
 
 export default function Page() {
   return (
-      <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-25">
-        <h1 className="w-fit flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
-          <button>About Me</button>
+    <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-25">
+      <button>
+        <h1 className="flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
+          About Me
         </h1>
-        <div className="dark:bg-darked rounded-xl bg-contentBg text-justify p-3 xs:p-6 xs:px-10 py-6 mt-6">
-          <h2 className={`text-2xl xxs:text-2xl xs:text-3xl md:text-4xl text-center`}>Description</h2>
-          <p className="text-lg xs:text-xl mt-4">
-            Hi there! My name is Chhatresh Khatri and I&apos;m a Full Stack developer with a passion for building modern
-            and user-friendly websites and applications. I have experience working with a range of Tech Stack to create
-            clean and modular code that follows industry best practices. In addition to my technical skills, I also have
-            a keen eye for design and enjoy creating responsive and visually appealing websites. I&apos;m learning about
-            the latest trends in the tech industry. I&apos;m a total go-getter and always bring my A-game, plus I&apos;m
-            super easy to talk to! I&apos;m driven, self-motivated, and passionate about all things tech. Let&apos;s collaborate and create something extraordinary! Thanks for visiting my portfolio website!
-          </p>
-        </div>
-        <h2 className="w-fit flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 mt-10 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
-          <button>Technology Stack</button>
+      </button>
+      <div className="dark:bg-darked rounded-xl bg-contentBg text-justify p-3 xs:p-6 xs:px-10 py-6 mt-6">
+        <h2 className={`text-2xl xxs:text-2xl xs:text-3xl md:text-4xl text-center`}>Description</h2>
+        <p className="text-lg xs:text-xl mt-4">
+          Hi there! My name is Chhatresh Khatri and I&apos;m a Full Stack developer with a passion for building modern
+          and user-friendly websites and applications. I have experience working with a range of Tech Stack to create
+          clean and modular code that follows industry best practices. In addition to my technical skills, I also have a
+          keen eye for design and enjoy creating responsive and visually appealing websites. I&apos;m learning about the
+          latest trends in the tech industry. I&apos;m a total go-getter and always bring my A-game, plus I&apos;m super
+          easy to talk to! I&apos;m driven, self-motivated, and passionate about all things tech. Let&apos;s collaborate
+          and create something extraordinary! Thanks for visiting my portfolio website!
+        </p>
+      </div>
+      <button>
+        <h2 className="flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 mt-10 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
+          Technology Stack
         </h2>
-        <div className="dark:bg-darked rounded-xl bg-contentBg px-6 xs:px-10 py-6 mt-6 w-full">
-          <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center pt-4`}>Languages</h3>
-          <div className="flex flex-wrap items-center justify-center mt-4">
-            <CustomImage SRC={C} title={`C`} />
-            <CustomImage SRC={Cpp} title={`C++`} />
-            <CustomImage SRC={Java} title={`Java`} />
-            <CustomImage SRC={MySql} title={`MySQL`} />
-            <CustomImage SRC={Html} title={`HTML5`} />
-            <CustomImage SRC={Css} title={`CSS3`} />
-            <CustomImage SRC={JavaScript} title={`JavaScript`} />
-            <CustomImage SRC={TypeScript} title={`TypeScript`} />
-          </div>
-          <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Framework & Libraries</h3>
-          <div className="flex flex-wrap items-center justify-center mt-4">
-            <CustomImage SRC={Reactjs} title={`React.js`} />
-            <CustomImage SRC={Nextjs} title={`Next.js`} />
-            <CustomImage SRC={Expressjs} title={`Express.js`} />
-            <CustomImage SRC={Nodejs} title={`Node.js`} />
-            <CustomImage SRC={Bootstrap} title={`Bootstrap`} />
-            <CustomImage SRC={Tailwind} title={`TailwindCSS`} />
-            <CustomImage SRC={Axios} title={`Axios`} />
-            <CustomImage SRC={Redux} title={`Redux`} />
-            <CustomImage SRC={DotEnv} title={`DotENV`} />
-          </div>
-          <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Tools & IDEs</h3>
-          <div className="flex flex-wrap items-center justify-center mt-4">
-            <CustomImage SRC={MongoDB} title={`MongoDB`} />
-            <CustomImage SRC={Nodemon} title={`Nodemon`} />
-            <CustomImage SRC={Netlify} title={`Netlify`} />
-            <CustomImage SRC={Render} title={`Render`} />
-            <CustomImage SRC={Back4App} title={`Back4App`} />
-            <CustomImage SRC={Git} title={`Git`} />
-            <CustomImage SRC={GitHub} title={`GitHub`} />
-            <CustomImage SRC={GitHubActions} title={`GitHub Actions`} />
-            <CustomImage SRC={GitHubPages} title={`GitHub Pages`} />
-            <CustomImage SRC={Vercel} title={`Vercel`} />
-            <CustomImage SRC={Firebase} title={`Firebase`} />
-            <CustomImage SRC={Canva} title={`Canva`} />
-            <CustomImage SRC={Gimp} title={`Gimp`} />
-            <CustomImage SRC={Postman} title={`Postman`} />
-            <CustomImage SRC={Cloudflare} title={`Cloudflare`} />
-            <CustomImage SRC={AlibabaCloud} title={`Alibaba Cloud`} />
-            <CustomImage SRC={GoogleCloud} title={`Google Cloud`} />
-            <CustomImage SRC={VSCode} title={`VS Code`} />
-          </div>
-          <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">OS</h3>
-          <div className="flex flex-wrap items-center justify-center mt-4">
-            <CustomImage SRC={Linux} title={`Linux`} />
-            <CustomImage SRC={Ubuntu} title={`Ubuntu`} />
-            <CustomImage SRC={Windows11} title={`Windows 11`} />
-          </div>
+      </button>
+      <div className="dark:bg-darked rounded-xl bg-contentBg px-6 xs:px-10 py-6 mt-6 w-full">
+        <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center pt-4`}>Languages</h3>
+        <div className="flex flex-wrap items-center justify-center mt-4">
+          <CustomImage SRC={C} title={`C`} />
+          <CustomImage SRC={Cpp} title={`C++`} />
+          <CustomImage SRC={Java} title={`Java`} />
+          <CustomImage SRC={MySql} title={`MySQL`} />
+          <CustomImage SRC={Html} title={`HTML5`} />
+          <CustomImage SRC={Css} title={`CSS3`} />
+          <CustomImage SRC={JavaScript} title={`JavaScript`} />
+          <CustomImage SRC={TypeScript} title={`TypeScript`} />
         </div>
-      </main>
+        <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Framework & Libraries</h3>
+        <div className="flex flex-wrap items-center justify-center mt-4">
+          <CustomImage SRC={Reactjs} title={`React.js`} />
+          <CustomImage SRC={Nextjs} title={`Next.js`} />
+          <CustomImage SRC={Expressjs} title={`Express.js`} />
+          <CustomImage SRC={Nodejs} title={`Node.js`} />
+          <CustomImage SRC={Bootstrap} title={`Bootstrap`} />
+          <CustomImage SRC={Tailwind} title={`TailwindCSS`} />
+          <CustomImage SRC={Axios} title={`Axios`} />
+          <CustomImage SRC={Redux} title={`Redux`} />
+          <CustomImage SRC={DotEnv} title={`DotENV`} />
+        </div>
+        <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Tools & IDEs</h3>
+        <div className="flex flex-wrap items-center justify-center mt-4">
+          <CustomImage SRC={MongoDB} title={`MongoDB`} />
+          <CustomImage SRC={Nodemon} title={`Nodemon`} />
+          <CustomImage SRC={Netlify} title={`Netlify`} />
+          <CustomImage SRC={Render} title={`Render`} />
+          <CustomImage SRC={Back4App} title={`Back4App`} />
+          <CustomImage SRC={Git} title={`Git`} />
+          <CustomImage SRC={GitHub} title={`GitHub`} />
+          <CustomImage SRC={GitHubActions} title={`GitHub Actions`} />
+          <CustomImage SRC={GitHubPages} title={`GitHub Pages`} />
+          <CustomImage SRC={Vercel} title={`Vercel`} />
+          <CustomImage SRC={Firebase} title={`Firebase`} />
+          <CustomImage SRC={Canva} title={`Canva`} />
+          <CustomImage SRC={Gimp} title={`Gimp`} />
+          <CustomImage SRC={Postman} title={`Postman`} />
+          <CustomImage SRC={Cloudflare} title={`Cloudflare`} />
+          <CustomImage SRC={AlibabaCloud} title={`Alibaba Cloud`} />
+          <CustomImage SRC={GoogleCloud} title={`Google Cloud`} />
+          <CustomImage SRC={VSCode} title={`VS Code`} />
+        </div>
+        <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">OS</h3>
+        <div className="flex flex-wrap items-center justify-center mt-4">
+          <CustomImage SRC={Linux} title={`Linux`} />
+          <CustomImage SRC={Ubuntu} title={`Ubuntu`} />
+          <CustomImage SRC={Windows11} title={`Windows 11`} />
+        </div>
+      </div>
+    </main>
   );
 }

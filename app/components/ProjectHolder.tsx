@@ -40,26 +40,30 @@ const ProjectHolder: React.FC<CustomProps> = ({
           <p className="text-xl mt-4 text-justify">{projectContent} </p>
           <div className="mt-8 flex space-x-4 text-md xxs:text-xl justify-center">
             {link1 ? (
-              <Link
-                href={link1}
-                target="_blank"
-                className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50 whitespace-nowrap"
-              >
-                {link1Icon}
-                {link1Type}
-              </Link>
+              <button>
+                <Link
+                  href={link1}
+                  target="_blank"
+                  className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50 whitespace-nowrap"
+                >
+                  {link1Icon}
+                  {link1Type}
+                </Link>
+              </button>
             ) : (
               ""
             )}
             {link2 ? (
-              <Link
-                href={link2}
-                target="_blank"
-                className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50 whitespace-nowrap"
-              >
-                {link2Icon}
-                {link2Type}
-              </Link>
+              <button>
+                <Link
+                  href={link2}
+                  target="_blank"
+                  className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50 whitespace-nowrap"
+                >
+                  {link2Icon}
+                  {link2Type}
+                </Link>
+              </button>
             ) : (
               ""
             )}
