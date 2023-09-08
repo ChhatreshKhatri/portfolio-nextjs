@@ -54,7 +54,7 @@ export default function Page() {
   return (
       <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-25">
         <h1 className="w-fit flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
-          About Me
+          <button>About Me</button>
         </h1>
         <div className="dark:bg-darked rounded-xl bg-contentBg text-justify p-3 xs:p-6 xs:px-10 py-6 mt-6">
           <h2 className={`text-2xl xxs:text-2xl xs:text-3xl md:text-4xl text-center`}>Description</h2>
@@ -68,7 +68,7 @@ export default function Page() {
           </p>
         </div>
         <h2 className="w-fit flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 mt-10 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
-          Technology Stack
+          <button>Technology Stack</button>
         </h2>
         <div className="dark:bg-darked rounded-xl bg-contentBg px-6 xs:px-10 py-6 mt-6 w-full">
           <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center pt-4`}>Languages</h3>
