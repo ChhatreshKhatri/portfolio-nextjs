@@ -1,9 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { GithubIcon, LinkedInIcon, MailIcon } from "./icons";
 import { usePathname } from "next/navigation";
 import ThemeButton from "./ThemeButton";
+import chhatresh from "@/app/assets/chhatresh_khatri.svg";
 
 const CustomLink = ({ href, title, className = "" }: { href: string; title: string; className?: string }) => {
   const path = usePathname();
@@ -48,9 +50,9 @@ const Navbar = () => {
           title="Chhatresh Khatri"
           aria-label="Chhatresh Khatri"
           href={"/"}
-          className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold "
+          className="flex justify-center items-center"
         >
-          CHHATRESH KHATRI
+          <Image src={chhatresh} alt="Chhatresh Khatri" />
         </Link>
         <div className="flex text-xl font-semibold">
           <CustomLink href={"/"} title={"Home"} className="mr-4" />

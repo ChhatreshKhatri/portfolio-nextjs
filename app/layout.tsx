@@ -10,16 +10,16 @@ const poppins = Poppins({
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio",
   description:
-    "Chhatresh Khatri Portfolio. Full stack Web Developer and a self-motivated, initiative-taking and an enthusiastic professional.",
+    "Chhatresh Khatri Portfolio. Full stack Web Developer passionate about latest trends in the tech industry. Crafting innovation with code.",
   keywords: [
     "Chhatresh Khatri",
     "Chhatresh khatri Portfolio",
-    "Full Stack",
-    "Web Developer",
+    "Full Stack Developer",
+    "web Development",
     "Web Designer",
     "Website",
     "Code",
-    "React.JS",
+    "Innovation",
     "Next.JS",
     "frontend",
     "Chhatresh About",
@@ -36,7 +36,7 @@ export const metadata = {
   openGraph: {
     title: "Chhatresh Khatri | Portfolio",
     description:
-      "Chhatresh Khatri Portfolio. Full stack Web Developer and a self-motivated, initiative-taking and an enthusiastic professional.",
+      "Chhatresh Khatri Portfolio. Full stack Web Developer passionate about latest trends in the tech industry. Crafting innovation with code.",
     url: "https://www.chhatreshkhatri.com/",
     siteName: "chhatreshkhatri",
     type: "website",
@@ -45,7 +45,7 @@ export const metadata = {
     title: "Chhatresh Khatri | Portfolio",
     url: "https://www.chhatreshkhatri.com/",
     description:
-      "Chhatresh Khatri Portfolio. Full stack Web Developer and a self-motivated, initiative-taking and an enthusiastic professional.",
+      "Chhatresh Khatri Portfolio. Full stack Web Developer passionate about latest trends in the tech industry. Crafting innovation with code.",
     card: "summary_large_image",
     creator: "@chhatreshkhatri",
   },

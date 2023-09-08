@@ -23,9 +23,7 @@ export default function Home() {
                 <Typewriter />
               </h2>
               <p className="text-lg xs:text-xl mt-4 text-justify">
-                B.Tech in Computer Science & Engineering and I am skilled in problem solving and web-development, as
-                well as being an enthusiastic and self-motivated professional with great interpersonal and communication
-                skills.
+              B.Tech in Computer Science & Engineering with skills in problem solving and web development. An enthusiastic, self-motivated professional with strong interpersonal and communication skills, I&apos;m passionate about the latest tech trends. A quick learner and team player, I thrive on new opportunities and challenges.
               </p>
               <div className="mt-8 flex space-x-4 text-md xxs:text-xl justify-center">
                 <Link

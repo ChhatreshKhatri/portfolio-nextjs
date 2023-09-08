@@ -14,7 +14,6 @@ import Nextjs from "@/app/assets/about/Next.js.svg";
 import Expressjs from "@/app/assets/about/express.svg";
 import Nodejs from "@/app/assets/about/Node.svg";
 import Axios from "@/app/assets/about/Axios.svg";
-import ReactRouter from "@/app/assets/about/ReactRouter.svg";
 import Redux from "@/app/assets/about/Redux.svg";
 import DotEnv from "@/app/assets/about/DotENV.svg";
 import MongoDB from "@/app/assets/about/MongoDB.svg";
@@ -48,7 +47,7 @@ export const metadata = {
   },
 };
 const CustomImage = ({ SRC, title }: { SRC: string; title: string }) => {
-  return <Image title={title} priority src={SRC} alt={title} className={`h-[35px] w-auto m-1 xs:m-3 xs:h-[45px] `} />;
+  return <Image title={title} priority src={SRC} alt={title} className={`h-[35px] w-auto m-1 xs:m-2 xs:h-[45px] `} />;
 };
 
 export default function Page() {
@@ -65,8 +64,7 @@ export default function Page() {
             clean and modular code that follows industry best practices. In addition to my technical skills, I also have
             a keen eye for design and enjoy creating responsive and visually appealing websites. I&apos;m learning about
             the latest trends in the tech industry. I&apos;m a total go-getter and always bring my A-game, plus I&apos;m
-            super easy to talk to! I&apos;m driven, self-motivated, and passionate about all things tech. Let&apos;s
-            work together and make something amazing! Thanks for visiting my portfolio website!
+            super easy to talk to! I&apos;m driven, self-motivated, and passionate about all things tech. Let&apos;s collaborate and create something extraordinary! Thanks for visiting my portfolio website!
           </p>
         </div>
         <h2 className="w-fit flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 mt-10 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
@@ -92,7 +90,6 @@ export default function Page() {
             <CustomImage SRC={Nodejs} title={`Node.js`} />
             <CustomImage SRC={Bootstrap} title={`Bootstrap`} />
             <CustomImage SRC={Tailwind} title={`TailwindCSS`} />
-            <CustomImage SRC={ReactRouter} title={`React Router`} />
             <CustomImage SRC={Axios} title={`Axios`} />
             <CustomImage SRC={Redux} title={`Redux`} />
             <CustomImage SRC={DotEnv} title={`DotENV`} />
