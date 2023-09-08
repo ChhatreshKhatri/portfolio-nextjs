@@ -108,9 +108,9 @@ const Navbar = () => {
             title="Chhatresh Khatri"
             aria-label="Chhatresh Khatri"
             href={"/"}
-            className="bg-gradient-to-r from-darkCk to-lightCk bg-clip-text text-transparent text-2xl font-semibold "
+            className="flex justify-center items-center"
           >
-            CHHATRESH KHATRI
+            <Image src={chhatresh} alt="Chhatresh Khatri" />
           </Link>
           <button
             aria-label="Toggle Menu"
