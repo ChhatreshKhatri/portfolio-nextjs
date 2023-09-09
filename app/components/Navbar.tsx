@@ -10,12 +10,12 @@ import chhatresh from "@/app/assets/chhatresh_khatri.svg";
 const CustomLink = ({ href, title, className = "" }: { href: string; title: string; className?: string }) => {
   const path = usePathname();
   return (
-    <Link href={href} className={`${className} relative group inline-flex py-1`}>
+    <Link href={href} className={`${className} relative flex items-center justify-center group py-1`}>
       {title}
       <span
         className={`${
           path === href ? "w-full" : "w-0"
-        } h-0.5 flex items-center bg-gradient-to-r from-darkCk to-lightCk absolute left-0 bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}
+        } h-0.5 flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk absolute left-0 bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}
       ></span>
     </Link>
   );
@@ -54,7 +54,7 @@ const Navbar = () => {
         >
           <Image src={chhatresh} alt="Chhatresh Khatri" />
         </Link>
-        <div className="flex text-xl font-semibold">
+        <div className="flex items-center justify-center text-xl font-semibold">
           <CustomLink href={"/"} title={"Home"} className="mr-4" />
           <CustomLink href={"/about"} title={"About"} className="mx-4" />
           <CustomLink href={"/projects"} title={"Projects"} className="ml-4" />
