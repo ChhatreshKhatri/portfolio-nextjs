@@ -31,7 +31,7 @@ export default function Home() {
             <div className="mt-8 flex space-x-4 text-md xxs:text-xl justify-center">
               <button>
                 <Link
-                  href={`https://drive.google.com/file/d/19RguGg9v2VWPQJa-XL_2sCASpk65u5hd/view`}
+                  href={`https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing`}
                   target="_blank"
                   className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50 whitespace-nowrap"
                 >
