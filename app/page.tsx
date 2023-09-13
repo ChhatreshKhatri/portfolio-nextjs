@@ -14,10 +14,10 @@ export default function Home() {
         </button>
       </div>
       <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-3">
-        <div className="order-2 lg:order-1 lg:col-span-2 flex justify-end items-center dark:bg-darked rounded-xl bg-contentBg md:bg-light md:dark:bg-dark relative">
+        <div className="relative order-2 lg:order-1 lg:col-span-2 flex justify-end items-center rounded-xl">
           {/* Content for the first column */}
             <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 md:bg-none"></div>
-          <div className="w-full h-full flex flex-col justify-center p-3 xs:p-6 lg:p-0 relative bg-light dark:bg-dark">
+          <div className="w-full h-full flex flex-col justify-center p-3 xs:p-6 lg:p-0 relative bg-light dark:bg-dark md:bg-light md:dark:bg-dark">
             {/* Centered content in the first column */}
             <h1 className="text-2xl xxs:text-2xl xs:text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold text-center">{`Hi! I'm Chhatresh Khatri`}</h1>
             <h2 className="text-2xl xxs:text-2xl xs:3xl md:text-4xl xl:text-5xl font-semibold mt-4 text-center">

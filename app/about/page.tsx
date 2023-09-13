@@ -58,8 +58,8 @@ export default function Page() {
           About Me
         </h1>
       </button>
-      <div className="rounded-xl mt-10 bg-gradient-to-r p-1 from-darkCk/50 to-lightCk/50">
-      <div className="dark:bg-dark rounded-xl bg-contentBg text-justify p-3 xs:p-6 xs:px-10 py-6">
+      <div className="rounded-lg mt-10 bg-gradient-to-r p-1 from-darkCk/50 to-lightCk/50">
+      <div className="dark:bg-darker rounded-xl bg-contentBg text-justify p-3 xs:p-6 xs:px-10 py-6">
         <h2 className={`text-2xl xxs:text-2xl xs:text-3xl md:text-4xl text-center`}>Description</h2>
         <p className="text-lg xs:text-xl mt-4">
           Hi there! My name is Chhatresh Khatri and I&apos;m a Full Stack developer with a passion for building modern
@@ -77,8 +77,8 @@ export default function Page() {
           Technology Stack
         </h2>
       </button>
-      <div className="rounded-xl mt-10 bg-gradient-to-r p-1 from-darkCk/50 to-lightCk/50">
-      <div className="w-full dark:bg-dark rounded-xl bg-contentBg px-6 xs:px-10 py-6">
+      <div className="rounded-lg mt-10 bg-gradient-to-r p-1 from-darkCk/50 to-lightCk/50">
+      <div className="w-full dark:bg-darker rounded-xl bg-contentBg px-6 xs:px-10 py-6">
         <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center pt-4`}>Languages</h3>
         <div className="flex flex-wrap items-center justify-center mt-4">
           <CustomImage SRC={C} title={`C`} />
