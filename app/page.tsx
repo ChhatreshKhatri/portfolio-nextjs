@@ -14,9 +14,10 @@ export default function Home() {
         </button>
       </div>
       <div className="grid grid-cols-1 w-full gap-1 lg:grid-cols-3">
-        <div className="order-2 lg:order-1 lg:col-span-2 flex justify-end items-center dark:bg-darked rounded-xl bg-contentBg md:bg-transparent md:dark:bg-transparent">
+        <div className="order-2 lg:order-1 lg:col-span-2 flex justify-end items-center dark:bg-darked rounded-xl bg-contentBg md:bg-light md:dark:bg-dark relative">
           {/* Content for the first column */}
-          <div className="w-full h-full flex flex-col justify-center p-3 xs:p-6 lg:p-0">
+            <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 md:bg-none"></div>
+          <div className="w-full h-full flex flex-col justify-center p-3 xs:p-6 lg:p-0 relative bg-light dark:bg-dark">
             {/* Centered content in the first column */}
             <h1 className="text-2xl xxs:text-2xl xs:text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold text-center">{`Hi! I'm Chhatresh Khatri`}</h1>
             <h2 className="text-2xl xxs:text-2xl xs:3xl md:text-4xl xl:text-5xl font-semibold mt-4 text-center">
@@ -28,27 +29,27 @@ export default function Home() {
               passionate about the latest tech trends. A quick learner and team player, I thrive on new opportunities
               and challenges.
             </p>
-            <div className="mt-8 flex space-x-4 text-md xxs:text-xl justify-center">
-              <button>
+            <div className="flex space-x-4 text-md xxs:text-xl justify-center items-center ">
+              <div className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
                 <Link
                   href={`https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing`}
                   target="_blank"
-                  className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50 whitespace-nowrap"
+                  className="py-1 px-2 rounded flex whitespace-nowrap bg-contentBg  dark:bg-darker"
                 >
                   <ResumeIcon className="mr-2" />
                   Resume
                 </Link>
-              </button>
-              <button>
+              </div>
+              <div className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
                 <Link
                   href={`https://social.chhatreshkhatri.com/`}
                   target="_blank"
-                  className="py-1 px-2 rounded flex items-center border border-darker dark:border-light bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50 whitespace-nowrap"
+                  className="py-1 px-2 rounded flex whitespace-nowrap bg-contentBg  dark:bg-darker"
                 >
                   <SocialIcon className="mr-2" />
                   Social Links
                 </Link>
-              </button>
+              </div>
             </div>
           </div>
         </div>

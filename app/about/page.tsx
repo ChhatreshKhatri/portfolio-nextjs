@@ -58,7 +58,8 @@ export default function Page() {
           About Me
         </h1>
       </button>
-      <div className="dark:bg-darked rounded-xl bg-contentBg text-justify p-3 xs:p-6 xs:px-10 py-6 mt-6">
+      <div className="rounded-xl mt-10 bg-gradient-to-r p-1 from-darkCk/50 to-lightCk/50">
+      <div className="dark:bg-dark rounded-xl bg-contentBg text-justify p-3 xs:p-6 xs:px-10 py-6">
         <h2 className={`text-2xl xxs:text-2xl xs:text-3xl md:text-4xl text-center`}>Description</h2>
         <p className="text-lg xs:text-xl mt-4">
           Hi there! My name is Chhatresh Khatri and I&apos;m a Full Stack developer with a passion for building modern
@@ -70,12 +71,14 @@ export default function Page() {
           and create something extraordinary! Thanks for visiting my portfolio website!
         </p>
       </div>
+      </div>
       <button>
         <h2 className="flex justify-center items-center font-semibold tracking-wider bg-gradient-to-r from-darkCk/50 to-lightCk/50 dark:from-darkCk/50 dark:to-lightCk/50 border-black dark:border-light border mb-4 mt-10 text-xl xxs:text-2xl md:text-3xl p-1 md:px-2">
           Technology Stack
         </h2>
       </button>
-      <div className="dark:bg-darked rounded-xl bg-contentBg px-6 xs:px-10 py-6 mt-6 w-full">
+      <div className="rounded-xl mt-10 bg-gradient-to-r p-1 from-darkCk/50 to-lightCk/50">
+      <div className="w-full dark:bg-dark rounded-xl bg-contentBg px-6 xs:px-10 py-6">
         <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center pt-4`}>Languages</h3>
         <div className="flex flex-wrap items-center justify-center mt-4">
           <CustomImage SRC={C} title={`C`} />
@@ -126,6 +129,7 @@ export default function Page() {
           <CustomImage SRC={Ubuntu} title={`Ubuntu`} />
           <CustomImage SRC={Windows11} title={`Windows 11`} />
         </div>
+      </div>
       </div>
     </main>
   );
