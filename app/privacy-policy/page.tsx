@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import FaviconVisibilityChange from "../components/FaviconVisibilityChange";
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | Privacy-Policy ",
   description: "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
@@ -101,6 +102,7 @@ const page = () => {
         <p>If you do not agree with these policies, please discontinue use of this Website.</p>
         <p>Last updated: July 1, 2023</p>
       </div>
+      <FaviconVisibilityChange />
     </main>
   );
 };

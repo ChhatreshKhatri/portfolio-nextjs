@@ -37,6 +37,7 @@ import VSCode from "@/app/assets/about/VSCode.svg";
 import Linux from "@/app/assets/about/Linux.svg";
 import Ubuntu from "@/app/assets/about/Ubuntu.svg";
 import Windows11 from "@/app/assets/about/Windows11.svg";
+import FaviconVisibilityChange from "../components/FaviconVisibilityChange";
 
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | About",
@@ -47,7 +48,7 @@ export const metadata = {
   },
 };
 const CustomImage = ({ SRC, title }: { SRC: string; title: string }) => {
-  return <Image title={title} priority src={SRC} alt={title} className={`h-[45px] w-[110px] xs:w-auto m-1 xs:m-2 `} />;
+  return <Image title={title} priority src={SRC} alt={title} className={`w-auto h-[35px] xs:h-[45px] m-1 xs:m-2 `} />;
 }
 
 export default function Page() {
@@ -78,8 +79,8 @@ export default function Page() {
         </h2>
       </button>
       <div className="rounded-lg mt-10 bg-gradient-to-r p-1 from-darkCk/50 to-lightCk/50">
-      <div className="w-full dark:bg-darker rounded-xl bg-contentBg px-6 xs:px-10 py-6">
-        <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center pt-4`}>Languages</h3>
+      <div className="w-full dark:bg-darker rounded-xl bg-contentBg p-3 xs:p-6 xs:px-10 py-6">
+        <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center mt-4`}>Languages</h3>
         <div className="flex flex-wrap items-center justify-center mt-4">
           <CustomImage SRC={C} title={`C`} />
           <CustomImage SRC={Cpp} title={`C++`} />
@@ -131,6 +132,7 @@ export default function Page() {
         </div>
       </div>
       </div>
+      <FaviconVisibilityChange />
     </main>
   );
 }

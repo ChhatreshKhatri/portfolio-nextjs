@@ -3,10 +3,12 @@ import NavBar from "./components/Navbar";
 import { Poppins } from "next/font/google";
 import Footer from "./components/footer";
 import ThemeProvider from "./components/themeProvider";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["500", "700"],
 });
+
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio",
   description:
@@ -25,6 +27,11 @@ export const metadata = {
     "Chhatresh About",
     "Chhatresh Projects",
   ],
+  icons: {
+    shortcut: [{ url: "/favcion.ico", type: "image/x-icon" }],
+    icon: ["/icon.svg"],
+    apple: [{ url: "/apple-icon.png" }],
+  },
   applicationName: "Chhatresh Khatri Portfolio",
   type: "website",
   authors: [{ name: "Chhatresh Khatri" }],
