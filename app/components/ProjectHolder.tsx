@@ -41,7 +41,7 @@ const ProjectHolder: React.FC<CustomProps> = ({
             <p className="text-xl mt-4 text-justify">{projectContent} </p>
             <div className="mt-8 flex items-center justify-center space-x-4 text-md xxs:text-xl">
               {link1 ? (
-                <div className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
+                <button className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
                   <Link
                     href={link1}
                     target="_blank"
@@ -50,12 +50,12 @@ const ProjectHolder: React.FC<CustomProps> = ({
                     {link1Icon}
                     {link1Type}
                   </Link>
-                </div>
+                </button>
               ) : (
                 ""
               )}
               {link2 ? (
-                <div className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
+                <button className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
                   <Link
                     href={link2}
                     target="_blank"
@@ -64,7 +64,7 @@ const ProjectHolder: React.FC<CustomProps> = ({
                     {link2Icon}
                     {link2Type}
                   </Link>
-                </div>
+                </button>
               ) : (
                 ""
               )}

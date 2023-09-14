@@ -30,7 +30,7 @@ export default function Home() {
               and challenges.
             </p>
             <div className="flex space-x-4 text-md xxs:text-xl justify-center items-center ">
-              <div className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
+              <button className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
                 <Link
                   href={`https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing`}
                   target="_blank"
@@ -39,8 +39,8 @@ export default function Home() {
                   <ResumeIcon className="mr-2" />
                   Resume
                 </Link>
-              </div>
-              <div className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
+              </button>
+              <button className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
                 <Link
                   href={`https://social.chhatreshkhatri.com/`}
                   target="_blank"
@@ -49,7 +49,7 @@ export default function Home() {
                   <SocialIcon className="mr-2" />
                   Social Links
                 </Link>
-              </div>
+              </button>
             </div>
           </div>
         </div>

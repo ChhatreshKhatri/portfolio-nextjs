@@ -47,8 +47,8 @@ export const metadata = {
   },
 };
 const CustomImage = ({ SRC, title }: { SRC: string; title: string }) => {
-  return <Image title={title} priority src={SRC} alt={title} className={`h-[35px] w-auto m-1 xs:m-2 xs:h-[45px] `} />;
-};
+  return <Image title={title} priority src={SRC} alt={title} className={`h-[45px] w-[110px] xs:w-auto m-1 xs:m-2 `} />;
+}
 
 export default function Page() {
   return (
