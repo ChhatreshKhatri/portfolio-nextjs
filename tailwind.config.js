@@ -32,11 +32,11 @@ module.exports = {
         light: "#f3f3FF",
         darkCk: "#5740FF",
         lightCk: "#FF4057",
-        darker: "#0c0c0c",
-        darked: "#111111",
+        darked: "#0c0c0c",
         contentBg: "#E3E3FF",
         navbarBg: "#D3D3FF",
-        footerBg: "#c3c3ff",
+        darker: "#101010",
+        lighter: "#f3f3ff",
       },
 
       dropShadow: {
