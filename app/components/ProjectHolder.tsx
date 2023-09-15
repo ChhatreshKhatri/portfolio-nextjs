@@ -41,11 +41,11 @@ const ProjectHolder: React.FC<CustomProps> = ({
             <p className="text-xl mt-4 text-justify">{projectContent} </p>
             <div className="mt-8 flex items-center justify-center space-x-4 text-md xxs:text-xl">
               {link1 ? (
-                <button className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
+                <button className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r from-darkCk/50 to-lightCk/50">
                   <Link
                     href={link1}
                     target="_blank"
-                    className="py-1 px-2 rounded flex whitespace-nowrap bg-light dark:bg-darker"
+                    className="py-1 px-2 rounded flex justify-center items-center whitespace-nowrap bg-light dark:bg-darker"
                   >
                     {link1Icon}
                     {link1Type}
@@ -55,11 +55,11 @@ const ProjectHolder: React.FC<CustomProps> = ({
                 ""
               )}
               {link2 ? (
-                <button className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r hover:from-darkCk/50 hover:to-lightCk/50">
+                <button className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r from-darkCk/50 to-lightCk/50">
                   <Link
                     href={link2}
                     target="_blank"
-                    className="py-1 px-2 rounded flex whitespace-nowrap bg-light  dark:bg-darker"
+                    className="py-1 px-2 rounded flex justify-center items-center whitespace-nowrap bg-light dark:bg-darker"
                   >
                     {link2Icon}
                     {link2Type}
