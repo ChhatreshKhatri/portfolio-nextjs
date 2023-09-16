@@ -23,10 +23,10 @@ module.exports = {
       },
       fontSize: {
         "4xl": "35px",
-        "5xl": "45px",
-        "6xl": "55px",
+        "5xl": "40px",
+        "6xl": "50px",
       },
-      screens: { xxs: "375px", xs: "480px", md: "768px", lg: "1024px", xl: "1200px", xxl: "1400px" },
+      screens: { xxs: "375px", xs: "480px", md: "768px", lg: "1024px", xl: "1200px", xxl: "1440px" },
       colors: {
         dark: "#191919",
         light: "#f3f3FF",

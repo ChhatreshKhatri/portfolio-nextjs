@@ -7,7 +7,6 @@ const FaviconVisibilityChange = () => {
 
     const handleVisibilityChange = () => {
       const hidden = document.hidden;
-      console.log(`Tab visibility changed to ${hidden ? 'hidden' : 'visible'}`);
       favicon?.setAttribute("href", `/icon${hidden ? "-hidden" : ""}.svg`);
     };
 
