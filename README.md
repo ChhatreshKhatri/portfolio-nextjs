@@ -1,5 +1,8 @@
 # Portfolio Website <a href="https://www.chhatreshkhatri.com/" target="_blank">Chhatresh Khatri | Portfolio</a>
 
+This portfolio website, meticulously crafted using Next.js, Tailwind CSS, and TypeScript, embodies a fusion of modern design and robust functionality. Its architecture comprises a Home Page, an About Page, and a Projects Page, each tailored to deliver a distinctive user experience.
+
+Consistency is ensured across the site with a well-structured navigation menu, subtle animations, and optional dark mode. The website's SEO optimization, performance enhancements, and analytics integration make it a potent tool for showcasing the skills.
 
 <br/> 
 
@@ -64,6 +67,10 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Deploy on Cloudflare pages
+
+[Cloudflare Pages](https://pages.cloudflare.com/) is a JAMstack platform for frontend developers to collaborate and deploy websites.
 
 <br>
 

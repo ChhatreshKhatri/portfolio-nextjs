@@ -1,7 +1,6 @@
 import Image from "next/image";
 import pfp from "./assets/chhatresh_banner.webp";
-import { ResumeIcon } from "./components/icons";
-import { SocialIcon } from "./components/socialicon.js";
+import { ResumeIcon,SocialIcon } from "./components/icons";
 import Link from "next/link";
 import Typewriter from "./components/Typewriter";
 import FaviconVisibilityChange from "./components/FaviconVisibilityChange";
