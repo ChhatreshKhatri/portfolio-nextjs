@@ -54,7 +54,7 @@ const CustomImage = ({ SRC, title }: { SRC: string; title: string }) => {
 export default function Page() {
   return (
     <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-20">
-      <button className="rounded mb-4 p-[2px] flex items-center justify-center bg-gradient-to-r from-darkCk/50 to-lightCk/50">
+      <button className="rounded mb-4 p-[2px] flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk">
         <h1 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-contentBg dark:bg-darked rounded">
           About Me
         </h1>
@@ -72,10 +72,10 @@ export default function Page() {
           and create something extraordinary! Thanks for visiting my portfolio website!
         </p>
       </div>
-      <button className="rounded mb-4 flex items-center justify-center bg-gradient-to-r from-darkCk/50 to-lightCk/50 mt-10 p-[2px]">
-        <h1 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-contentBg dark:bg-darked rounded">
+      <button className="rounded mb-4 flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk mt-10 p-[2px]">
+        <h2 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-contentBg dark:bg-darked rounded">
           Technology Stack
-        </h1>
+        </h2>
       </button>
       <div className="relative group rounded-lg mt-4">
         <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>

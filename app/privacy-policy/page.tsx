@@ -17,7 +17,7 @@ export const metadata = {
 const page = () => {
   return (
     <main className="w-full h-full flex items-center flex-col justify-center font-medium px-4 md:px-12 lg:px-20 py-20">
-      <button className="rounded mb-4 p-[2px] flex items-center justify-center bg-gradient-to-r from-darkCk/50 to-lightCk/50">
+      <button className="rounded mb-4 p-[2px] flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk">
         <h1 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-contentBg dark:bg-darked rounded">
           Privacy Policy
         </h1>
