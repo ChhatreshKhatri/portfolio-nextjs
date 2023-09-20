@@ -8,19 +8,24 @@ export default function manifest(): MetadataRoute.Manifest {
       "Chhatresh Khatri Portfolio. Full stack Web Developer and a self-motivated, initiative-taking and an enthusiastic professional.",
     start_url: "/",
     display: "standalone",
-    background_color: "#000000",
-    theme_color: "#000000",
+    background_color: "#191919",
+    theme_color: "#191919",
     icons: [
       {
-        src: "icon.svg",
+        src: "/icon.svg",
         sizes: "any",
         type: "image/svg+xml",
         purpose: "maskable",
       },
       {
-        src: "favicon.ico",
-        sizes: "16x16 24x24 32x32 48x48 64x64 96x96 128x128 192x192 256x256 384x384 512x512",
-        type: "image/x-icon",
+        src: "/icon-192x192.png",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        src: "/icon-512x512.png",
+        sizes: "512x512",
+        type: "image/png",
       },
     ],
   };
