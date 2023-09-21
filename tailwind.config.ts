@@ -1,11 +1,7 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from "tailwindcss";
 
 const config: Config = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ["./pages/**/*.{js,ts,jsx,tsx,mdx}", "./components/**/*.{js,ts,jsx,tsx,mdx}", "./app/**/*.{js,ts,jsx,tsx,mdx}"],
   darkMode: "class",
   theme: {
     extend: {
@@ -41,11 +37,12 @@ const config: Config = {
       },
 
       dropShadow: {
+        text: "0 1px 1px #191919",
         "2xl": "0 0 15px #000000",
         "3xl": "0 0 20px #000000",
       },
     },
   },
   plugins: [],
-}
-export default config
+};
+export default config;

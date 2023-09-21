@@ -26,10 +26,9 @@ export default function Home() {
               <Typewriter />
             </h2>
             <p className="text-lg xs:text-xl mt-4 text-justify">
-              B.Tech in Computer Science & Engineering with skills in problem solving and web development. An
-              enthusiastic, self-motivated professional with strong interpersonal and communication skills, I&apos;m
-              passionate about the latest tech trends. A quick learner and team player, I thrive on new opportunities
-              and challenges.
+              B.Tech in Computer Science & Engineering with skills in problem solving and web development. An enthusiastic, self-motivated
+              professional with strong interpersonal and communication skills, I&apos;m passionate about the latest tech trends. A quick learner and
+              team player, I thrive on new opportunities and challenges.
             </p>
             <div className="flex justify-center items-center  text-md xxs:text-xl">
               <button className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r from-lightCk to-darkCk">
@@ -42,11 +41,11 @@ export default function Home() {
                   Resume
                 </Link>
               </button>
-              <button className="flex items-center justify-center ml-4 mt-10 p-[2px] rounded bg-gradient-to-r from-darkCk to-lightCk">
+              <button className="max-h-[42px] flex items-center justify-center ml-4 mt-10 p-[2px] rounded bg-gradient-to-r from-darkCk to-lightCk">
                 <Link
                   href={`https://social.chhatreshkhatri.com/`}
                   target="_blank"
-                  className="flex justify-center items-center py-1 px-2 rounded  whitespace-nowrap bg-lighter dark:bg-darker"
+                  className="max-height-[42px] flex justify-center items-center py-1 px-2 rounded  whitespace-nowrap bg-lighter dark:bg-darker"
                 >
                   <SocialIcon className="mr-2" />
                   Social Links

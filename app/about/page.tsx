@@ -1,43 +1,44 @@
-import Image from "next/image";
-import C from "@/app/assets/about/c.svg";
-import Cpp from "@/app/assets/about/c++.svg";
-import Java from "@/app/assets/about/Java.svg";
-import MySql from "@/app/assets/about/MySql.svg";
-import Html from "@/app/assets/about/HTML5.svg";
-import Css from "@/app/assets/about/CSS3.svg";
-import JavaScript from "@/app/assets/about/JavaScript.svg";
-import TypeScript from "@/app/assets/about/TypeScript.svg";
-import Bootstrap from "@/app/assets/about/bootstrap.svg";
-import Tailwind from "@/app/assets/about/TailwindCSS.svg";
-import Reactjs from "@/app/assets/about/ReactJS.svg";
-import Nextjs from "@/app/assets/about/Next.js.svg";
-import Expressjs from "@/app/assets/about/express.svg";
-import Nodejs from "@/app/assets/about/Node.svg";
-import Axios from "@/app/assets/about/Axios.svg";
-import Redux from "@/app/assets/about/Redux.svg";
-import DotEnv from "@/app/assets/about/DotENV.svg";
-import MongoDB from "@/app/assets/about/MongoDB.svg";
-import Nodemon from "@/app/assets/about/Nodemon.svg";
-import Netlify from "@/app/assets/about/Netlify.svg";
-import Render from "@/app/assets/about/Render.svg";
-import Back4App from "@/app/assets/about/Back4App.svg";
-import Git from "@/app/assets/about/Git.svg";
-import GitHub from "@/app/assets/about/GitHub.svg";
-import GitHubActions from "@/app/assets/about/GitHubActions.svg";
-import GitHubPages from "@/app/assets/about/GitHubPages.svg";
-import Vercel from "@/app/assets/about/Vercel.svg";
-import Firebase from "@/app/assets/about/Firebase.svg";
-import Canva from "@/app/assets/about/Canva.svg";
-import Gimp from "@/app/assets/about/Gimp.svg";
-import Postman from "@/app/assets/about/Postman.svg";
-import Cloudflare from "@/app/assets/about/Cloudflare.svg";
-import AlibabaCloud from "@/app/assets/about/AlibabaCloud.svg";
-import GoogleCloud from "@/app/assets/about/GoogleCloud.svg";
-import VSCode from "@/app/assets/about/VSCode.svg";
-import Linux from "@/app/assets/about/Linux.svg";
-import Ubuntu from "@/app/assets/about/Ubuntu.svg";
-import Windows11 from "@/app/assets/about/Windows11.svg";
-import FaviconVisibilityChange from "../components/FaviconVisibilityChange";
+import {
+  SiC,
+  SiCplusplus,
+  SiOpenjdk,
+  SiMysql,
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTypescript,
+  SiBootstrap,
+  SiTailwindcss,
+  SiReact,
+  SiNextdotjs,
+  SiExpress,
+  SiNodedotjs,
+  SiAxios,
+  SiRedux,
+  SiDotenv,
+  SiMongodb,
+  SiNodemon,
+  SiNetlify,
+  SiRender,
+  SiGit,
+  SiGithub,
+  SiGithubactions,
+  SiGithubpages,
+  SiVercel,
+  SiFirebase,
+  SiCanva,
+  SiGimp,
+  SiPostman,
+  SiCloudflare,
+  SiAlibabacloud,
+  SiGooglecloud,
+  SiVisualstudiocode,
+  SiLinux,
+  SiUbuntu,
+  SiWindows11,
+} from "@icons-pack/react-simple-icons";
+
+import FaviconVisibilityChange from "@/app/components/FaviconVisibilityChange";
 
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | About",
@@ -47,9 +48,20 @@ export const metadata = {
     canonical: "/about",
   },
 };
-const CustomImage = ({ SRC, title }: { SRC: string; title: string }) => {
-  return <Image title={title} priority src={SRC} alt={title} className={`w-auto h-[35px] xs:h-[45px] m-1 xs:m-2 `} />;
-};
+function SkillButton({ name, color, icon, className }: { name: string; color: string; icon: React.ReactNode; className: string }) {
+  return (
+    <button
+      title={name}
+      className={`relative w-auto h-[35px] xs:h-[45px] m-1 xs:m-2 ${color} rounded-md p-1 xs:p-2 flex items-center justify-center text-light dark:text-dark`}
+    >
+      <div className={`absolute inset-0 bg-gradient-to-b from-[#fff]/10 rounded-md`} />
+      <div className={`relative flex items-center justify-center ${className}`}>
+        {icon}
+        <p className="relative text-xl md:text-2xl ml-1 xs:ml-2 drop-shadow-text">{name}</p>
+      </div>
+    </button>
+  );
+}
 
 export default function Page() {
   return (
@@ -63,13 +75,12 @@ export default function Page() {
         <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
         <h2 className={`relative text-2xl xxs:text-2xl xs:text-3xl md:text-4xl text-center`}>Description</h2>
         <p className="relative text-lg xs:text-xl mt-4">
-          Hi there! My name is Chhatresh Khatri and I&apos;m a Full Stack developer with a passion for building modern
-          and user-friendly websites and applications. I have experience working with a range of Tech Stack to create
-          clean and modular code that follows industry best practices. In addition to my technical skills, I also have a
-          keen eye for design and enjoy creating responsive and visually appealing websites. I&apos;m learning about the
-          latest trends in the tech industry. I&apos;m a total go-getter and always bring my A-game, plus I&apos;m super
-          easy to talk to! I&apos;m driven, self-motivated, and passionate about all things tech. Let&apos;s collaborate
-          and create something extraordinary! Thanks for visiting my portfolio website!
+          Hi there! My name is Chhatresh Khatri and I&apos;m a Full Stack developer with a passion for building modern and user-friendly websites and
+          applications. I have experience working with a range of Tech Stack to create clean and modular code that follows industry best practices. In
+          addition to my technical skills, I also have a keen eye for design and enjoy creating responsive and visually appealing websites. I&apos;m
+          learning about the latest trends in the tech industry. I&apos;m a total go-getter and always bring my A-game, plus I&apos;m super easy to
+          talk to! I&apos;m driven, self-motivated, and passionate about all things tech. Let&apos;s collaborate and create something extraordinary!
+          Thanks for visiting my portfolio website!
         </p>
       </div>
       <button className="rounded mb-4 flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk mt-10 p-[2px]">
@@ -82,53 +93,57 @@ export default function Page() {
         <div className="relative w-full p-3 xs:p-6 xs:px-10 py-6">
           <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center mt-4`}>Languages</h3>
           <div className="flex flex-wrap items-center justify-center mt-4">
-            <CustomImage SRC={C} title={`C`} />
-            <CustomImage SRC={Cpp} title={`C++`} />
-            <CustomImage SRC={Java} title={`Java`} />
-            <CustomImage SRC={MySql} title={`MySQL`} />
-            <CustomImage SRC={Html} title={`HTML5`} />
-            <CustomImage SRC={Css} title={`CSS3`} />
-            <CustomImage SRC={JavaScript} title={`JavaScript`} />
-            <CustomImage SRC={TypeScript} title={`TypeScript`} />
+            <SkillButton color="bg-[#1563b1]" name="C" icon={<SiC size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#004488]" name="C++" icon={<SiCplusplus size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#437291]" name="Java" icon={<SiOpenjdk size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#4479A1]" name="MySQL" icon={<SiMysql size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#e34f26]" name="HTML5" icon={<SiHtml5 size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#1572B6]" name="CSS3" icon={<SiCss3 size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#F7DF1E]" name="JavaScript" icon={<SiJavascript size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#3178C6]" name="TypeScript" icon={<SiTypescript size={32} className="h-6 xs:h-12" />} className={""} />
           </div>
           <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Framework & Libraries</h3>
           <div className="flex flex-wrap items-center justify-center mt-4">
-            <CustomImage SRC={Reactjs} title={`React.js`} />
-            <CustomImage SRC={Nextjs} title={`Next.js`} />
-            <CustomImage SRC={Expressjs} title={`Express.js`} />
-            <CustomImage SRC={Nodejs} title={`Node.js`} />
-            <CustomImage SRC={Bootstrap} title={`Bootstrap`} />
-            <CustomImage SRC={Tailwind} title={`TailwindCSS`} />
-            <CustomImage SRC={Axios} title={`Axios`} />
-            <CustomImage SRC={Redux} title={`Redux`} />
-            <CustomImage SRC={DotEnv} title={`DotENV`} />
+            <SkillButton color="bg-[#61DAFB]" name="React.js" icon={<SiReact size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#000000]" name="Next.js" icon={<SiNextdotjs size={32} className="h-6 xs:h-12" />} className={"text-white"} />
+            <SkillButton color="bg-[#000000]" name="Express.js" icon={<SiExpress size={32} className="h-6 xs:h-12" />} className={"text-white"} />
+            <SkillButton color="bg-[#339933]" name="Node.js" icon={<SiNodedotjs size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#05054B]" name="Bootstrap" icon={<SiBootstrap size={32} className="h-6 xs:h-12" />} className={"text-white"} />
+            <SkillButton color="bg-[#06B6D4]" name="TailwindCSS" icon={<SiTailwindcss size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#5A29E4]" name="Axios" icon={<SiAxios size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#764ABC]" name="Redux" icon={<SiRedux size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#ECD53F]" name="DotENV" icon={<SiDotenv size={32} className="h-6 xs:h-12" />} className={""} />
           </div>
           <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Tools & IDEs</h3>
           <div className="flex flex-wrap items-center justify-center mt-4">
-            <CustomImage SRC={MongoDB} title={`MongoDB`} />
-            <CustomImage SRC={Nodemon} title={`Nodemon`} />
-            <CustomImage SRC={Netlify} title={`Netlify`} />
-            <CustomImage SRC={Render} title={`Render`} />
-            <CustomImage SRC={Back4App} title={`Back4App`} />
-            <CustomImage SRC={Git} title={`Git`} />
-            <CustomImage SRC={GitHub} title={`GitHub`} />
-            <CustomImage SRC={GitHubActions} title={`GitHub Actions`} />
-            <CustomImage SRC={GitHubPages} title={`GitHub Pages`} />
-            <CustomImage SRC={Vercel} title={`Vercel`} />
-            <CustomImage SRC={Firebase} title={`Firebase`} />
-            <CustomImage SRC={Canva} title={`Canva`} />
-            <CustomImage SRC={Gimp} title={`Gimp`} />
-            <CustomImage SRC={Postman} title={`Postman`} />
-            <CustomImage SRC={Cloudflare} title={`Cloudflare`} />
-            <CustomImage SRC={AlibabaCloud} title={`Alibaba Cloud`} />
-            <CustomImage SRC={GoogleCloud} title={`Google Cloud`} />
-            <CustomImage SRC={VSCode} title={`VS Code`} />
+            <SkillButton color="bg-[#47A248]" name="MongoDB" icon={<SiMongodb size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#76D04B]" name="Nodemon" icon={<SiNodemon size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#00C7B7]" name="Netlify" icon={<SiNetlify size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#46E3B7]" name="Render" icon={<SiRender size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#F05032]" name="Git" icon={<SiGit size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#181717]" name="GitHub" icon={<SiGithub size={32} className="h-6 xs:h-12" />} className={"text-white"} />
+            <SkillButton color="bg-[#2088FF]" name="GitHub Actions" icon={<SiGithubactions size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton
+              color="bg-[#222222]"
+              name="GitHub Pages"
+              icon={<SiGithubpages size={32} className="h-6 xs:h-12" />}
+              className={"text-white"}
+            />
+            <SkillButton color="bg-[#000000]" name="Vercel" icon={<SiVercel size={32} className="h-6 xs:h-12" />} className={"text-white"} />
+            <SkillButton color="bg-[#FFCA28]" name="Firebase" icon={<SiFirebase size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#00C4CC]" name="Canva" icon={<SiCanva size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#5C5543]" name="Gimp" icon={<SiGimp size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#FF6C37]" name="Postman" icon={<SiPostman size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#F38020]" name="Cloudflare" icon={<SiCloudflare size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#FF6A00]" name="Alibaba Cloud" icon={<SiAlibabacloud size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#4285F4]" name="Google Cloud" icon={<SiGooglecloud size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#007ACC]" name="VS Code" icon={<SiVisualstudiocode size={32} className="h-6 xs:h-12" />} className={""} />
           </div>
           <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">OS</h3>
           <div className="flex flex-wrap items-center justify-center mt-4">
-            <CustomImage SRC={Linux} title={`Linux`} />
-            <CustomImage SRC={Ubuntu} title={`Ubuntu`} />
-            <CustomImage SRC={Windows11} title={`Windows 11`} />
+            <SkillButton color="bg-[#FCC624]" name="Linux" icon={<SiLinux size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#E95420]" name="Ubuntu" icon={<SiUbuntu size={32} className="h-6 xs:h-12" />} className={""} />
+            <SkillButton color="bg-[#0078D4]" name="Windows 11" icon={<SiWindows11 size={32} className="h-6 xs:h-12" />} className={""} />
           </div>
         </div>
       </div>

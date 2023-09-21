@@ -4,8 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Chhatresh Khatri | Portfolio",
     short_name: "Chhatresh Khatri",
-    description:
-      "Chhatresh Khatri Portfolio. Full stack Web Developer and a self-motivated, initiative-taking and an enthusiastic professional.",
+    description: "Chhatresh Khatri Portfolio. Full stack Web Developer and a self-motivated, initiative-taking and an enthusiastic professional.",
     start_url: "/",
     display: "standalone",
     background_color: "#191919",
