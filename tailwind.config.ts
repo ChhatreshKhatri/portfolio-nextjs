@@ -1,9 +1,10 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+
+const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   darkMode: "class",
   theme: {
@@ -45,14 +46,6 @@ module.exports = {
       },
     },
   },
-  variants: {
-    extend: {
-      // Enable transition utilities
-      transitionProperty: ["responsive", "motion-safe", "motion-reduce"],
-      transitionDuration: ["responsive", "motion-safe", "motion-reduce"],
-      transitionTimingFunction: ["responsive", "motion-safe", "motion-reduce"],
-      transitionDelay: ["responsive", "motion-safe", "motion-reduce"],
-    },
-  },
   plugins: [],
-};
+}
+export default config
