@@ -37,7 +37,7 @@ export default function Home() {
                   target="_blank"
                   className="flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker"
                 >
-                  <ResumeIcon width={32} className="mr-2" />
+                  <ResumeIcon height={32} width={32} className="mr-2 w-8" />
                   Resume
                 </Link>
               </button>
@@ -47,7 +47,7 @@ export default function Home() {
                   target="_blank"
                   className="flex justify-center items-center py-1 px-2 rounded  whitespace-nowrap bg-lighter dark:bg-darker"
                 >
-                  <SocialIcon width={32} className="mr-2" />
+                  <SocialIcon height={32} width={32} className="mr-2 w-8" />
                   Social Links
                 </Link>
               </button>

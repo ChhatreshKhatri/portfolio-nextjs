@@ -30,7 +30,7 @@ export default function Projects() {
         projectImage={RamaaCreations.src}
         link1="https://www.alibabacloud.com/blog/project-showcase-%7C-ramaa-creations_598812"
         link2=""
-        link1Icon={<AlibabaCloudIcon width={32} className={"mr-2"} />}
+        link1Icon={<AlibabaCloudIcon height={32} width={32} className={"mr-2 w-8"} />}
         link1Type="Blog Link"
         link2Type=""
         link2Icon={undefined}
@@ -44,10 +44,10 @@ export default function Projects() {
         projectImage={StackoverflowClone.src}
         link1="https://github.com/Chhatreshkhatri/stack-overflow-clone"
         link1Type="Github Link"
-        link1Icon={<GithubIcon width={32} className={"mr-2"} />}
+        link1Icon={<GithubIcon height={32} width={32} className={"mr-2 w-8"} />}
         link2="https://soclone.chhatreshkhatri.com/"
         link2Type="Live Link"
-        link2Icon={<LinkIcon width={32} className={"mr-2"} />}
+        link2Icon={<LinkIcon height={32} width={32} className={"mr-2 w-8"} />}
         order="even"
       />
       {/* Amazon Clone */}
@@ -58,10 +58,10 @@ export default function Projects() {
         projectImage={AmazonClone.src}
         link1="https://github.com/Chhatreshkhatri/amazon-clone"
         link1Type="Github Link"
-        link1Icon={<GithubIcon width={32} className={`mr-2`} />}
+        link1Icon={<GithubIcon height={32} width={32} className={`mr-2 w-8`} />}
         link2="https://amazonclone.chhatreshkhatri.com/"
         link2Type="Live Link"
-        link2Icon={<LinkIcon width={32} className={`mr-2`} />}
+        link2Icon={<LinkIcon height={32} width={32} className={`mr-2 w-8`} />}
         order="odd"
       />
       {/* MyChat Project */}
@@ -72,7 +72,7 @@ export default function Projects() {
         projectImage={MyChat.src}
         link1="https://github.com/Chhatreshkhatri/MyChat"
         link1Type="Github Link"
-        link1Icon={<GithubIcon width={32} className={`mr-2`} />}
+        link1Icon={<GithubIcon height={32} width={32} className={`mr-2 w-8`} />}
         link2=""
         link2Type=""
         link2Icon={undefined}
