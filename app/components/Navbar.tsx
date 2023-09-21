@@ -68,7 +68,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8"
           >
-            <GithubIcon className="" />
+            <GithubIcon width={32} className="" />
           </Link>
           <Link
             title="LinkedIn"
@@ -78,7 +78,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
           >
-            <LinkedInIcon className={``} />
+            <LinkedInIcon width={32} className={``} />
           </Link>
           <Link
             title="Mail"
@@ -88,7 +88,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
           >
-            <MailIcon className="" />
+            <MailIcon width={32} className="" />
           </Link>
           <ThemeButton />
         </div>
@@ -149,7 +149,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 h-8"
             >
-              <GithubIcon className={""} />
+              <GithubIcon width={32} className={""} />
             </Link>
             <Link
               title="LinkedIn"
@@ -159,7 +159,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8"
             >
-              <LinkedInIcon className={``} />
+              <LinkedInIcon width={32} className={``} />
             </Link>
             <Link
               title="Mail"
@@ -169,7 +169,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8"
             >
-              <MailIcon className={""} />
+              <MailIcon width={32} className={""} />
             </Link>
             <ThemeButton />
           </div>

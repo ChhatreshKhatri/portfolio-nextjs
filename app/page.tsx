@@ -37,17 +37,17 @@ export default function Home() {
                   target="_blank"
                   className="flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker"
                 >
-                  <ResumeIcon className="mr-2" />
+                  <ResumeIcon width={32} className="mr-2" />
                   Resume
                 </Link>
               </button>
-              <button className="max-h-[42px] flex items-center justify-center ml-4 mt-10 p-[2px] rounded bg-gradient-to-r from-darkCk to-lightCk">
+              <button className="flex items-center justify-center ml-4 mt-10 p-[2px] rounded bg-gradient-to-r from-darkCk to-lightCk">
                 <Link
                   href={`https://social.chhatreshkhatri.com/`}
                   target="_blank"
-                  className="max-height-[42px] flex justify-center items-center py-1 px-2 rounded  whitespace-nowrap bg-lighter dark:bg-darker"
+                  className="flex justify-center items-center py-1 px-2 rounded  whitespace-nowrap bg-lighter dark:bg-darker"
                 >
-                  <SocialIcon className="mr-2" />
+                  <SocialIcon width={32} className="mr-2" />
                   Social Links
                 </Link>
               </button>
