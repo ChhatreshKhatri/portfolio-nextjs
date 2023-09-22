@@ -16,7 +16,7 @@ export default function Home() {
         </button>
       </div>
       <div className="relative group grid grid-cols-1 w-full lg:grid-cols-3 mt-4">
-        <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
+        <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
         <div className="relative order-2 lg:order-1 lg:col-span-2 flex justify-end items-center rounded-lg">
           {/* Content for the first column */}
           <div className="w-full h-full flex flex-col justify-center rounded-lg p-2 xs:p-6">
@@ -31,7 +31,7 @@ export default function Home() {
               latest tech trends. A quick learner and team player, I thrive on new opportunities and challenges.
             </p>
             <div className="flex justify-center items-center  text-md xxs:text-xl">
-              <button className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r from-lightCk to-darkCk">
+              <button className="flex items-center justify-center mt-10 p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
                 <Link
                   href={`https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing`}
                   target="_blank"
@@ -41,7 +41,7 @@ export default function Home() {
                   Resume
                 </Link>
               </button>
-              <button className="flex items-center justify-center ml-4 mt-10 p-[2px] rounded bg-gradient-to-r from-darkCk to-lightCk">
+              <button className="flex items-center justify-center ml-4 mt-10 p-0.5 rounded bg-gradient-to-r from-darkCk to-lightCk">
                 <Link
                   href={`https://social.chhatreshkhatri.com/`}
                   target="_blank"

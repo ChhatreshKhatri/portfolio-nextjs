@@ -30,7 +30,7 @@ const ProjectHolder: React.FC<CustomProps> = ({
 }) => {
   return (
     <div className="group relative mt-4 mb-10">
-      <div className="absolute -inset-1 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
+      <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
       <div className="relative grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl p-3 xs:p-6">
         <div className={`${order == "odd" ? "" : "lg:order-2"}`}>
           {/* Content for the first column */}
@@ -42,7 +42,7 @@ const ProjectHolder: React.FC<CustomProps> = ({
             <div className="mt-8 flex items-center justify-center space-x-4 text-md xxs:text-xl">
               {link1 ? (
                 
-                <button className="flex items-center justify-center ml-4 mt-10 p-[2px] rounded bg-gradient-to-r from-darkCk to-lightCk">
+                <button className="flex items-center justify-center ml-4 mt-10 p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
                   <Link
                     href={link1}
                     target="_blank"
@@ -56,7 +56,7 @@ const ProjectHolder: React.FC<CustomProps> = ({
                 ""
               )}
               {link2 ? (
-                <button className="flex items-center justify-center ml-4 mt-10 p-[2px] rounded bg-gradient-to-r from-darkCk to-lightCk">
+                <button className="flex items-center justify-center ml-4 mt-10 p-0.5 rounded bg-gradient-to-r from-darkCk to-lightCk">
                   <Link
                     href={link2}
                     target="_blank"

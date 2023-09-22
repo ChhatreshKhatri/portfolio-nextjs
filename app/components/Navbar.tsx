@@ -15,7 +15,7 @@ const CustomLink = ({ href, title, className = "" }: { href: string; title: stri
       <span
         className={`${
           path === href ? "w-full" : "w-0"
-        } h-0.5 flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk absolute left-0 bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}
+        } absolute h-0.5 bg-gradient-to-r from-darkCk to-lightCk bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}
       ></span>
     </Link>
   );
