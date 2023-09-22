@@ -26,16 +26,16 @@ export default function Home() {
               <Typewriter />
             </h2>
             <p className="text-lg xs:text-xl mt-4 text-justify">
-              B.Tech in Computer Science & Engineering with skills in problem solving and web development. An enthusiastic, self-motivated
-              professional with strong interpersonal and communication skills, I&apos;m passionate about the latest tech trends. A quick learner and
-              team player, I thrive on new opportunities and challenges.
+              B.Tech in Computer Science & Engineering with skills in problem solving and web development. An enthusiastic,
+              self-motivated professional with strong interpersonal and communication skills, I&apos;m passionate about the
+              latest tech trends. A quick learner and team player, I thrive on new opportunities and challenges.
             </p>
             <div className="flex justify-center items-center  text-md xxs:text-xl">
               <button className="rounded mt-10 p-[2px] flex items-center justify-center bg-gradient-to-r from-lightCk to-darkCk">
                 <Link
                   href={`https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing`}
                   target="_blank"
-                  className="flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker"
+                  className="max-h-[42px] flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker"
                 >
                   <ResumeIcon height={32} width={32} className="mr-2 w-8" />
                   Resume
@@ -45,7 +45,7 @@ export default function Home() {
                 <Link
                   href={`https://social.chhatreshkhatri.com/`}
                   target="_blank"
-                  className="flex justify-center items-center py-1 px-2 rounded  whitespace-nowrap bg-lighter dark:bg-darker"
+                  className="max-h-[42px] flex justify-center items-center py-1 px-2 rounded  whitespace-nowrap bg-lighter dark:bg-darker"
                 >
                   <SocialIcon height={32} width={32} className="mr-2 w-8" />
                   Social Links

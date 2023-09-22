@@ -1,9 +1,17 @@
 import * as React from "react";
 export const B4a = ({ className, ...rest }) => (
-  <svg width="1.5em" height="1.5em" viewBox="0 0 20 9" fill="none" xmlns="http://www.w3.org/2000/svg" {...rest} className={`${className} w-full  h-full`}>
+  <svg
+    width="1.5em"
+    height="1.5em"
+    viewBox="0 0 20 9"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+    {...rest}
+    className={`${className} w-full  h-full`}
+  >
     <path
       d="M0.924805 8V-2.38419e-07H1.84668V2.95312H1.9248C1.99251 2.84896 2.08626 2.71615 2.20605 2.55469C2.32845 2.39062 2.50293 2.24479 2.72949 2.11719C2.95866 1.98698 3.26855 1.92188 3.65918 1.92188C4.16439 1.92188 4.6097 2.04818 4.99512 2.30078C5.38053 2.55339 5.68132 2.91146 5.89746 3.375C6.11361 3.83854 6.22168 4.38542 6.22168 5.01563C6.22168 5.65104 6.11361 6.20182 5.89746 6.66797C5.68132 7.13151 5.38184 7.49089 4.99902 7.74609C4.61621 7.9987 4.1748 8.125 3.6748 8.125C3.28939 8.125 2.98079 8.0612 2.74902 7.93359C2.51725 7.80339 2.33887 7.65625 2.21387 7.49219C2.08887 7.32552 1.99251 7.1875 1.9248 7.07812H1.81543V8H0.924805ZM1.83105 5C1.83105 5.45312 1.89746 5.85286 2.03027 6.19922C2.16309 6.54297 2.3571 6.8125 2.6123 7.00781C2.86751 7.20052 3.18001 7.29688 3.5498 7.29688C3.93522 7.29688 4.25684 7.19531 4.51465 6.99219C4.77507 6.78646 4.97038 6.51042 5.10059 6.16406C5.2334 5.8151 5.2998 5.42708 5.2998 5C5.2998 4.57812 5.2347 4.19792 5.10449 3.85937C4.97689 3.51823 4.78288 3.2487 4.52246 3.05078C4.26465 2.85026 3.94043 2.75 3.5498 2.75C3.1748 2.75 2.8597 2.84505 2.60449 3.03516C2.34928 3.22266 2.15658 3.48568 2.02637 3.82422C1.89616 4.16016 1.83105 4.55208 1.83105 5ZM7.42871 6.35937V5.5625L10.9443 -2.38419e-07H11.5225V1.23438H11.1318L8.47559 5.4375V5.5H13.21V6.35937H7.42871ZM11.1943 8V6.11719V5.74609V-2.38419e-07H12.1162V8H11.1943ZM16.4551 8.14063C16.0749 8.14063 15.7298 8.06901 15.4199 7.92578C15.11 7.77995 14.8639 7.57031 14.6816 7.29688C14.4993 7.02083 14.4082 6.6875 14.4082 6.29687C14.4082 5.95312 14.4759 5.67448 14.6113 5.46094C14.7467 5.24479 14.9277 5.07552 15.1543 4.95312C15.3809 4.83073 15.6309 4.73958 15.9043 4.67969C16.1803 4.61719 16.4577 4.56771 16.7363 4.53125C17.1009 4.48437 17.3965 4.44922 17.623 4.42578C17.8522 4.39974 18.0189 4.35677 18.123 4.29687C18.2298 4.23698 18.2832 4.13281 18.2832 3.98437V3.95312C18.2832 3.56771 18.1777 3.26823 17.9668 3.05469C17.7585 2.84115 17.4421 2.73437 17.0176 2.73437C16.5775 2.73437 16.2324 2.83073 15.9824 3.02344C15.7324 3.21615 15.5566 3.42187 15.4551 3.64062L14.5801 3.32812C14.7363 2.96354 14.9447 2.67969 15.2051 2.47656C15.4681 2.27083 15.7546 2.1276 16.0645 2.04687C16.377 1.96354 16.6842 1.92188 16.9863 1.92188C17.179 1.92188 17.4004 1.94531 17.6504 1.99219C17.903 2.03646 18.1465 2.12891 18.3809 2.26953C18.6178 2.41016 18.8145 2.6224 18.9707 2.90625C19.127 3.1901 19.2051 3.57031 19.2051 4.04688V8H18.2832V7.1875H18.2363C18.1738 7.31771 18.0697 7.45703 17.9238 7.60547C17.778 7.75391 17.584 7.88021 17.3418 7.98437C17.0996 8.08854 16.804 8.14063 16.4551 8.14063ZM16.5957 7.3125C16.9603 7.3125 17.2676 7.24089 17.5176 7.09766C17.7702 6.95443 17.9603 6.76953 18.0879 6.54297C18.2181 6.31641 18.2832 6.07812 18.2832 5.82812V4.98437C18.2441 5.03125 18.1582 5.07422 18.0254 5.11328C17.8952 5.14974 17.7441 5.18229 17.5723 5.21094C17.403 5.23698 17.2376 5.26042 17.0762 5.28125C16.9173 5.29948 16.7884 5.3151 16.6895 5.32812C16.4499 5.35937 16.2259 5.41016 16.0176 5.48047C15.8118 5.54818 15.6452 5.65104 15.5176 5.78906C15.3926 5.92448 15.3301 6.10937 15.3301 6.34375C15.3301 6.66406 15.4486 6.90625 15.6855 7.07031C15.9251 7.23177 16.2285 7.3125 16.5957 7.3125Z"
-      fill="white"
+      fill=""
     />
   </svg>
 );
@@ -142,14 +150,7 @@ export const LinkedInIcon = ({ className, ...rest }) => (
   </svg>
 );
 export const TwitterIcon = ({ className, ...rest }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 256 209"
-    {...rest}
-    className={`w-full h-auto ${className}`}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 209" {...rest} className={`w-full h-auto ${className}`}>
     <path fill="none" d="M0 0h256v209H0z" />
     <path
       fill="#55acee"
@@ -159,14 +160,7 @@ export const TwitterIcon = ({ className, ...rest }) => (
 );
 
 export const PinterestIcon = ({ className, ...rest }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 256 256"
-    {...rest}
-    className={`w-full h-auto ${className}`}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256" {...rest} className={`w-full h-auto ${className}`}>
     <path fill="none" d="M0 0h256v256H0z" />
     <path
       fill="#CB1F27"
@@ -176,19 +170,9 @@ export const PinterestIcon = ({ className, ...rest }) => (
 );
 
 export const DribbbleIcon = ({ className, ...rest }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    viewBox="0 0 256 256"
-    {...rest}
-    className={`w-full h-auto ${className}`}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256" {...rest} className={`w-full h-auto ${className}`}>
     <path fill="none" d="M0 0h256v256H0z" />
-    <path
-      fill="#E74D89"
-      d="M128 8.5c66 0 119.4 53.4 119.4 119.3S194 247.2 128 247.2 8.6 193.8 8.6 127.9 62 8.5 128 8.5Z"
-    />
+    <path fill="#E74D89" d="M128 8.5c66 0 119.4 53.4 119.4 119.3S194 247.2 128 247.2 8.6 193.8 8.6 127.9 62 8.5 128 8.5Z" />
     <path
       fill="#B2215A"
       d="M128 255.7c-70.6 0-128-57.3-128-127.8C0 57.3 57.4 0 128 0s128 57.3 128 127.8-57.4 127.9-128 127.9Zm107.9-110.4c-3.7-1.2-33.8-10.1-68.1-4.7 14.3 39.2 20.1 71.2 21.2 77.8 24.6-16.5 42.1-42.7 46.9-73.1Zm-65.2 83.2c-1.6-9.6-8-43-23.3-82.8-.2.1-.5.2-.7.2-61.7 21.5-83.8 64.2-85.8 68.2 18.5 14.4 41.8 23 67.1 23 15.1.1 29.6-3 42.7-8.6ZM46.8 201c2.5-4.2 32.5-53.8 88.9-72.1 1.4-.5 2.9-.9 4.3-1.3-2.7-6.2-5.7-12.4-8.9-18.5-54.6 16.3-107.6 15.6-112.4 15.5 0 1.1-.1 2.2-.1 3.3.1 28.1 10.7 53.7 28.2 73.1ZM21 105.6c4.9.1 49.9.3 101.1-13.3C104 60.1 84.4 33.1 81.6 29.2 50.9 43.6 28.1 71.8 21 105.6Zm81.4-83.8c3 4 22.9 31 40.8 63.9 38.9-14.6 55.3-36.6 57.3-39.4-19.3-17.1-44.7-27.5-72.5-27.5-8.8 0-17.4 1.1-25.6 3Zm110.2 37.1c-2.3 3.1-20.6 26.6-61 43.1 2.5 5.2 5 10.5 7.3 15.8.8 1.9 1.6 3.8 2.4 5.6 36.4-4.6 72.5 2.8 76.1 3.5-.3-25.7-9.5-49.4-24.8-68Z"
@@ -197,14 +181,7 @@ export const DribbbleIcon = ({ className, ...rest }) => (
 );
 
 export const SunIcon = ({ className, ...rest }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    {...rest}
-    className={`w-full h-auto ${className}`}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" {...rest} className={`w-full h-auto ${className}`}>
     <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
       <g strokeDasharray="2">
         <path d="M12 21v1M21 12h1M12 3v-1M3 12h-1">
@@ -310,24 +287,11 @@ export const SunIcon = ({ className, ...rest }) => (
 );
 
 export const MoonIcon = ({ className, ...rest }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="24"
-    height="24"
-    viewBox="0 0 24 24"
-    {...rest}
-    className={`w-full h-auto ${className}`}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" {...rest} className={`w-full h-auto ${className}`}>
     <rect x="0" y="0" width="24" height="24" fill="rgba(255, 255, 255, 0)" />
     <g fill="none" stroke="currentColor" strokeDasharray="2" strokeDashoffset="2" strokeLinecap="round" strokeWidth="2">
       <path d="M0 0">
-        <animate
-          fill="freeze"
-          attributeName="d"
-          begin="1.2s"
-          dur="0.2s"
-          values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1"
-        />
+        <animate fill="freeze" attributeName="d" begin="1.2s" dur="0.2s" values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1" />
         <animate fill="freeze" attributeName="stroke-dashoffset" begin="1.2s" dur="0.2s" values="2;0" />
       </path>
       <path d="M0 0">
@@ -340,13 +304,7 @@ export const MoonIcon = ({ className, ...rest }) => (
         />
         <animate fill="freeze" attributeName="stroke-dashoffset" begin="1.5s" dur="1.2s" values="2;0" />
       </path>
-      <animateTransform
-        attributeName="transform"
-        dur="30s"
-        repeatCount="indefinite"
-        type="rotate"
-        values="0 12 12;360 12 12"
-      />
+      <animateTransform attributeName="transform" dur="30s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12" />
     </g>
     <g fill="currentColor">
       <path d="M15.22 6.03L17.75 4.09L14.56 4L13.5 1L12.44 4L9.25 4.09L11.78 6.03L10.87 9.09L13.5 7.28L16.13 9.09L15.22 6.03Z">
@@ -373,14 +331,7 @@ export const MoonIcon = ({ className, ...rest }) => (
         <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="10;1" />
       </circle>
     </mask>
-    <circle
-      cx="12"
-      cy="12"
-      r="10"
-      fill="currentColor"
-      mask="url(#lineMdMoonFilledToSunnyFilledLoopTransition0)"
-      opacity="0"
-    >
+    <circle cx="12" cy="12" r="10" fill="currentColor" mask="url(#lineMdMoonFilledToSunnyFilledLoopTransition0)" opacity="0">
       <set attributeName="opacity" begin="0.6s" to="1" />
       <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="10;6" />
     </circle>
@@ -388,14 +339,7 @@ export const MoonIcon = ({ className, ...rest }) => (
 );
 
 export const LinkArrow = ({ className, ...rest }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width={24}
-    height={24}
-    viewBox="0 0 24 24"
-    className={`w-full h-auto ${className}`}
-    {...rest}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" className={`w-full h-auto ${className}`} {...rest}>
     <path fill="none" d="M0 0h24v24H0z" />
     <path
       fill="none"
