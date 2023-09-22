@@ -1,8 +1,8 @@
 import * as React from "react";
 export const B4a = ({ className, ...rest }) => (
   <svg
-    width="1.5em"
-    height="1.5em"
+    width="32px"
+    height="32px"
     viewBox="0 0 20 9"
     fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
@@ -18,8 +18,8 @@ export const B4a = ({ className, ...rest }) => (
 export const SocialIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="1.5em"
-    height="1.5em"
+    width="32px"
+    height="32px"
     viewBox="0 0 256 256"
     fill="currentColor"
     {...rest}
@@ -58,8 +58,8 @@ export const LinkIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     fill="currentColor"
-    width="1.5em"
-    height="1.5em"
+    width="32px"
+    height="32px"
     viewBox="0 0 32 32"
     version="1.1"
     {...rest}
@@ -72,8 +72,8 @@ export const AlibabaCloudIcon = ({ className, ...rest }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="-22.98 -3.25 64 64"
-    width="1.5em"
-    height="1.5em"
+    width="32px"
+    height="32px"
     fill="currentColor"
     {...rest}
     className={`${className} w-full h-full`}
@@ -85,8 +85,8 @@ export const ResumeIcon = ({ className, ...rest }) => (
   <svg
     version="1.0"
     xmlns="http://www.w3.org/2000/svg"
-    width="1.5em"
-    height="1.5em"
+    width="32px"
+    height="32px"
     viewBox="0 0 512.000000 512.000000"
     preserveAspectRatio="xMidYMid meet"
     {...rest}
@@ -105,8 +105,8 @@ export const MailIcon = ({ className, ...rest }) => (
     role="img"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
-    height="1.5em"
-    width="1.5em"
+    height="32px"
+    width="32px"
     {...rest}
     className={`w-full h-auto ${className}`}
   >
@@ -121,8 +121,8 @@ export const GithubIcon = ({ className, ...rest }) => (
     role="img"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
-    height="1.5em"
-    width="1.5em"
+    height="32px"
+    width="32px"
     {...rest}
     className={`w-full h-auto ${className}`}
   >
@@ -138,8 +138,8 @@ export const LinkedInIcon = ({ className, ...rest }) => (
     role="img"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
-    height="1.5em"
-    width="1.5em"
+    height="32px"
+    width="32px"
     {...rest}
     className={`w-full h-auto ${className}`}
   >

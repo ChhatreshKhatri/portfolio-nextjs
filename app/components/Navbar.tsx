@@ -6,6 +6,7 @@ import { GithubIcon, LinkedInIcon, MailIcon } from "./icons";
 import { usePathname } from "next/navigation";
 import ThemeButton from "./ThemeButton";
 import chhatresh from "@/app/assets/chhatresh_khatri.svg";
+import { SiLinkedin} from 'react-icons/si'
 
 const CustomLink = ({ href, title, className = "" }: { href: string; title: string; className?: string }) => {
   const path = usePathname();
@@ -46,12 +47,7 @@ const Navbar = () => {
           scrolled ? " py-2 shadow-bottom bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md" : "py-3"
         } hidden  lg:flex w-full font-medium  align-center justify-between fixed lg:px-20 transition-navBar duration-200 ease-in-out z-10`}
       >
-        <Link
-          title="Chhatresh Khatri"
-          aria-label="Chhatresh Khatri"
-          href={"/"}
-          className="flex justify-center items-center"
-        >
+        <Link title="Chhatresh Khatri" aria-label="Chhatresh Khatri" href={"/"} className="flex justify-center items-center">
           <Image src={chhatresh} alt="Chhatresh Khatri" />
         </Link>
         <div className="flex items-center justify-center text-xl font-semibold">
@@ -59,7 +55,7 @@ const Navbar = () => {
           <CustomLink href={"/about"} title={"About"} className="mx-4" />
           <CustomLink href={"/projects"} title={"Projects"} className="ml-4" />
         </div>
-        <div className={`flex`}>
+        <div className={`flex items-center justify-center`}>
           <Link
             title="Github"
             aria-label="Github"
@@ -68,7 +64,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8"
           >
-            <GithubIcon width={32} className="" />
+            <GithubIcon className="w-8" />
           </Link>
           <Link
             title="LinkedIn"
@@ -78,7 +74,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
           >
-            <LinkedInIcon width={32} className={``} />
+            <SiLinkedin title={"Linkedin"} size={32} className={`w-8`} />
           </Link>
           <Link
             title="Mail"
@@ -88,7 +84,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
           >
-            <MailIcon width={32} className="" />
+            <MailIcon className="w-8" />
           </Link>
           <ThemeButton />
         </div>
@@ -140,7 +136,7 @@ const Navbar = () => {
           <CustomLink href={"/"} title={"Home"} className={""} />
           <CustomLink href={"/about"} title={"About"} className={""} />
           <CustomLink href={"/projects"} title={"Projects"} className={""} />
-          <div className={`flex items-center justify-center flex-wrap my-2`}>
+          <div className={`flex items-center justify-center whitespace-nowrap my-2`}>
             <Link
               title="Github"
               aria-label="Github"
@@ -149,7 +145,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 h-8"
             >
-              <GithubIcon width={32} className={""} />
+              <GithubIcon className={"w-8"} />
             </Link>
             <Link
               title="LinkedIn"
@@ -159,7 +155,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8"
             >
-              <LinkedInIcon width={32} className={``} />
+              <LinkedInIcon className={`w-8`} />
             </Link>
             <Link
               title="Mail"
@@ -169,7 +165,7 @@ const Navbar = () => {
               rel="noopener noreferrer"
               className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8"
             >
-              <MailIcon width={32} className={""} />
+              <MailIcon className={"w-8"} />
             </Link>
             <ThemeButton />
           </div>

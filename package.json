@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@icons-pack/react-simple-icons": "^9.0.0",
     "@types/node": "20.6.3",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
@@ -21,6 +20,7 @@
     "postcss": "8.4.30",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.11.0",
     "sharp": "^0.32.6",
     "tailwindcss": "3.3.3",
     "typescript": "5.2.2",
