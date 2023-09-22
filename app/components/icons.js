@@ -287,7 +287,7 @@ export const SunIcon = ({ className, ...rest }) => (
 );
 
 export const MoonIcon = ({ className, ...rest }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" {...rest} className={` ${className}`}>
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" {...rest} className={` ${className}`}>
     <rect x="0" y="0" width="24" height="24" fill="rgba(255, 255, 255, 0)" />
     <g fill="none" stroke="currentColor" strokeDasharray="2" strokeDashoffset="2" strokeLinecap="round" strokeWidth="2">
       <path d="M0 0">

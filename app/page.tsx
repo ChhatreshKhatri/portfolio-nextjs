@@ -1,7 +1,6 @@
 import Image from "next/image";
 import chhatresh_banner from "./assets/chhatresh khatri.webp";
 import { ResumeIcon, SocialIcon } from "./components/icons";
-import {BsFillPersonVcardFill} from 'react-icons/bs'
 import Link from "next/link";
 import Typewriter from "./components/Typewriter";
 import FaviconVisibilityChange from "./components/FaviconVisibilityChange";
