@@ -36,9 +36,9 @@ export default function Home() {
                 <Link
                   href={`https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing`}
                   target="_blank"
-                  className="max-h-[42px] flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker"
+                  className="flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker"
                 >
-                  <ResumeIcon className="mr-2 w-8" />
+                  <ResumeIcon className="mr-2" />
                   Resume
                 </Link>
               </button>
@@ -48,7 +48,7 @@ export default function Home() {
                   target="_blank"
                   className="max-h-[42px] flex justify-center items-center py-1 px-2 rounded  whitespace-nowrap bg-lighter dark:bg-darker"
                 >
-                  <SocialIcon className="mr-2 w-8" />
+                  <SocialIcon className="mr-2" />
                   Social Links
                 </Link>
               </button>

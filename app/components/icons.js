@@ -23,7 +23,7 @@ export const SocialIcon = ({ className, ...rest }) => (
     viewBox="0 0 256 256"
     fill="currentColor"
     {...rest}
-    className={`w-full h-full ${className}`}
+    className={` ${className}`}
   >
     <path d="M140.892 228.625L151.938 222.108L140.892 215.592V228.625Z" fill="" />
     <path
@@ -63,7 +63,7 @@ export const LinkIcon = ({ className, ...rest }) => (
     viewBox="0 0 32 32"
     version="1.1"
     {...rest}
-    className={`${className} h-full w-full`}
+    className={`${className} `}
   >
     <path d="M10.406 13.406l2.5-2.531c0.219-0.219 0.469-0.5 0.719-0.813 0.25-0.281 0.531-0.531 0.813-0.75 0.531-0.469 1.156-0.875 1.938-0.875 0.688 0 1.281 0.313 1.719 0.719s0.688 1 0.688 1.688c0 0.281-0.031 0.594-0.125 0.813-0.219 0.438-0.406 0.75-0.594 1-0.094 0.125-0.188 0.25-0.188 0.375 0 0.094 0 0.188 0.063 0.219 0.344 0.844 0.594 1.563 0.75 2.438 0.094 0.344 0.281 0.5 0.594 0.5 0.125 0 0.25-0.031 0.375-0.125 0.25-0.156 0.469-0.406 0.688-0.656 0.125-0.125 0.219-0.25 0.281-0.313 1.125-1.094 1.781-2.656 1.781-4.25 0-1.688-0.688-3.188-1.781-4.281-1.094-1.063-2.625-1.781-4.25-1.781s-3.188 0.656-4.281 1.813l-4.281 4.25c-1.125 1.156-1.75 2.656-1.75 4.25 0 0.469 0.188 1.438 0.5 2.344 0.313 0.875 0.719 1.656 1.25 1.656 0.281 0 0.875-0.469 1.375-1s1-1.125 1-1.344c0-0.156-0.125-0.344-0.25-0.625-0.156-0.281-0.219-0.625-0.219-1.031 0-0.625 0.25-1.25 0.688-1.688zM10.313 25.406l4.281-4.25c1.125-1.094 1.75-2.688 1.75-4.281 0-0.469-0.188-1.406-0.5-2.313-0.281-0.875-0.719-1.688-1.25-1.688-0.219 0-0.875 0.5-1.344 1.031-0.531 0.531-1.031 1.094-1.031 1.313 0 0.156 0.094 0.406 0.25 0.656 0.156 0.281 0.281 0.594 0.281 1-0.031 0.625-0.281 1.25-0.719 1.75l-2.531 2.5c-0.219 0.25-0.469 0.5-0.719 0.781l-0.781 0.781c-0.531 0.5-1.188 0.844-1.969 0.844-1.313 0-2.375-1.031-2.375-2.375 0-0.313 0.063-0.594 0.156-0.813 0.188-0.438 0.375-0.75 0.594-1 0.094-0.125 0.125-0.25 0.125-0.344 0-0.063-0.031-0.125-0.063-0.25-0.375-0.844-0.594-1.563-0.75-2.438-0.063-0.156-0.094-0.281-0.188-0.344-0.094-0.125-0.25-0.156-0.406-0.156-0.125 0-0.219 0.031-0.344 0.125-0.25 0.156-0.5 0.406-0.719 0.656-0.094 0.125-0.219 0.219-0.281 0.281-1.125 1.125-1.781 2.688-1.781 4.281 0 1.656 0.656 3.188 1.781 4.281 1.094 1.094 2.594 1.75 4.25 1.75 1.625 0 3.188-0.625 4.281-1.781z" />
   </svg>
@@ -76,7 +76,7 @@ export const AlibabaCloudIcon = ({ className, ...rest }) => (
     height="32px"
     fill="currentColor"
     {...rest}
-    className={`${className} w-full h-full`}
+    className={`${className} `}
   >
     <path d="M-14.278 9.1c-2.917.6-6.05 2.93-7.352 5.484s-1.35 3.182-1.35 13.933c0 5.737.096 10.462.24 11.2.856 4.376 4.278 7.798 8.654 8.654 1.326.24 18.585.362 18.585.096 0-.193-1.47-5.978-1.543-6.05-.024-.048-3.086-.723-6.798-1.52-8.654-1.88-8.4-1.808-9.112-2.676l-.627-.747v-17.5l.627-.76c.723-.868.458-.795 9.112-2.676l6.798-1.52C3.03 14.968 4.5 9.182 4.5 9c0-.23-17.62-.12-18.778.12zm27.938.036c.024.434 1.374 5.737 1.52 5.882.048.072 3.35.82 7.304 1.663s7.473 1.7 7.786 1.88c.424.246.78.594 1.037 1.012.386.675.434 1.398.434 9.16s-.048 8.485-.434 9.16a3.17 3.17 0 0 1-1.037 1.012c-.313.17-3.8 1.012-7.786 1.88L15.18 42.46c-.145.145-1.495 5.448-1.52 5.882 0 .265 1.736.313 9.353.24 10.5-.096 10.63-.12 13.306-1.928 1.922-1.323 3.374-3.222 4.146-5.424.554-1.615.554-1.76.554-12.487s0-10.872-.554-12.487a11.01 11.01 0 0 0-4.146-5.424C33.643 9.026 33.523 9 23.013 8.905c-7.617-.072-9.353-.036-9.353.24zM2.9 28.238a1.74 1.74 0 0 0-.048.795c.072.4.506.434 6.17.506l6.075.048V27.9H9.08c-5.038 0-6.075.048-6.17.337z" />
   </svg>
@@ -90,7 +90,7 @@ export const ResumeIcon = ({ className, ...rest }) => (
     viewBox="0 0 512.000000 512.000000"
     preserveAspectRatio="xMidYMid meet"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={` ${className}`}
   >
     <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
       <path d="M1052 4955 c-228 -50 -407 -241 -442 -472 -7 -46 -10 -689 -8 -1968 l3 -1900 27 -74 c63 -173 197 -306 367 -364 l66 -22 1462 -3 c1625 -3 1542 -6 1681 64 130 66 236 192 283 336 l24 73 0 1935 0 1935 -24 73 c-64 196 -229 346 -426 387 -101 21 -2916 21 -3013 0z m2974 -300 c64 -19 127 -73 162 -139 l27 -51 0 -1905 0 -1905 -27 -51 c-35 -66 -98 -120 -162 -139 -75 -22 -2857 -22 -2932 0 -64 19 -127 73 -162 139 l-27 51 0 1905 0 1905 27 51 c34 64 98 120 158 139 70 21 2864 22 2936 0z" />
@@ -108,7 +108,7 @@ export const MailIcon = ({ className, ...rest }) => (
     height="32px"
     width="32px"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={` ${className}`}
   >
     <path
       fill="currentColor"
@@ -124,7 +124,7 @@ export const GithubIcon = ({ className, ...rest }) => (
     height="32px"
     width="32px"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={` ${className}`}
   >
     <path
       fill="currentColor"
@@ -141,7 +141,7 @@ export const LinkedInIcon = ({ className, ...rest }) => (
     height="32px"
     width="32px"
     {...rest}
-    className={`w-full h-auto ${className}`}
+    className={` ${className}`}
   >
     <path
       fill="currentColor"
@@ -150,7 +150,7 @@ export const LinkedInIcon = ({ className, ...rest }) => (
   </svg>
 );
 export const TwitterIcon = ({ className, ...rest }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 209" {...rest} className={`w-full h-auto ${className}`}>
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 209" {...rest} className={` ${className}`}>
     <path fill="none" d="M0 0h256v209H0z" />
     <path
       fill="#55acee"
@@ -160,7 +160,7 @@ export const TwitterIcon = ({ className, ...rest }) => (
 );
 
 export const PinterestIcon = ({ className, ...rest }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256" {...rest} className={`w-full h-auto ${className}`}>
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256" {...rest} className={` ${className}`}>
     <path fill="none" d="M0 0h256v256H0z" />
     <path
       fill="#CB1F27"
@@ -170,7 +170,7 @@ export const PinterestIcon = ({ className, ...rest }) => (
 );
 
 export const DribbbleIcon = ({ className, ...rest }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256" {...rest} className={`w-full h-auto ${className}`}>
+  <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 256 256" {...rest} className={` ${className}`}>
     <path fill="none" d="M0 0h256v256H0z" />
     <path fill="#E74D89" d="M128 8.5c66 0 119.4 53.4 119.4 119.3S194 247.2 128 247.2 8.6 193.8 8.6 127.9 62 8.5 128 8.5Z" />
     <path
@@ -181,7 +181,7 @@ export const DribbbleIcon = ({ className, ...rest }) => (
 );
 
 export const SunIcon = ({ className, ...rest }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" {...rest} className={`w-full h-auto ${className}`}>
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" {...rest} className={` ${className}`}>
     <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
       <g strokeDasharray="2">
         <path d="M12 21v1M21 12h1M12 3v-1M3 12h-1">
@@ -287,7 +287,7 @@ export const SunIcon = ({ className, ...rest }) => (
 );
 
 export const MoonIcon = ({ className, ...rest }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" {...rest} className={`w-full h-auto ${className}`}>
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" {...rest} className={` ${className}`}>
     <rect x="0" y="0" width="24" height="24" fill="rgba(255, 255, 255, 0)" />
     <g fill="none" stroke="currentColor" strokeDasharray="2" strokeDashoffset="2" strokeLinecap="round" strokeWidth="2">
       <path d="M0 0">
@@ -339,7 +339,7 @@ export const MoonIcon = ({ className, ...rest }) => (
 );
 
 export const LinkArrow = ({ className, ...rest }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" className={`w-full h-auto ${className}`} {...rest}>
+  <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" className={` ${className}`} {...rest}>
     <path fill="none" d="M0 0h24v24H0z" />
     <path
       fill="none"
