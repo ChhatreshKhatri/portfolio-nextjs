@@ -6,7 +6,7 @@ import { GithubIcon, LinkedInIcon, MailIcon } from "./icons";
 import { usePathname } from "next/navigation";
 import ThemeButton from "./ThemeButton";
 import chhatresh from "@/app/assets/chhatresh_khatri.svg";
-import { SiLinkedin} from 'react-icons/si'
+import { SiGithub,SiLinkedin,SiGmail} from 'react-icons/si'
 
 const CustomLink = ({ href, title, className = "" }: { href: string; title: string; className?: string }) => {
   const path = usePathname();
@@ -57,14 +57,13 @@ const Navbar = () => {
         </div>
         <div className={`flex items-center justify-center`}>
           <Link
-            title="Github"
             aria-label="Github"
             href={"https://github.com/chhatreshkhatri"}
             target="_blank"
             rel="noopener noreferrer"
             className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8"
           >
-            <GithubIcon className="w-8" />
+            <SiGithub title={`GitHub`} size={32} className="w-8" />
           </Link>
           <Link
             title="LinkedIn"
@@ -74,17 +73,16 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
           >
-            <SiLinkedin title={"Linkedin"} size={32} className={`w-8`} />
+            <SiLinkedin title={`Linkedin`} size={32} className={`w-8`} />
           </Link>
           <Link
-            title="Mail"
             aria-label="Mail"
             href={"mailto:contact@chhatreshkhatri.com"}
             target="_blank"
             rel="noopener noreferrer"
             className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
           >
-            <MailIcon className="w-8" />
+            <SiGmail title={`Mail`} size={32} className="w-8" />
           </Link>
           <ThemeButton />
         </div>
@@ -138,34 +136,31 @@ const Navbar = () => {
           <CustomLink href={"/projects"} title={"Projects"} className={""} />
           <div className={`flex items-center justify-center whitespace-nowrap my-2`}>
             <Link
-              title="Github"
               aria-label="Github"
               href={"https://github.com/chhatreshkhatri"}
               target="_blank"
               rel="noopener noreferrer"
               className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 h-8"
             >
-              <GithubIcon className={"w-8"} />
+              <SiGithub title={`GitHub`} className={"w-8"} />
             </Link>
             <Link
-              title="LinkedIn"
               aria-label="LinkedIn"
               href={"https://www.linkedin.com/in/chhatreshkhatri/"}
               target="_blank"
               rel="noopener noreferrer"
               className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8"
             >
-              <LinkedInIcon className={`w-8`} />
+              <SiLinkedin title={`LinkedIn`} className={`w-8`} />
             </Link>
             <Link
-              title="Mail"
               aria-label="Mail"
               href={"mailto:contact@chhatreshkhatri.com"}
               target="_blank"
               rel="noopener noreferrer"
               className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8"
             >
-              <MailIcon className={"w-8"} />
+              <SiGmail title={`Mail`} className={"w-8"} />
             </Link>
             <ThemeButton />
           </div>
