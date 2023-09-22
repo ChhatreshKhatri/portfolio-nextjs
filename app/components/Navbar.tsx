@@ -63,7 +63,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8"
           >
-            <SiGithub title={`GitHub`} size={32} className="w-8" />
+            <SiGithub title={`GitHub`} size={32} className="" />
           </Link>
           <Link
             title="LinkedIn"
@@ -73,7 +73,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
           >
-            <SiLinkedin title={`Linkedin`} size={32} className={`w-8`} />
+            <SiLinkedin title={`Linkedin`} size={32} className={``} />
           </Link>
           <Link
             aria-label="Mail"
@@ -82,7 +82,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
             className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
           >
-            <SiGmail title={`Mail`} size={32} className="w-8" />
+            <SiGmail title={`Mail`} size={32} className="" />
           </Link>
           <ThemeButton />
         </div>
@@ -140,27 +140,27 @@ const Navbar = () => {
               href={"https://github.com/chhatreshkhatri"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110"
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8"
             >
-              <SiGithub title={`GitHub`} className={"w-8"} />
+              <SiGithub title={`GitHub`} size={32} className={""} />
             </Link>
             <Link
               aria-label="LinkedIn"
               href={"https://www.linkedin.com/in/chhatreshkhatri/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5"
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
             >
-              <SiLinkedin title={`LinkedIn`} className={`w-8`} />
+              <SiLinkedin title={`LinkedIn`} size={32} className={``} />
             </Link>
             <Link
               aria-label="Mail"
               href={"mailto:contact@chhatreshkhatri.com"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5"
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
             >
-              <SiGmail title={`Mail`} className={"w-8"} />
+              <SiGmail title={`Mail`} size={32} className={""} />
             </Link>
             <ThemeButton />
           </div>

@@ -19,10 +19,10 @@ const ThemeButton = () => {
       type="button"
       className={`${
         resolvedTheme === "dark" ? " text-light" : " text-dark"
-      } flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5`}
+      } flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 ml-5 w-8`}
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
     >
-      {resolvedTheme === "dark" ? <SunIcon className={`fill-dark w-8`} /> : <MoonIcon className={`fill-dark w-8`} />}
+      {resolvedTheme === "dark" ? <SunIcon className={`fill-dark`} /> : <MoonIcon className={`fill-dark`} />}
     </button>
   );
 };

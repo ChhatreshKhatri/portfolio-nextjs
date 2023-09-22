@@ -181,7 +181,7 @@ export const DribbbleIcon = ({ className, ...rest }) => (
 );
 
 export const SunIcon = ({ className, ...rest }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" {...rest} className={`w-full h-auto ${className}`}>
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" {...rest} className={`w-full h-auto ${className}`}>
     <g fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
       <g strokeDasharray="2">
         <path d="M12 21v1M21 12h1M12 3v-1M3 12h-1">
