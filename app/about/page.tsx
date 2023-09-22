@@ -36,7 +36,7 @@ import {
   SiLinux,
   SiUbuntu,
   SiWindows11,
-} from "@icons-pack/react-simple-icons";
+} from "react-icons/si";
 
 import FaviconVisibilityChange from "@/app/components/FaviconVisibilityChange";
 
