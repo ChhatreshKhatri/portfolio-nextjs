@@ -131,11 +131,11 @@ const Navbar = () => {
             ></span>
           </button>
         </div>
-        <div className={`${navOpen ? "flex" : "hidden"} flex-col text-xl font-semibold items-center justify-center`}>
-          <CustomLink href={"/"} title={"Home"} className={""} />
-          <CustomLink href={"/about"} title={"About"} className={""} />
-          <CustomLink href={"/projects"} title={"Projects"} className={""} />
-          <div className={`flex items-center justify-center whitespace-nowrap my-2`}>
+        <div className={`${navOpen ? "flex" : "hidden"} flex-col font-semibold items-center justify-center  text-xl`}>
+          <CustomLink href={"/"} title={"Home"} className={"mx-auto"} />
+          <CustomLink href={"/about"} title={"About"} className={"mx-auto"} />
+          <CustomLink href={"/projects"} title={"Projects"} className={"mx-auto"} />
+          <div className={`flex items-center justify-center whitespace-nowrap my-2 mx-auto`}>
             <Link
               title={`GitHub`}
               aria-label="Github"
