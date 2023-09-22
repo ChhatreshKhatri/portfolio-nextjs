@@ -1,6 +1,7 @@
 import Image from "next/image";
 import chhatresh_banner from "./assets/chhatresh khatri.webp";
 import { ResumeIcon, SocialIcon } from "./components/icons";
+import {BsFillPersonVcardFill} from 'react-icons/bs'
 import Link from "next/link";
 import Typewriter from "./components/Typewriter";
 import FaviconVisibilityChange from "./components/FaviconVisibilityChange";
@@ -37,7 +38,7 @@ export default function Home() {
                   target="_blank"
                   className="max-h-[42px] flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker"
                 >
-                  <ResumeIcon height={32} width={32} className="mr-2 w-8" />
+                  <ResumeIcon className="mr-2 w-8" />
                   Resume
                 </Link>
               </button>
@@ -47,7 +48,7 @@ export default function Home() {
                   target="_blank"
                   className="max-h-[42px] flex justify-center items-center py-1 px-2 rounded  whitespace-nowrap bg-lighter dark:bg-darker"
                 >
-                  <SocialIcon height={32} width={32} className="mr-2 w-8" />
+                  <SocialIcon className="mr-2 w-8" />
                   Social Links
                 </Link>
               </button>

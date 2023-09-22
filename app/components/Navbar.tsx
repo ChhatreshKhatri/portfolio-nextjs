@@ -140,7 +140,7 @@ const Navbar = () => {
               href={"https://github.com/chhatreshkhatri"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 h-8"
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110"
             >
               <SiGithub title={`GitHub`} className={"w-8"} />
             </Link>
@@ -149,7 +149,7 @@ const Navbar = () => {
               href={"https://www.linkedin.com/in/chhatreshkhatri/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8"
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5"
             >
               <SiLinkedin title={`LinkedIn`} className={`w-8`} />
             </Link>
@@ -158,7 +158,7 @@ const Navbar = () => {
               href={"mailto:contact@chhatreshkhatri.com"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 h-8"
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5"
             >
               <SiGmail title={`Mail`} className={"w-8"} />
             </Link>
