@@ -1,1 +1,10 @@
-<svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"> <rect width="48" height="48" rx="3" fill="url(#paint0_linear_5_8)" /> <path d="M22.395 20.7416H17.085C16.815 18.6388 15.225 17.9005 13.26 17.9005C9.915 17.9005 8.295 20.4205 8.295 23.8876C8.295 27.2584 9.63 30.0995 13.125 30.0995C15.075 30.0995 16.875 29.3612 17.04 27.0498H22.485C22.26 32.6517 17.955 34 12.6 34C7.305 34 3 31.0947 3 24.0321C3 16.9053 7.11 14 13.425 14C17.955 14 22.305 15.7175 22.395 20.7416ZM25.935 33.4864V14.5136H31.08V22.8925L38.235 14.5136H44.445L36.705 23.0209L45 33.4864H38.34L31.125 23.7111H31.08V33.4864H25.935Z" fill="url(#paint1_linear_5_8)" /> <defs> <linearGradient id="paint0_linear_5_8" x1="0" y1="48" x2="48" y2="0" gradientUnits="userSpaceOnUse"> <stop /> <stop offset="1" stop-color="#191919" /> </linearGradient> <linearGradient id="paint1_linear_5_8" x1="8.5" y1="23.6308" x2="36.4999" y2="23.6308" gradientUnits="userSpaceOnUse"> <stop stop-color="#3048C1" /> <stop offset="1" stop-color="#FF4057" /> </linearGradient> </defs> </svg>
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="48" height="48" rx="3" fill="#0C0C0C"/>
+<path d="M22.395 20.7416H17.085C16.815 18.6388 15.225 17.9005 13.26 17.9005C9.915 17.9005 8.295 20.4205 8.295 23.8876C8.295 27.2584 9.63 30.0995 13.125 30.0995C15.075 30.0995 16.875 29.3612 17.04 27.0498H22.485C22.26 32.6517 17.955 34 12.6 34C7.305 34 3 31.0947 3 24.0321C3 16.9053 7.11 14 13.425 14C17.955 14 22.305 15.7175 22.395 20.7416ZM25.935 33.4864V14.5136H31.08V22.8925L38.235 14.5136H44.445L36.705 23.0209L45 33.4864H38.34L31.125 23.7111H31.08V33.4864H25.935Z" fill="url(#paint0_linear_48_2)"/>
+<defs>
+<linearGradient id="paint0_linear_48_2" x1="8.5" y1="23.6308" x2="36.4999" y2="23.6308" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3048C1"/>
+<stop offset="1" stop-color="#FF4057"/>
+</linearGradient>
+</defs>
+</svg>
