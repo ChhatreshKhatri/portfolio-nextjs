@@ -30,7 +30,7 @@ export default function Home() {
               self-motivated professional with strong interpersonal and communication skills, I&apos;m passionate about the
               latest tech trends. A quick learner and team player, I thrive on new opportunities and challenges.
             </p>
-            <div className="flex flex-wrap justify-center items-center text-md xxs:text-xl">
+            <div className="flex flex-wrap justify-center items-center space-x-4 text-md xxs:text-xl">
               <button className="flex items-center justify-center mt-10 p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
                 <Link
                   href={`https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing`}
@@ -41,7 +41,7 @@ export default function Home() {
                   Resume
                 </Link>
               </button>
-              <button className="flex items-center justify-center ml-4 mt-10 p-0.5 rounded bg-gradient-to-r from-darkCk to-lightCk">
+              <button className="flex items-center justify-center mt-10 p-0.5 rounded bg-gradient-to-r from-darkCk to-lightCk">
                 <Link
                   href={`https://social.chhatreshkhatri.com/`}
                   target="_blank"
