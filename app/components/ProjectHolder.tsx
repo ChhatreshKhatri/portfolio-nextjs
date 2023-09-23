@@ -1,7 +1,8 @@
 // use this to add external images -> https://nextjs.org/docs/messages/next-image-unconfigured-host
-import Image from "next/image";
+"use client"
 import Link from "next/link";
 import React from "react";
+import {CldImage} from "next-cloudinary";
 interface CustomProps {
   heading: string;
   subHeading: string;
@@ -39,7 +40,7 @@ const ProjectHolder: React.FC<CustomProps> = ({
             <h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold text-center">{heading}</h2>
             <h3 className="text-xl  xl:text-3xl font-semibold mt-4 text-center">{subHeading}</h3>
             <p className="text-xl mt-4 text-justify">{projectContent} </p>
-            <div className="mt-8 flex items-center justify-center space-x-4 text-md xxs:text-xl">
+            <div className="mt-4 flex items-center justify-center flex-wrap text-md xxs:text-xl">
               {link1 ? (
                 
                 <button className="flex items-center justify-center ml-4 mt-10 p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
@@ -77,7 +78,7 @@ const ProjectHolder: React.FC<CustomProps> = ({
           <div className="w-full h-full flex justify-center items-center relative">
             {/* Centered content in the second column */}
             <div className="w-full h-[300px] md:h-[350px] relative overflow-hidden rounded-2xl scroll-div xs:px-8">
-              <Image
+              <CldImage
                 title={heading}
                 priority
                 src={projectImage}

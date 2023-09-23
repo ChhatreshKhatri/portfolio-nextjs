@@ -1,9 +1,9 @@
-import Image from "next/image";
-import chhatresh_banner from "./assets/chhatresh khatri.webp";
+"use client";
 import { ResumeIcon, SocialIcon } from "./components/icons";
 import Link from "next/link";
 import Typewriter from "./components/Typewriter";
 import FaviconVisibilityChange from "./components/FaviconVisibilityChange";
+import { CldImage } from "next-cloudinary";
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
               self-motivated professional with strong interpersonal and communication skills, I&apos;m passionate about the
               latest tech trends. A quick learner and team player, I thrive on new opportunities and challenges.
             </p>
-            <div className="flex justify-center items-center  text-md xxs:text-xl">
+            <div className="flex flex-wrap justify-center items-center text-md xxs:text-xl">
               <button className="flex items-center justify-center mt-10 p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
                 <Link
                   href={`https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing`}
@@ -58,8 +58,10 @@ export default function Home() {
           {/* Content for the second column */}
           <div className="w-full h-full flex justify-center items-center py-5">
             {/* Centered content in the second column */}
-            <Image
-              src={chhatresh_banner}
+            <CldImage
+              width={480}
+              height={480}
+              src={`v1695488626/chhatresh_khatri_judigr.webp`}
               priority
               alt="Chhatresh Khatri Banner"
               className="w-[60%] xs:w-[50%] md:w-[35%] lg:w-[100%] xl:w-[80%] drop-shadow-2xl"
