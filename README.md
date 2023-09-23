@@ -14,8 +14,9 @@ This project was built using
 - Next.js
 - TailwindCSS
 - TypeScript
-- Typewriter-Effects
 - Next-themes
+- Typewriter-Effects
+- React-icons
 - VS Code
 
 <br/> 
