@@ -1,11 +1,9 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import { GithubIcon, LinkedInIcon, MailIcon } from "./icons";
+import { GithubIcon, LinkedInIcon, MailIcon, ChhatreshKhatri } from "./icons";
 import { usePathname } from "next/navigation";
 import ThemeButton from "./ThemeButton";
-import chhatresh from "@/app/assets/chhatresh_khatri.svg";
 
 const CustomLink = ({ href, title, className = "" }: { href: string; title: string; className?: string }) => {
   const path = usePathname();
@@ -43,60 +41,10 @@ const Navbar = () => {
     <header className={``}>
       <nav
         className={`${
-          scrolled ? " py-2 shadow-bottom bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md" : "py-3"
-        } hidden  lg:flex w-full font-medium  align-center justify-between fixed lg:px-20 transition-navBar duration-200 ease-in-out z-10`}
-      >
-        <Link title="Chhatresh Khatri" aria-label="Chhatresh Khatri" href={"/"} className="flex justify-center items-center">
-          <Image src={chhatresh} alt="Chhatresh Khatri" />
-        </Link>
-        <div className="flex items-center justify-center space-x-8 text-xl font-semibold">
-          <CustomLink href={"/"} title={"Home"} className="" />
-          <CustomLink href={"/about"} title={"About"} className="" />
-          <CustomLink href={"/projects"} title={"Projects"} className="" />
-        </div>
-        <div className={`flex items-center justify-center`}>
-          <Link
-            title={`GitHub`}
-            aria-label="Github"
-            href={"https://github.com/chhatreshkhatri"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8"
-          >
-            <GithubIcon size={32} className="" />
-          </Link>
-          <Link
-            title="LinkedIn"
-            aria-label="LinkedIn"
-            href={"https://www.linkedin.com/in/chhatreshkhatri/"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
-          >
-            <LinkedInIcon size={32} className={``} />
-          </Link>
-          <Link
-            title={`Mail`}
-            aria-label="Mail"
-            href={"mailto:contact@chhatreshkhatri.com"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
-          >
-            <MailIcon size={32} className="" />
-          </Link>
-          <ThemeButton />
-        </div>
-      </nav>
-
-      {/* mobile */}
-
-      <nav
-        className={`${
           navOpen || scrolled
-            ? "lg:hidden bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md shadow-bottom py-2 transition-navBar duration-200 ease-in-out"
+            ? " bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md shadow-bottom py-2 transition-navBar duration-200 ease-in-out"
             : "py-3"
-        } w-full flex flex-col items-center px-2 xxs:px-3 xs:px-6 md:px-12 fixed z-10 lg:hidden`}
+        } w-full flex flex-col items-center px-3 xs:px-6 md:px-12 lg:px-20 fixed z-10`}
       >
         <div className="flex justify-between w-full">
           <Link
@@ -105,8 +53,46 @@ const Navbar = () => {
             href={"/"}
             className="flex justify-center items-center"
           >
-            <Image src={chhatresh} alt="Chhatresh Khatri" />
+            <ChhatreshKhatri className={``} />
           </Link>
+          <div className="hidden lg:flex items-center justify-center space-x-8 text-xl font-semibold">
+            <CustomLink href={"/"} title={"Home"} className="" />
+            <CustomLink href={"/about"} title={"About"} className="" />
+            <CustomLink href={"/projects"} title={"Projects"} className="" />
+          </div>
+          <div className={`hidden lg:flex items-center justify-center`}>
+            <Link
+              title={`GitHub`}
+              aria-label="Github"
+              href={"https://github.com/chhatreshkhatri"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8"
+            >
+              <GithubIcon size={32} className="" />
+            </Link>
+            <Link
+              title="LinkedIn"
+              aria-label="LinkedIn"
+              href={"https://www.linkedin.com/in/chhatreshkhatri/"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
+            >
+              <LinkedInIcon size={32} className={``} />
+            </Link>
+            <Link
+              title={`Mail`}
+              aria-label="Mail"
+              href={"mailto:contact@chhatreshkhatri.com"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
+            >
+              <MailIcon size={32} className="" />
+            </Link>
+            <ThemeButton />
+          </div>
           <button
             aria-label="Toggle Menu"
             className={`flex-col justify-center items-center flex lg:hidden`}
@@ -131,7 +117,8 @@ const Navbar = () => {
             ></span>
           </button>
         </div>
-        <div className={`${navOpen ? "flex" : "hidden"} flex-col font-semibold items-center justify-center text-xl`}>
+        {/* Mobile  Nav items */}
+        <div className={`${navOpen ? "flex flex-col" : "hidden"} font-semibold items-center justify-center text-xl`}>
           <CustomLink href={"/"} title={"Home"} className={""} />
           <CustomLink href={"/about"} title={"About"} className={""} />
           <CustomLink href={"/projects"} title={"Projects"} className={""} />
