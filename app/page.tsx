@@ -61,7 +61,7 @@ export default function Home() {
             <CldImage
               width={480}
               height={480}
-              src={`v1695488626/chhatresh_khatri_judigr.webp`}
+              src={`v1695488626/portfolio/chhatresh_khatri_judigr.webp`}
               priority
               alt="Chhatresh Khatri Banner"
               className="w-[60%] xs:w-[50%] md:w-[35%] lg:w-[100%] xl:w-[80%] drop-shadow-2xl"

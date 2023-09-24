@@ -23,8 +23,8 @@ export default function Projects() {
         heading="Ramaa Creations"
         subHeading="An e-commerce Jewellery website"
         projectContent="Built using Alicms tool at Alibaba Cloud Low-Code Development Contest 2022. Achieved second position out of 2043 participants."
-        projectImage={`v1695546881/ramaa-creations_ivgpqa.webp`}
-        link1="https://www.alibabacloud.com/blog/project-showcase-%7C-ramaa-creations_598812"
+        projectImage={`v1695546881/portfolio/ramaa-creations_ivgpqa.webp`}
+        link1="https://www.alibabacloud.com/blog/598812"
         link1Icon={<AlibabaCloudIcon size={32} className={"mr-2 w-8"} />}
         link1Type="Blog Link"
         link2="https://www.alibabacloud.com/blog/598754"
@@ -37,7 +37,7 @@ export default function Projects() {
         heading="StackOverflow Clone"
         subHeading="A question-answer website with chatbot feature"
         projectContent="A popular online forum for programming-related questions and answers built using MERN Stack, and it features user authentication, a voting system for answers, and keyword-based question search."
-        projectImage={`v1695546880/stackoverflow-clone_rhd5ab.webp`}
+        projectImage={`v1695546880/portfolio/stackoverflow-clone_rhd5ab.webp`}
         link1="https://github.com/Chhatreshkhatri/stack-overflow-clone"
         link1Type="Github Link"
         link1Icon={<GithubIcon className={"mr-2 w-8"} />}
@@ -51,7 +51,7 @@ export default function Projects() {
         heading="Amazon Clone"
         subHeading="An e-commerce Jewellery website"
         projectContent="This project includes a range of features including user authentication, a shopping cart, product details page, payment processing and order history."
-        projectImage={`v1695547219/amazon-clone_earg9x.webp`}
+        projectImage={`v1695547219/portfolio/amazon-clone_earg9x.webp`}
         link1="https://github.com/Chhatreshkhatri/amazon-clone"
         link1Type="Github Link"
         link1Icon={<GithubIcon size={32} className={"mr-2 w-8"} />}
@@ -65,7 +65,7 @@ export default function Projects() {
         heading="MyChat"
         subHeading="An android chat application"
         projectContent="A simple Android chat app allows users to communicate with each other through text messages on their Android devices. The app typically features a user-friendly interface and easy-to-use chat functions."
-        projectImage={`v1695547501/MyChat_kd6uvo.webp`}
+        projectImage={`v1695547501/portfolio/MyChat_kd6uvo.webp`}
         link1="https://github.com/Chhatreshkhatri/MyChat"
         link1Type="Github Link"
         link1Icon={<GithubIcon className={"mr-2 w-8"} />}
