@@ -40,7 +40,7 @@ const ProjectHolder: React.FC<CustomProps> = ({
             <h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold text-center">{heading}</h2>
             <h3 className="text-xl  xl:text-3xl font-semibold mt-4 text-center">{subHeading}</h3>
             <p className="text-xl mt-4 text-justify">{projectContent} </p>
-            <div className="flex flex-wrap items-center justify-center mt-4 space-x-4 text-md xxs:text-xl">
+            <div className="flex flex-wrap items-center justify-center mt-4 space-x-2 xxs:space-x-4 text-md xxs:text-xl">
               {link1 ? (
                 
                 <button className="flex items-center justify-center mt-10 p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">

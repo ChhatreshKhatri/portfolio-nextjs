@@ -26,11 +26,12 @@ export default function Home() {
               <Typewriter />
             </h2>
             <p className="text-lg xs:text-xl mt-4 text-justify">
-              B.Tech in Computer Science & Engineering with skills in problem solving and web development. An enthusiastic,
-              self-motivated professional with strong interpersonal and communication skills, I&apos;m passionate about the
-              latest tech trends. A quick learner and team player, I thrive on new opportunities and challenges.
+              A Computer Science & Engineering graduate with a passion for problem-solving and web development. An
+              enthusiastic, self-motivated professional with strong interpersonal and communication skills, I&apos;m
+              passionate about the latest tech trends. A quick learner and team player, I thrive on new opportunities and
+              challenges.
             </p>
-            <div className="flex flex-wrap justify-center items-center space-x-4 text-md xxs:text-xl">
+            <div className="flex flex-wrap justify-center items-center space-x-2 xxs:space-x-4 text-md xxs:text-xl">
               <button className="flex items-center justify-center mt-10 p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
                 <Link
                   href={`https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing`}
