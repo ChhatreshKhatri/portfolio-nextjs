@@ -4,10 +4,9 @@ This portfolio website, meticulously crafted using Next.js, Tailwind CSS, and Ty
 
 Consistency is ensured across the site with a well-structured navigation menu, subtle animations, and optional dark mode. The website's SEO optimization, performance enhancements, and analytics integration make it a potent tool for showcasing the skills.
 
-<br/> 
+<br/>
 
 # Built With
-
 
 This project was built using
 
@@ -19,7 +18,7 @@ This project was built using
 - React-icons
 - VS Code
 
-<br/> 
+<br/>
 
 # Features
 
@@ -29,13 +28,13 @@ This project was built using
 
 **📱 Fully Responsive**
 
-<br/> 
+<br/>
 
 # Getting Started
 
 Clone down this repository. You will need `node.js` and `git` installed globally on your machine.
 
-<br/> 
+<br/>
 
 ## 🛠 Installation and Setup Instructions
 
@@ -47,7 +46,7 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.
 
-<br/> 
+<br/>
 
 First, run the development server:
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
@@ -76,6 +75,7 @@ Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment)
 <br>
 
 # 🖼️ Screenshots
+
 <div align="center" > 
   <img src="./app/assets/home dark.jpeg" width="49%">
   <img src="./app/assets/home light.jpeg" width="49%">
@@ -93,15 +93,14 @@ Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment)
 
 Share my portfolio ( https://www.chhatreshkhatri.com/ ) with your friends in just a click
 
-[![facebook](https://user-images.githubusercontent.com/6418354/179013321-ac1d1452-0689-493f-9066-940cf2302b6e.png)](https://www.facebook.com/sharer/sharer.php?u=https://www.chhatreshkhatri.com/)
-[![twitter](https://user-images.githubusercontent.com/6418354/179013351-7d8d6d1c-4ce2-46ab-bef8-4c4765a1b888.png)](https://twitter.com/intent/tweet?url=https://www.chhatreshkhatri.com/)
-[![whatsapp](https://user-images.githubusercontent.com/6418354/179013353-f477fa0b-3e6f-4138-a357-c9991b23ff88.png)](https://api.whatsapp.com/send?text=https://www.chhatreshkhatri.com/)
-[![linkedin](https://user-images.githubusercontent.com/6418354/179013327-ca7b7102-1da8-4b1c-858f-1a6e5f21bd70.png)](https://www.linkedin.com/shareArticle?mini=true&url=https://www.chhatreshkhatri.com/)
-[![pinterest](https://user-images.githubusercontent.com/6418354/179013331-44cd9206-11b1-4b65-becb-5863b61c828f.png)](https://pinterest.com/pin/create/button/?url=https://www.chhatreshkhatri.com/)
-[![reddit](https://user-images.githubusercontent.com/6418354/179013338-7416ae3f-73ba-4522-86e1-1374d7082d22.png)](https://www.reddit.com/submit?url=https://www.chhatreshkhatri.com/)
-[![pocket](https://user-images.githubusercontent.com/6418354/179013334-b095c45f-becf-49f4-9ee1-5a731a9b1f85.png)](https://getpocket.com/save?url=https://www.chhatreshkhatri.com/)
-[![tumblr](https://user-images.githubusercontent.com/6418354/179013343-3111f55a-3b90-40c7-8487-9777348672b0.png)](https://www.tumblr.com/share?v=3&u=https://www.chhatreshkhatri.com/)
+<a title="Facebook" href="mailto:?subject=Chhatresh Khatri | Portfolio&body=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/931465f32268d3f9f1c971ada3615fb8b91f6507/assets/gmail.svg" width="32px"/></a>
+<a title="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/8ffb973736e05a032047f2c5f6a0945f51c639d2/assets/facebook.svg" width="32px"/></a>
+<a title="X (Twitter)" href="https://twitter.com/intent/tweet?url=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/8ffb973736e05a032047f2c5f6a0945f51c639d2/assets/x.svg" width="32px"/></a>
+<a title="Whatsapp" href="https://api.whatsapp.com/send?text=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/8ffb973736e05a032047f2c5f6a0945f51c639d2/assets/whatsapp.svg" width="32px"/></a>
+<a title="LinkedIn" href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/8ffb973736e05a032047f2c5f6a0945f51c639d2/assets/linkedin.svg" width="32px"/></a>
+<a title="Pinterest" href="https://pinterest.com/pin/create/button/?url=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/8ffb973736e05a032047f2c5f6a0945f51c639d2/assets/pinterest.svg" width="32px"/></a>
+<a title="Reddit" href="https://www.reddit.com/submit?url=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/8ffb973736e05a032047f2c5f6a0945f51c639d2/assets/reddit.svg" width="32px"/></a>
+<a title="Pocket" href="https://getpocket.com/save?url=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/8ffb973736e05a032047f2c5f6a0945f51c639d2/assets/getpocket.svg" width="32px"/></a>
+<a title="Tumblr" href="https://www.tumblr.com/share?v=3&u=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/8ffb973736e05a032047f2c5f6a0945f51c639d2/assets/tumblr.svg" width="32px"/></a>
 
 </div>
-
-
