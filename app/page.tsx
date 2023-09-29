@@ -4,7 +4,6 @@ import Link from "next/link";
 import Typewriter from "./components/Typewriter";
 import FaviconVisibilityChange from "./components/FaviconVisibilityChange";
 import { CldImage } from "next-cloudinary";
-
 export default function Home() {
   return (
     <main className="w-full h-full flex flex-col  font-medium px-3 xs:px-6 md:px-12 lg:px-20 py-20">
@@ -26,30 +25,25 @@ export default function Home() {
               <Typewriter />
             </h2>
             <p className="text-lg xs:text-xl mt-4 text-justify">
-              A Computer Science & Engineering graduate with a passion for problem-solving and web development. An
-              enthusiastic, self-motivated professional with strong interpersonal and communication skills, I&apos;m
-              passionate about the latest tech trends. A quick learner and team player, I thrive on new opportunities and
-              challenges.
+              A Computer Science & Engineering graduate with a passion for problem-solving and web development. An enthusiastic, self-motivated
+              professional with strong interpersonal and communication skills, I&apos;m passionate about the latest tech trends. A quick learner and
+              team player, I thrive on new opportunities and challenges.
             </p>
             <div className="flex flex-wrap justify-center items-center space-x-2 xxs:space-x-4 text-md xxs:text-xl">
               <button className="flex items-center justify-center mt-10 p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
                 <Link
                   href={`https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing`}
                   target="_blank"
-                  className="flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker"
-                >
-                  <ResumeIcon className="mr-2" />
-                  Resume
+                  className="flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker">
+                  <ResumeIcon className="mr-2" /> Resume
                 </Link>
               </button>
               <button className="flex items-center justify-center mt-10 p-0.5 rounded bg-gradient-to-r from-darkCk to-lightCk">
                 <Link
                   href={`https://social.chhatreshkhatri.com/`}
                   target="_blank"
-                  className="max-h-[42px] flex justify-center items-center py-1 px-2 rounded  whitespace-nowrap bg-lighter dark:bg-darker"
-                >
-                  <SocialIcon className="mr-2" />
-                  Social Links
+                  className="flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker">
+                  <SocialIcon className="mr-2" /> Social Links
                 </Link>
               </button>
             </div>
