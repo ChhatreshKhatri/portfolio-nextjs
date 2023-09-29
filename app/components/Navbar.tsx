@@ -13,8 +13,7 @@ const CustomLink = ({ href, title, className = "" }: { href: string; title: stri
       <span
         className={`${
           path === href ? "w-full" : "w-0"
-        } absolute h-0.5 bg-gradient-to-r from-darkCk to-lightCk bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}
-      ></span>
+        } absolute h-0.5 bg-gradient-to-r from-darkCk to-lightCk bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}></span>
     </Link>
   );
 };
@@ -44,15 +43,9 @@ const Navbar = () => {
           navOpen || scrolled
             ? " bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md shadow-bottom py-2 transition-navBar duration-200 ease-in-out"
             : "py-3"
-        } w-full flex flex-col items-center px-3 xs:px-6 md:px-12 lg:px-20 fixed z-10`}
-      >
+        } w-full flex flex-col items-center px-3 xs:px-6 md:px-12 lg:px-20 fixed z-10`}>
         <div className="flex justify-between w-full">
-          <Link
-            title="Chhatresh Khatri"
-            aria-label="Chhatresh Khatri"
-            href={"/"}
-            className="flex justify-center items-center"
-          >
+          <Link title="Chhatresh Khatri" aria-label="Chhatresh Khatri" href={"/"} className="flex justify-center items-center">
             <ChhatreshKhatri className={``} />
           </Link>
           <div className="hidden lg:flex items-center justify-center space-x-8 text-xl font-semibold">
@@ -67,8 +60,7 @@ const Navbar = () => {
               href={"https://github.com/chhatreshkhatri"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8"
-            >
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8">
               <GithubIcon size={32} className="" />
             </Link>
             <Link
@@ -77,8 +69,7 @@ const Navbar = () => {
               href={"https://www.linkedin.com/in/chhatreshkhatri/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
-            >
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8">
               <LinkedInIcon size={32} className={``} />
             </Link>
             <Link
@@ -87,8 +78,7 @@ const Navbar = () => {
               href={"mailto:contact@chhatreshkhatri.com"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
-            >
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8">
               <MailIcon size={32} className="" />
             </Link>
             <ThemeButton />
@@ -98,23 +88,19 @@ const Navbar = () => {
             className={`flex-col justify-center items-center flex lg:hidden`}
             onClick={() => {
               setNavOpen(!navOpen);
-            }}
-          >
+            }}>
             <span
               className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${
                 navOpen ? "rotate-45 translate-y-1" : "-translate-y-1"
-              }`}
-            ></span>
+              }`}></span>
             <span
               className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
                 navOpen ? "opacity-0" : "opacity-100"
-              }`}
-            ></span>
+              }`}></span>
             <span
               className={`bg-gradient-to-r from-lightCk to-darkCk transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
                 navOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
-              }`}
-            ></span>
+              }`}></span>
           </button>
         </div>
         {/* Mobile  Nav items */}
@@ -129,8 +115,7 @@ const Navbar = () => {
               href={"https://github.com/chhatreshkhatri"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8"
-            >
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8">
               <GithubIcon size={32} className={""} />
             </Link>
             <Link
@@ -139,8 +124,7 @@ const Navbar = () => {
               href={"https://www.linkedin.com/in/chhatreshkhatri/"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
-            >
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8">
               <LinkedInIcon size={32} className={``} />
             </Link>
             <Link
@@ -149,8 +133,7 @@ const Navbar = () => {
               href={"mailto:contact@chhatreshkhatri.com"}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8"
-            >
+              className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 ml-5 w-8">
               <MailIcon size={32} className={""} />
             </Link>
             <ThemeButton />

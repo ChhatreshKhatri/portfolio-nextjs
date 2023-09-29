@@ -34,12 +34,14 @@ import {
   SiWindows11,
 } from "react-icons/si";
 import FaviconVisibilityChange from "@/app/components/FaviconVisibilityChange";
+
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | About",
   description:
     "Chhatresh Khatri About. Full Stack developer skilled in diverse tech including C/C++, Java, HTML5, CSS3, JavaScript, React.js, Next.js, and more.",
   alternates: { canonical: "/about" },
 };
+
 const languages = [
   { name: "C", color: "bg-[#1563b1]", icon: <SiC title="C" size={32} className="h-6 xs:h-12" />, className: "" },
   { name: "C++", color: "bg-[#004488]", icon: <SiCplusplus title="C++" size={32} className="h-6 xs:h-12" /> },
@@ -81,6 +83,7 @@ const OS = [
   { name: "Ubuntu", color: "bg-[#E95420]", icon: <SiUbuntu title="Ubuntu" size={32} className="h-6 xs:h-12" /> },
   { name: "Windows 11", color: "bg-[#0078D4]", icon: <SiWindows11 title="Windows 11" size={32} className="h-6 xs:h-12" /> },
 ];
+
 const SkillButton = ({ name, color, icon, className }: { name: string; color: string; icon: React.ReactNode; className: string }) => (
   <button
     title={name}
@@ -91,6 +94,7 @@ const SkillButton = ({ name, color, icon, className }: { name: string; color: st
     </div>
   </button>
 );
+
 export default function Page() {
   return (
     <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-20">

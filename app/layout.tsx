@@ -4,10 +4,7 @@ import { Poppins } from "next/font/google";
 import Footer from "./components/footer";
 import ThemeProvider from "./components/themeProvider";
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["500", "700"],
-});
+const poppins = Poppins({ subsets: ["latin"], weight: ["500", "700"] });
 
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio",
@@ -27,17 +24,12 @@ export const metadata = {
     "Next.JS",
     "frontend",
   ],
-  icons: {
-    icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
-    apple: [{ url: "/apple-icon.png" }],
-  },
+  icons: { icon: [{ url: "/favicon.ico", type: "image/x-icon" }], apple: [{ url: "/apple-icon.png" }] },
   applicationName: "Chhatresh Khatri Portfolio",
   type: "website",
   authors: [{ name: "Chhatresh Khatri" }],
   metadataBase: new URL("https://www.chhatreshkhatri.com"),
-  alternates: {
-    canonical: "/",
-  },
+  alternates: { canonical: "/" },
   category: "website",
   openGraph: {
     title: "Chhatresh Khatri | Portfolio",
@@ -67,14 +59,13 @@ export const metadata = {
   },
   themeColor: "#191919",
 };
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className={`${poppins.className} w-full min-h-screen flex flex-col bg-light text-darked dark:bg-dark dark:text-light`}>
         <ThemeProvider>
-          <NavBar />
-          {children}
-          <Footer />
+          <NavBar /> {children} <Footer />
         </ThemeProvider>
       </body>
     </html>

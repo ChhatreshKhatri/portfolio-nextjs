@@ -1,8 +1,8 @@
 // use this to add external images -> https://nextjs.org/docs/messages/next-image-unconfigured-host
-"use client"
+"use client";
 import Link from "next/link";
 import React from "react";
-import {CldImage} from "next-cloudinary";
+import { CldImage } from "next-cloudinary";
 interface CustomProps {
   heading: string;
   subHeading: string;
@@ -42,13 +42,11 @@ const ProjectHolder: React.FC<CustomProps> = ({
             <p className="text-xl mt-4 text-justify">{projectContent} </p>
             <div className="flex flex-wrap items-center justify-center mt-4 space-x-2 xxs:space-x-4 text-md xxs:text-xl">
               {link1 ? (
-                
                 <button className="flex items-center justify-center mt-10 p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
                   <Link
                     href={link1}
                     target="_blank"
-                    className="flex justify-center items-center py-1 px-2 rounded  whitespace-nowrap bg-lighter dark:bg-darker"
-                  >
+                    className="flex justify-center items-center py-1 px-2 rounded  whitespace-nowrap bg-lighter dark:bg-darker">
                     {link1Icon}
                     {link1Type}
                   </Link>
@@ -61,8 +59,7 @@ const ProjectHolder: React.FC<CustomProps> = ({
                   <Link
                     href={link2}
                     target="_blank"
-                    className="flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker"
-                  >
+                    className="flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker">
                     {link2Icon}
                     {link2Type}
                   </Link>
