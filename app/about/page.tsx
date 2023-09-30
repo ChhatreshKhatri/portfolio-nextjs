@@ -33,7 +33,6 @@ import {
   SiUbuntu,
   SiWindows11,
 } from "react-icons/si";
-import FaviconVisibilityChange from "@/app/components/FaviconVisibilityChange";
 
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | About",
@@ -149,7 +148,6 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <FaviconVisibilityChange />
     </main>
   );
 }

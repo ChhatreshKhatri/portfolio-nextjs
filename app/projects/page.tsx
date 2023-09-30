@@ -1,6 +1,5 @@
 import { AlibabaCloudIcon, GithubIcon, LinkIcon } from "../components/icons";
 import ProjectHolder from "../components/ProjectHolder";
-import FaviconVisibilityChange from "../components/FaviconVisibilityChange";
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | Projects",
   description:
@@ -74,7 +73,6 @@ export default function Projects() {
         link2Icon={undefined}
         order="even"
       />
-      <FaviconVisibilityChange />
     </main>
   );
 }

@@ -37,3 +37,4 @@ next-env.d.ts
 deploy.cmd
 contentSubmission.*
 .env
+curl or web request.cmd

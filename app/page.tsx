@@ -2,7 +2,6 @@
 import { ResumeIcon, SocialIcon } from "./components/icons";
 import Link from "next/link";
 import Typewriter from "./components/Typewriter";
-import FaviconVisibilityChange from "./components/FaviconVisibilityChange";
 import { CldImage } from "next-cloudinary";
 export default function Home() {
   return (
@@ -64,7 +63,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <FaviconVisibilityChange />
     </main>
   );
 }
