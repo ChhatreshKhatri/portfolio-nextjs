@@ -1,22 +1,22 @@
 {
-    "github": {
-      "silent": true,
-      "autoAlias": false
-    },
-    "git": {
-        "deploymentEnabled": {
-          "master": false
-        }
-      },
-      "headers":[
+  "github": {
+    "silent": true,
+    "autoAlias": false
+  },
+  "git": {
+    "deploymentEnabled": {
+      "master": false
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
         {
-          "source": "/(.*)",
-          "headers": [
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "*"
-            }
-          ]
+          "key": "x-robots-tag",
+          "value": "noindex"
         }
       ]
-  }
+    }
+  ]
+}

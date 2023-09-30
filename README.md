@@ -93,7 +93,7 @@ Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment)
 
 Share my portfolio ( https://www.chhatreshkhatri.com/ ) with your friends in just a click
 
-<a title="Facebook" href="mailto:?subject=Chhatresh Khatri | Portfolio&body=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/931465f32268d3f9f1c971ada3615fb8b91f6507/assets/gmail.svg" width="32px"/></a>
+<a title="Mail" href="mailto:?subject=Chhatresh Khatri | Portfolio&body=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/931465f32268d3f9f1c971ada3615fb8b91f6507/assets/gmail.svg" width="32px"/></a>
 <a title="Facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/8ffb973736e05a032047f2c5f6a0945f51c639d2/assets/facebook.svg" width="32px"/></a>
 <a title="X (Twitter)" href="https://twitter.com/intent/tweet?url=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/8ffb973736e05a032047f2c5f6a0945f51c639d2/assets/x.svg" width="32px"/></a>
 <a title="Whatsapp" href="https://api.whatsapp.com/send?text=https://www.chhatreshkhatri.com/" target="_blank"><img src="https://raw.githubusercontent.com/Chhatreshkhatri/social-links/8ffb973736e05a032047f2c5f6a0945f51c639d2/assets/whatsapp.svg" width="32px"/></a>
