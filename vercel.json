@@ -7,16 +7,5 @@
     "deploymentEnabled": {
       "master": false
     }
-  },
-  "headers": [
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "x-robots-tag",
-          "value": "noindex"
-        }
-      ]
-    }
-  ]
+  }
 }
