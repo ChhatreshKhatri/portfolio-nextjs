@@ -16,6 +16,17 @@ const CustomLink = ({ href, title, className = "" }: { href: string; title: stri
     </Link>
   );
 };
+const NavIcon = ({ title, href, icon, className = "" }: { title: string; href: string; icon: React.ReactNode; className?: string }) => (
+  <Link
+    title={title}
+    aria-label={title}
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className={`flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8 ${className}`}>
+    {icon}
+  </Link>
+);
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
@@ -42,38 +53,18 @@ const Navbar = () => {
           <ChhatreshKhatri className={``} />
         </Link>
         <div className="hidden lg:flex items-center justify-center gap-x-8 text-xl font-semibold">
-          <CustomLink href={"/"} title={"Home"} className="" />
-          <CustomLink href={"/about"} title={"About"} className="" />
+          <CustomLink href={"/"} title={"Home"} className="" /> <CustomLink href={"/about"} title={"About"} className="" />
           <CustomLink href={"/projects"} title={"Projects"} className="" />
         </div>
         <div className={`hidden lg:flex items-center justify-center gap-x-5`}>
-          <Link
-            title={`GitHub`}
-            aria-label="Github"
-            href={"https://github.com/chhatreshkhatri"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8">
-            <GithubIcon size={32} className="" />
-          </Link>
-          <Link
+          <NavIcon title="GitHub" aria-label="Github" href={"https://github.com/Chhatreshkhatri"} icon={<GithubIcon size={32} className="" />} />
+          <NavIcon
             title="LinkedIn"
             aria-label="LinkedIn"
-            href={"https://www.linkedin.com/in/chhatreshkhatri/"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8">
-            <LinkedInIcon size={32} className={``} />
-          </Link>
-          <Link
-            title={`Mail`}
-            aria-label="Mail"
-            href={"mailto:contact@chhatreshkhatri.com"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8">
-            <MailIcon size={32} className="" />
-          </Link>
+            href={"https://www.linkedin.com/in/chhatreshkhatri"}
+            icon={<LinkedInIcon size={32} className="" />}
+          />
+          <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<MailIcon size={32} className="" />} />
           <ThemeButton />
         </div>
         <button
@@ -98,37 +89,17 @@ const Navbar = () => {
       </div>
       {/* Mobile  Nav items */}
       <div className={`${navOpen ? "flex flex-col" : "hidden"} lg:hidden font-semibold items-center justify-center text-xl`}>
-        <CustomLink href={"/"} title={"Home"} className={""} />
-        <CustomLink href={"/about"} title={"About"} className={""} />
+        <CustomLink href={"/"} title={"Home"} className={""} /> <CustomLink href={"/about"} title={"About"} className={""} />
         <CustomLink href={"/projects"} title={"Projects"} className={""} />
         <div className={`flex items-center justify-center whitespace-nowrap gap-5 my-2`}>
-          <Link
-            title={`GitHub`}
-            aria-label="Github"
-            href={"https://github.com/chhatreshkhatri"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8">
-            <GithubIcon size={32} className={""} />
-          </Link>
-          <Link
-            title={`LinkedIn`}
+          <NavIcon title="GitHub" aria-label="Github" href={"https://github.com/Chhatreshkhatri"} icon={<GithubIcon size={32} className="" />} />
+          <NavIcon
+            title="LinkedIn"
             aria-label="LinkedIn"
-            href={"https://www.linkedin.com/in/chhatreshkhatri/"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8">
-            <LinkedInIcon size={32} className={``} />
-          </Link>
-          <Link
-            title={`Mail`}
-            aria-label="Mail"
-            href={"mailto:contact@chhatreshkhatri.com"}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex align-center justify-center transform transition-transform duration-300 hover:scale-110 w-8">
-            <MailIcon size={32} className={""} />
-          </Link>
+            href={"https://www.linkedin.com/in/chhatreshkhatri"}
+            icon={<LinkedInIcon size={32} className="" />}
+          />
+          <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<MailIcon size={32} className="" />} />
           <ThemeButton />
         </div>
       </div>

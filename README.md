@@ -72,6 +72,7 @@ Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment)
 
 [Cloudflare Pages](https://pages.cloudflare.com/) is a JAMstack platform for frontend developers to collaborate and deploy websites.
 
+Check out [Next.js deployment documentation](https://developers.cloudflare.com/pages/framework-guides/deploy-a-nextjs-site/) for more details.
 <br>
 
 # 🖼️ Screenshots

@@ -112,7 +112,7 @@ export default function Page() {
   return (
     <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-20 gap-8">
       <button className="rounded p-0.5 flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk">
-        <h1 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-contentBg dark:bg-darked rounded">
+        <h1 className="flex justify-center items-center font-semibold tracking-wider text-2xl xxs:text-3xl md:text-4xl p-1 md:px-2 bg-contentBg dark:bg-darked rounded">
           About Me
         </h1>
       </button>
