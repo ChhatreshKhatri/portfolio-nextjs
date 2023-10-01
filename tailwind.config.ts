@@ -37,7 +37,7 @@ const config: Config = {
       },
 
       dropShadow: {
-        text: "0 1px 1px #232323",
+        text: "1px 1px 1px #222222",
         "2xl": "0 0 15px #000000",
         "3xl": "0 0 20px #000000",
       },
