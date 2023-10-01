@@ -17,19 +17,19 @@ export default function Home() {
         <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
         <div className="relative order-2 lg:order-1 lg:col-span-2 flex justify-end items-center rounded-lg">
           {/* Content for the first column */}
-          <div className="w-full h-full flex flex-col justify-center rounded-lg p-2 xs:p-6">
+          <div className="w-full h-full flex flex-col justify-center rounded-lg p-2 md:gap-4 xs:p-6">
             {/* Centered content in the first column */}
             <h1 className="text-2xl xxs:text-2xl xs:text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold text-center">{`Hi! I'm Chhatresh Khatri`}</h1>
-            <h2 className="text-2xl xxs:text-2xl xs:3xl md:text-4xl xl:text-5xl font-semibold mt-1 xs:mt-4 text-center">
+            <h2 className="text-2xl xxs:text-2xl xs:3xl md:text-4xl xl:text-5xl font-semibold mt-1 text-center">
               <Typewriter />
             </h2>
-            <p className="text-lg xs:text-xl mt-4 text-justify">
+            <p className="text-lg xs:text-xl text-justify mt-4">
               A Computer Science & Engineering graduate with a passion for problem-solving and web development. An enthusiastic, self-motivated
               professional with strong interpersonal and communication skills, I&apos;m passionate about the latest tech trends. A quick learner and
               team player, I thrive on new opportunities and challenges.
             </p>
-            <div className="flex flex-wrap justify-center items-center space-x-2 xxs:space-x-4 text-md xxs:text-xl">
-              <button className="flex items-center justify-center mt-10 p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
+            <div className="flex flex-wrap justify-center items-center gap-2 xxs:gap-4 mt-4 text-md xxs:text-xl">
+              <button className="flex items-center justify-center p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
                 <Link
                   href={`https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing`}
                   target="_blank"
@@ -37,7 +37,7 @@ export default function Home() {
                   <ResumeIcon className="mr-2" /> Resume
                 </Link>
               </button>
-              <button className="flex items-center justify-center mt-10 p-0.5 rounded bg-gradient-to-r from-darkCk to-lightCk">
+              <button className="flex items-center justify-center p-0.5 rounded bg-gradient-to-r from-darkCk to-lightCk">
                 <Link
                   href={`https://social.chhatreshkhatri.com/`}
                   target="_blank"

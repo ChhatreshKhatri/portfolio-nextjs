@@ -35,14 +35,14 @@ const ProjectHolder: React.FC<CustomProps> = ({
       <div className="relative grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl p-3 xs:p-6">
         <div className={`${order == "odd" ? "" : "lg:order-2"}`}>
           {/* Content for the first column */}
-          <div className="w-full h-full flex flex-col justify-center items-center xs:px-8">
+          <div className="w-full h-full flex flex-col justify-center items-center xs:px-8 gap-y-4">
             {/* Centered content in the first column */}
             <h2 className="text-2xl xxs:text-3xl md:text-4xl xl:text-5xl font-semibold text-center">{heading}</h2>
-            <h3 className="text-xl  xl:text-3xl font-semibold mt-4 text-center">{subHeading}</h3>
-            <p className="text-xl mt-4 text-justify">{projectContent} </p>
-            <div className="flex flex-wrap items-center justify-center mt-4 space-x-2 xxs:space-x-4 text-md xxs:text-xl">
+            <h3 className="text-xl xl:text-3xl font-semibold text-center">{subHeading}</h3>
+            <p className="text-xl text-justify">{projectContent} </p>
+            <div className="flex flex-wrap items-center justify-center  gap-2 xxs:gap-4 text-md xxs:text-xl">
               {link1 ? (
-                <button className="flex items-center justify-center mt-10 p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
+                <button className="flex items-center justify-center p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
                   <Link
                     href={link1}
                     target="_blank"
@@ -55,7 +55,7 @@ const ProjectHolder: React.FC<CustomProps> = ({
                 ""
               )}
               {link2 ? (
-                <button className="flex items-center justify-center ml-4 mt-10 p-0.5 rounded bg-gradient-to-r from-darkCk to-lightCk">
+                <button className="flex items-center justify-center p-0.5 rounded bg-gradient-to-r from-darkCk to-lightCk">
                   <Link
                     href={link2}
                     target="_blank"

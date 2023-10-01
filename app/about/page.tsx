@@ -40,8 +40,13 @@ export const metadata = {
     "Chhatresh Khatri About. Full Stack developer skilled in diverse tech including C/C++, Java, HTML5, CSS3, JavaScript, React.js, Next.js, and more.",
   alternates: { canonical: "/about" },
 };
-
-const languages = [
+interface Skill {
+  name: string;
+  color: string;
+  icon: React.ReactNode;
+  className?: string;
+}
+const languages: Skill[] = [
   { name: "C", color: "bg-[#1563b1]", icon: <SiC title="C" size={32} className="h-6 xs:h-12" />, className: "" },
   { name: "C++", color: "bg-[#004488]", icon: <SiCplusplus title="C++" size={32} className="h-6 xs:h-12" /> },
   { name: "Java", color: "bg-[#437291]", icon: <SiOpenjdk title="Java" size={32} className="h-6 xs:h-12" /> },
@@ -51,7 +56,7 @@ const languages = [
   { name: "JavaScript", color: "bg-[#F7DF1E]", icon: <SiJavascript title="JavaScript" size={32} className="h-6 xs:h-12" /> },
   { name: "TypeScript", color: "bg-[#3178C6]", icon: <SiTypescript title="TypeScript" size={32} className="h-6 xs:h-12" /> },
 ];
-const frameworks = [
+const frameworks: Skill[] = [
   { name: "React.js", color: "bg-[#61DAFB]", icon: <SiReact title="React.js" size={32} className="h-6 xs:h-12" /> },
   { name: "Next.js", color: "bg-[#000000]", icon: <SiNextdotjs title="Next.js" size={32} className="h-6 xs:h-12" />, className: "text-white" },
   { name: "Express.js", color: "bg-[#000000]", icon: <SiExpress title="Express.js" size={32} className="h-6 xs:h-12" />, className: "text-white" },
@@ -62,7 +67,7 @@ const frameworks = [
   { name: "Redux", color: "bg-[#764ABC]", icon: <SiRedux title="Redux" size={32} className="h-6 xs:h-12" /> },
   { name: "DotENV", color: "bg-[#ECD53F]", icon: <SiDotenv title="DotENV" size={32} className="h-6 xs:h-12" /> },
 ];
-const tools = [
+const tools: Skill[] = [
   { name: "MongoDB", color: "bg-[#47A248]", icon: <SiMongodb title="MongoDB" size={32} className="h-6 xs:h-12" /> },
   { name: "Postman", color: "bg-[#FF6C37]", icon: <SiPostman title="Postman" size={32} className="h-6 xs:h-12" /> },
   { name: "Git", color: "bg-[#F05032]", icon: <SiGit title="" size={32} className="h-6 xs:h-12" /> },
@@ -77,7 +82,7 @@ const tools = [
   { name: "Google Cloud", color: "bg-[#4285F4]", icon: <SiGooglecloud title="Google Cloud" size={32} className="h-6 xs:h-12" /> },
   { name: "VS Code", color: "bg-[#007ACC]", icon: <SiVisualstudiocode title="VS Code" size={32} className="h-6 xs:h-12" /> },
 ];
-const OS = [
+const OS: Skill[] = [
   { name: "Linux", color: "bg-[#FCC624]", icon: <SiLinux title="Linux" size={32} className="h-6 xs:h-12" /> },
   { name: "Ubuntu", color: "bg-[#E95420]", icon: <SiUbuntu title="Ubuntu" size={32} className="h-6 xs:h-12" /> },
   { name: "Windows 11", color: "bg-[#0078D4]", icon: <SiWindows11 title="Windows 11" size={32} className="h-6 xs:h-12" /> },
@@ -86,23 +91,32 @@ const OS = [
 const SkillButton = ({ name, color, icon, className }: { name: string; color: string; icon: React.ReactNode; className: string }) => (
   <button
     title={name}
-    className={`relative w-auto h-[35px] xs:h-[45px] m-1 xs:m-2 ${color} rounded-md p-1 xs:p-2 flex items-center justify-center text-light dark:text-dark`}>
+    className={`relative w-auto h-[35px] xs:h-[45px] ${color} rounded-md p-1 xs:p-2 flex items-center justify-center text-light dark:text-dark`}>
     <div className={`absolute inset-0 bg-gradient-to-b from-[#fff]/10 rounded-md`} />
     <div className={`relative flex items-center justify-center ${className}`}>
       {icon} <p className="relative text-xl md:text-2xl ml-1 xs:ml-2 drop-shadow-text">{name}</p>
     </div>
   </button>
 );
-
+const Skills = ({ skillName, arrayName }: { skillName: string; arrayName: Skill[] }) => (
+  <>
+    <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center">{skillName}</h3>
+    <div className="flex flex-wrap items-center justify-center gap-2 xs:gap-4">
+      {arrayName.map((param, index) => (
+        <SkillButton key={index} name={param.name} color={param.color} icon={param.icon} className={`${param.className}`} />
+      ))}
+    </div>
+  </>
+);
 export default function Page() {
   return (
-    <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-20">
-      <button className="rounded mb-4 p-0.5 flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk">
+    <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-20 gap-8">
+      <button className="rounded p-0.5 flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk">
         <h1 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-contentBg dark:bg-darked rounded">
           About Me
         </h1>
       </button>
-      <div className="relative group rounded-lg text-justify p-3 xs:p-6 xs:px-10 py-6 mt-4">
+      <div className="relative group rounded-lg w-full text-justify p-3 xs:p-6 xs:px-10 py-6">
         <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
         <h2 className={`relative text-2xl xxs:text-2xl xs:text-3xl md:text-4xl text-center`}>Description</h2>
         <p className="relative text-lg xs:text-xl mt-4">
@@ -114,38 +128,18 @@ export default function Page() {
           Thanks for visiting my portfolio website!
         </p>
       </div>
-      <button className="rounded mb-4 flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk mt-10 p-0.5">
+      <button className="rounded flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk p-0.5">
         <h2 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-contentBg dark:bg-darked rounded">
           Technology Stack
         </h2>
       </button>
-      <div className="relative group rounded-lg mt-4">
+      <div className="relative group rounded-lg w-full">
         <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
-        <div className="relative w-full p-3 xs:p-6 xs:px-10 py-6">
-          <h3 className={`text-2xl xxs:text-3xl md:text-4xl text-center mt-4`}>Languages</h3>
-          <div className="flex flex-wrap items-center justify-center mt-4">
-            {languages.map((language, index) => (
-              <SkillButton key={index} name={language.name} color={language.color} icon={language.icon} className={`${language.className}`} />
-            ))}
-          </div>
-          <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Framework & Libraries</h3>
-          <div className="flex flex-wrap items-center justify-center mt-4">
-            {frameworks.map((language, index) => (
-              <SkillButton key={index} name={language.name} color={language.color} icon={language.icon} className={`${language.className}`} />
-            ))}
-          </div>
-          <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">Tools & IDEs</h3>
-          <div className="flex flex-wrap items-center justify-center mt-4">
-            {tools.map((framework, index) => (
-              <SkillButton key={index} name={framework.name} color={framework.color} icon={framework.icon} className={`${framework.className}`} />
-            ))}
-          </div>
-          <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center pt-4">OS</h3>
-          <div className="flex flex-wrap items-center justify-center mt-4">
-            {OS.map((os, index) => (
-              <SkillButton key={index} name={os.name} color={os.color} icon={os.icon} className={""} />
-            ))}
-          </div>
+        <div className="relative flex flex-col w-full p-3 xs:p-6 xs:px-10 py-6 gap-4">
+          <Skills skillName="Languages" arrayName={languages} />
+          <Skills skillName="Frameworks & Libraries" arrayName={frameworks} />
+          <Skills skillName="Tools & IDEs" arrayName={tools} />
+          <Skills skillName="OS" arrayName={OS} />
         </div>
       </div>
     </main>
