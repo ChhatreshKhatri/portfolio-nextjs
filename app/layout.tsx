@@ -25,7 +25,7 @@ export const metadata = {
     "Next.JS",
     "frontend",
   ],
-  icons: { icon: [{ url: "/favicon.ico", type: "image/x-icon" }], apple: [{ url: "/apple-icon.png" }] },
+  // icons: { icon: [{ url: "/favicon.ico", type: "image/x-icon" }], apple: [{ url: "/apple-icon.png" }] },
   applicationName: "Chhatresh Khatri Portfolio",
   type: "website",
   authors: [{ name: "Chhatresh Khatri" }],
