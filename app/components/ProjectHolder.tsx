@@ -1,8 +1,8 @@
 // use this to add external images -> https://nextjs.org/docs/messages/next-image-unconfigured-host
 "use client";
-import Link from "next/link";
 import React from "react";
 import { CldImage } from "next-cloudinary";
+import LinkButton from "./LinkButton";
 interface CustomProps {
   heading: string;
   subHeading: string;
@@ -41,32 +41,8 @@ const ProjectHolder: React.FC<CustomProps> = ({
             <h3 className="text-xl xl:text-3xl font-semibold text-center">{subHeading}</h3>
             <p className="text-xl text-justify">{projectContent} </p>
             <div className="flex flex-wrap items-center justify-center  gap-2 xxs:gap-4 text-md xxs:text-xl">
-              {link1 ? (
-                <button className="flex items-center justify-center p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
-                  <Link
-                    href={link1}
-                    target="_blank"
-                    className="flex justify-center items-center py-1 px-2 rounded  whitespace-nowrap bg-lighter dark:bg-darker">
-                    {link1Icon}
-                    {link1Type}
-                  </Link>
-                </button>
-              ) : (
-                ""
-              )}
-              {link2 ? (
-                <button className="flex items-center justify-center p-0.5 rounded bg-gradient-to-r from-darkCk to-lightCk">
-                  <Link
-                    href={link2}
-                    target="_blank"
-                    className="flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker">
-                    {link2Icon}
-                    {link2Type}
-                  </Link>
-                </button>
-              ) : (
-                ""
-              )}
+              {link1 ? <LinkButton name={link1Type} link={link1} icon={link1Icon} /> : ""}
+              {link2 ? <LinkButton name={link2Type} link={link2} icon={link2Icon} /> : ""}
             </div>
           </div>
         </div>

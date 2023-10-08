@@ -1,8 +1,8 @@
 "use client";
 import { ResumeIcon, SocialIcon } from "./components/icons";
-import Link from "next/link";
 import Typewriter from "./components/Typewriter";
 import { CldImage } from "next-cloudinary";
+import LinkButton from "./components/LinkButton";
 export default function Home() {
   return (
     <main className="w-full h-full flex flex-col  font-medium px-3 xs:px-6 md:px-12 lg:px-20 py-20">
@@ -29,22 +29,12 @@ export default function Home() {
               team player, I thrive on new opportunities and challenges.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-2 xxs:gap-4 mt-4 text-md xxs:text-xl">
-              <button className="flex items-center justify-center p-0.5 rounded bg-gradient-to-r from-lightCk to-darkCk">
-                <Link
-                  href={`https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing`}
-                  target="_blank"
-                  className="flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker">
-                  <ResumeIcon className="mr-2" /> Resume
-                </Link>
-              </button>
-              <button className="flex items-center justify-center p-0.5 rounded bg-gradient-to-r from-darkCk to-lightCk">
-                <Link
-                  href={`https://social.chhatreshkhatri.com/`}
-                  target="_blank"
-                  className="flex justify-center items-center py-1 px-2 rounded whitespace-nowrap bg-lighter dark:bg-darker">
-                  <SocialIcon className="mr-2" /> Social Links
-                </Link>
-              </button>
+              <LinkButton
+                name="Resume"
+                link="https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing"
+                icon={<ResumeIcon className="" />}
+              />
+              <LinkButton name="Social Links" link="https://social.chhatreshkhatri.com/" icon={<SocialIcon className="" />} />
             </div>
           </div>
         </div>
