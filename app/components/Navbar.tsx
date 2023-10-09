@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { GithubIcon, LinkedInIcon, MailIcon, ChhatreshKhatri } from "./icons";
+import { ChhatreshKhatri } from "./icons";
+import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
 import { usePathname } from "next/navigation";
 import ThemeButton from "./ThemeButton";
 const CustomLink = ({ href, title, className = "" }: { href: string; title: string; className?: string }) => {
@@ -57,14 +58,14 @@ const Navbar = () => {
           <CustomLink href={"/projects"} title={"Projects"} className="" />
         </div>
         <div className={`hidden lg:flex items-center justify-center gap-x-5`}>
-          <NavIcon title="GitHub" aria-label="Github" href={"https://github.com/Chhatreshkhatri"} icon={<GithubIcon size={32} className="" />} />
+          <NavIcon title="GitHub" aria-label="Github" href={"https://github.com/Chhatreshkhatri"} icon={<SiGithub size={32} className="" />} />
           <NavIcon
             title="LinkedIn"
             aria-label="LinkedIn"
             href={"https://www.linkedin.com/in/chhatreshkhatri"}
-            icon={<LinkedInIcon size={32} className="" />}
+            icon={<SiLinkedin size={32} className="" />}
           />
-          <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<MailIcon size={32} className="" />} />
+          <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<SiGmail size={32} className="" />} />
           <ThemeButton />
         </div>
         <button
@@ -92,14 +93,14 @@ const Navbar = () => {
         <CustomLink href={"/"} title={"Home"} className={""} /> <CustomLink href={"/about"} title={"About"} className={""} />
         <CustomLink href={"/projects"} title={"Projects"} className={""} />
         <div className={`flex items-center justify-center whitespace-nowrap gap-5 my-2`}>
-          <NavIcon title="GitHub" aria-label="Github" href={"https://github.com/Chhatreshkhatri"} icon={<GithubIcon size={32} className="" />} />
+          <NavIcon title="GitHub" aria-label="Github" href={"https://github.com/Chhatreshkhatri"} icon={<SiGithub size={32} className="" />} />
           <NavIcon
             title="LinkedIn"
             aria-label="LinkedIn"
             href={"https://www.linkedin.com/in/chhatreshkhatri"}
-            icon={<LinkedInIcon size={32} className="" />}
+            icon={<SiLinkedin size={32} className="" />}
           />
-          <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<MailIcon size={32} className="" />} />
+          <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<SiGmail size={32} className="" />} />
           <ThemeButton />
         </div>
       </div>

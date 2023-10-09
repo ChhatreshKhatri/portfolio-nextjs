@@ -5,15 +5,15 @@ import { CldImage } from "next-cloudinary";
 import LinkButton from "./components/LinkButton";
 export default function Home() {
   return (
-    <main className="w-full h-full flex flex-col  font-medium px-3 xs:px-6 md:px-12 lg:px-20 py-20">
+    <>
       <div className="flex justify-center items-center">
-        <button className="rounded mb-4 p-[2px] flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk">
+        <button className="flex items-center justify-center rounded p-0.5 bg-gradient-to-r from-darkCk to-lightCk">
           <span className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-contentBg dark:bg-darked rounded">
             Welcome to my Portfolio
           </span>
         </button>
       </div>
-      <div className="relative group grid grid-cols-1 w-full lg:grid-cols-3 mt-4">
+      <div className="relative group grid grid-cols-1 w-full lg:grid-cols-3">
         <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
         <div className="relative order-2 lg:order-1 lg:col-span-2 flex justify-end items-center rounded-lg">
           {/* Content for the first column */}
@@ -53,6 +53,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </main>
+    </>
   );
 }

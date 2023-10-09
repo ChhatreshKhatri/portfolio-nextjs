@@ -30,7 +30,7 @@ const ProjectHolder: React.FC<CustomProps> = ({
   order,
 }) => {
   return (
-    <div className="group relative mt-4 mb-10">
+    <div className="group relative">
       <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
       <div className="relative grid grid-cols-1 w-full gap-1 lg:grid-cols-2 rounded-xl p-3 xs:p-6">
         <div className={`${order == "odd" ? "" : "lg:order-2"}`}>
