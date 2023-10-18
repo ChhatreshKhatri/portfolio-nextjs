@@ -41,8 +41,8 @@ const ProjectHolder: React.FC<CustomProps> = ({
             <h3 className="text-xl xl:text-3xl font-semibold text-center">{subHeading}</h3>
             <p className="text-xl text-justify">{projectContent} </p>
             <div className="flex flex-wrap items-center justify-center  gap-2 xxs:gap-4 text-md xxs:text-xl">
-              {link1 ? <LinkButton name={link1Type} link={link1} icon={link1Icon} /> : ""}
-              {link2 ? <LinkButton name={link2Type} link={link2} icon={link2Icon} /> : ""}
+              {link1 ? <LinkButton name={link1Type} link={link1} icon={link1Icon} pos={`0`} /> : ""}
+              {link2 ? <LinkButton name={link2Type} link={link2} icon={link2Icon} pos={"1"} /> : ""}
             </div>
           </div>
         </div>

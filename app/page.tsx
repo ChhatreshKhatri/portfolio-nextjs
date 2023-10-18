@@ -33,8 +33,9 @@ export default function Home() {
                 name="Resume"
                 link="https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing"
                 icon={<ResumeIcon className="" />}
+                pos="0"
               />
-              <LinkButton name="Social Links" link="https://social.chhatreshkhatri.com/" icon={<SocialIcon className="" />} />
+              <LinkButton name="Social Links" link="https://social.chhatreshkhatri.com/" icon={<SocialIcon className="" />} pos={"1"} />
             </div>
           </div>
         </div>

@@ -1,8 +1,9 @@
 import Link from "next/link";
 
-const LinkButton = ({ name, link, icon }: { name: string; link: string; icon: React.ReactNode }) => {
+const LinkButton = ({ name, link, icon, pos }: { name: string; link: string; icon: React.ReactNode; pos: string }) => {
   return (
-    <button className="items-center justify-center p-0.5 rounded bg-gradient-to-r from-darkCk to-lightCk">
+    <button
+      className={`items-center justify-center p-0.5 rounded bg-gradient-to-r ${pos == "1" ? "from-darkCk to-lightCk" : "from-lightCk to-darkCk"}`}>
       <Link
         href={link}
         target="_blank"
