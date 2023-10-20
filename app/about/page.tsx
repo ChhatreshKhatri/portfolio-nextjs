@@ -112,7 +112,7 @@ export default function Page() {
   return (
     <>
       <button className="flex items-center justify-center rounded p-0.5 bg-gradient-to-r from-darkCk to-lightCk">
-        <h1 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-contentBg dark:bg-darked rounded">
+        <h1 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-buttonBg dark:bg-darked rounded">
           About Me
         </h1>
       </button>
@@ -129,7 +129,7 @@ export default function Page() {
         </p>
       </div>
       <button className="rounded flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk p-0.5">
-        <h2 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-contentBg dark:bg-darked rounded">
+        <h2 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-buttonBg dark:bg-darked rounded">
           Technology Stack
         </h2>
       </button>

@@ -30,7 +30,7 @@ const config: Config = {
         darkCk: "#4158D0",
         lightCk: "#FFCC70",
         darked: "#0c0c0c",
-        contentBg: "#dde6ff",
+        buttonBg: "#dde6ff",
         navbarBg: "#c7e1fc",
         darker: "#101010",
         lighter: "#e9e9ff",

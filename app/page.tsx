@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <div className="flex justify-center items-center">
         <button className="flex items-center justify-center rounded p-0.5 bg-gradient-to-r from-darkCk to-lightCk">
-          <span className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-contentBg dark:bg-darked rounded">
+          <span className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-buttonBg dark:bg-darked rounded">
             Welcome to my Portfolio
           </span>
         </button>
