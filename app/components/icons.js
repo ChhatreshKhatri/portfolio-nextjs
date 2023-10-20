@@ -16,7 +16,7 @@ export const ChhatreshKhatri = ({ className, ...rest }) => (
     <defs>
       <linearGradient id="paint0_linear_2_2" x1="0" y1="8.80005" x2="241" y2="8.80003" gradientUnits="userSpaceOnUse">
         <stop stopColor="#5740FF" />
-        <stop offset="1" stopColor="#FF4057" />
+        <stop offset="1" stopColor="#30C68A" />
       </linearGradient>
     </defs>
   </svg>

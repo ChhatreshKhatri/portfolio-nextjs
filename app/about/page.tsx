@@ -117,7 +117,7 @@ export default function Page() {
         </h1>
       </button>
       <div className="relative group rounded-lg w-full text-justify p-3 xs:p-6 xs:px-10 py-6">
-        <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
+        <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-blue/50 to-green/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
         <h2 className={`relative text-2xl xxs:text-3xl md:text-4xl text-center`}>Description</h2>
         <p className="relative text-lg xs:text-xl mt-4">
           Hi there! My name is Chhatresh Khatri and I&apos;m a Full Stack developer with a passion for building modern and user-friendly websites and
@@ -134,7 +134,7 @@ export default function Page() {
         </h2>
       </button>
       <div className="relative group rounded-lg w-full">
-        <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
+        <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-blue/50 to-green/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
         <div className="relative flex flex-col w-full p-3 xs:p-6 xs:px-10 py-6 gap-4">
           <Skills skillName="Languages" arrayName={languages} />
           <Skills skillName="Frameworks & Libraries" arrayName={frameworks} />

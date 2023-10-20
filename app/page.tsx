@@ -14,7 +14,7 @@ export default function Home() {
         </button>
       </div>
       <div className="relative group grid grid-cols-1 w-full lg:grid-cols-3">
-        <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-darkCk/50 to-lightCk/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
+        <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-blue/50 to-green/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
         <div className="relative order-2 lg:order-1 lg:col-span-2 flex justify-end items-center rounded-lg">
           {/* Content for the first column */}
           <div className="w-full h-full flex flex-col justify-center rounded-lg p-2 md:gap-4 xs:p-6">

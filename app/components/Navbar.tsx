@@ -46,7 +46,7 @@ const Navbar = () => {
     <nav
       className={`${
         navOpen || scrolled
-          ? " bg-navbarBg/70 dark:bg-darker/80 backdrop-blur-md shadow-bottom py-2 transition-navBar duration-200 ease-in-out"
+          ? " bg-navbarBg/60 dark:bg-darker/70 backdrop-blur-md shadow-bottom py-2 transition-navBar duration-200 ease-in-out"
           : "py-2.5"
       } w-full flex flex-col items-center px-3 xs:px-6 md:px-12 lg:px-20 fixed z-10 top-0`}>
       <div className="flex justify-between w-full">
