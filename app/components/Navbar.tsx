@@ -13,7 +13,7 @@ const CustomLink = ({ href, title, className = "" }: { href: string; title: stri
       <span
         className={`${
           path === href ? "w-full" : "w-0"
-        } absolute h-0.5 bg-gradient-to-r from-darkCk to-lightCk bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}></span>
+        } absolute h-0.5 bg-gradient-to-r from-blue1 to-yellow1 bottom-0.5 group-hover:w-full transition-[width] ease duration-500`}></span>
     </Link>
   );
 };
@@ -75,15 +75,15 @@ const Navbar = () => {
             setNavOpen(!navOpen);
           }}>
           <span
-            className={`bg-gradient-to-r from-green to-blue transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${
+            className={`bg-gradient-to-r from-green2 to-blue2 transition-all duration-300 ease-out h-0.5 w-6 rounded-sm  ${
               navOpen ? "rotate-45 translate-y-1" : "-translate-y-1"
             }`}></span>
           <span
-            className={`bg-gradient-to-r from-green to-blue transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
+            className={`bg-gradient-to-r from-green2 to-blue2 transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${
               navOpen ? "opacity-0" : "opacity-100"
             }`}></span>
           <span
-            className={`bg-gradient-to-r from-green to-blue transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
+            className={`bg-gradient-to-r from-green2 to-blue2 transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${
               navOpen ? "-rotate-45 -translate-y-1" : "translate-y-1"
             }`}></span>
         </button>

@@ -7,14 +7,14 @@ export default function Home() {
   return (
     <>
       <div className="flex justify-center items-center">
-        <button className="flex items-center justify-center rounded p-0.5 bg-gradient-to-r from-darkCk to-lightCk">
+        <button className="flex items-center justify-center rounded p-0.5 bg-gradient-to-r from-blue1 to-yellow1">
           <span className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-buttonBg dark:bg-darked rounded">
             Welcome to my Portfolio
           </span>
         </button>
       </div>
       <div className="relative group grid grid-cols-1 w-full lg:grid-cols-3">
-        <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-blue/50 to-green/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
+        <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-blue2/50 to-green2/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
         <div className="relative order-2 lg:order-1 lg:col-span-2 flex justify-end items-center rounded-lg">
           {/* Content for the first column */}
           <div className="w-full h-full flex flex-col justify-center rounded-lg p-2 md:gap-4 xs:p-6">

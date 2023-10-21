@@ -27,15 +27,15 @@ const config: Config = {
       colors: {
         dark: "#191919",
         light: "#f3f3FF",
-        darkCk: "#4158D0",
-        lightCk: "#FFCC70",
+        blue1: "#4158D0",
+        yellow1: "#FFCC70",
+        blue2: "#1952C0",
+        green2: "#20C68A",
         darked: "#0c0c0c",
         buttonBg: "#dde6ff",
         navbarBg: "#c7e1fc",
         darker: "#101010",
         lighter: "#e9e9ff",
-        blue: "#1952C0",
-        green: "#20C68A"
       },
 
       dropShadow: {

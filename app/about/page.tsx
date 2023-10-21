@@ -111,13 +111,13 @@ const Skills = ({ skillName, arrayName }: { skillName: string; arrayName: Skill[
 export default function Page() {
   return (
     <>
-      <button className="flex items-center justify-center rounded p-0.5 bg-gradient-to-r from-darkCk to-lightCk">
+      <button className="flex items-center justify-center rounded p-0.5 bg-gradient-to-r from-blue1 to-yellow1">
         <h1 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-buttonBg dark:bg-darked rounded">
           About Me
         </h1>
       </button>
       <div className="relative group rounded-lg w-full text-justify p-3 xs:p-6 xs:px-10 py-6">
-        <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-blue/50 to-green/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
+        <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-blue2/50 to-green2/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
         <h2 className={`relative text-2xl xxs:text-3xl md:text-4xl text-center`}>Description</h2>
         <p className="relative text-lg xs:text-xl mt-4">
           Hi there! My name is Chhatresh Khatri and I&apos;m a Full Stack developer with a passion for building modern and user-friendly websites and
@@ -128,13 +128,13 @@ export default function Page() {
           Thanks for visiting my portfolio website!
         </p>
       </div>
-      <button className="rounded flex items-center justify-center bg-gradient-to-r from-darkCk to-lightCk p-0.5">
+      <button className="rounded flex items-center justify-center bg-gradient-to-r from-blue1 to-yellow1 p-0.5">
         <h2 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-buttonBg dark:bg-darked rounded">
           Technology Stack
         </h2>
       </button>
       <div className="relative group rounded-lg w-full">
-        <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-blue/50 to-green/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
+        <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-blue2/50 to-green2/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
         <div className="relative flex flex-col w-full p-3 xs:p-6 xs:px-10 py-6 gap-4">
           <Skills skillName="Languages" arrayName={languages} />
           <Skills skillName="Frameworks & Libraries" arrayName={frameworks} />
