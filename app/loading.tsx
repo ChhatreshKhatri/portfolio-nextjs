@@ -5,7 +5,17 @@ export default function Loading() {
     <div className={`flex justify-center items-center h-screen `}>
       <div className={`${styles.outer_css} bg-light dark:bg-dark`}>
         <div className={`${styles.inner_css} `}>
-          <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
           <div></div>
         </div>
       </div>

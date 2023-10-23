@@ -38,12 +38,12 @@ export default function Projects() {
         subHeading="A question-answer website with chatbot feature"
         projectContent="A popular online forum for programming-related questions and answers built using MERN Stack, and it features user authentication, a voting system for answers, and keyword-based question search."
         projectImage={`v1695546880/portfolio/stackoverflow-clone_rhd5ab.webp`}
-        link1="https://github.com/Chhatreshkhatri/stack-overflow-clone"
-        link1Type="Github Link"
-        link1Icon={<SiGithub size={32} className={"w-8"} />}
-        link2="https://soclone.chhatreshkhatri.com/"
-        link2Type="Live Link"
-        link2Icon={<AiOutlineLink size={32} className={"w-8"} />}
+        link1="https://soclone.chhatreshkhatri.com/"
+        link1Type="Live Link"
+        link1Icon={<AiOutlineLink size={32} className={"w-8"} />}
+        link2="https://github.com/Chhatreshkhatri/stack-overflow-clone"
+        link2Type="Github Link"
+        link2Icon={<SiGithub size={32} className={"w-8"} />}
         order="even"
       />
       {/* Amazon Clone */}
@@ -52,12 +52,12 @@ export default function Projects() {
         subHeading="An e-commerce Jewellery website"
         projectContent="This project includes a range of features including user authentication, a shopping cart, product details page, payment processing and order history."
         projectImage={`v1695547219/portfolio/amazon-clone_earg9x.webp`}
-        link1="https://github.com/Chhatreshkhatri/amazon-clone"
-        link1Type="Github Link"
-        link1Icon={<SiGithub size={32} className={"w-8"} />}
-        link2="https://amazonclone.chhatreshkhatri.com/"
-        link2Type="Live Link"
-        link2Icon={<AiOutlineLink size={32} className={"w-8"} />}
+        link1="https://amazonclone.chhatreshkhatri.com/"
+        link1Type="Live Link"
+        link1Icon={<AiOutlineLink size={32} className={"w-8"} />}
+        link2="https://github.com/Chhatreshkhatri/amazon-clone"
+        link2Type="Github Link"
+        link2Icon={<SiGithub size={32} className={"w-8"} />}
         order="odd"
       />
       {/* MyChat Project */}
