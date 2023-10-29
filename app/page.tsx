@@ -47,8 +47,10 @@ export default function Home() {
             {/* Centered content in the second column */}
             <Image
               priority
-              src={ChhatreshKhatri}
+              src={`https://assets.chhatreshkhatri.com/chhatresh_khatri.webp`}
               alt={"Chhatresh Khatri"}
+              width={500}
+              height={500}
               className="w-[60%] xs:w-[50%] md:w-[35%] lg:w-[100%] xl:w-[80%] drop-shadow-2xl"
             />
           </div>

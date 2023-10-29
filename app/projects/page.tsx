@@ -1,10 +1,6 @@
 import { SiAlibabacloud, SiGithub } from "react-icons/si";
 import { AiOutlineLink } from "react-icons/ai";
 import ProjectHolder from "../components/ProjectHolder";
-import MyChat from "../assets/projects/MyChat.webp";
-import RamaaCreations from "../assets/projects/ramaa-creations.webp";
-import StackOverflowClone from "../assets/projects/stackoverflow-clone.webp";
-import AmazonClone from "../assets/projects//amazon-clone.webp";
 
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | Projects",
@@ -28,7 +24,7 @@ export default function Projects() {
         heading="Ramaa Creations"
         subHeading="An e-commerce Jewellery website"
         projectContent="Built using Alicms tool at Alibaba Cloud Low-Code Development Contest 2022. Achieved second position out of 2043 participants."
-        projectImage={RamaaCreations.src}
+        projectImage={`ramaa-creations.webp`}
         link1="https://www.alibabacloud.com/blog/598812"
         link1Icon={<SiAlibabacloud size={32} className={"w-8"} />}
         link1Type="Blog Link"
@@ -42,7 +38,7 @@ export default function Projects() {
         heading="StackOverflow Clone"
         subHeading="A question-answer website with chatbot feature"
         projectContent="A popular online forum for programming-related questions and answers built using MERN Stack, and it features user authentication, a voting system for answers, and keyword-based question search."
-        projectImage={StackOverflowClone.src}
+        projectImage={`stackoverflow-clone.webp`}
         link1="https://soclone.chhatreshkhatri.com/"
         link1Type="Live Link"
         link1Icon={<AiOutlineLink size={32} className={"w-8"} />}
@@ -56,7 +52,7 @@ export default function Projects() {
         heading="Amazon Clone"
         subHeading="An e-commerce Jewellery website"
         projectContent="This project includes a range of features including user authentication, a shopping cart, product details page, payment processing and order history."
-        projectImage={AmazonClone.src}
+        projectImage={`amazon-clone.webp`}
         link1="https://amazonclone.chhatreshkhatri.com/"
         link1Type="Live Link"
         link1Icon={<AiOutlineLink size={32} className={"w-8"} />}
@@ -70,7 +66,7 @@ export default function Projects() {
         heading="MyChat"
         subHeading="An android chat application"
         projectContent="A simple Android chat app allows users to communicate with each other through text messages on their Android devices. The app typically features a user-friendly interface and easy-to-use chat functions."
-        projectImage={MyChat.src}
+        projectImage={`MyChat.webp`}
         link1="https://github.com/Chhatreshkhatri/MyChat"
         link1Type="Github Link"
         link1Icon={<SiGithub size={32} className={"w-8"} />}

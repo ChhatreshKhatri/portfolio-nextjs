@@ -52,7 +52,7 @@ const ProjectHolder: React.FC<CustomProps> = ({
               <Image
                 title={heading}
                 priority
-                src={projectImage}
+                src={`https://assets.chhatreshkhatri.com/${projectImage}`}
                 alt={`${heading} Image`}
                 width={500}
                 height={500}
