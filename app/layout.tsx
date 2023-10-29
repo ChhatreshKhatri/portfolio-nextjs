@@ -57,9 +57,10 @@ export const metadata = {
     "max-image-preview": "standard",
     "max-snippet": -1,
   },
-  themeColor: "#191919",
 };
-
+export const viewport = {
+  themeColor: '#191919',
+}
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

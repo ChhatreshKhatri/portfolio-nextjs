@@ -1,8 +1,10 @@
 "use client";
 import { ResumeIcon, SocialIcon } from "./components/icons";
 import Typewriter from "./components/Typewriter";
-import { CldImage } from "next-cloudinary";
 import LinkButton from "./components/LinkButton";
+import ChhatreshKhatri from "./assets/chhatresh_khatri.webp";
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
@@ -43,12 +45,10 @@ export default function Home() {
           {/* Content for the second column */}
           <div className="w-full h-full flex justify-center items-center py-5">
             {/* Centered content in the second column */}
-            <CldImage
-              width={480}
-              height={480}
-              src={`v1695488626/portfolio/chhatresh_khatri_judigr.webp`}
+            <Image
               priority
-              alt="Chhatresh Khatri Banner"
+              src={ChhatreshKhatri}
+              alt={"Chhatresh Khatri"}
               className="w-[60%] xs:w-[50%] md:w-[35%] lg:w-[100%] xl:w-[80%] drop-shadow-2xl"
             />
           </div>

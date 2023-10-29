@@ -78,12 +78,12 @@ Check out [Next.js deployment documentation](https://developers.cloudflare.com/p
 # 🖼️ Screenshots
 
 <div align="center" > 
-  <img src="./app/assets/home dark.jpeg" width="49%">
-  <img src="./app/assets/home light.jpeg" width="49%">
-  <img src="./app/assets/about dark.jpeg" width="49%">
-  <img src="./app/assets/about light.jpeg" width="49%">
-  <img src="./app/assets/projects dark.jpeg" width="49%">
-  <img src="./app/assets/projects light.jpeg" width="49%">
+  <img src="./Readme/home dark.jpeg" width="49%">
+  <img src="./Readme/home light.jpeg" width="49%">
+  <img src="./Readme/about dark.jpeg" width="49%">
+  <img src="./Readme/about light.jpeg" width="49%">
+  <img src="./Readme/projects dark.jpeg" width="49%">
+  <img src="./Readme/projects light.jpeg" width="49%">
 </div>
 
 <br/>
