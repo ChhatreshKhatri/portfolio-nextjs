@@ -2,9 +2,7 @@
 import { ResumeIcon, SocialIcon } from "./components/icons";
 import Typewriter from "./components/Typewriter";
 import LinkButton from "./components/LinkButton";
-import ChhatreshKhatri from "./assets/chhatresh_khatri.webp";
 import Image from "next/image";
-
 export default function Home() {
   return (
     <>
@@ -47,7 +45,7 @@ export default function Home() {
             {/* Centered content in the second column */}
             <Image
               priority
-              src={`https://assets.chhatreshkhatri.com/chhatresh_khatri.webp`}
+              src={`https://assets.chhatreshkhatri.com/ChhatreshKhatri.webp`}
               alt={"Chhatresh Khatri"}
               width={500}
               height={500}

@@ -1,16 +1,12 @@
 import { SiAlibabacloud, SiGithub } from "react-icons/si";
 import { AiOutlineLink } from "react-icons/ai";
 import ProjectHolder from "../components/ProjectHolder";
-
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | Projects",
   description:
     "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
-  alternates: {
-    canonical: "/projects",
-  },
+  alternates: { canonical: "/projects" },
 };
-
 export default function Projects() {
   return (
     <>
@@ -24,7 +20,7 @@ export default function Projects() {
         heading="Ramaa Creations"
         subHeading="An e-commerce Jewellery website"
         projectContent="Built using Alicms tool at Alibaba Cloud Low-Code Development Contest 2022. Achieved second position out of 2043 participants."
-        projectImage={`ramaa-creations.webp`}
+        projectImage={`RamaaCreations.webp`}
         link1="https://www.alibabacloud.com/blog/598812"
         link1Icon={<SiAlibabacloud size={32} className={"w-8"} />}
         link1Type="Blog Link"
@@ -38,7 +34,7 @@ export default function Projects() {
         heading="StackOverflow Clone"
         subHeading="A question-answer website with chatbot feature"
         projectContent="A popular online forum for programming-related questions and answers built using MERN Stack, and it features user authentication, a voting system for answers, and keyword-based question search."
-        projectImage={`stackoverflow-clone.webp`}
+        projectImage={`StackOverflowClone.webp`}
         link1="https://soclone.chhatreshkhatri.com/"
         link1Type="Live Link"
         link1Icon={<AiOutlineLink size={32} className={"w-8"} />}
@@ -52,7 +48,7 @@ export default function Projects() {
         heading="Amazon Clone"
         subHeading="An e-commerce Jewellery website"
         projectContent="This project includes a range of features including user authentication, a shopping cart, product details page, payment processing and order history."
-        projectImage={`amazon-clone.webp`}
+        projectImage={`AmazonClone.webp`}
         link1="https://amazonclone.chhatreshkhatri.com/"
         link1Type="Live Link"
         link1Icon={<AiOutlineLink size={32} className={"w-8"} />}

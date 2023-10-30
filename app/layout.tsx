@@ -4,9 +4,7 @@ import Footer from "./components/footer";
 import ThemeProvider from "./components/themeProvider";
 import FaviconVisibilityChange from "./components/FaviconVisibilityChange";
 import "./globals.css";
-
 const poppins = Poppins({ subsets: ["latin"], weight: ["500", "700"] });
-
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio",
   description:
@@ -58,9 +56,7 @@ export const metadata = {
     "max-snippet": -1,
   },
 };
-export const viewport = {
-  themeColor: '#191919',
-}
+export const viewport = { themeColor: "#191919" };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">

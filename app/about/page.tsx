@@ -33,7 +33,6 @@ import {
   SiUbuntu,
   SiWindows11,
 } from "react-icons/si";
-
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | About",
   description:
@@ -87,7 +86,6 @@ const OS: Skill[] = [
   { name: "Ubuntu", color: "bg-[#E95420]", icon: <SiUbuntu title="Ubuntu" size={32} className="h-6 xs:h-12" /> },
   { name: "Windows 11", color: "bg-[#0078D4]", icon: <SiWindows11 title="Windows 11" size={32} className="h-6 xs:h-12" /> },
 ];
-
 const SkillButton = ({ name, color, icon, className }: { name: string; color: string; icon: React.ReactNode; className: string }) => (
   <button
     title={name}

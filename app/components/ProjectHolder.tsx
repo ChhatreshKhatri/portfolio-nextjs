@@ -1,20 +1,7 @@
 // use this to add external images -> https://nextjs.org/docs/messages/next-image-unconfigured-host
 import Image from "next/image";
 import LinkButton from "./LinkButton";
-interface CustomProps {
-  heading: string;
-  subHeading: string;
-  projectContent: string;
-  projectImage: string;
-  link1: string;
-  link1Type: string;
-  link1Icon: React.ReactNode;
-  link2: string;
-  link2Type: string;
-  link2Icon: React.ReactNode;
-  order: string;
-}
-const ProjectHolder: React.FC<CustomProps> = ({
+const ProjectHolder = ({
   heading,
   subHeading,
   projectContent,
@@ -26,6 +13,18 @@ const ProjectHolder: React.FC<CustomProps> = ({
   link2Type,
   link2Icon,
   order,
+}: {
+  heading: string;
+  subHeading: string;
+  projectContent: string;
+  projectImage: string;
+  link1: string;
+  link1Type: string;
+  link1Icon: React.ReactNode;
+  link2: string;
+  link2Type: string;
+  link2Icon: React.ReactNode;
+  order: string;
 }) => {
   return (
     <div className="group relative">
@@ -65,5 +64,4 @@ const ProjectHolder: React.FC<CustomProps> = ({
     </div>
   );
 };
-
 export default ProjectHolder;
