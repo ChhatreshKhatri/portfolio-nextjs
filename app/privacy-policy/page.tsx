@@ -9,19 +9,19 @@ export const metadata = {
   },
   openGraph: {
     title: "Chhatresh Khatri | Portfolio | Privacy-Policy",
-    description:
-      "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
+    description: "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
     url: "https://www.chhatreshkhatri.com/privacy-policy",
     siteName: "chhatreshkhatri",
     type: "website",
+    images: [{ url: "../opengraph-image.png" }],
   },
   twitter: {
     title: "Chhatresh Khatri | Portfolio | Privacy-Policy",
     url: "https://www.chhatreshkhatri.com/privacy-policy",
-    description:
-      "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
+    description: "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
     card: "summary_large_image",
     creator: "@chhatreshkhatri",
+    images: [{ url: "../opengraph-image.png" }],
   },
   robots: {
     index: false,
