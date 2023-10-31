@@ -7,6 +7,22 @@ export const metadata = {
   alternates: {
     canonical: "/privacy-policy",
   },
+  openGraph: {
+    title: "Chhatresh Khatri | Portfolio | Privacy-Policy",
+    description:
+      "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
+    url: "https://www.chhatreshkhatri.com/privacy-policy",
+    siteName: "chhatreshkhatri",
+    type: "website",
+  },
+  twitter: {
+    title: "Chhatresh Khatri | Portfolio | Privacy-Policy",
+    url: "https://www.chhatreshkhatri.com/privacy-policy",
+    description:
+      "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
+    card: "summary_large_image",
+    creator: "@chhatreshkhatri",
+  },
   robots: {
     index: false,
     follow: false,

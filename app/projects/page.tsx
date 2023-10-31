@@ -6,6 +6,22 @@ export const metadata = {
   description:
     "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
   alternates: { canonical: "/projects" },
+  openGraph: {
+    title: "Chhatresh Khatri | Portfolio | Projects",
+    description:
+      "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
+    url: "https://www.chhatreshkhatri.com/projects",
+    siteName: "chhatreshkhatri",
+    type: "website",
+  },
+  twitter: {
+    title: "Chhatresh Khatri | Portfolio | Projects",
+    url: "https://www.chhatreshkhatri.com/projects",
+    description:
+      "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
+    card: "summary_large_image",
+    creator: "@chhatreshkhatri",
+  },
 };
 export default function Projects() {
   return (

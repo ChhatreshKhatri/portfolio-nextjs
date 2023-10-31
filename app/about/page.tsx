@@ -38,6 +38,22 @@ export const metadata = {
   description:
     "Chhatresh Khatri About. Full Stack developer skilled in diverse tech including C/C++, Java, HTML5, CSS3, JavaScript, React.js, Next.js, and more.",
   alternates: { canonical: "/about" },
+  openGraph: {
+    title: "Chhatresh Khatri | Portfolio | About",
+    description:
+      "Chhatresh Khatri About. Full Stack developer skilled in diverse tech including C/C++, Java, HTML5, CSS3, JavaScript, React.js, Next.js, and more.",
+    url: "https://www.chhatreshkhatri.com/about",
+    siteName: "chhatreshkhatri",
+    type: "website",
+  },
+  twitter: {
+    title: "Chhatresh Khatri | Portfolio | About",
+    url: "https://www.chhatreshkhatri.com/about",
+    description:
+      "Chhatresh Khatri About. Full Stack developer skilled in diverse tech including C/C++, Java, HTML5, CSS3, JavaScript, React.js, Next.js, and more.",
+    card: "summary_large_image",
+    creator: "@chhatreshkhatri",
+  },
 };
 interface Skill {
   name: string;

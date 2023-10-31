@@ -1,0 +1,1 @@
+npm i @types/node@latest @types/react@latest @types/react-dom@latest autoprefixer@latest eslint@latest eslint-config-next@latest next@latest next-themes@latest postcss@latest react@latest react-dom@latest react-icons@latest sharp@latest tailwindcss@latest typescript@latest typewriter-effect@latest
