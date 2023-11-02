@@ -1,7 +1,7 @@
 import { SiAlibabacloud, SiGithub } from "react-icons/si";
 import { AiOutlineLink } from "react-icons/ai";
 import ProjectHolder from "../../components/ProjectHolder";
-import PageHead from "@/components/pageHead";
+import PageHead from "@/components/PageHead";
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | Projects",
   description:

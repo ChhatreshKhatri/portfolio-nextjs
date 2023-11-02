@@ -1,7 +1,7 @@
 "use client";
 import { useEffect } from "react";
 
-const FaviconVisibilityChange = () => {
+const FaviconVisibility = () => {
   useEffect(() => {
     const favicon = document.querySelector('link[rel="icon"]');
 
@@ -20,4 +20,4 @@ const FaviconVisibilityChange = () => {
   return null;
 };
 
-export default FaviconVisibilityChange;
+export default FaviconVisibility;

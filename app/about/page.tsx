@@ -1,4 +1,4 @@
-import PageHead from "@/components/pageHead";
+import PageHead from "@/components/PageHead";
 import {
   SiC,
   SiCplusplus,

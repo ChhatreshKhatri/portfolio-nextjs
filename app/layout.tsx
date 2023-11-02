@@ -1,8 +1,8 @@
 import NavBar from "../components/Navbar";
 import { Poppins } from "next/font/google";
-import Footer from "@/components/footer";
 import ThemeProviderWrapper from "@/components/ThemeProviderWrapper";
-import FaviconVisibilityChange from "../components/FaviconVisibilityChange";
+import FaviconVisibility from "../components/FaviconVisibility";
+import Footer from "@/components/Footer";
 import "./globals.css";
 const poppins = Poppins({ subsets: ["latin"], weight: ["500", "700"] });
 export const metadata = {
@@ -62,10 +62,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={`${poppins.className} w-full min-h-screen flex flex-col bg-light text-darked dark:bg-dark dark:text-light`}>
         <ThemeProviderWrapper>
+          <FaviconVisibility />
           <NavBar />
           <main className="w-full h-full flex items-center flex-col justify-center font-medium px-2 xxs:px-3 xs:px-6 md:px-12 lg:px-20 py-20 gap-y-8">
             {children}
-            <FaviconVisibilityChange />
           </main>
           <Footer />
         </ThemeProviderWrapper>
