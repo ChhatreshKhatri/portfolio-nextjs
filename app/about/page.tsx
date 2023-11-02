@@ -1,3 +1,4 @@
+import PageHead from "@/components/pageHead";
 import {
   SiC,
   SiCplusplus,
@@ -127,11 +128,7 @@ const Skills = ({ skillName, arrayName }: { skillName: string; arrayName: Skill[
 export default function Page() {
   return (
     <>
-      <button className="flex items-center justify-center rounded p-0.5 bg-gradient-to-r from-blue1 to-yellow1">
-        <h1 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-buttonBg dark:bg-darked rounded">
-          About Me
-        </h1>
-      </button>
+      <PageHead text="About" />
       <div className="relative group rounded-lg w-full text-justify p-3 xs:p-6 xs:px-10 py-6">
         <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-blue2/50 to-green2/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
         <h2 className={`relative text-2xl xxs:text-3xl md:text-4xl text-center`}>Description</h2>

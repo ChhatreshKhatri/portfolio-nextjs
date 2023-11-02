@@ -1,6 +1,7 @@
 import { SiAlibabacloud, SiGithub } from "react-icons/si";
 import { AiOutlineLink } from "react-icons/ai";
 import ProjectHolder from "../../components/ProjectHolder";
+import PageHead from "@/components/pageHead";
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | Projects",
   description:
@@ -28,11 +29,7 @@ export const metadata = {
 export default function Projects() {
   return (
     <>
-      <button className="flex items-center justify-center rounded p-0.5 bg-gradient-to-r from-blue1 to-yellow1">
-        <h1 className="flex justify-center items-center font-semibold tracking-wider text-xl xxs:text-2xl md:text-3xl p-1 md:px-2 bg-buttonBg dark:bg-darked rounded">
-          My Projects
-        </h1>
-      </button>
+      <PageHead text="Projects" />
       {/* Ramma creations */}
       <ProjectHolder
         heading="Ramaa Creations"
