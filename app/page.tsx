@@ -45,6 +45,7 @@ export default function Home() {
               width={500}
               height={500}
               className="w-[60%] xs:w-[50%] md:w-[35%] lg:w-[100%] xl:w-[80%] drop-shadow-2xl"
+              quality={100}
             />
           </div>
         </div>

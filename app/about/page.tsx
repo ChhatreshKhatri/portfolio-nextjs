@@ -14,8 +14,6 @@ import {
   SiNextdotjs,
   SiExpress,
   SiNodedotjs,
-  SiAxios,
-  SiRedux,
   SiDotenv,
   SiMongodb,
   SiGit,
@@ -33,6 +31,7 @@ import {
   SiLinux,
   SiUbuntu,
   SiWindows11,
+  SiAstro,
 } from "react-icons/si";
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio | About",
@@ -77,12 +76,11 @@ const languages: Skill[] = [
 const frameworks: Skill[] = [
   { name: "React.js", color: "bg-[#61DAFB]", icon: <SiReact title="React.js" size={32} className="h-6 xs:h-12" /> },
   { name: "Next.js", color: "bg-[#000000]", icon: <SiNextdotjs title="Next.js" size={32} className="h-6 xs:h-12" />, className: "text-white" },
+  { name: "Astro", color: "bg-[#BC52EE]", icon: <SiAstro title="Astro" size={32} className="h-6 xs:h-12" /> },
   { name: "Express.js", color: "bg-[#000000]", icon: <SiExpress title="Express.js" size={32} className="h-6 xs:h-12" />, className: "text-white" },
   { name: "Node.js", color: "bg-[#339933]", icon: <SiNodedotjs title="Node.js" size={32} className="h-6 xs:h-12" /> },
   { name: "Bootstrap", color: "bg-[#05054B]", icon: <SiBootstrap title="Bootstrap" size={32} className="h-6 xs:h-12" />, className: "text-white" },
   { name: "Tailwind CSS", color: "bg-[#06B6D4]", icon: <SiTailwindcss title="Tailwind CSS" size={32} className="h-6 xs:h-12" /> },
-  { name: "Axios", color: "bg-[#5A29E4]", icon: <SiAxios title="Axios" size={32} className="h-6 xs:h-12" /> },
-  { name: "Redux", color: "bg-[#764ABC]", icon: <SiRedux title="Redux" size={32} className="h-6 xs:h-12" /> },
   { name: "DotENV", color: "bg-[#ECD53F]", icon: <SiDotenv title="DotENV" size={32} className="h-6 xs:h-12" /> },
 ];
 const tools: Skill[] = [
