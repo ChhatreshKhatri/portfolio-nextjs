@@ -14,10 +14,10 @@ export default function Home() {
           {/* Content for the first column */}
           <div className="w-full h-full flex flex-col justify-center rounded-lg p-2 md:gap-4 xs:p-6">
             {/* Centered content in the first column */}
-            <h1 className="text-2xl xxs:text-2xl xs:text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold text-center">{`Hi! I'm Chhatresh Khatri`}</h1>
-            <h2 className="text-2xl xxs:text-2xl xs:3xl md:text-4xl xl:text-5xl font-semibold text-center">
+            <h2 className="text-2xl xxs:text-2xl xs:text-3xl md:text-5xl lg:text-5xl xl:text-6xl font-semibold text-center">{`Hi! I'm Chhatresh Khatri`}</h2>
+            <span className="text-2xl xxs:text-2xl xs:3xl md:text-4xl xl:text-5xl font-semibold text-center">
               <Typewriter />
-            </h2>
+            </span>
             <p className="text-lg xs:text-xl text-justify mt-1">
               A Computer Science & Engineering graduate with a passion for problem-solving and web development. An enthusiastic, self-motivated
               professional with strong interpersonal and communication skills, I&apos;m passionate about the latest tech trends. A quick learner and
