@@ -4,8 +4,6 @@
     "autoAlias": false
   },
   "git": {
-    "deploymentEnabled": {
-      "master": false
-    }
+    "deploymentEnabled": false
   }
 }

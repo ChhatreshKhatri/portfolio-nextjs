@@ -1,10 +1,23 @@
 import NavBar from "@/app/components/Navbar";
-import { Poppins } from "next/font/google";
+import localFont from 'next/font/local'
 import ThemeProviderWrapper from "@/app/components/ThemeProviderWrapper";
 import FaviconVisibility from "@/app/components/FaviconVisibility";
 import Footer from "@/app/components/Footer";
 import "./globals.css";
-const poppins = Poppins({ subsets: ["latin"], weight: ["500", "700"] });
+const poppins = localFont({
+  src: [
+    {
+      path: './assets/fonts/Poppins.woff2',
+      weight: '500',
+      style: 'normal',
+    },
+    {
+      path: './assets/fonts/PoppinsBold.woff2',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+});
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio",
   description:
