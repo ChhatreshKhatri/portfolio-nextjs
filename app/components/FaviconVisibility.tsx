@@ -7,7 +7,7 @@ const FaviconVisibility = () => {
 
     const handleVisibilityChange = () => {
       const hidden = document.hidden;
-      favicon?.setAttribute("href", `/icon${hidden ? "-hidden" : ""}.svg`);
+      favicon?.setAttribute("href", `https://assets.chhatreshkhatri.com/assets/${hidden ? "icon-hidden.svg" : "favicon.ico"}`);
     };
 
     document.addEventListener("visibilitychange", handleVisibilityChange);

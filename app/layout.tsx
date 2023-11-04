@@ -1,8 +1,8 @@
-import NavBar from "@/components/Navbar";
+import NavBar from "@/app/components/Navbar";
 import { Poppins } from "next/font/google";
-import ThemeProviderWrapper from "@/components/ThemeProviderWrapper";
-import FaviconVisibility from "@/components/FaviconVisibility";
-import Footer from "@/components/Footer";
+import ThemeProviderWrapper from "@/app/components/ThemeProviderWrapper";
+import FaviconVisibility from "@/app/components/FaviconVisibility";
+import Footer from "@/app/components/Footer";
 import "./globals.css";
 const poppins = Poppins({ subsets: ["latin"], weight: ["500", "700"] });
 export const metadata = {
@@ -23,6 +23,11 @@ export const metadata = {
     "Next.JS",
     "frontend",
   ],
+  icons: {
+    shortcut: [{ url: "https://assets.chhatreshkhatri.com/assets/icon.svg" }],
+    icon: [{ url: "https://assets.chhatreshkhatri.com/assets/favicon.ico" }],
+    apple: ["https://assets.chhatreshkhatri.com/assets/apple-touch-icon.png"],
+  },
   applicationName: "Chhatresh Khatri Portfolio",
   type: "website",
   authors: [{ name: "Chhatresh Khatri" }],
@@ -34,6 +39,7 @@ export const metadata = {
     description:
       "Chhatresh Khatri Portfolio. Full stack Web Developer passionate about latest trends in the tech industry. Crafting innovation with code.",
     url: "https://www.chhatreshkhatri.com/",
+    images: ["https://assets.chhatreshkhatri.com/assets/opengraph-image.png"],
     siteName: "chhatreshkhatri",
     type: "website",
   },
@@ -43,6 +49,7 @@ export const metadata = {
     description:
       "Chhatresh Khatri Portfolio. Full stack Web Developer passionate about latest trends in the tech industry. Crafting innovation with code.",
     card: "summary_large_image",
+    images: ["https://assets.chhatreshkhatri.com/assets/opengraph-image.png"],
     creator: "@chhatreshkhatri",
   },
   robots: {
@@ -60,7 +67,6 @@ export const viewport = { themeColor: "#191919" };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <FaviconVisibility />
       <body className={`${poppins.className} w-full min-h-screen flex flex-col bg-light text-darked dark:bg-dark dark:text-light`}>
         <ThemeProviderWrapper>
           <NavBar />
@@ -70,6 +76,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
         </ThemeProviderWrapper>
       </body>
+      <FaviconVisibility />
     </html>
   );
 }

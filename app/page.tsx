@@ -1,9 +1,9 @@
 "use client";
-import { ResumeIcon, SocialIcon } from "../components/icons";
-import Typewriter from "../components/Typewriter";
-import LinkButton from "../components/LinkButton";
+import { ResumeIcon, SocialIcon } from "./components/icons";
+import Typewriter from "./components/Typewriter";
+import LinkButton from "./components/LinkButton";
 import Image from "next/image";
-import PageHead from "@/components/PageHead";
+import PageHead from "@/app/components/PageHead";
 export default function Home() {
   return (
     <>

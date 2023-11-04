@@ -1,4 +1,4 @@
-import PageHead from "@/components/PageHead";
+import PageHead from "@/app/components/PageHead";
 import Link from "next/link";
 import React from "react";
 
