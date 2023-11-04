@@ -33,13 +33,16 @@ const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 0) {
         setScrolled(true);
       } else {
         setScrolled(false);
       }
     };
+    // Call onScroll once to set the initial state
+    onScroll();
     window.addEventListener("scroll", onScroll);
+
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
