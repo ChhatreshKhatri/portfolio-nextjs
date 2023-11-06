@@ -1,8 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ChhatreshKhatri } from "./icons";
-import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
+import { ChhatreshKhatri, GitHubIcon, GmailIcon, LinkedInIcon } from "./icons";
 import { usePathname } from "next/navigation";
 import ThemeButton from "./ThemeButton";
 const CustomLink = ({ href, title, className = "" }: { href: string; title: string; className?: string }) => {
@@ -78,7 +77,8 @@ const Navbar = () => {
           </button>
         </div>
         <div className={`${navOpen ? "flex" : "hidden"} flex-col lg:flex lg:flex-row items-center justify-center gap-x-8 text-xl font-semibold`}>
-          <CustomLink href={"/"} title={"Home"} className="" /> <CustomLink href={"/about"} title={"About"} className="" />
+          <CustomLink href={"/"} title={"Home"} className="" />
+          <CustomLink href={"/about"} title={"About"} className="" />
           <CustomLink href={"/projects"} title={"Projects"} className="" />
         </div>
         <div className={`${navOpen ? "flex" : "hidden"} lg:flex items-center justify-center gap-x-5`}>
@@ -86,19 +86,19 @@ const Navbar = () => {
             title="GitHub"
             aria-label="Github"
             href={"https://github.com/Chhatreshkhatri"}
-            icon={<SiGithub title="GitHub" size={32} className="" />}
+            icon={<GitHubIcon title="GitHub" size={32} className="w-8" />}
           />
           <NavIcon
             title="LinkedIn"
             aria-label="LinkedIn"
             href={"https://www.linkedin.com/in/chhatreshkhatri"}
-            icon={<SiLinkedin title="LinkedIn" size={32} className="" />}
+            icon={<LinkedInIcon title="LinkedIn" size={32} className="w-8" />}
           />
           <NavIcon
             title="Mail"
             aria-label="Mail"
             href={"mailto:contact@chhatreshkhatri.com"}
-            icon={<SiGmail title="Mail" size={32} className="" />}
+            icon={<GmailIcon title="Mail" size={32} className="w-8" />}
           />
           <ThemeButton />
         </div>

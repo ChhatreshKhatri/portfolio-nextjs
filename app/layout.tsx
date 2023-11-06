@@ -1,23 +1,12 @@
 import NavBar from "@/app/components/Navbar";
-import localFont from 'next/font/local'
 import ThemeProviderWrapper from "@/app/components/ThemeProviderWrapper";
 import FaviconVisibility from "@/app/components/FaviconVisibility";
 import Footer from "@/app/components/Footer";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-const poppins = localFont({
-  src: [
-    {
-      path: './assets/fonts/Poppins.woff2',
-      weight: '500',
-      style: 'normal',
-    },
-    {
-      path: './assets/fonts/PoppinsBold.woff2',
-      weight: '700',
-      style: 'normal',
-    },
-  ],
-});
+
+const poppins = Poppins({ subsets: ["latin"], weight: ["500", "700"], display: "swap" });
+
 export const metadata = {
   title: "Chhatresh Khatri | Portfolio",
   description:
@@ -37,8 +26,8 @@ export const metadata = {
     "frontend",
   ],
   icons: {
-    shortcut: [{ url: "https://assets.chhatreshkhatri.com/assets/icon.svg" }],
-    icon: [{ url: "https://assets.chhatreshkhatri.com/assets/favicon.ico" }],
+    shortcut: [{ url: "https://assets.chhatreshkhatri.com/icons/icon.svg" }],
+    icon: [{ url: "https://assets.chhatreshkhatri.com/icon/favicon.ico" }],
     apple: ["https://assets.chhatreshkhatri.com/assets/apple-touch-icon.png"],
   },
   applicationName: "Chhatresh Khatri Portfolio",
@@ -52,7 +41,7 @@ export const metadata = {
     description:
       "Chhatresh Khatri Portfolio. Full stack Web Developer passionate about latest trends in the tech industry. Crafting innovation with code.",
     url: "https://www.chhatreshkhatri.com/",
-    images: ["https://assets.chhatreshkhatri.com/assets/opengraph-image.png"],
+    images: ["https://assets.chhatreshkhatri.com/icons/opengraph-image.png"],
     siteName: "chhatreshkhatri",
     type: "website",
   },
@@ -62,7 +51,7 @@ export const metadata = {
     description:
       "Chhatresh Khatri Portfolio. Full stack Web Developer passionate about latest trends in the tech industry. Crafting innovation with code.",
     card: "summary_large_image",
-    images: ["https://assets.chhatreshkhatri.com/assets/opengraph-image.png"],
+    images: ["https://assets.chhatreshkhatri.com/icons/opengraph-image.png"],
     creator: "@chhatreshkhatri",
   },
   robots: {

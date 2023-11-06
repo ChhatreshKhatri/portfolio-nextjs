@@ -9,9 +9,9 @@ export default function manifest(): MetadataRoute.Manifest {
     background_color: "#191919",
     theme_color: "#191919",
     icons: [
-      { src: "https://assets.chhatreshkhatri.com/assets/icon.svg", sizes: "any", type: "image/svg+xml", purpose: "maskable" },
-      { src: "https://assets.chhatreshkhatri.com/assets/icon-192x192.png", sizes: "192x192", type: "image/png" },
-      { src: "https://assets.chhatreshkhatri.com/assets/icon-512x512.png", sizes: "512x512", type: "image/png" },
+      { src: "https://assets.chhatreshkhatri.com/icons/icon.svg", sizes: "any", type: "image/svg+xml", purpose: "maskable" },
+      { src: "https://assets.chhatreshkhatri.com/icons/icon-192x192.png", sizes: "192x192", type: "image/png" },
+      { src: "https://assets.chhatreshkhatri.com/icons/icon-512x512.png", sizes: "512x512", type: "image/png" },
     ],
   };
 }
