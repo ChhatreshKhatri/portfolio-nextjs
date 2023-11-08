@@ -1,4 +1,3 @@
-
 import ProjectHolder from "../components/ProjectHolder";
 import PageHead from "@/app/components/PageHead";
 import { AlibabaCloudIcon, GitHubIcon, LiveLink } from "../components/icons";
@@ -14,7 +13,7 @@ export const metadata = {
     url: "https://www.chhatreshkhatri.com/projects",
     siteName: "chhatreshkhatri",
     type: "website",
-    images: [{ url: "../opengraph-image.png" }],
+    images: [{ url: "https://assets.chhatreshkhatri.com/icons/opengraph-image.png" }],
   },
   twitter: {
     title: "Chhatresh Khatri | Portfolio | Projects",
@@ -23,7 +22,7 @@ export const metadata = {
       "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
     card: "summary_large_image",
     creator: "@chhatreshkhatri",
-    images: [{ url: "../opengraph-image.png" }],
+    images: [{ url: "https://assets.chhatreshkhatri.com/icons/opengraph-image.png" }],
   },
 };
 export default function Projects() {
@@ -37,11 +36,11 @@ export default function Projects() {
         projectContent="Built using Alicms tool at Alibaba Cloud Low-Code Development Contest 2022. Achieved second position out of 2043 participants."
         projectImage={`RamaaCreations.webp`}
         link1="https://www.alibabacloud.com/blog/598812"
-        link1Icon={<AlibabaCloudIcon size={32} className={"w-8"} />}
+        link1Icon={<AlibabaCloudIcon size={32} className={"w-6 xs:w-8"} />}
         link1Type="Blog Link"
         link2="https://www.alibabacloud.com/blog/598754"
         link2Type="Winner List"
-        link2Icon={<AlibabaCloudIcon size={32} className={"w-8"} />}
+        link2Icon={<AlibabaCloudIcon size={32} className={"w-6 xs:w-8"} />}
         order="odd"
       />
       {/* StackOverflow Clone */}
@@ -52,10 +51,10 @@ export default function Projects() {
         projectImage={`StackOverflowClone.webp`}
         link1="https://soclone.chhatreshkhatri.com/"
         link1Type="Live Link"
-        link1Icon={<LiveLink size={32} className={"w-8"} />}
+        link1Icon={<LiveLink size={32} className={"w-6 xs:w-8"} />}
         link2="https://github.com/Chhatreshkhatri/stack-overflow-clone"
         link2Type="Github Link"
-        link2Icon={<GitHubIcon size={32} className={"w-8"} />}
+        link2Icon={<GitHubIcon size={32} className={"w-6 xs:w-8"} />}
         order="even"
       />
       {/* Amazon Clone */}
@@ -66,10 +65,10 @@ export default function Projects() {
         projectImage={`AmazonClone.webp`}
         link1="https://amazonclone.chhatreshkhatri.com/"
         link1Type="Live Link"
-        link1Icon={<LiveLink size={32} className={"w-8"} />}
+        link1Icon={<LiveLink size={32} className={"w-6 xs:w-8"} />}
         link2="https://github.com/Chhatreshkhatri/amazon-clone"
         link2Type="Github Link"
-        link2Icon={<GitHubIcon size={32} className={"w-8"} />}
+        link2Icon={<GitHubIcon size={32} className={"w-6 xs:w-8"} />}
         order="odd"
       />
       {/* MyChat Project */}
@@ -80,7 +79,7 @@ export default function Projects() {
         projectImage={`MyChat.webp`}
         link1="https://github.com/Chhatreshkhatri/MyChat"
         link1Type="Github Link"
-        link1Icon={<GitHubIcon size={32} className={"w-8"} />}
+        link1Icon={<GitHubIcon size={32} className={"w-6 xs:w-8"} />}
         link2=""
         link2Type=""
         link2Icon={undefined}

@@ -8,7 +8,8 @@ const LinkButton = ({ name, link, icon, pos }: { name: string; link: string; ico
         href={link}
         target="_blank"
         className="flex justify-center items-center py-1 px-2 gap-x-2 rounded whitespace-nowrap bg-lighter dark:bg-darker">
-        {icon} {name}
+        {icon}
+        {name}
       </Link>
     </button>
   );

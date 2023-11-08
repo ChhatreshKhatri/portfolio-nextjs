@@ -8,7 +8,7 @@ const CustomLink = ({ href, title, className = "" }: { href: string; title: stri
   const path = usePathname();
   return (
     <Link href={href} className={`${className} relative flex items-center justify-center group py-1`}>
-      {title}
+      <p>{title}</p>
       <span
         className={`${
           path === href ? "w-full" : "w-0"
@@ -48,8 +48,8 @@ const Navbar = () => {
     <nav
       className={`${
         navOpen || scrolled
-          ? " bg-navbarBg/60 dark:bg-darker/70 backdrop-blur-md shadow-bottom py-2 transition-navBar duration-200 ease-in-out"
-          : "py-2.5"
+          ? " bg-navbarBg/60 dark:bg-darker/70 backdrop-blur-md shadow-bottom py-1.5 transition-navBar duration-200 ease-in-out"
+          : "py-2"
       } w-full flex flex-col items-center px-3 xs:px-6 md:px-12 lg:px-20 fixed z-10 top-0`}>
       <div className="flex flex-col justify-center lg:flex-row lg:justify-between w-full">
         <div className="flex justify-between">
@@ -81,25 +81,15 @@ const Navbar = () => {
           <CustomLink href={"/about"} title={"About"} className="" />
           <CustomLink href={"/projects"} title={"Projects"} className="" />
         </div>
-        <div className={`${navOpen ? "flex" : "hidden"} lg:flex items-center justify-center gap-x-5`}>
-          <NavIcon
-            title="GitHub"
-            aria-label="Github"
-            href={"https://github.com/Chhatreshkhatri"}
-            icon={<GitHubIcon title="GitHub" size={32} className="w-8" />}
-          />
+        <div className={`${navOpen ? "flex" : "hidden"} lg:flex items-center justify-center py-1 lg:py-0 gap-x-5`}>
+          <NavIcon title="GitHub" aria-label="Github" href={"https://github.com/Chhatreshkhatri"} icon={<GitHubIcon className="w-8" />} />
           <NavIcon
             title="LinkedIn"
             aria-label="LinkedIn"
             href={"https://www.linkedin.com/in/chhatreshkhatri"}
-            icon={<LinkedInIcon title="LinkedIn" size={32} className="w-8" />}
+            icon={<LinkedInIcon className="w-8" />}
           />
-          <NavIcon
-            title="Mail"
-            aria-label="Mail"
-            href={"mailto:contact@chhatreshkhatri.com"}
-            icon={<GmailIcon title="Mail" size={32} className="w-8" />}
-          />
+          <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<GmailIcon className="w-8" />} />
           <ThemeButton />
         </div>
       </div>
