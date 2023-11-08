@@ -42,8 +42,9 @@ export default function Home() {
               priority
               src={`https://assets.chhatreshkhatri.com/assets/ChhatreshKhatri.webp`}
               alt={"Chhatresh Khatri"}
-              width={500}
-              height={500}
+              height={512}
+              width={512}
+              decoding="async"
               className="w-[60%] xs:w-[50%] md:w-[35%] lg:w-[100%] xl:w-[80%] drop-shadow-2xl"
             />
           </div>

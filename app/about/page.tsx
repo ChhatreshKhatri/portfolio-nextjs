@@ -2,12 +2,12 @@ import PageHead from "@/app/components/PageHead";
 import { AlibabaCloudIcon, AstroIcon, BootstrapIcon, CIcon, CPlusPlusIcon, CanvaIcon, CloudflareIcon, CssIcon, ExpressIcon, FigmaIcon, FirebaseIcon, GimpIcon, GitHubIcon, GitIcon, GoogleCloudIcon, HtmlIcon, JavaIcon, JavaScriptIcon, LinuxIcon, MongoDBIcon, MySqlIcon, NextjsIcon, NodejsIcon, PostmanIcon, ReactIcon, TailwindCssIcon, TypeScriptIcon, UbuntuIcon, VSCodeIcon, VercelIcon, Windows11Icon } from "../components/icons";
 
 export const metadata = {
-  title: "Chhatresh Khatri | Portfolio | About",
+  title: "Chhatresh Khatri | About",
   description:
     "Chhatresh Khatri About. Full Stack developer skilled in diverse tech including C/C++, Java, HTML5, CSS3, JavaScript, React.js, Next.js, and more.",
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "Chhatresh Khatri | Portfolio | About",
+    title: "Chhatresh Khatri | About",
     description:
       "Chhatresh Khatri About. Full Stack developer skilled in diverse tech including C/C++, Java, HTML5, CSS3, JavaScript, React.js, Next.js, and more.",
     url: "https://www.chhatreshkhatri.com/about",
@@ -16,7 +16,7 @@ export const metadata = {
     images: [{ url: "https://assets.chhatreshkhatri.com/icons/opengraph-image.png" }],
   },
   twitter: {
-    title: "Chhatresh Khatri | Portfolio | About",
+    title: "Chhatresh Khatri | About",
     url: "https://www.chhatreshkhatri.com/about",
     description:
       "Chhatresh Khatri About. Full Stack developer skilled in diverse tech including C/C++, Java, HTML5, CSS3, JavaScript, React.js, Next.js, and more.",

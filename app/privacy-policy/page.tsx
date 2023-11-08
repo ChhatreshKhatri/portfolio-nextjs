@@ -3,13 +3,13 @@ import Link from "next/link";
 import React from "react";
 
 export const metadata = {
-  title: "Chhatresh Khatri | Portfolio | Privacy-Policy ",
+  title: "Chhatresh Khatri | Privacy-Policy ",
   description: "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
   alternates: {
     canonical: "/privacy-policy",
   },
   openGraph: {
-    title: "Chhatresh Khatri | Portfolio | Privacy-Policy",
+    title: "Chhatresh Khatri | Privacy-Policy",
     description: "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
     url: "https://www.chhatreshkhatri.com/privacy-policy",
     siteName: "chhatreshkhatri",
@@ -17,7 +17,7 @@ export const metadata = {
     images: [{ url: "https://assets.chhatreshkhatri.com/icons/opengraph-image.png" }],
   },
   twitter: {
-    title: "Chhatresh Khatri | Portfolio | Privacy-Policy",
+    title: "Chhatresh Khatri | Privacy-Policy",
     url: "https://www.chhatreshkhatri.com/privacy-policy",
     description: "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
     card: "summary_large_image",

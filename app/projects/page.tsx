@@ -2,12 +2,12 @@ import ProjectHolder from "../components/ProjectHolder";
 import PageHead from "@/app/components/PageHead";
 import { AlibabaCloudIcon, GitHubIcon, LiveLink } from "../components/icons";
 export const metadata = {
-  title: "Chhatresh Khatri | Portfolio | Projects",
+  title: "Chhatresh Khatri | Projects",
   description:
     "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
   alternates: { canonical: "/projects" },
   openGraph: {
-    title: "Chhatresh Khatri | Portfolio | Projects",
+    title: "Chhatresh Khatri | Projects",
     description:
       "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
     url: "https://www.chhatreshkhatri.com/projects",
@@ -16,7 +16,7 @@ export const metadata = {
     images: [{ url: "https://assets.chhatreshkhatri.com/icons/opengraph-image.png" }],
   },
   twitter: {
-    title: "Chhatresh Khatri | Portfolio | Projects",
+    title: "Chhatresh Khatri | Projects",
     url: "https://www.chhatreshkhatri.com/projects",
     description:
       "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
