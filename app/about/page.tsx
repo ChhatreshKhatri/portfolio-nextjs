@@ -117,7 +117,7 @@ export default function Page() {
           <Skills skillName="Languages" arrayName={languages} />
           <Skills skillName="Frameworks & Libraries" arrayName={frameworks} />
           <Skills skillName="Tools & IDEs" arrayName={tools} />
-          <Skills skillName="OS" arrayName={OS} />
+          <Skills skillName="Operatinng System" arrayName={OS} />
         </div>
       </div>
     </>
