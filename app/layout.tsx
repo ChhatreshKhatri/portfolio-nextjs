@@ -27,8 +27,8 @@ export const metadata = {
   ],
   icons: {
     shortcut: [{ url: "https://assets.chhatreshkhatri.com/icons/icon.svg" }],
-    icon: [{ url: "https://assets.chhatreshkhatri.com/icon/favicon.ico" }],
-    apple: ["https://assets.chhatreshkhatri.com/assets/apple-touch-icon.png"],
+    icon: [{ url: "https://assets.chhatreshkhatri.com/icons/favicon.ico" }],
+    apple: ["https://assets.chhatreshkhatri.com/icons/apple-icon.png"],
   },
   applicationName: "Chhatresh Khatri Portfolio",
   type: "website",
