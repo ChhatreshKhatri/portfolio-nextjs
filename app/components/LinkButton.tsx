@@ -3,7 +3,9 @@ import Link from "next/link";
 const LinkButton = ({ name, link, icon, pos }: { name: string; link: string; icon: React.ReactNode; pos: string }) => {
   return (
     <button
-      className={`items-center justify-center p-0.5 rounded bg-gradient-to-r ${pos == "1" ? "from-blue1 to-yellow1" : "from-yellow1 to-blue1"}`}>
+      className={`items-center justify-center p-0.5 rounded bg-gradient-to-r ${
+        pos == "1" ? "from-yellow1 to-blue1 dark:from-blue1 dark:to-yellow1" : "from-blue1 to-yellow1 dark:from-yellow1 dark:to-blue1"
+      }`}>
       <Link
         href={link}
         target="_blank"
