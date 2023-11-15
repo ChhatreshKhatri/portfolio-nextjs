@@ -29,6 +29,7 @@ export const metadata = {
     shortcut: [{ url: "https://assets.chhatreshkhatri.com/icons/icon.svg" }],
     icon: [{ url: "https://assets.chhatreshkhatri.com/icons/favicon.ico" }],
     apple: ["https://assets.chhatreshkhatri.com/icons/apple-icon.png"],
+    other: [{ rel: "mask-icon", url: "https://assets.chhatreshkhatri.com/icons/icon.svg", color: "#191919" }],
   },
   applicationName: "Chhatresh Khatri Portfolio",
   type: "website",
@@ -53,16 +54,6 @@ export const metadata = {
     card: "summary_large_image",
     images: ["https://assets.chhatreshkhatri.com/icons/opengraph-image.png"],
     creator: "@chhatreshkhatri",
-  },
-  robots: {
-    index: true,
-    follow: true,
-    nocache: false,
-    noarchive: false,
-    noimageindex: false,
-    "max-video-preview": -1,
-    "max-image-preview": "standard",
-    "max-snippet": -1,
   },
 };
 export const viewport = { themeColor: "#191919" };
