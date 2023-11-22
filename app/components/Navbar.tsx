@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ChhatreshKhatri, GitHubIcon, GmailIcon, LinkedInIcon } from "./icons";
 import { usePathname } from "next/navigation";
 import ThemeButton from "./ThemeButton";
+import Image from "next/image";
 const CustomLink = ({ href, title, className = "" }: { href: string; title: string; className?: string }) => {
   const path = usePathname();
   return (
@@ -50,7 +51,7 @@ const Navbar = () => {
         navOpen || scrolled
           ? " bg-navbarBg/60 dark:bg-darker/70 backdrop-blur-md shadow-bottom py-1.5 transition-navBar duration-200 ease-in-out"
           : "py-2"
-      } w-full flex flex-col items-center px-3 xs:px-6 md:px-12 lg:px-20 fixed z-10 top-0`}>
+      } w-full flex flex-col items-center px-3 xs:px-6 md:px-12 lg:px-20 sticky z-10 top-0`}>
       <div className="flex flex-col justify-center lg:flex-row lg:justify-between w-full">
         <div className="flex justify-between">
           <Link title="Chhatresh Khatri" aria-label="Chhatresh Khatri" href={"/"} className="flex justify-center items-center">
@@ -81,16 +82,20 @@ const Navbar = () => {
           <CustomLink href={"/about"} title={"About"} className="" />
           <CustomLink href={"/projects"} title={"Projects"} className="" />
         </div>
-        <div className={`${navOpen ? "flex" : "hidden"} lg:flex items-center justify-center py-1 lg:py-0 gap-x-5`}>
-          <NavIcon title="GitHub" aria-label="Github" href={"https://github.com/Chhatreshkhatri"} icon={<GitHubIcon className="w-8" />} />
-          <NavIcon
-            title="LinkedIn"
-            aria-label="LinkedIn"
-            href={"https://www.linkedin.com/in/chhatreshkhatri"}
-            icon={<LinkedInIcon className="w-8" />}
-          />
-          <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<GmailIcon className="w-8" />} />
-          <ThemeButton />
+        <div className={`${navOpen ? "flex" : "hidden"} flex-col lg:flex-row lg:flex items-center justify-center py-1 lg:py-0 gap-x-5 gap-y-1`}>
+          <div className="flex items-center justify-center py-1 lg:py-0 gap-x-5">
+            <NavIcon title="GitHub" aria-label="Github" href={"https://github.com/Chhatreshkhatri"} icon={<GitHubIcon className="w-8" />} />
+            <NavIcon
+              title="LinkedIn"
+              aria-label="LinkedIn"
+              href={"https://www.linkedin.com/in/chhatreshkhatri"}
+              icon={<LinkedInIcon className="w-8" />}
+            />
+            <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<GmailIcon className="w-8" />} />
+            <ThemeButton />
+          </div>
+          {/* image */}
+          <Image src={"https://visits.chhatreshkhatri.com/ck"} alt={"visits"} width={100} height={8} className="h-8" />
         </div>
       </div>
     </nav>

@@ -7,11 +7,10 @@ const Footer = () => {
       <div className="flex justify-center items-center" title="Chhatresh Khatri">
         <ChhatreshKhatri className={`flex`} alt="Chhatresh Khatri Logo" />
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center text-center">
+      <div className="flex items-center justify-center text-center">
         <p>
-          Developed By <strong>Chhatresh Khatri&nbsp;</strong>
+        &copy; <strong>Chhatresh Khatri&nbsp;</strong>
         </p>
-        <p>&copy; 2023 All Rights Reserved</p>
       </div>
       <Link href="/privacy-policy">Privacy Policy</Link>
     </footer>
