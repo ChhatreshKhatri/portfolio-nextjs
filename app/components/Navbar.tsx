@@ -30,8 +30,10 @@ const NavIcon = ({ title, href, icon, className = "" }: { title: string; href: s
 );
 const Navbar = () => {
   const { resolvedTheme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
+  useEffect(() => setMounted(true), []);
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 0) {
@@ -96,18 +98,20 @@ const Navbar = () => {
               icon={<Icons.LinkedInIcon className="w-8" />}
             />
             <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<Icons.GmailIcon className="w-8" />} />
-            <button
-              title={resolvedTheme === "dark" ? "Dark Mode" : "Light Mode"}
-              aria-label="Toggle Theme"
-              type="button"
-              className={`${
-                resolvedTheme === "dark" ? " text-light" : " text-dark"
-              } flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 w-8`}
-              onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
-              {resolvedTheme === "dark" ? <Icons.SunIcon className={`w-8`} /> : <Icons.MoonIcon className={`w-8`} />}
-            </button>
+            {mounted && (
+              <button
+                title={resolvedTheme === "dark" ? "Dark Mode" : "Light Mode"}
+                aria-label="Toggle Theme"
+                type="button"
+                className={`${
+                  resolvedTheme === "dark" ? " text-light" : " text-dark"
+                } flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 w-8`}
+                onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
+                {resolvedTheme === "dark" ? <Icons.SunIcon className={`w-8`} /> : <Icons.MoonIcon className={`w-8`} />}
+              </button>
+            )}
           </div>
-          <Image src={visitsUrl} alt={"visits"} width={100} height={8} className="h-8" />
+          <Image  src={visitsUrl} alt={"visits"} width={118} height={8} className="h-8" />
         </div>
       </div>
     </nav>
