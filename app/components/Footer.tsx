@@ -9,7 +9,7 @@ const Footer = () => {
       </div>
       <div className="flex items-center justify-center text-center">
         <p>
-        &copy; <strong>Chhatresh Khatri&nbsp;</strong>
+        &copy; <strong>Chhatresh Khatri 2023&nbsp;</strong>
         </p>
       </div>
       <Link href="/privacy-policy">Privacy Policy</Link>
