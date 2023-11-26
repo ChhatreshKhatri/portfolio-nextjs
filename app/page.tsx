@@ -1,5 +1,5 @@
 "use client";
-import { ResumeIcon, SocialIcon } from "./components/icons";
+import { Icons } from "./components/icons";
 import Typewriter from "./components/Typewriter";
 import LinkButton from "./components/LinkButton";
 import Image from "next/image";
@@ -27,10 +27,10 @@ export default function Home() {
               <LinkButton
                 name="Resume"
                 link="https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing"
-                icon={<ResumeIcon className="w-6 xs:w-8" />}
+                icon={<Icons.ResumeIcon className="w-6 xs:w-8" />}
                 pos="0"
               />
-              <LinkButton name="Social Links" link="https://social.chhatreshkhatri.com/" icon={<SocialIcon className="w-6 xs:w-8" />} pos={"1"} />
+              <LinkButton name="Social Links" link="https://social.chhatreshkhatri.com/" icon={<Icons.SocialIcon className="w-6 xs:w-8" />} pos={"1"} />
             </div>
           </div>
         </div>

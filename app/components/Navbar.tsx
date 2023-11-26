@@ -1,10 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ChhatreshKhatri, GitHubIcon, GmailIcon, LinkedInIcon } from "./icons";
+import { Icons } from "./icons";
 import { usePathname } from "next/navigation";
 import ThemeButton from "./ThemeButton";
 import Image from "next/image";
+import { useTheme } from "next-themes";
 const CustomLink = ({ href, title, className = "" }: { href: string; title: string; className?: string }) => {
   const path = usePathname();
   return (
@@ -29,6 +30,7 @@ const NavIcon = ({ title, href, icon, className = "" }: { title: string; href: s
   </Link>
 );
 const Navbar = () => {
+  const { resolvedTheme, setTheme } = useTheme();
   const [scrolled, setScrolled] = useState(false);
   const [navOpen, setNavOpen] = useState(false);
   useEffect(() => {
@@ -45,6 +47,9 @@ const Navbar = () => {
 
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+  const visitsUrl = `https://visits.chhatreshkhatri.com/ck?LBGC=3048C680&CBGC=30C68A80&LTC=${resolvedTheme === "dark" ? "FFFFFF" : "000000"}&CTC=${
+    resolvedTheme === "dark" ? "FFFFFF" : "000000"
+  }`;
   return (
     <nav
       className={`${
@@ -55,7 +60,7 @@ const Navbar = () => {
       <div className="flex flex-col justify-center lg:flex-row lg:justify-between w-full">
         <div className="flex justify-between">
           <Link title="Chhatresh Khatri" aria-label="Chhatresh Khatri" href={"/"} className="flex justify-center items-center">
-            <ChhatreshKhatri className={``} />
+            <Icons.ChhatreshKhatri className={``} />
           </Link>
           <button
             aria-label="Toggle Menu"
@@ -84,18 +89,26 @@ const Navbar = () => {
         </div>
         <div className={`${navOpen ? "flex" : "hidden"} flex-col lg:flex-row lg:flex items-center justify-center py-1 lg:py-0 gap-x-5 gap-y-1`}>
           <div className="flex items-center justify-center py-1 lg:py-0 gap-x-5">
-            <NavIcon title="GitHub" aria-label="Github" href={"https://github.com/Chhatreshkhatri"} icon={<GitHubIcon className="w-8" />} />
+            <NavIcon title="GitHub" aria-label="Github" href={"https://github.com/Chhatreshkhatri"} icon={<Icons.GitHubIcon className="w-8" />} />
             <NavIcon
               title="LinkedIn"
               aria-label="LinkedIn"
               href={"https://www.linkedin.com/in/chhatreshkhatri"}
-              icon={<LinkedInIcon className="w-8" />}
+              icon={<Icons.LinkedInIcon className="w-8" />}
             />
-            <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<GmailIcon className="w-8" />} />
-            <ThemeButton />
+            <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<Icons.GmailIcon className="w-8" />} />
+            <button
+              title={resolvedTheme === "dark" ? "Dark Mode" : "Light Mode"}
+              aria-label="Toggle Theme"
+              type="button"
+              className={`${
+                resolvedTheme === "dark" ? " text-light" : " text-dark"
+              } flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 w-8`}
+              onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
+              {resolvedTheme === "dark" ? <Icons.SunIcon className={`w-8`} /> : <Icons.MoonIcon className={`w-8`} />}
+            </button>
           </div>
-          {/* image */}
-          <Image src={"https://visits.chhatreshkhatri.com/ck"} alt={"visits"} width={100} height={8} className="h-8" />
+          <Image src={visitsUrl} alt={"visits"} width={100} height={8} className="h-8" />
         </div>
       </div>
     </nav>
