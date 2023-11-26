@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Icons } from "./icons";
 import { usePathname } from "next/navigation";
-import ThemeButton from "./ThemeButton";
 import Image from "next/image";
 import { useTheme } from "next-themes";
 const CustomLink = ({ href, title, className = "" }: { href: string; title: string; className?: string }) => {
