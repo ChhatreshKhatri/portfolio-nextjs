@@ -111,7 +111,7 @@ const Navbar = () => {
               </button>
             )}
           </div>
-          <Image title="Total Visits" src={visitsUrl} alt={"visits"} width={118} height={8} className="h-8" />
+          {mounted && <Image title="Total Visits" src={visitsUrl} alt={"visits"} width={118} height={8} className="h-8" />}
         </div>
       </div>
     </nav>
