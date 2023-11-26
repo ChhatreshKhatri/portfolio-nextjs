@@ -50,7 +50,7 @@ const Navbar = () => {
   }, []);
   const visitsUrl = `https://visits.chhatreshkhatri.com/ck?LBGC=3048C680&CBGC=30C68A80&LTC=${resolvedTheme === "dark" ? "FFFFFF" : "000000"}&CTC=${
     resolvedTheme === "dark" ? "FFFFFF" : "000000"
-  }`;
+  }&LBC=3048C680&BC=30C68A80&TC=${resolvedTheme === "dark" ? "FFFFFF" : "000000"}&TTC=${resolvedTheme === "dark" ? "FFFFFF" : "000000"}`;
   return (
     <nav
       className={`${
@@ -111,7 +111,7 @@ const Navbar = () => {
               </button>
             )}
           </div>
-          <Image  src={visitsUrl} alt={"visits"} width={118} height={8} className="h-8" />
+          <Image title="Total Visits" src={visitsUrl} alt={"visits"} width={118} height={8} className="h-8" />
         </div>
       </div>
     </nav>
