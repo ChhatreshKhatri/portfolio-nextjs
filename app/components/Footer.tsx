@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { Icons } from "./icons";
+import { ChhatreshKhatri } from "./icons";
 
 const Footer = () => {
   return (
     <footer className="flex flex-col lg:flex-row justify-between items-center w-full shadow-top bg-navbarBg dark:bg-darker py-2 px-3 xs:px-6 md:px-12 lg:px-20 mt-auto space-y-0.5">
       <div className="flex justify-center items-center" title="Chhatresh Khatri">
-        <Icons.ChhatreshKhatri className={`flex`} alt="Chhatresh Khatri Logo" />
+        <ChhatreshKhatri className={`flex`} alt="Chhatresh Khatri Logo" />
       </div>
       <div className="flex items-center justify-center text-center">
         <p>

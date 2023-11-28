@@ -1,10 +1,10 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Icons } from "./icons";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import { ChhatreshKhatri, GitHubIcon, LinkedInIcon, GmailIcon, SunIcon, MoonIcon } from "./icons";
 const CustomLink = ({ href, title, className = "" }: { href: string; title: string; className?: string }) => {
   const path = usePathname();
   return (
@@ -61,7 +61,7 @@ const Navbar = () => {
       <div className="flex flex-col justify-center lg:flex-row lg:justify-between w-full">
         <div className="flex justify-between">
           <Link title="Chhatresh Khatri" aria-label="Chhatresh Khatri" href={"/"} className="flex justify-center items-center">
-            <Icons.ChhatreshKhatri className={``} />
+            <ChhatreshKhatri className={``} />
           </Link>
           <button
             aria-label="Toggle Menu"
@@ -90,14 +90,14 @@ const Navbar = () => {
         </div>
         <div className={`${navOpen ? "flex" : "hidden"} flex-col lg:flex-row lg:flex items-center justify-center py-1 lg:py-0 gap-x-5 gap-y-1`}>
           <div className="flex items-center justify-center py-1 lg:py-0 gap-x-5">
-            <NavIcon title="GitHub" aria-label="Github" href={"https://github.com/Chhatreshkhatri"} icon={<Icons.GitHubIcon className="w-8" />} />
+            <NavIcon title="GitHub" aria-label="Github" href={"https://github.com/Chhatreshkhatri"} icon={<GitHubIcon className="w-8" />} />
             <NavIcon
               title="LinkedIn"
               aria-label="LinkedIn"
               href={"https://www.linkedin.com/in/chhatreshkhatri"}
-              icon={<Icons.LinkedInIcon className="w-8" />}
+              icon={<LinkedInIcon className="w-8" />}
             />
-            <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<Icons.GmailIcon className="w-8" />} />
+            <NavIcon title="Mail" aria-label="Mail" href={"mailto:contact@chhatreshkhatri.com"} icon={<GmailIcon className="w-8" />} />
             {mounted && (
               <button
                 title={resolvedTheme === "dark" ? "Dark Mode" : "Light Mode"}
@@ -107,7 +107,7 @@ const Navbar = () => {
                   resolvedTheme === "dark" ? " text-light" : " text-dark"
                 } flex align-center justify-center focus:outline-none transition duration-300 ease-in-out hover:scale-110 w-8`}
                 onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
-                {resolvedTheme === "dark" ? <Icons.SunIcon className={`w-8`} /> : <Icons.MoonIcon className={`w-8`} />}
+                {resolvedTheme === "dark" ? <SunIcon className={`w-8`} /> : <MoonIcon className={`w-8`} />}
               </button>
             )}
           </div>

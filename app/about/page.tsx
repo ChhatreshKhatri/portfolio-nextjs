@@ -1,6 +1,6 @@
 import PageHead from "@/app/components/PageHead";
 import SkillButton from "../components/SkillsButton";
-import { Icons } from "../components/icons";
+import { CIcon, CPlusPlusIcon, JavaIcon, MySqlIcon, HtmlIcon, CssIcon, JavaScriptIcon, TypeScriptIcon, ReactIcon, NextjsIcon, AstroIcon, ExpressIcon, NodejsIcon, BootstrapIcon, TailwindCssIcon, MongoDBIcon, PostmanIcon, GitIcon, GitHubIcon, VercelIcon, FirebaseIcon, FigmaIcon, CanvaIcon, GimpIcon, CloudflareIcon, AlibabaCloudIcon, GoogleCloudIcon, VSCodeIcon, LinuxIcon, UbuntuIcon, Windows11Icon } from "../components/icons";
 
 export const metadata = {
   title: "Chhatresh Khatri | About",
@@ -53,51 +53,51 @@ export default function Page() {
         <div className="relative flex flex-col w-full p-3 xs:p-6 xs:px-10 py-6 gap-4">
           <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center">Languages</h3>
           <div className="flex flex-wrap items-center justify-center gap-2 xs:gap-4">
-            <SkillButton name="C" color="bg-[#1563b1]" icon={<Icons.CIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="C++" color="bg-[#004488]" icon={<Icons.CPlusPlusIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Java" color="bg-[#437291]" icon={<Icons.JavaIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="MySQL" color="bg-[#4479A1]" icon={<Icons.MySqlIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="HTML5" color="bg-[#e34f26]" icon={<Icons.HtmlIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="CSS3" color="bg-[#1572B6]" icon={<Icons.CssIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="JavaScript" color="bg-[#F7DF1E]" icon={<Icons.JavaScriptIcon lassName="h-6 xs:h-8" />} />
-            <SkillButton name="TypeScript" color="bg-[#3178C6]" icon={<Icons.TypeScriptIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="C" color="bg-[#1563b1]" icon={<CIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="C++" color="bg-[#004488]" icon={<CPlusPlusIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Java" color="bg-[#437291]" icon={<JavaIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="MySQL" color="bg-[#4479A1]" icon={<MySqlIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="HTML5" color="bg-[#e34f26]" icon={<HtmlIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="CSS3" color="bg-[#1572B6]" icon={<CssIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="JavaScript" color="bg-[#F7DF1E]" icon={<JavaScriptIcon lassName="h-6 xs:h-8" />} />
+            <SkillButton name="TypeScript" color="bg-[#3178C6]" icon={<TypeScriptIcon className="h-6 xs:h-8" />} />
           </div>
           <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center">Framework & Libraries</h3>
           <div className="flex flex-wrap items-center justify-center gap-2 xs:gap-4">
-            <SkillButton name="React.js" color="bg-[#61DAFB]" icon={<Icons.ReactIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Next.js" color="bg-[#000000]" className="text-white" icon={<Icons.NextjsIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Astro" color="bg-[#BC52EE]" icon={<Icons.AstroIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Express.js" color="bg-[#000000]" className="text-white" icon={<Icons.ExpressIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Node.js" color="bg-[#339933]" icon={<Icons.NodejsIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="React.js" color="bg-[#61DAFB]" icon={<ReactIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Next.js" color="bg-[#000000]" className="text-white" icon={<NextjsIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Astro" color="bg-[#BC52EE]" icon={<AstroIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Express.js" color="bg-[#000000]" className="text-white" icon={<ExpressIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Node.js" color="bg-[#339933]" icon={<NodejsIcon className="h-6 xs:h-8" />} />
             <SkillButton
               name="Bootstrap"
               color="bg-[#05054B]"
               className="text-white"
-              icon={<Icons.BootstrapIcon title="Bootstrap" className="h-6 xs:h-8" />}
+              icon={<BootstrapIcon title="Bootstrap" className="h-6 xs:h-8" />}
             />
-            <SkillButton name="Tailwind CSS" color="bg-[#06B6D4]" icon={<Icons.TailwindCssIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Tailwind CSS" color="bg-[#06B6D4]" icon={<TailwindCssIcon className="h-6 xs:h-8" />} />
           </div>
           <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center">Tools</h3>
           <div className="flex flex-wrap items-center justify-center gap-2 xs:gap-4">
-            <SkillButton name="MongoDB" color="bg-[#47A248]" icon={<Icons.MongoDBIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Postman" color="bg-[#FF6C37]" icon={<Icons.PostmanIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Git" color="bg-[#F05032]" icon={<Icons.GitIcon title="" className="h-6 xs:h-8" />} />
-            <SkillButton name="GitHub" color="bg-[#181717]" className="text-white" icon={<Icons.GitHubIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Vercel" color="bg-[#000000]" className="text-white" icon={<Icons.VercelIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Firebase" color="bg-[#FFCA28]" icon={<Icons.FirebaseIcon title="Firebase" className="h-6 xs:h-8" />} />
-            <SkillButton name="Figma" color="bg-[#F24E1E]" icon={<Icons.FigmaIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Canva" color="bg-[#00C4CC]" icon={<Icons.CanvaIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Gimp" color="bg-[#5C5543]" icon={<Icons.GimpIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Cloudflare" color="bg-[#F38020]" icon={<Icons.CloudflareIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Alibaba Cloud" color="bg-[#FF6A00]" icon={<Icons.AlibabaCloudIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Google Cloud" color="bg-[#4285F4]" icon={<Icons.GoogleCloudIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="VS Code" color="bg-[#007ACC]" icon={<Icons.VSCodeIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="MongoDB" color="bg-[#47A248]" icon={<MongoDBIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Postman" color="bg-[#FF6C37]" icon={<PostmanIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Git" color="bg-[#F05032]" icon={<GitIcon title="" className="h-6 xs:h-8" />} />
+            <SkillButton name="GitHub" color="bg-[#181717]" className="text-white" icon={<GitHubIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Vercel" color="bg-[#000000]" className="text-white" icon={<VercelIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Firebase" color="bg-[#FFCA28]" icon={<FirebaseIcon title="Firebase" className="h-6 xs:h-8" />} />
+            <SkillButton name="Figma" color="bg-[#F24E1E]" icon={<FigmaIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Canva" color="bg-[#00C4CC]" icon={<CanvaIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Gimp" color="bg-[#5C5543]" icon={<GimpIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Cloudflare" color="bg-[#F38020]" icon={<CloudflareIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Alibaba Cloud" color="bg-[#FF6A00]" icon={<AlibabaCloudIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Google Cloud" color="bg-[#4285F4]" icon={<GoogleCloudIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="VS Code" color="bg-[#007ACC]" icon={<VSCodeIcon className="h-6 xs:h-8" />} />
           </div>
           <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center">Operating System</h3>
           <div className="flex flex-wrap items-center justify-center gap-2 xs:gap-4">
-            <SkillButton name="Linux" color="bg-[#FCC624]" icon={<Icons.LinuxIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Ubuntu" color="bg-[#E95420]" icon={<Icons.UbuntuIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="Windows 11" color="bg-[#0078D4]" icon={<Icons.Windows11Icon className="h-6 xs:h-8" />} />
+            <SkillButton name="Linux" color="bg-[#FCC624]" icon={<LinuxIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Ubuntu" color="bg-[#E95420]" icon={<UbuntuIcon className="h-6 xs:h-8" />} />
+            <SkillButton name="Windows 11" color="bg-[#0078D4]" icon={<Windows11Icon className="h-6 xs:h-8" />} />
           </div>
         </div>
       </div>
