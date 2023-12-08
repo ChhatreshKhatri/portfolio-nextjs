@@ -40,7 +40,7 @@ export default function Home() {
             {/* Centered content in the second column */}
             <Image
               priority
-              src={`https://assets.chhatreshkhatri.com/assets/ChhatreshKhatri.webp`}
+              src={`https://assets.chhatreshkhatri.com/images/ChhatreshKhatri.webp`}
               alt={"Chhatresh Khatri"}
               height={512}
               width={512}

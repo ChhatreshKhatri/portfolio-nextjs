@@ -51,7 +51,7 @@ const ProjectHolder = ({
               <Image
                 title={heading}
                 priority
-                src={`https://assets.chhatreshkhatri.com/assets/${projectImage}`}
+                src={`https://assets.chhatreshkhatri.com/images/${projectImage}`}
                 alt={`${heading} Image`}
                 height={512}
                 width={512}
