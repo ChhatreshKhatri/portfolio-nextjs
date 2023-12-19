@@ -30,7 +30,7 @@ export default function Home() {
                 icon={<ResumeIcon className="w-6 xs:w-8" />}
                 pos="0"
               />
-              <LinkButton name="Social Links" link="https://social.chhatreshkhatri.com/" icon={<SocialIcon className="w-6 xs:w-8" />} pos={"1"} />
+              <LinkButton name="Social Links" link="https://links.chhatreshkhatri.com/" icon={<SocialIcon className="w-6 xs:w-8" />} pos={"1"} />
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@ export default function Home() {
             {/* Centered content in the second column */}
             <Image
               priority
-              src={`https://assets.chhatreshkhatri.com/images/ChhatreshKhatri.webp`}
+              src={`https://cdn.chhatreshkhatri.com/images/ChhatreshKhatri.webp`}
               alt={"Chhatresh Khatri"}
               height={512}
               width={512}

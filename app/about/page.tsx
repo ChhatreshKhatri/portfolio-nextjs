@@ -14,7 +14,7 @@ export const metadata = {
     url: "https://www.chhatreshkhatri.com/about",
     siteName: "chhatreshkhatri",
     type: "website",
-    images: [{ url: "https://assets.chhatreshkhatri.com/icons/opengraph-image.png" }],
+    images: [{ url: "https://cdn.chhatreshkhatri.com/icons/opengraph-image.png" }],
   },
   twitter: {
     title: "Chhatresh Khatri | About",
@@ -23,7 +23,7 @@ export const metadata = {
       "Chhatresh Khatri About. Full Stack developer skilled in diverse tech including C/C++, Java, HTML5, CSS3, JavaScript, React.js, Next.js, and more.",
     card: "summary_large_image",
     creator: "@chhatreshkhatri",
-    images: [{ url: "https://assets.chhatreshkhatri.com/icons/opengraph-image.png" }],
+    images: [{ url: "https://cdn.chhatreshkhatri.com/icons/opengraph-image.png" }],
   },
 };
 

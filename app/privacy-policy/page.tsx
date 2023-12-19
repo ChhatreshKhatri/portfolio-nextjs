@@ -14,7 +14,7 @@ export const metadata = {
     url: "https://www.chhatreshkhatri.com/privacy-policy",
     siteName: "chhatreshkhatri",
     type: "website",
-    images: [{ url: "https://assets.chhatreshkhatri.com/icons/opengraph-image.png" }],
+    images: [{ url: "https://cdn.chhatreshkhatri.com/icons/opengraph-image.png" }],
   },
   twitter: {
     title: "Chhatresh Khatri | Privacy-Policy",
@@ -22,7 +22,7 @@ export const metadata = {
     description: "Privacy Policy for chhatreshkhatri.com Website and Its Subdomains.",
     card: "summary_large_image",
     creator: "@chhatreshkhatri",
-    images: [{ url: "https://assets.chhatreshkhatri.com/icons/opengraph-image.png" }],
+    images: [{ url: "https://cdn.chhatreshkhatri.com/icons/opengraph-image.png" }],
   },
   robots: {
     index: false,

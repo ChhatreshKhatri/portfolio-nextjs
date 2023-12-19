@@ -13,7 +13,7 @@ export const metadata = {
     url: "https://www.chhatreshkhatri.com/projects",
     siteName: "chhatreshkhatri",
     type: "website",
-    images: [{ url: "https://assets.chhatreshkhatri.com/icons/opengraph-image.png" }],
+    images: [{ url: "https://cdn.chhatreshkhatri.com/icons/opengraph-image.png" }],
   },
   twitter: {
     title: "Chhatresh Khatri | Projects",
@@ -22,7 +22,7 @@ export const metadata = {
       "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
     card: "summary_large_image",
     creator: "@chhatreshkhatri",
-    images: [{ url: "https://assets.chhatreshkhatri.com/icons/opengraph-image.png" }],
+    images: [{ url: "https://cdn.chhatreshkhatri.com/icons/opengraph-image.png" }],
   },
 };
 export default function Projects() {

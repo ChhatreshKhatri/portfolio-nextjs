@@ -26,10 +26,10 @@ export const metadata = {
     "frontend",
   ],
   icons: {
-    shortcut: [{ url: "https://assets.chhatreshkhatri.com/icons/icon.svg" }],
-    icon: [{ url: "https://assets.chhatreshkhatri.com/icons/favicon.ico" }],
-    apple: ["https://assets.chhatreshkhatri.com/icons/apple-icon.png"],
-    other: [{ rel: "mask-icon", url: "https://assets.chhatreshkhatri.com/icons/icon.svg", color: "#191919" }],
+    shortcut: [{ url: "https://cdn.chhatreshkhatri.com/icons/icon.svg" }],
+    icon: [{ url: "https://cdn.chhatreshkhatri.com/icons/favicon.ico" }],
+    apple: ["https://cdn.chhatreshkhatri.com/icons/apple-icon.png"],
+    other: [{ rel: "mask-icon", url: "https://cdn.chhatreshkhatri.com/icons/icon.svg", color: "#191919" }],
   },
   applicationName: "Chhatresh Khatri Portfolio",
   type: "website",
@@ -42,7 +42,7 @@ export const metadata = {
     description:
       "Chhatresh Khatri Portfolio. Full stack Web Developer passionate about latest trends in the tech industry. Crafting innovation with code.",
     url: "https://www.chhatreshkhatri.com/",
-    images: ["https://assets.chhatreshkhatri.com/icons/opengraph-image.png"],
+    images: ["https://cdn.chhatreshkhatri.com/icons/opengraph-image.png"],
     siteName: "chhatreshkhatri",
     type: "website",
   },
@@ -52,7 +52,7 @@ export const metadata = {
     description:
       "Chhatresh Khatri Portfolio. Full stack Web Developer passionate about latest trends in the tech industry. Crafting innovation with code.",
     card: "summary_large_image",
-    images: ["https://assets.chhatreshkhatri.com/icons/opengraph-image.png"],
+    images: ["https://cdn.chhatreshkhatri.com/icons/opengraph-image.png"],
     creator: "@chhatreshkhatri",
   },
 };
