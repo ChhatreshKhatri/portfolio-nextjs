@@ -43,6 +43,20 @@ export default function Projects() {
         link2Icon={<AlibabaCloudIcon size={32} className={"w-6 xs:w-8"} />}
         order="odd"
       />
+      {/* Visits Counter */}
+      <ProjectHolder
+        heading="Visits Counter"
+        subHeading="Web Visits Counter with Dynamic UI"
+        projectContent="The Visits Counter project is a real-time web application that features a dynamic and responsive user interface, built with MongoDB, Express, React, and Tailwind CSS. The application displays website visits through an SVG badge."
+        projectImage={`VisitsCounter.webp`}
+        link1="https://visits.chhatreshkhatri.com/"
+        link1Icon={<LiveLink size={32} className={"w-6 xs:w-8"}  />}
+        link1Type="Live Link"
+        link2="https://github.com/Chhatreshkhatri/visits-counter"
+        link2Type="Github Link"
+        link2Icon={<GitHubIcon size={32} className={"w-6 xs:w-8"} />}
+        order="even"
+      />
       {/* StackOverflow Clone */}
       <ProjectHolder
         heading="StackOverflow Clone"
@@ -55,7 +69,7 @@ export default function Projects() {
         link2="https://github.com/Chhatreshkhatri/stack-overflow-clone"
         link2Type="Github Link"
         link2Icon={<GitHubIcon size={32} className={"w-6 xs:w-8"} />}
-        order="even"
+        order="odd"
       />
       {/* Amazon Clone */}
       <ProjectHolder
@@ -69,7 +83,7 @@ export default function Projects() {
         link2="https://github.com/Chhatreshkhatri/amazon-clone"
         link2Type="Github Link"
         link2Icon={<GitHubIcon size={32} className={"w-6 xs:w-8"} />}
-        order="odd"
+        order="even"
       />
       {/* MyChat Project */}
       <ProjectHolder
@@ -83,7 +97,7 @@ export default function Projects() {
         link2=""
         link2Type=""
         link2Icon={undefined}
-        order="even"
+        order="odd"
       />
     </>
   );

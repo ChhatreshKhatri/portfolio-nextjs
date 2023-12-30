@@ -53,8 +53,8 @@ const ProjectHolder = ({
                 priority
                 src={`https://cdn.chhatreshkhatri.com/images/${projectImage}`}
                 alt={`${heading} Image`}
-                height={512}
-                width={512}
+                width={480}
+                height={480}
                 className="w-full h-full object-cover object-top transition-all duration-4000 ease-in-out rounded-2xl hover:object-bottom"
               />
             </div>
