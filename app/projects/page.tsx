@@ -32,7 +32,8 @@ export default function Projects() {
       <div className="relative group rounded-lg w-full text-justify p-3 xs:p-6 xs:px-10 py-6">
         <div className="absolute -inset-0 rounded-lg bg-gradient-to-r from-blue2/50 to-green2/50 opacity-20 transition duration-500 group-hover:opacity-50"></div>
         <p className="relative text-lg xs:text-xl mt-4">
-Discover a diverse collection of projects by Chhatresh Khatri, each uniquely crafted with innovative features. Explore further through relevant links to learn more. As a tech enthusiast, I&apos;m  self-driven, motivated, and eager to collaborate on creating extraordinary solutions.
+          Discover a diverse collection of projects by Chhatresh Khatri, each uniquely crafted with innovative features. Explore further through
+          relevant links to learn more.
         </p>
       </div>
       {/* Ramma creations */}
