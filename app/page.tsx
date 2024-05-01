@@ -4,6 +4,7 @@ import LinkButton from "./components/LinkButton";
 import Image from "next/image";
 import PageHead from "@/app/components/PageHead";
 import { ResumeIcon, SocialIcon } from "./components/icons";
+import FaviconVisibility from "./components/FaviconVisibility";
 export default function Home() {
   return (
     <>
@@ -49,6 +50,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <FaviconVisibility />
     </>
   );
 }

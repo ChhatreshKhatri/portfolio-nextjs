@@ -1,6 +1,5 @@
 import NavBar from "@/app/components/Navbar";
 import ThemeProviderWrapper from "@/app/components/ThemeProviderWrapper";
-import FaviconVisibility from "@/app/components/FaviconVisibility";
 import Footer from "@/app/components/Footer";
 import { Poppins } from "next/font/google";
 import "./globals.css";
@@ -69,7 +68,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
         </ThemeProviderWrapper>
       </body>
-      <FaviconVisibility />
     </html>
   );
 }

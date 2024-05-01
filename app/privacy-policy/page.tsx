@@ -1,6 +1,7 @@
 import PageHead from "@/app/components/PageHead";
 import Link from "next/link";
 import React from "react";
+import FaviconVisibility from "../components/FaviconVisibility";
 
 export const metadata = {
   title: "Chhatresh Khatri | Privacy-Policy ",
@@ -111,6 +112,7 @@ const page = () => {
           <p>Last updated: July 1, 2023</p>
         </div>
       </div>
+      <FaviconVisibility />
     </>
   );
 };
