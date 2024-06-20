@@ -4,13 +4,11 @@ import { AlibabaCloudIcon, LiveLink, GitHubIcon } from "../components/icons";
 import FaviconVisibility from "../components/FaviconVisibility";
 export const metadata = {
   title: "Chhatresh Khatri | Projects",
-  description:
-    "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
+  description: "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
   alternates: { canonical: "/projects" },
   openGraph: {
     title: "Chhatresh Khatri | Projects",
-    description:
-      "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
+    description: "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
     url: "https://www.chhatreshkhatri.com/projects",
     siteName: "chhatreshkhatri",
     type: "website",
@@ -19,8 +17,7 @@ export const metadata = {
   twitter: {
     title: "Chhatresh Khatri | Projects",
     url: "https://www.chhatreshkhatri.com/projects",
-    description:
-      "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
+    description: "Chhatresh Khatri Projects. Explore a collection of diverse projects,  discover their unique features and access relevant links for more information.",
     card: "summary_large_image",
     creator: "@chhatreshkhatri",
     images: [{ url: "https://cdn.chhatreshkhatri.com/icons/opengraph-image.png" }],

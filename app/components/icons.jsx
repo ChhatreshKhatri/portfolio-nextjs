@@ -1,4 +1,34 @@
 import * as React from "react";
+
+export const CKIcon = ({ ...rest }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" {...rest} fill="none">
+    <rect width="48" height="48" rx="3" fill="#0C0C0C" />
+    <path
+      d="M4 24.024C4 22.0827 4.42 20.356 5.26 18.844C6.1 17.3133 7.26667 16.128 8.76 15.288C10.272 14.4293 11.98 14 13.884 14C16.2174 14 18.2147 14.616 19.876 15.848C21.5374 17.08 22.648 18.76 23.208 20.888H17.944C17.552 20.0667 16.992 19.4413 16.264 19.012C15.5547 18.5827 14.7427 18.368 13.828 18.368C12.3533 18.368 11.1587 18.8813 10.244 19.908C9.32933 20.9347 8.872 22.3067 8.872 24.024C8.872 25.7413 9.32933 27.1133 10.244 28.14C11.1587 29.1667 12.3533 29.68 13.828 29.68C14.7427 29.68 15.5547 29.4653 16.264 29.036C16.992 28.6067 17.552 27.9813 17.944 27.16H23.208C22.648 29.288 21.5374 30.968 19.876 32.2C18.2147 33.4133 16.2174 34.02 13.884 34.02C11.98 34.02 10.272 33.6 8.76 32.76C7.26667 31.9013 6.1 30.716 5.26 29.204C4.42 27.692 4 25.9653 4 24.024ZM37.5362 33.88L30.9282 25.2V33.88H26.1402V14.224H30.9282V22.848L37.4802 14.224H43.1082L35.4922 23.856L43.3882 33.88H37.5362Z"
+      fill="url(#paint0_linear_57_18)"
+    />
+    <defs>
+      <linearGradient id="paint0_linear_57_18" x1="9.00177" y1="23.88" x2="35.5018" y2="23.88" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#3048C6" />
+        <stop offset="1" stopColor="#30C68A" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
+export const CKIconHidden = ({ ...rest }) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 48 48" {...rest} fill="none">
+    <path
+      d="M4 24.024C4 22.0827 4.42 20.356 5.26 18.844C6.1 17.3133 7.26667 16.128 8.76 15.288C10.272 14.4293 11.98 14 13.884 14C16.2174 14 18.2147 14.616 19.876 15.848C21.5374 17.08 22.648 18.76 23.208 20.888H17.944C17.552 20.0667 16.992 19.4413 16.264 19.012C15.5547 18.5827 14.7427 18.368 13.828 18.368C12.3533 18.368 11.1587 18.8813 10.244 19.908C9.32933 20.9347 8.872 22.3067 8.872 24.024C8.872 25.7413 9.32933 27.1133 10.244 28.14C11.1587 29.1667 12.3533 29.68 13.828 29.68C14.7427 29.68 15.5547 29.4653 16.264 29.036C16.992 28.6067 17.552 27.9813 17.944 27.16H23.208C22.648 29.288 21.5374 30.968 19.876 32.2C18.2147 33.4133 16.2174 34.02 13.884 34.02C11.98 34.02 10.272 33.6 8.76 32.76C7.26667 31.9013 6.1 30.716 5.26 29.204C4.42 27.692 4 25.9653 4 24.024ZM37.5362 33.88L30.9282 25.2V33.88H26.1402V14.224H30.9282V22.848L37.4802 14.224H43.1082L35.4922 23.856L43.3882 33.88H37.5362Z"
+      fill="url(#paint0_linear_57_18)"
+    />
+    <defs>
+      <linearGradient id="paint0_linear_57_18" x1="9.00177" y1="23.88" x2="35.5018" y2="23.88" gradientUnits="userSpaceOnUse">
+        <stop stopColor="#3048C6" />
+        <stop offset="1" stopColor="#30C68A" />
+      </linearGradient>
+    </defs>
+  </svg>
+);
 export const VSIcon = ({ ...rest }) => (
   <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="32px" {...rest} fill="currentColor">
     <path d="M17.583.063a1.5 1.5 0 00-1.032.392 1.5 1.5 0 00-.001 0A.88.88 0 0016.5.5L8.528 9.316 3.875 5.5l-.407-.35a1 1 0 00-1.024-.154 1 1 0 00-.012.005l-1.817.75a1 1 0 00-.077.036 1 1 0 00-.047.028 1 1 0 00-.038.022 1 1 0 00-.048.034 1 1 0 00-.03.024 1 1 0 00-.044.036 1 1 0 00-.036.033 1 1 0 00-.032.035 1 1 0 00-.033.038 1 1 0 00-.035.044 1 1 0 00-.024.034 1 1 0 00-.032.05 1 1 0 00-.02.035 1 1 0 00-.024.05 1 1 0 00-.02.045 1 1 0 00-.016.044 1 1 0 00-.016.047 1 1 0 00-.015.055 1 1 0 00-.01.04 1 1 0 00-.008.054 1 1 0 00-.006.05A1 1 0 000 6.668v10.666a1 1 0 00.615.917l1.817.764a1 1 0 001.035-.164l.408-.35 4.653-3.815 7.973 8.815a1.5 1.5 0 00.072.065 1.5 1.5 0 00.057.05 1.5 1.5 0 00.058.042 1.5 1.5 0 00.063.044 1.5 1.5 0 00.065.038 1.5 1.5 0 00.065.036 1.5 1.5 0 00.068.031 1.5 1.5 0 00.07.03 1.5 1.5 0 00.073.025 1.5 1.5 0 00.066.02 1.5 1.5 0 00.08.02 1.5 1.5 0 00.068.014 1.5 1.5 0 00.075.01 1.5 1.5 0 00.075.008 1.5 1.5 0 00.073.003 1.5 1.5 0 00.077 0 1.5 1.5 0 00.078-.005 1.5 1.5 0 00.067-.007 1.5 1.5 0 00.087-.015 1.5 1.5 0 00.06-.012 1.5 1.5 0 00.08-.022 1.5 1.5 0 00.068-.02 1.5 1.5 0 00.07-.028 1.5 1.5 0 00.09-.037l4.944-2.377a1.5 1.5 0 00.476-.362 1.5 1.5 0 00.09-.112 1.5 1.5 0 00.004-.007 1.5 1.5 0 00.08-.125 1.5 1.5 0 00.062-.12 1.5 1.5 0 00.009-.017 1.5 1.5 0 00.04-.108 1.5 1.5 0 00.015-.037 1.5 1.5 0 00.03-.107 1.5 1.5 0 00.009-.037 1.5 1.5 0 00.017-.1 1.5 1.5 0 00.008-.05 1.5 1.5 0 00.006-.09 1.5 1.5 0 00.004-.08V3.942a1.5 1.5 0 000-.003 1.5 1.5 0 000-.032 1.5 1.5 0 00-.01-.15 1.5 1.5 0 00-.84-1.17L18.206.21a1.5 1.5 0 00-.622-.146zM18 6.92v10.163l-6.198-5.08zM3 8.574l3.099 3.427-3.1 3.426z" />
@@ -163,70 +193,26 @@ export const SunIcon = ({ ...rest }) => (
           <animate fill="freeze" attributeName="stroke-dashoffset" begin="0.2s" dur="0.2s" values="4;2"></animate>
         </path>
       </g>
-      <path
-        fill="currentColor"
-        d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z"
-        opacity="0">
+      <path fill="currentColor" d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z" opacity="0">
         <set attributeName="opacity" begin="0.5s" to="1"></set>
       </path>
     </g>
     <g fill="currentColor" fillOpacity="0">
       <path d="m15.22 6.03l2.53-1.94L14.56 4L13.5 1l-1.06 3l-3.19.09l2.53 1.94l-.91 3.06l2.63-1.81l2.63 1.81z">
-        <animate
-          id="lineMdSunnyFilledLoopToMoonFilledLoopTransition0"
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="0.6s;lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+6s"
-          dur="0.4s"
-          values="0;1"></animate>
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.2s"
-          dur="0.4s"
-          values="1;0"></animate>
+        <animate id="lineMdSunnyFilledLoopToMoonFilledLoopTransition0" fill="freeze" attributeName="fill-opacity" begin="0.6s;lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+6s" dur="0.4s" values="0;1"></animate>
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.2s" dur="0.4s" values="1;0"></animate>
       </path>
       <path d="M13.61 5.25L15.25 4l-2.06-.05L12.5 2l-.69 1.95L9.75 4l1.64 1.25l-.59 1.98l1.7-1.17l1.7 1.17z">
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3s"
-          dur="0.4s"
-          values="0;1"></animate>
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.2s"
-          dur="0.4s"
-          values="1;0"></animate>
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3s" dur="0.4s" values="0;1"></animate>
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.2s" dur="0.4s" values="1;0"></animate>
       </path>
       <path d="M19.61 12.25L21.25 11l-2.06-.05L18.5 9l-.69 1.95l-2.06.05l1.64 1.25l-.59 1.98l1.7-1.17l1.7 1.17z">
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+0.4s"
-          dur="0.4s"
-          values="0;1"></animate>
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.8s"
-          dur="0.4s"
-          values="1;0"></animate>
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+0.4s" dur="0.4s" values="0;1"></animate>
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+2.8s" dur="0.4s" values="1;0"></animate>
       </path>
       <path d="m20.828 9.731l1.876-1.439l-2.366-.067L19.552 6l-.786 2.225l-2.366.067l1.876 1.439L17.601 12l1.951-1.342L21.503 12z">
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3.4s"
-          dur="0.4s"
-          values="0;1"></animate>
-        <animate
-          fill="freeze"
-          attributeName="fill-opacity"
-          begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.6s"
-          dur="0.4s"
-          values="1;0"></animate>
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+3.4s" dur="0.4s" values="0;1"></animate>
+        <animate fill="freeze" attributeName="fill-opacity" begin="lineMdSunnyFilledLoopToMoonFilledLoopTransition0.begin+5.6s" dur="0.4s" values="1;0"></animate>
       </path>
     </g>
     <mask id="lineMdSunnyFilledLoopToMoonFilledLoopTransition1">
@@ -256,22 +242,11 @@ export const MoonIcon = ({ ...rest }) => (
       {" "}
       <path d="M0 0">
         {" "}
-        <animate
-          fill="freeze"
-          attributeName="d"
-          begin="1.2s"
-          dur="0.2s"
-          values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1"></animate>{" "}
-        <animate fill="freeze" attributeName="stroke-dashoffset" begin="1.2s" dur="0.2s" values="2;0"></animate>{" "}
+        <animate fill="freeze" attributeName="d" begin="1.2s" dur="0.2s" values="M12 19v1M19 12h1M12 5v-1M5 12h-1;M12 21v1M21 12h1M12 3v-1M3 12h-1"></animate> <animate fill="freeze" attributeName="stroke-dashoffset" begin="1.2s" dur="0.2s" values="2;0"></animate>{" "}
       </path>{" "}
       <path d="M0 0">
         {" "}
-        <animate
-          fill="freeze"
-          attributeName="d"
-          begin="1.5s"
-          dur="0.2s"
-          values="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5;M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"></animate>{" "}
+        <animate fill="freeze" attributeName="d" begin="1.5s" dur="0.2s" values="M17 17l0.5 0.5M17 7l0.5 -0.5M7 7l-0.5 -0.5M7 17l-0.5 0.5;M18.5 18.5l0.5 0.5M18.5 5.5l0.5 -0.5M5.5 5.5l-0.5 -0.5M5.5 18.5l-0.5 0.5"></animate>{" "}
         <animate fill="freeze" attributeName="stroke-dashoffset" begin="1.5s" dur="1.2s" values="2;0"></animate>{" "}
       </path>{" "}
       <animateTransform attributeName="transform" dur="30s" repeatCount="indefinite" type="rotate" values="0 12 12;360 12 12"></animateTransform>{" "}
@@ -289,29 +264,23 @@ export const MoonIcon = ({ ...rest }) => (
     </g>{" "}
     <g fill="currentColor" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2">
       {" "}
-      <path d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z"></path>{" "}
-      <set attributeName="opacity" begin="0.6s" to="0"></set>{" "}
+      <path d="M7 6 C7 12.08 11.92 17 18 17 C18.53 17 19.05 16.96 19.56 16.89 C17.95 19.36 15.17 21 12 21 C7.03 21 3 16.97 3 12 C3 8.83 4.64 6.05 7.11 4.44 C7.04 4.95 7 5.47 7 6 Z"></path> <set attributeName="opacity" begin="0.6s" to="0"></set>{" "}
     </g>{" "}
     <mask id="lineMdMoonFilledToSunnyFilledLoopTransition0">
       {" "}
       <circle cx="12" cy="12" r="12" fill="#fff"></circle>{" "}
       <circle cx="18" cy="6" r="12" fill="#fff">
         {" "}
-        <animate fill="freeze" attributeName="cx" begin="0.6s" dur="0.4s" values="18;22"></animate>{" "}
-        <animate fill="freeze" attributeName="cy" begin="0.6s" dur="0.4s" values="6;2"></animate>{" "}
-        <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="12;3"></animate>{" "}
+        <animate fill="freeze" attributeName="cx" begin="0.6s" dur="0.4s" values="18;22"></animate> <animate fill="freeze" attributeName="cy" begin="0.6s" dur="0.4s" values="6;2"></animate> <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="12;3"></animate>{" "}
       </circle>{" "}
       <circle cx="18" cy="6" r="10">
         {" "}
-        <animate fill="freeze" attributeName="cx" begin="0.6s" dur="0.4s" values="18;22"></animate>{" "}
-        <animate fill="freeze" attributeName="cy" begin="0.6s" dur="0.4s" values="6;2"></animate>{" "}
-        <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="10;1"></animate>{" "}
+        <animate fill="freeze" attributeName="cx" begin="0.6s" dur="0.4s" values="18;22"></animate> <animate fill="freeze" attributeName="cy" begin="0.6s" dur="0.4s" values="6;2"></animate> <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="10;1"></animate>{" "}
       </circle>{" "}
     </mask>{" "}
     <circle cx="12" cy="12" r="10" fill="currentColor" mask="url(#lineMdMoonFilledToSunnyFilledLoopTransition0)" opacity="0">
       {" "}
-      <set attributeName="opacity" begin="0.6s" to="1"></set>{" "}
-      <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="10;6"></animate>{" "}
+      <set attributeName="opacity" begin="0.6s" to="1"></set> <animate fill="freeze" attributeName="r" begin="0.6s" dur="0.4s" values="10;6"></animate>{" "}
     </circle>{" "}
   </svg>
 );
@@ -341,14 +310,7 @@ export const ReactIcon = ({ ...rest }) => (
   </svg>
 );
 export const ResumeIcon = ({ ...rest }) => (
-  <svg
-    version="1.0"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 512.000000 512.000000"
-    preserveAspectRatio="xMidYMid meet"
-    width="32px"
-    {...rest}
-    fill="currentColor">
+  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" width="32px" {...rest} fill="currentColor">
     <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="currentColor" stroke="none">
       <path d="M1052 4955 c-228 -50 -407 -241 -442 -472 -7 -46 -10 -689 -8 -1968 l3 -1900 27 -74 c63 -173 197 -306 367 -364 l66 -22 1462 -3 c1625 -3 1542 -6 1681 64 130 66 236 192 283 336 l24 73 0 1935 0 1935 -24 73 c-64 196 -229 346 -426 387 -101 21 -2916 21 -3013 0z m2974 -300 c64 -19 127 -73 162 -139 l27 -51 0 -1905 0 -1905 -27 -51 c-35 -66 -98 -120 -162 -139 -75 -22 -2857 -22 -2932 0 -64 19 -127 73 -162 139 l-27 51 0 1905 0 1905 27 51 c34 64 98 120 158 139 70 21 2864 22 2936 0z"></path>
       <path d="M2394 4216 c-213 -52 -399 -238 -449 -448 -39 -165 0 -350 104 -501 l30 -44 -62 -35 c-237 -136 -412 -350 -492 -598 -37 -117 -40 -221 -6 -269 46 -64 -1 -61 1011 -61 1020 0 966 -4 1014 66 32 47 33 92 6 198 -44 172 -135 344 -249 469 -62 67 -183 160 -262 201 l-55 29 42 63 c71 105 104 216 104 345 0 94 -16 160 -61 258 -72 155 -233 286 -401 326 -75 18 -203 18 -274 1z m259 -329 c67 -28 142 -113 163 -184 57 -195 -85 -387 -286 -387 -257 0 -395 303 -224 494 94 103 219 131 347 77z m92 -907 c190 -60 347 -186 448 -361 15 -25 27 -49 27 -52 0 -4 -310 -7 -690 -7 -379 0 -690 3 -690 7 0 26 97 161 160 223 109 107 228 172 374 206 90 20 281 12 371 -16z"></path>
