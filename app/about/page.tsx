@@ -97,7 +97,7 @@ export default function Page() {
             <SkillButton name="MySQL" color="bg-[#4479A1]" icon={<MySqlIcon className="h-6 xs:h-8" />} />
             <SkillButton name="HTML5" color="bg-[#e34f26]" icon={<HtmlIcon className="h-6 xs:h-8" />} />
             <SkillButton name="CSS3" color="bg-[#1572B6]" icon={<CssIcon className="h-6 xs:h-8" />} />
-            <SkillButton name="JavaScript" color="bg-[#F7DF1E]" icon={<JavaScriptIcon lassName="h-6 xs:h-8" />} />
+            <SkillButton name="JavaScript" color="bg-[#F7DF1E]" icon={<JavaScriptIcon className="h-6 xs:h-8" />} />
             <SkillButton name="TypeScript" color="bg-[#3178C6]" icon={<TypeScriptIcon className="h-6 xs:h-8" />} />
           </div>
           <h3 className="text-2xl xxs:text-3xl md:text-4xl text-center">Framework & Libraries</h3>
