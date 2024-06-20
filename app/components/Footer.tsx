@@ -26,7 +26,7 @@ const Footer = () => {
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
 
-  const visitsUrl = `https://visits.chhatreshkhatri.com/test?LBGC=3048C680&CBGC=30C68A80&LTC=${resolvedTheme === "dark" ? "FFFFFF" : "000000"}&CTC=${resolvedTheme === "dark" ? "FFFFFF" : "000000"}&LBC=3048C680&BC=30C68A80&TC=${resolvedTheme === "dark" ? "FFFFFF" : "000000"}&TTC=${
+  const visitsUrl = `https://visits.chhatreshkhatri.com/ck?LBGC=3048C680&CBGC=30C68A80&LTC=${resolvedTheme === "dark" ? "FFFFFF" : "000000"}&CTC=${resolvedTheme === "dark" ? "FFFFFF" : "000000"}&LBC=3048C680&BC=30C68A80&TC=${resolvedTheme === "dark" ? "FFFFFF" : "000000"}&TTC=${
     resolvedTheme === "dark" ? "FFFFFF" : "000000"
   }`;
 
