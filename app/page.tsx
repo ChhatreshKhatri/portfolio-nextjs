@@ -20,17 +20,11 @@ export default function Home() {
               <Typewriter />
             </span>
             <p className="text-lg xs:text-xl text-justify mt-1">
-              A Computer Science & Engineering graduate with a passion for problem-solving and web development. An enthusiastic, self-motivated
-              professional with strong interpersonal and communication skills, I&apos;m passionate about the latest tech trends. A quick learner and
-              team player, I thrive on new opportunities and challenges.
+              A Computer Science & Engineering graduate with a passion for problem-solving and web development. An enthusiastic, self-motivated professional with strong interpersonal and communication skills, I&apos;m passionate about the latest tech trends. A quick learner and team player, I thrive
+              on new opportunities and challenges.
             </p>
             <div className="flex flex-wrap justify-center items-center gap-2 xxs:gap-4 mt-4 text-md xxs:text-xl">
-              <LinkButton
-                name="Resume"
-                link="https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing"
-                icon={<ResumeIcon className="w-6 xs:w-8" />}
-                pos="0"
-              />
+              <LinkButton name="Resume" link="https://drive.google.com/file/d/1i_gAK3PxDoMok4g5XEh0KTaD7Dm-JRR_/view?usp=sharing" icon={<ResumeIcon className="w-6 xs:w-8" />} pos="0" />
               <LinkButton name="Social Links" link="https://links.chhatreshkhatri.com/" icon={<SocialIcon className="w-6 xs:w-8" />} pos={"1"} />
             </div>
           </div>
@@ -39,14 +33,7 @@ export default function Home() {
           {/* Content for the second column */}
           <div className="w-full h-full flex justify-center items-center py-5">
             {/* Centered content in the second column */}
-            <Image
-              priority
-              src={`https://cdn.chhatreshkhatri.com/images/ChhatreshKhatri.webp`}
-              alt={"Chhatresh Khatri"}
-              height={512}
-              width={512}
-              className="w-[60%] xs:w-[50%] md:w-[35%] lg:w-[100%] xl:w-[80%] drop-shadow-2xl"
-            />
+            <Image priority src={`https://cdn.chhatreshkhatri.com/images/ChhatreshKhatri.webp`} alt={"Chhatresh Khatri"} height={512} width={512} className="w-[60%] xs:w-[50%] md:w-[35%] lg:w-[100%] xl:w-[80%] drop-shadow-2xl" />
           </div>
         </div>
       </div>
