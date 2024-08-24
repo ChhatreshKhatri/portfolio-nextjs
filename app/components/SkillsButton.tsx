@@ -1,15 +1,14 @@
-export default function Skills({ name, color, className, icon }: { name: string; color: string; className?: string; icon: React.ReactNode }) {
+import LinkButton from "./LinkButton";
+
+export default function Skills({ name, color, className, icon, pos }: { name: string; color?: string; className?: string; icon: React.ReactNode; pos?: string }) {
   return (
     <>
-      <button
-        title={name}
-        className={`relative w-auto h-[35px] xs:h-[45px] rounded-md p-1 xs:p-2 flex items-center justify-center text-light dark:text-dark ${color}`}>
-        <div className={`absolute inset-0 bg-gradient-to-b from-[#fff]/10 rounded-md`} />
-        <div className={`relative flex items-center justify-center ${className}`}>
+      <div className={`items-center justify-center p-0.5 rounded bg-gradient-to-r ${pos == "1" ? "from-yellow1 to-blue1 dark:from-blue1 dark:to-yellow1" : "from-blue1 to-yellow1 dark:from-yellow1 dark:to-blue1"}`}>
+        <div className="flex justify-center items-center py-1 px-2 gap-x-2 rounded whitespace-nowrap bg-buttonBg dark:bg-darker">
           {icon}
-          <p className="relative text-xl md:text-2xl ml-1 xs:ml-2 drop-shadow-text">{name}</p>
+          <p className={`${color} `}>{name}</p>
         </div>
-      </button>
+      </div>
     </>
   );
 }

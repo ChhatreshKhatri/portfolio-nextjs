@@ -33,7 +33,7 @@ export default function Home() {
           {/* Content for the second column */}
           <div className="w-full h-full flex justify-center items-center py-5">
             {/* Centered content in the second column */}
-            <Image priority src={`https://cdn.chhatreshkhatri.com/images/ChhatreshKhatri.webp`} alt={"Chhatresh Khatri"} height={512} width={512} className="w-[60%] xs:w-[50%] md:w-[35%] lg:w-[100%] xl:w-[80%] drop-shadow-2xl" />
+            <Image priority src={`https://cdn.chhatreshkhatri.com/images/ChhatreshKhatri.webp`} alt={"Chhatresh Khatri"} height={480} width={480} className="w-[60%] xs:w-[50%] md:w-[35%] lg:w-[100%] xl:w-[80%] drop-shadow-2xl" />
           </div>
         </div>
       </div>
