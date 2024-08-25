@@ -218,15 +218,15 @@ export const AstroIcon = ({ ...rest }) => (
   </svg>
 );
 export const BootstrapIcon = ({ ...rest }) => (
-  <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="geometricPrecision" textRendering="geometricPrecision" imageRendering="optimizeQuality" fillRule="evenodd" clipRule="evenodd" viewBox="0 0 512 408">
+  <svg xmlns="http://www.w3.org/2000/svg" shapeRendering="geometricPrecision" textRendering="geometricPrecision" imageRendering="optimizeQuality" fillRule="evenodd" clipRule="evenodd" viewBox="0 0 512 408" width={32} {...rest}>
     <defs>
-      <linearGradient id="a" gradientUnits="userSpaceOnUse" x1="76" y1="10" x2="523" y2="365">
+      <linearGradient id="BGrad" gradientUnits="userSpaceOnUse" x1="76" y1="10" x2="523" y2="365">
         <stop offset="0" stopColor="#9013FE" />
         <stop offset="1" stopColor="#6610F2" />
       </linearGradient>
     </defs>
     <path
-      fill="url(#a)"
+      fill="url(#BGrad)"
       fillRule="nonzero"
       d="M56.48 53.32C55.52 25.58 77.13 0 106.34 0H405.7c29.21 0 50.82 25.58 49.86 53.32-.93 26.65.27 61.16 8.96 89.31 8.72 28.23 23.41 46.08 47.48 48.37v26c-24.07 2.29-38.76 20.14-47.48 48.37-8.69 28.15-9.89 62.66-8.96 89.31.96 27.74-20.65 53.32-49.86 53.32H106.34c-29.21 0-50.82-25.58-49.86-53.32.93-26.65-.28-61.16-8.96-89.31C38.8 237.14 24.07 219.29 0 217v-26c24.07-2.29 38.8-20.14 47.52-48.37 8.68-28.15 9.89-62.66 8.96-89.31z"
     />

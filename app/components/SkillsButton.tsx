@@ -1,5 +1,3 @@
-import LinkButton from "./LinkButton";
-
 export default function Skills({ name, color, className, icon, pos }: { name: string; color?: string; className?: string; icon: React.ReactNode; pos?: string }) {
   return (
     <>
