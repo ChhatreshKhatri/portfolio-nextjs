@@ -39,3 +39,4 @@ contentSubmission.*
 .env
 curl or web request.cmd
 packageUpdate.bat
+package-lock.json
