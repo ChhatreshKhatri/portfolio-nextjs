@@ -1,0 +1,9 @@
+{
+  "github": {
+    "silent": true,
+    "autoAlias": false
+  },
+  "git": {
+    "deploymentEnabled": false
+  }
+}
