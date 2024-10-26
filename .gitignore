@@ -40,3 +40,5 @@ contentSubmission.*
 curl or web request.cmd
 packageUpdate.bat
 package-lock.json
+.vercel.json
+vercel.json
