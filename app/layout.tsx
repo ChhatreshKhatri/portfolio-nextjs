@@ -42,7 +42,7 @@ export const metadata = {
 export const viewport = { themeColor: "#191919" };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={`${poppins.className} w-full min-h-screen flex flex-col bg-light text-darked dark:bg-dark dark:text-light`}>
         <ThemeProviderWrapper>
           <NavBar />
